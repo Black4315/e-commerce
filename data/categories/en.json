@@ -1,0 +1,131 @@
+{
+    "categories": [
+        {
+            "name": "Women’s Fashion",
+            "link": "/category/womens-fashion",
+            "children": [
+                {
+                    "name": "Dresses",
+                    "link": "/category/womens-fashion/dresses"
+                },
+                {
+                    "name": "Tops & Blouses",
+                    "link": "/category/womens-fashion/tops-blouses"
+                },
+                {
+                    "name": "Pants & Trousers",
+                    "link": "/category/womens-fashion/pants-trousers"
+                },
+                {
+                    "name": "Skirts",
+                    "link": "/category/womens-fashion/skirts"
+                },
+                {
+                    "name": "Outerwear",
+                    "link": "/category/womens-fashion/outerwear"
+                },
+                {
+                    "name": "Shoes",
+                    "link": "/category/womens-fashion/shoes"
+                },
+                {
+                    "name": "Bags",
+                    "link": "/category/womens-fashion/bags"
+                },
+                {
+                    "name": "Accessories",
+                    "link": "/category/womens-fashion/accessories"
+                },
+                {
+                    "name": "Lingerie & Sleepwear",
+                    "link": "/category/womens-fashion/lingerie-sleepwear"
+                },
+                {
+                    "name": "Jewelry",
+                    "link": "/category/womens-fashion/jewelry"
+                }
+            ]
+        },
+        {
+            "name": "Men’s Fashion",
+            "link": "/category/mens-fashion",
+            "children": [
+                {
+                    "name": "T-Shirts & Polos",
+                    "link": "/category/mens-fashion/tshirts-polos"
+                },
+                {
+                    "name": "Shirts",
+                    "link": "/category/mens-fashion/shirts"
+                },
+                {
+                    "name": "Jeans & Trousers",
+                    "link": "/category/mens-fashion/jeans-trousers"
+                },
+                {
+                    "name": "Suits & Blazers",
+                    "link": "/category/mens-fashion/suits-blazers"
+                },
+                {
+                    "name": "Outerwear",
+                    "link": "/category/mens-fashion/outerwear"
+                },
+                {
+                    "name": "Shoes",
+                    "link": "/category/mens-fashion/shoes"
+                },
+                {
+                    "name": "Watches",
+                    "link": "/category/mens-fashion/watches"
+                },
+                {
+                    "name": "Bags & Wallets",
+                    "link": "/category/mens-fashion/bags-wallets"
+                },
+                {
+                    "name": "Accessories",
+                    "link": "/category/mens-fashion/accessories"
+                },
+                {
+                    "name": "Underwear & Socks",
+                    "link": "/category/mens-fashion/underwear-socks"
+                }
+            ]
+        },
+        {
+            "name": "Electronics",
+            "link": "/category/electronics",
+            "children": []
+        },
+        {
+            "name": "Home & Lifestyle",
+            "link": "/category/home-lifestyle",
+            "children": []
+        },
+        {
+            "name": "Medicine",
+            "link": "/category/medicine",
+            "children": []
+        },
+        {
+            "name": "Sports & Outdoor",
+            "link": "/category/sports-outdoor",
+            "children": []
+        },
+        {
+            "name": "Baby & Toys",
+            "link": "/category/baby-toys",
+            "children": []
+        },
+        {
+            "name": "Groceries & Pets",
+            "link": "/category/groceries-pets",
+            "children": []
+        },
+        {
+            "name": "Health & Beauty",
+            "link": "/category/health-beauty",
+            "children": []
+        }
+    ]
+}

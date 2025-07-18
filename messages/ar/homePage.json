@@ -1,0 +1,134 @@
+{
+    "homePage": {
+        "categories": [
+            {
+                "name": "أزياء النساء",
+                "link": "/category/womens-fashion",
+                "children": [
+                    {
+                        "name": "فساتين",
+                        "link": "/category/womens-fashion/dresses"
+                    },
+                    {
+                        "name": "بلوزات وتوبات",
+                        "link": "/category/womens-fashion/tops-blouses"
+                    },
+                    {
+                        "name": "بنطلونات وسراويل",
+                        "link": "/category/womens-fashion/pants-trousers"
+                    },
+                    {
+                        "name": "تنانير",
+                        "link": "/category/womens-fashion/skirts"
+                    },
+                    {
+                        "name": "ملابس خارجية",
+                        "link": "/category/womens-fashion/outerwear"
+                    },
+                    {
+                        "name": "أحذية",
+                        "link": "/category/womens-fashion/shoes"
+                    },
+                    {
+                        "name": "حقائب",
+                        "link": "/category/womens-fashion/bags"
+                    },
+                    {
+                        "name": "إكسسوارات",
+                        "link": "/category/womens-fashion/accessories"
+                    },
+                    {
+                        "name": "ملابس داخلية وملابس نوم",
+                        "link": "/category/womens-fashion/lingerie-sleepwear"
+                    },
+                    {
+                        "name": "مجوهرات",
+                        "link": "/category/womens-fashion/jewelry"
+                    }
+                ]
+            },
+            {
+                "name": "أزياء الرجال",
+                "link": "/category/mens-fashion",
+                "children": [
+                    {
+                        "name": "تيشيرتات وبولو",
+                        "link": "/category/mens-fashion/tshirts-polos"
+                    },
+                    {
+                        "name": "قمصان",
+                        "link": "/category/mens-fashion/shirts"
+                    },
+                    {
+                        "name": "جينز وسراويل",
+                        "link": "/category/mens-fashion/jeans-trousers"
+                    },
+                    {
+                        "name": "بدل وسترات",
+                        "link": "/category/mens-fashion/suits-blazers"
+                    },
+                    {
+                        "name": "ملابس خارجية",
+                        "link": "/category/mens-fashion/outerwear"
+                    },
+                    {
+                        "name": "أحذية",
+                        "link": "/category/mens-fashion/shoes"
+                    },
+                    {
+                        "name": "ساعات",
+                        "link": "/category/mens-fashion/watches"
+                    },
+                    {
+                        "name": "حقائب ومحافظ",
+                        "link": "/category/mens-fashion/bags-wallets"
+                    },
+                    {
+                        "name": "إكسسوارات",
+                        "link": "/category/mens-fashion/accessories"
+                    },
+                    {
+                        "name": "ملابس داخلية وجوارب",
+                        "link": "/category/mens-fashion/underwear-socks"
+                    }
+                ]
+            },
+            {
+                "name": "إلكترونيات",
+                "link": "/category/electronics",
+                "children": []
+            },
+            {
+                "name": "المنزل والديكور",
+                "link": "/category/home-lifestyle",
+                "children": []
+            },
+            {
+                "name": "الطب والرعاية الصحية",
+                "link": "/category/medicine",
+                "children": []
+            },
+            {
+                "name": "الرياضة والأنشطة الخارجية",
+                "link": "/category/sports-outdoor",
+                "children": []
+            },
+            {
+                "name": "الرضّع والألعاب",
+                "link": "/category/baby-toys",
+                "children": []
+            },
+            {
+                "name": "البقالة والحيوانات الأليفة",
+                "link": "/category/groceries-pets",
+                "children": []
+            },
+            {
+                "name": "الصحة والجمال",
+                "link": "/category/health-beauty",
+                "children": []
+            }
+        ],
+        "shopNowBtn": "تسوق الآن"
+    }
+}

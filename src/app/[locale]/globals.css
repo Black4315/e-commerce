@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+@config '../../../tailwind.config.ts';
+
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+
+  --font-poppins: "Poppins", sans-serif;
+  --font-inter: "Inter", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background-color: #0a0a0a
+}
+
+@layer base {
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus {
+    background-color: transparent !important;
+    -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+    -webkit-text-fill-color: inherit !important;
+  }
+}
+
+@layer utilities {
+  body {
+
+    @apply bg-white text-black font-inter overflow-x-hidden;
+
+  }
+
+  .screen-max-width {
+    max-width: 1170px;
+    /* max-width: 1440px; */
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    position: relative;
+  }
+
+  .main-content {
+    flex: 1;
+  }
+
+  .page-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .common-padding {
+    @apply px-4 sm:px-6
+  }
+
+
+}
+
+
+@layer components {
+  .logo {
+    color: black;
+    @apply not-italic font-bold text-xl sm:text-2xl leading-6 tracking-[0.03em] font-inter;
+  }
+
+  .nav-item {
+    @apply text-sm md:text-base leading-6 font-normal font-poppins relative hover:after:w-[105%] after:transition-all after:duration-300 after:ease-in-out;
+  }
+
+  .nav-item::after {
+    @apply bg-[#808080];
+    content: '';
+    display: block;
+    width: 0%;
+    height: 1px;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+  }
+
+  .profileNav {
+    @apply w-10 h-10 hover:bg-hover-button-2 cursor-pointer flex items-center justify-center transition-all flex-none order-2 flex-grow-0 rounded-full
+  }
+
+  .action-btn-select {
+    @apply bg-button-2 text-text-1
+  }
+
+  .footer-subtitle {
+    @apply not-italic font-medium text-base sm:text-xl leading-7 text-gray-100 font-poppins
+  }
+
+  .footer-text {
+    @apply not-italic font-normal text-sm sm:text-base leading-6 font-poppins text-text-1 transition-all
+  }
+
+  .footer a {
+    @apply hover:text-hover-button-1 transition-all text-text-3
+  }
+
+  /* Heading */
+  .heading-slider {
+    @apply not-italic font-semibold text-4xl md:text-5xl leading-12 md:leading-14 tracking-wider font-inter;
+  }
+
+  /* Regular text */
+  .reg-text {
+    @apply not-italic font-normal text-sm md:text-base leading-5 md:leading-6 font-poppins;
+  }
+
+  .heading{
+    @apply not-italic font-semibold text-2xl md:text-4xl font-inter leading-10 md:leading-12 tracking-[0.0em]
+  }
+
+  /* Title */
+  .title {
+    @apply not-italic font-medium text-sm md:text-base leading-5 md:leading-6 font-poppins;
+  }
+
+}

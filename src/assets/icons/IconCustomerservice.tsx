@@ -1,0 +1,21 @@
+import React from 'react';
+
+type Props = React.SVGProps<SVGSVGElement>;
+
+const IconCustomerserviceIcon = (props: Props) => (
+  <svg {...props} width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_809_279)">
+<path d="M13.3332 25C13.3332 23.1591 11.8408 21.6667 9.99984 21.6667C8.15889 21.6667 6.6665 23.1591 6.6665 25V28.3334C6.6665 30.1743 8.15889 31.6667 9.99984 31.6667C11.8408 31.6667 13.3332 30.1743 13.3332 28.3334V25Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M33.3332 25C33.3332 23.1591 31.8408 21.6667 29.9998 21.6667C28.1589 21.6667 26.6665 23.1591 26.6665 25V28.3334C26.6665 30.1743 28.1589 31.6667 29.9998 31.6667C31.8408 31.6667 33.3332 30.1743 33.3332 28.3334V25Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.6665 25V20C6.6665 16.4638 8.07126 13.0724 10.5717 10.5719C13.0722 8.07145 16.4636 6.66669 19.9998 6.66669C23.5361 6.66669 26.9274 8.07145 29.4279 10.5719C31.9284 13.0724 33.3332 16.4638 33.3332 20V25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M30 31.6667C30 32.9928 28.9464 34.2645 27.0711 35.2022C25.1957 36.1399 22.6522 36.6667 20 36.6667" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_809_279">
+<rect width="40" height="40" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+);
+
+export default IconCustomerserviceIcon;

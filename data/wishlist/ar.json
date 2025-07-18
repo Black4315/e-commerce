@@ -1,0 +1,16 @@
+[
+    {
+        "userId": 1,
+        "id": 201,
+        "name": "MacBook Air M3",
+        "price": 1299,
+        "image": "/assets/products/macbook.jpg"
+    },
+    {
+        "userId": 1,
+        "id": 202,
+        "name": "Apple Watch Ultra",
+        "price": 799,
+        "image": "/assets/products/watch.jpg"
+    }
+]

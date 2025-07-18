@@ -1,0 +1,52 @@
+{
+    "header": {
+    "nav": [
+        {
+            "label": "الرئيسية",
+            "link": "/"
+        },
+        {
+            "label": "اتصل بنا",
+            "link": "/contact"
+        },
+        {
+            "label": "عن الموقع",
+            "link": "/about"
+        },
+        {
+            "label": "تسجيل",
+            "link": "/signup"
+        }
+    ],
+    "searchPlaceholder": "ماذا تبحث؟",
+    "tooltip": {
+        "cart": "عربة التسوق",
+        "profile": "الملف الشخصي",
+        "wishlist": "قائمة الرغبات",
+        "search": "بحث"
+    },
+
+    "profileMenu": [
+        {
+            "label": "إدارة حسابي",
+            "link": "/my-account"
+        },
+        {
+            "label": "طلبي",
+            "link": "/my-order"
+        },
+        {
+            "label":  "إلغائي",
+            "link": "/my-cancellations"
+        },
+        {
+            "label": "مراجعاتي",
+            "link": "/my-reviews"
+        },
+        {
+            "label": "تسجيل الخروج",
+            "link": "/logout"
+        }
+    ]
+}
+}

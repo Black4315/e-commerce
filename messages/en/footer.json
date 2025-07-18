@@ -1,0 +1,74 @@
+{
+    "footer": {
+        "sub":"Subscribe",
+        "offer":"Get 10% off your first order",
+        "email":"Enter your email",
+        "support": {
+            "title": "Support",
+            "list": [
+                {
+                    "label": "111 Bijoy Sarani, Dhaka, DH 1515, Bangladesh.",
+                    "link": ""
+                },
+                {
+                    "label": "exclusive@gmail.com",
+                    "link": ""
+                },
+                {
+                    "label": "+88015-88888-9999",
+                    "link": ""
+                }
+            ]
+        },
+        "account": {
+            "title": "Account",
+            "list": [
+                {
+                    "label": "My Account",
+                    "link": "/my-account"
+                },
+                {
+                    "label": "Login / Register",
+                    "link": "/login"
+                },
+                {
+                    "label": "Cart",
+                    "link": "/cart"
+                },
+                {
+                    "label": "Wishlist",
+                    "link": "/wishlist"
+                },
+                {
+                    "label": "Shop",
+                    "link": "/shop"
+                }
+            ]
+        },
+        "quickLinks": {
+            "title": "Quick Links",
+            "list": [
+                {
+                    "label": "Privacy Policy",
+                    "link": "/privacy-policy"
+                },
+                {
+                    "label": "Terms Of Use",
+                    "link": "/terms-of-use"
+                },
+                {
+                    "label": "FAQ",
+                    "link": "/faq"
+                },
+                {
+                    "label": "Contact",
+                    "link": "/contact"
+                }
+            ]
+        },
+        "download":{
+            "header":"Download App",
+            "text":"Save $3 with App New User Only"
+        }
+    }
+}

@@ -1,0 +1,44 @@
+{
+    "header": {
+        "nav": [
+            {
+                "label": "Home",
+                "link": "/"
+            },
+            {
+                "label": "Contact",
+                "link": "/contact"
+            },
+            {
+                "label": "About",
+                "link": "/about"
+            },
+            {
+                "label": "Sign Up",
+                "link": "/signup"
+            }
+        ],
+        "searchPlaceholder": "What are you looking for?",
+        "profileMenu":[
+            {
+                "label": "Manage My Account",
+                "link": "/my-account"
+            },
+            {
+                "label": "My Order",
+                "link": "/my-order"
+            },
+            {
+                "label": "My Cancellations",
+                "link": "/my-cancellations"
+            },
+            {
+                "label":  "My Reviews",
+                "link": "/my-reviews"
+            },{
+                "label": "Logout",
+                "link": "/logout"
+            } 
+        ]
+    }
+}

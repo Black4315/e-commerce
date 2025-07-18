@@ -1,0 +1,34 @@
+
+
+"link": "/login"
+
+"link": "/cart"
+
+"link": "/wishlist"
+
+"link": "/shop"
+
+"link": "/privacy-policy"
+
+"link": "/terms-of-use"
+
+"link": "/faq"
+
+
+"link": "/"
+
+"link": "/contact"
+
+"link": "/about"
+
+"link": "/signup"
+
+"link": "/my-account"
+
+"link": "/my-order"
+
+"link": "/my-cancellations"
+
+"link": "/my-reviews"
+
+"link": "/logout"

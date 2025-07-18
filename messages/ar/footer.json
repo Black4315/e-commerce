@@ -1,0 +1,70 @@
+{
+    "footer": {
+        "sub": "اشترك",
+        "offer": "احصل على خصم 10٪ على أول طلب لك",
+        "email": "أدخل بريدك الإلكتروني",
+        "support": {
+            "title": "الدعم",
+            "list": [
+                {
+                    "label": "111 بيجي ساراتي، دكا، DH 1515، بنغلاديش.",
+                    "link": ""
+                },
+                {
+                    "label": "exclusive@gmail.com",
+                    "link": ""
+                },
+                {
+                    "label": "+88015-88888-9999",
+                    "link": ""
+                }
+            ]
+        },
+        "account": {
+            "title": "حسابي",
+            "list": [
+                {
+                    "label": "تسجيل الدخول / التسجيل",
+                    "link": "/login"
+                },
+                {
+                    "label": "العربة",
+                    "link": "/cart"
+                },
+                {
+                    "label": "قائمة المفضلة",
+                    "link": "/wishlist"
+                },
+                {
+                    "label": "تسوق",
+                    "link": "/shop"
+                }
+            ]
+        },
+        "quickLinks": {
+            "title": "روابط سريعة",
+            "list": [
+                {
+                    "label": "سياسة الخصوصية",
+                    "link": "/privacy-policy"
+                },
+                {
+                    "label": "شروط الاستخدام",
+                    "link": "/terms-of-use"
+                },
+                {
+                    "label": "الأسئلة الشائعة",
+                    "link": "/faq"
+                },
+                {
+                    "label": "اتصل",
+                    "link": "/contact"
+                }
+            ]
+        },
+        "download": {
+            "header": "تحميل التطبيق",
+            "text": "وفّر ٣ دولارات لمستخدمي التطبيق الجدد فقط"
+        }
+    }
+}
