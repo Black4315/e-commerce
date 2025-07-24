@@ -7,6 +7,7 @@ import { useFetchOurProducts } from "./hooks/useFetchOurProducts";
 
 type ourProductsType = {
     ourProducts: {
+        viewAll:string;
         products: productType[]
     }
 }
@@ -32,7 +33,8 @@ const OurProducts = () => {
             isLoading={isLoading}
             isError={isError}
             products={data && ourProducts.products}
-            viewAllLink={'/best-sellings/'}
+            viewAllLink={data && ourProducts.viewAll}
+            rows={2}
         />
     )
 }

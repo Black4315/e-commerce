@@ -1,5 +1,6 @@
 {
     "ourProducts": {
+        "viewAll": "/our-products/",
         "products": [
             {
                 "id": 1,

@@ -6,6 +6,7 @@ import CountdownTimer from './components/CountdownTimer'
 import ErrorTimer from './components/ErrorTimer'
 import { flashDataType, flashSalesContextType } from './types'
 import { FlashSalesProvider, useFlashSalesContext } from './context/FlashSalesContext'
+import ErrorProducts from '@/components/SectionProducts/components/ErrorProducts'
 
 
 
@@ -58,7 +59,7 @@ const FlashSalesSection = () => {
       isLoading={isLoading}
       isError={isError}
       products={data && flashSale.products}
-      viewAllLink={!flashEnd ? '/flash-sales/' : ''}
+      viewAllLink={data && flashSale.viewAll}
     />
   );
 }

@@ -47,12 +47,6 @@ const EmblaCarousel = forwardRef<EmblaCarouselHandle, PropType>(
             onNextButtonClick
         } = usePrevNextButtons(emblaApi)
 
-        // useImperativeHandle(ref, () => ({
-        //     prevBtnDisabled,
-        //     nextBtnDisabled,
-        //     onPrevButtonClick,
-        //     onNextButtonClick
-        // }), [prevBtnDisabled, nextBtnDisabled, onPrevButtonClick, onNextButtonClick])
 
         return (
             <div className='relative'>

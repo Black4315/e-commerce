@@ -2,6 +2,7 @@
     "flashSale": {
         "start": "2025-07-17T00:00:00Z",
         "end": "2025-07-20T23:59:59Z",
+        "viewAll":"/flash-sales/",
         "products": [
             {
                 "id": 1,

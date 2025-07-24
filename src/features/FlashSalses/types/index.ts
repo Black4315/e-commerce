@@ -4,6 +4,7 @@ export type flashDataType = {
     flashSale: {
         start: string;
         end: string;
+        viewAll: string;
         products: productType[];
     };
 };

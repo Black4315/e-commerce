@@ -1,6 +1,7 @@
 {
     "bestSellings": {
         "bestSellingsIn": "This Month",
+        "viewAll": "/best-sellings/",
         "products": [
             {
                 "id": 11,

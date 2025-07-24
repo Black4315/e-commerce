@@ -19,6 +19,7 @@ type SectionProductsProps = {
     isLoading: boolean;
     isError: boolean;
     products: productType[];
+    rows?: number;
 } & React.ComponentProps<'section'>;
 
 const SectionProducts: React.FC<SectionProductsProps> = ({
@@ -31,6 +32,7 @@ const SectionProducts: React.FC<SectionProductsProps> = ({
     isLoading,
     isError,
     products,
+    rows,
     ...props
 }) => {
     const t = useTranslations('homePage.product')
@@ -53,7 +55,7 @@ const SectionProducts: React.FC<SectionProductsProps> = ({
                 <SkeltonProductCard />
             ) : (
                 <>
-                    <ProductCards data={products} />
+                    <ProductCards data={products} rows={rows} />
                     {viewAllLink && <div className="flex-center">
                         <Link href={viewAllLink} className="w-48 md:w-56 aspect-[4.6] med-text flex-center hover:bg-hover-button-2 transition-all bg-secondary-3 text-text-1 rounded">
                             {t('viewAll')}

@@ -6,9 +6,10 @@ import { useFlashSalesContext } from "@/features/FlashSalses/context/FlashSalesC
 
 type ProductCardsProps = {
     data?: productType[];
+    rows?: number;
 }
 
-const ProductCards: React.FC<ProductCardsProps> = ({ data }) => {
+const ProductCards: React.FC<ProductCardsProps> = ({ data,rows }) => {
 
     // Not all sections use the FlashSalesProvider,
     // so this context might not always be available.
@@ -26,7 +27,11 @@ const ProductCards: React.FC<ProductCardsProps> = ({ data }) => {
 
     return (
         <EmblaCarousel className={`p-5 -m-5 overflow-x-hidden`}>
-            <div className="flex gap-[30px] touch-pan-y touch-pinch-zoom ">
+            <div className={`
+            ${rows && rows > 1 ? `grid grid-rows-${rows}`:'flex'} 
+            grid-flow-col 
+            auto-cols-auto 
+            gap-[30px] touch-pan-y touch-pinch-zoom `}>
                 {data?.map((props) => (
                     <ProductCard key={props.id} {...props} className={flashEnd ? 'sale-ended':''} />
                 )) ?? null}

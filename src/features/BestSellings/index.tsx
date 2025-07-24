@@ -8,7 +8,8 @@ import { UseQueryResult } from "@tanstack/react-query";
 
 type bestSellingsDataType = {
   bestSellings: {
-    bestSellingsIn: string,
+    bestSellingsIn: string
+    viewAll: string;
     products: productType[]
   }
 }
@@ -34,7 +35,7 @@ const BestSellings = () => {
       isLoading={isLoading}
       isError={isError}
       products={data && bestSellings.products}
-      viewAllLink={'/best-sellings/'}
+      viewAllLink={data && bestSellings.viewAll}
     />
   )
 }
