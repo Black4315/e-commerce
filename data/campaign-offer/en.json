@@ -27,7 +27,7 @@
         },
         "fallback_after_expiry": {
             "message": "This deal has ended. Check out similar products.",
-            "button": "similar products.",
+            "button": "similar products",
             "redirect_url": "/flash-sales"
         }
     }
