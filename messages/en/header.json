@@ -19,6 +19,12 @@
             }
         ],
         "searchPlaceholder": "What are you looking for?",
+        "tooltip": {
+            "cart":"Cart",
+            "profile": "Profile",
+            "wishlist": "Wishlist",
+            "search": "Search"
+        },
         "profileMenu":[
             {
                 "label": "Manage My Account",

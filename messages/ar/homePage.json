@@ -129,6 +129,40 @@
                 "children": []
             }
         ],
-        "shopNowBtn": "تسوق الآن"
+        "shopNowBtn": "تسوق الآن",
+        "buyNowBtn": "اشتري الآن",
+        "flashSale": {
+            "label": "اليوم",
+            "title": "الخصومات الفورية",
+            "days": "أيام",
+            "hours": "ساعات",
+            "minutes": "دقائق",
+            "seconds": "ثواني",
+            "salesEnd": "العرض انتهى"
+        },
+        "product": {
+            "new": "جديد",
+            "addCart": "اضف الى العربه",
+            "viewAll": "عرض جميع المنتجات",
+            "removeCart": "إزالة من العربة"
+        },
+        "browseByCategory": {
+            "label": "الفئات",
+            "title": "التصفح حسب الفئة",
+            "phones":"هواتف",
+            "computers":"أجهزة كمبيوتر",
+            "smartwatch": "ساعات ذكية",
+            "camera": "كاميرا",
+            "headphones": "سماعات رأس",
+            "gaming": "ألعاب"
+        },
+        "bestSellings": {
+            "label": "",
+            "title": "أفضل المنتجات مبيعا"
+        },
+        "ourProducts": {
+            "label": "منتجاتنا",
+            "title": "استكشف منتجاتنا"
+        }
     }
 }

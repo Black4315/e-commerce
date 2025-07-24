@@ -1,0 +1,34 @@
+{
+    "campaign": {
+        "id": "flash-56767",
+        "status": "active",
+        "type": "limited_time_offer",
+        "starts_at": "2025-07-21T00:00:00Z",
+        "ends_at": "2025-07-26T12:00:00Z",
+        "product": {
+            "id": "56767",
+            "name": "مكبر صوت بلوتوث محمول JBL Boombox 2",
+            "short_description": "ارتقِ بتجربتك الموسيقية",
+            "image": "/assets/products/images/JBL_BOOMBOX_2_HERO_020_x1.png",
+            "buy_now_url": "/products/56767"
+        },
+        "labels": {
+            "category": "الفئات",
+            "countdown": {
+                "days": "يوم",
+                "hours": "ساعة",
+                "minutes": "دقيقة",
+                "seconds": "ثانية"
+            }
+        },
+        "countdown": {
+            "enabled": true,
+            "target_time": "2025-07-26T12:00:00Z"
+        },
+        "fallback_after_expiry": {
+            "message": "انتهى هذا العرض. تحقق من المنتجات المشابهة.",
+            "button": "المنتجات المشابهة",
+            "redirect_url": "/flash-sales"
+        }
+    }
+}

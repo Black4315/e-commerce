@@ -4,10 +4,10 @@
 @config '../../../tailwind.config.ts';
 
 
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --apple-transition: cubic-bezier(0, 0, .5, 1);
 }
 
 @theme inline {
@@ -24,7 +24,9 @@
 }
 
 body {
-  background-color: #0a0a0a
+  background: black;
+  color-scheme: dark;
+  @apply text-black font-inter overflow-x-hidden;
 }
 
 @layer base {
@@ -39,11 +41,6 @@ body {
 }
 
 @layer utilities {
-  body {
-
-    @apply bg-white text-black font-inter overflow-x-hidden;
-
-  }
 
   .screen-max-width {
     max-width: 1170px;
@@ -61,6 +58,8 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    /* width: 99%; */
+    overflow-x: hidden;
   }
 
   .flex-center {
@@ -71,6 +70,21 @@ body {
     @apply px-4 sm:px-6
   }
 
+  .anim-show {
+    animation: fade-in 0.3s var(--apple-transition) forwards;
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
 }
 
@@ -116,9 +130,12 @@ body {
     @apply hover:text-hover-button-1 transition-all text-text-3
   }
 
+  .heading {
+    @apply not-italic font-semibold text-2xl md:text-4xl font-inter leading-8 md:leading-12 tracking-[0.0em]
+  }
   /* Heading */
   .heading-slider {
-    @apply not-italic font-semibold text-4xl md:text-5xl leading-12 md:leading-14 tracking-wider font-inter;
+    @apply not-italic font-semibold text-2xl md:text-5xl leading-8 md:leading-14 tracking-wider font-inter;
   }
 
   /* Regular text */
@@ -126,13 +143,44 @@ body {
     @apply not-italic font-normal text-sm md:text-base leading-5 md:leading-6 font-poppins;
   }
 
-  .heading{
-    @apply not-italic font-semibold text-2xl md:text-4xl font-inter leading-10 md:leading-12 tracking-[0.0em]
+  .med-text {
+    @apply not-italic font-medium text-sm md:text-base leading-5 md:leading-6 font-poppins;
   }
+
+  .semi-text {
+    @apply not-italic font-semibold text-sm md:text-base leading-5 md:leading-6 font-poppins;
+  }
+
 
   /* Title */
   .title {
     @apply not-italic font-medium text-sm md:text-base leading-5 md:leading-6 font-poppins;
   }
 
+  .sale-ended {
+    filter: brightness(0.7) grayscale(0.3);
+    /* Brighter, less harsh */
+    pointer-events: none;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .sale-ended::after {
+    content: "Sale Ended";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(2px);
+    color: #333;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+  }
+
+
+  
 }

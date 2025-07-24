@@ -10,13 +10,16 @@ export default {
   ],
   theme: {
     extend: {
-
+      transitionTimingFunction: {
+        apple: 'cubic-bezier(0, 0, 0.5, 1)',
+      },
       colors: {
         // Core Neutrals (Black & White)
         'white': '#FFFFFF',
         'black': '#000000',
 
         'border': '#B3B3B3', // Assuming this is a neutral border color
+        'inactive':'#808080',
 
         // Primary Colors
         'primary-1': '#FFFFFF', // Assuming the first primary is the white #FFFFFF
@@ -35,7 +38,7 @@ export default {
         'text-button-card': '#D37643', // Duplicate for clarity, but same as text-1
 
         // Other Colors / Button Colors
-        'button-1': '#47B486',
+        'button-1': '#01e85d', //#00FF66
         'button-2': '#DB4444', // This matches secondary-3, good for consistency
         'hover-button-1': '#a0bce0',
         'hover-button-2': '#EB5757',
@@ -121,12 +124,19 @@ export default {
   plugins: [
     plugin(function ({ addBase, addComponents, addUtilities }) {
       addBase({});
+      
       addComponents({
 
 
       });
-
-
+      
+      addUtilities({
+        '.transition-apple': {
+          transitionProperty: 'all',
+          transitionTimingFunction: 'cubic-bezier(0, 0, 0.5, 1)',
+        },
+      })
+      
     }),
   ],
 };

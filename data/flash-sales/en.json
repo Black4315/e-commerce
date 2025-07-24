@@ -1,13 +1,13 @@
 {
     "flashSale": {
         "start": "2025-07-17T00:00:00Z",
-        "end": "2025-07-18T14:38:50Z",
+        "end": "2025-07-20T23:59:59Z",
         "products": [
             {
                 "id": 1,
                 "title": "HAVIT HV-G92 Gamepad",
                 "description": "High quality gamepad suitable for PC and laptop gaming.",
-                "image": "/images/gamepad.png",
+                "image": "/assets/products/images/g92-2-500x500 1.png",
                 "category": "Electronics",
                 "originalPrice": 160,
                 "discountedPrice": 120,
@@ -16,14 +16,15 @@
                 "inStock": true,
                 "rating": 4.5,
                 "reviewsCount": 88,
-                "colors": [],
-                "sizes": []
+                "colors": ["red","green"],
+                "sizes": [],
+                "isNew": true
             },
             {
                 "id": 2,
                 "title": "IPS LCD Gaming Monitor",
                 "description": "High resolution display monitor suitable for pro gaming.",
-                "image": "/images/monitor.png",
+                "image": "/assets/products/images/g27cq4-500x500 1.png",
                 "category": "Electronics",
                 "originalPrice": 400,
                 "discountedPrice": 370,
@@ -33,13 +34,14 @@
                 "rating": 4.7,
                 "reviewsCount": 99,
                 "colors": [],
-                "sizes": []
+                "sizes": [],
+                "isNew": false
             },
             {
                 "id": 3,
                 "title": "S-Series Comfort Chair",
                 "description": "Modern comfortable office chair for perfect seating.",
-                "image": "/images/chair.png",
+                "image": "/assets/products/images/sam-moghadam-khamseh-kvmdsTrGOBM-unsplash 1.png",
                 "category": "Furniture",
                 "originalPrice": 400,
                 "discountedPrice": 375,
@@ -49,16 +51,17 @@
                 "rating": 4.4,
                 "reviewsCount": 99,
                 "colors": [
-                    "Black",
-                    "Grey"
+                    "#000000",
+                    "#444"
                 ],
-                "sizes": []
+                "sizes": [],
+                "isNew": false
             },
             {
                 "id": 4,
                 "title": "AK-900 Wired Keyboard",
                 "description": "High performance keyboard with RGB lighting.",
-                "image": "/images/keyboard.png",
+                "image": "/assets/products/images/ak-900-01-500x500 1.png",
                 "category": "Electronics",
                 "originalPrice": 1160,
                 "discountedPrice": 960,
@@ -68,55 +71,109 @@
                 "rating": 4.8,
                 "reviewsCount": 75,
                 "colors": [],
-                "sizes": []
+                "sizes": [],
+                "isNew": false
+            }, {
+                "id": 5,
+                "title": "AK-900 Wired Keyboard",
+                "description": "High performance keyboard with RGB lighting.",
+                "image": "/assets/products/images/ak-900-01-500x500 1.png",
+                "category": "Electronics",
+                "originalPrice": 1160,
+                "discountedPrice": 960,
+                "currency": "USD",
+                "discountPercent": 35,
+                "inStock": true,
+                "rating": 4.8,
+                "reviewsCount": 75,
+                "colors": [],
+                "sizes": [],
+                "isNew": false
             },
             {
-                "id": 5,
-                "title": "Cotton T-Shirt",
-                "description": "Lightweight, high quality cotton t-shirt.",
-                "image": "/images/tshirt.png",
-                "category": "Clothing",
-                "originalPrice": 50,
-                "discountedPrice": 35,
+                "id": 6,
+                "title": "AK-900 Wired Keyboard",
+                "description": "High performance keyboard with RGB lighting.",
+                "image": "/assets/products/images/ak-900-01-500x500 1.png",
+                "category": "Electronics",
+                "originalPrice": 1160,
+                "discountedPrice": 960,
                 "currency": "USD",
-                "discountPercent": 30,
+                "discountPercent": 35,
                 "inStock": true,
-                "rating": 4.3,
-                "reviewsCount": 54,
-                "colors": [
-                    "White",
-                    "Black"
-                ],
-                "sizes": [
-                    "S",
-                    "M",
-                    "L",
-                    "XL"
-                ]
+                "rating": 4.8,
+                "reviewsCount": 75,
+                "colors": [],
+                "sizes": [],
+                "isNew": false
             },
             {
-                "id": 5,
-                "title": "Cotton T-Shirt",
-                "description": "Lightweight, high quality cotton t-shirt.",
-                "image": "/images/tshirt.png",
-                "category": "Clothing",
-                "originalPrice": 50,
-                "discountedPrice": 35,
+                "id": 7,
+                "title": "AK-900 Wired Keyboard",
+                "description": "High performance keyboard with RGB lighting.",
+                "image": "/assets/products/images/ak-900-01-500x500 1.png",
+                "category": "Electronics",
+                "originalPrice": 1160,
+                "discountedPrice": 960,
                 "currency": "USD",
-                "discountPercent": 30,
+                "discountPercent": 35,
                 "inStock": true,
-                "rating": 4.3,
-                "reviewsCount": 54,
-                "colors": [
-                    "White",
-                    "Black"
-                ],
-                "sizes": [
-                    "S",
-                    "M",
-                    "L",
-                    "XL"
-                ]
+                "rating": 4.8,
+                "reviewsCount": 75,
+                "colors": [],
+                "sizes": [],
+                "isNew": false
+            },
+            {
+                "id": 8,
+                "title": "AK-900 Wired Keyboard",
+                "description": "High performance keyboard with RGB lighting.",
+                "image": "/assets/products/images/ak-900-01-500x500 1.png",
+                "category": "Electronics",
+                "originalPrice": 1160,
+                "discountedPrice": 960,
+                "currency": "USD",
+                "discountPercent": 35,
+                "inStock": true,
+                "rating": 4.8,
+                "reviewsCount": 75,
+                "colors": [],
+                "sizes": [],
+                "isNew": false
+            },
+            {
+                "id": 9,
+                "title": "AK-900 Wired Keyboard",
+                "description": "High performance keyboard with RGB lighting.",
+                "image": "/assets/products/images/ak-900-01-500x500 1.png",
+                "category": "Electronics",
+                "originalPrice": 1160,
+                "discountedPrice": 960,
+                "currency": "USD",
+                "discountPercent": 35,
+                "inStock": true,
+                "rating": 4.8,
+                "reviewsCount": 75,
+                "colors": [],
+                "sizes": [],
+                "isNew": false
+            },
+            {
+                "id": 10,
+                "title": "AK-900 Wired Keyboard",
+                "description": "High performance keyboard with RGB lighting.",
+                "image": "/assets/products/images/ak-900-01-500x500 1.png",
+                "category": "Electronics",
+                "originalPrice": 1160,
+                "discountedPrice": 960,
+                "currency": "USD",
+                "discountPercent": 35,
+                "inStock": true,
+                "rating": 4.8,
+                "reviewsCount": 75,
+                "colors": [],
+                "sizes": [],
+                "isNew": false
             }
         ]
     }

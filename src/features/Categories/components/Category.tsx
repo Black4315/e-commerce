@@ -10,7 +10,7 @@ type CategoryProps = {
 const Category = ({ category }: CategoryProps) => {
     const isRTL = useIsRTL();
     return (
-        <div className="w-full group hover:text-hover-button-2 transition-all">
+        <div className="w-full group hover:text-secondary-3 transition-all">
             <div className="flex justify-between cursor-pointer">
                 <h3 className="normal-text">
                     <Link href={category.link}>{category.name}</Link>

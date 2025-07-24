@@ -6,7 +6,7 @@ import SearchComponent from "../../../features/Search/SearchComponent"
 import NavProfileActions from "./components/ActionsNav"
 import { useUserContext } from "@/contexts/UserContext"
 import { useEffect, useState } from "react"
-import SideBarMenu from "@/features/MenuSideBar"
+import SideBarMenu from "@/components/layout/Header/components/MenuSideBar"
 import { useMobileCheck } from "@/hooks/useMobileCheck"
 import { cn } from "@/lib/utils"
 

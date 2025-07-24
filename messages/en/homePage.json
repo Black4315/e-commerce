@@ -1,5 +1,5 @@
 {
-    "homePage":{
+    "homePage": {
         "categories": [
             {
                 "name": "Women’s Fashion",
@@ -129,6 +129,40 @@
                 "children": []
             }
         ],
-        "shopNowBtn":"Shop now"
+        "shopNowBtn": "Shop now",
+        "buyNowBtn": "Buy now",
+        "flashSale": {
+            "label": "Today's",
+            "title": "Flash Sales",
+            "days": "Days",
+            "hours": "Hours",
+            "minutes": "minuts",
+            "seconds": "seconds",
+            "salesEnd": "SALE ENDED"
+        },
+        "product": {
+            "new": "NEW",
+            "addCart": "Add To Cart",
+            "viewAll": "View All Products",
+            "removeCart": "Remove From Cart"
+        },
+        "browseByCategory": {
+            "label": "categories",
+            "title": "Browse By Category",
+            "phones": "phones",
+            "computers": "computers",
+            "smartwatch": "smartwatchs",
+            "camera": "camera",
+            "headphones": "headphones",
+            "gaming": "gaming"
+        },
+        "bestSellings": {
+            "label": "",
+            "title": "Best Selling Products"
+        },
+        "ourProducts": {
+            "label": "Our Products",
+            "title": "Explore Our Products"
+        }
     }
 }

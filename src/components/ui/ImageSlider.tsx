@@ -59,7 +59,6 @@ export const ImageSliderWrapper = ({
     <ImageSliderProvider {...{ current, setCurrent }}>
         <div
             className={cn("!relative w-full h-[344px] overflow-hidden bg-black", className)}>
-
             {children}
         </div>
     </ImageSliderProvider>
@@ -107,7 +106,7 @@ export const ImageSlider = ({
                 animate={{ translateX: `${isRTL ? "" : "-"}${current * 100}%` }}  // Change translateX based on slide index
                 transition={{
                     type: "tween",           // Using tween for smoother animation
-                    ease: "easeInOut",      // Smooth and natural transition
+                    ease: [0, 0, 0.5, 1],      // Smooth and natural transition
                     duration: 0.4,          // Longer duration for smooth motion (Apple-like)
                 }}
                 {...props}

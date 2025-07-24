@@ -1,0 +1,34 @@
+{
+    "campaign": {
+        "id": "flash-56767",
+        "status": "active",
+        "type": "limited_time_offer",
+        "starts_at": "2025-07-21T00:00:00Z",
+        "ends_at": "2025-07-24T08:00:00Z",
+        "product": {
+            "id": "56767",
+            "name": "JBL Boombox 2 Portable Bluetooth Speaker",
+            "short_description": "Enhance Your Music Experience",
+            "image": "/assets/products/images/JBL_BOOMBOX_2_HERO_020_x1.png",
+            "buy_now_url": "/products/56767"
+        },
+        "labels": {
+            "category": "Categories",
+            "countdown": {
+                "days": "Days",
+                "hours": "Hours",
+                "minutes": "Minutes",
+                "seconds": "Seconds"
+            }
+        },
+        "countdown": {
+            "enabled": true,
+            "target_time": "2025-07-26T12:00:00Z"
+        },
+        "fallback_after_expiry": {
+            "message": "This deal has ended. Check out similar products.",
+            "button": "similar products.",
+            "redirect_url": "/flash-sales"
+        }
+    }
+}

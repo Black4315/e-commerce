@@ -14,6 +14,7 @@ const CustomAccordion = ({
 }: CustomAccordionProps) => {
     return (
         <Accordion
+            TransitionProps={{ timeout: 200 }}
             disableGutters
             square
             {...props}

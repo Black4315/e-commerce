@@ -1,0 +1,89 @@
+{
+    "bestSellings": {
+        "bestSellingsIn": "This Month",
+        "products": [
+            {
+                "id": 11,
+                "title": "The North Coat",
+                "description": "Stylish and warm winter coat for everyday wear.",
+                "image": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                "category": "Fashion",
+                "originalPrice": 360,
+                "discountedPrice": 260,
+                "currency": "USD",
+                "discountPercent": 28,
+                "inStock": true,
+                "rating": 5,
+                "reviewsCount": 65,
+                "colors": [
+                    "#FF4F5A",
+                    "#F5F5F5"
+                ],
+                "sizes": [
+                    "S",
+                    "M",
+                    "L",
+                    "XL"
+                ],
+                "isNew": true
+            },
+            {
+                "id": 12,
+                "title": "Gucci Duffle Bag",
+                "description": "Premium designer bag with classic Gucci pattern.",
+                "image": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+                "category": "Accessories",
+                "originalPrice": 1160,
+                "discountedPrice": 960,
+                "currency": "USD",
+                "discountPercent": 17,
+                "inStock": true,
+                "rating": 4.8,
+                "reviewsCount": 85,
+                "colors": [
+                    "#BFA06E"
+                ],
+                "sizes": [],
+                "isNew": false
+            },
+            {
+                "id": 13,
+                "title": "RGB Liquid CPU Cooler",
+                "description": "High performance liquid cooler with RGB lighting.",
+                "image": "/assets/products/images/gammaxx-l240-argb-1-500x500 1.png",
+                "category": "Electronics",
+                "originalPrice": 170,
+                "discountedPrice": 160,
+                "currency": "USD",
+                "discountPercent": 6,
+                "inStock": true,
+                "rating": 4.7,
+                "reviewsCount": 65,
+                "colors": [
+                    "#000000"
+                ],
+                "sizes": [],
+                "isNew": false
+            },
+            {
+                "id": 14,
+                "title": "Small BookShelf",
+                "description": "Compact wooden bookshelf for small spaces.",
+                "image": "/assets/products/images/sam-moghadam-khamseh-L_7MQsHl_aU-unsplash 1.png",
+                "category": "Furniture",
+                "originalPrice": 460,
+                "discountedPrice": 360,
+                "currency": "USD",
+                "discountPercent": 22,
+                "inStock": true,
+                "rating": 5,
+                "reviewsCount": 65,
+                "colors": [
+                    "#A9745D"
+                ],
+                "sizes": [],
+                "isNew": false
+            }
+        ]
+    }
+}

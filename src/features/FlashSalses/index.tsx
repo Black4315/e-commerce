@@ -1,24 +1,33 @@
 "use client"
-import SectionProducts from '@/features/SectionProduct/SectionProducts'
-import React, { useState } from 'react'
+import SectionProducts from '@/components/SectionProducts/SectionProducts'
 import { useFetchFlashsales } from './hooks/useFetchFlashSales'
-import { useLocale } from 'next-intl'
-import { calculateTimeLeft } from './utils/claulateTimLeftTimer'
+import { useLocale, useTranslations } from 'next-intl'
 import CountdownTimer from './components/CountdownTimer'
-import { productType } from '../SectionProduct/types/productType'
+import ErrorTimer from './components/ErrorTimer'
+import { flashDataType, flashSalesContextType } from './types'
+import { FlashSalesProvider, useFlashSalesContext } from './context/FlashSalesContext'
 
-type flashDataType = {
-  flashSale: {
-    start: string;
-    end: string;
-    products: productType[];
-  };
+
+
+export default function FlashSales() {
+  return (
+    <FlashSalesProvider>
+      <FlashSalesSection />
+    </FlashSalesProvider>
+  )
 };
 
-const FlashSales = () => {
-  const [flashEnd, setFlashEnd] = useState(false)
 
+
+const FlashSalesSection = () => {
+  const { flashEnd, setFlashEnd } = useFlashSalesContext()
+
+
+  // translations
+  const t = useTranslations('homePage')
   const locale = useLocale();
+
+  // fetching
   const { data, isLoading, isError } = useFetchFlashsales(locale) as {
     data: flashDataType;
     isLoading: boolean;
@@ -35,10 +44,12 @@ const FlashSales = () => {
 
   return (
     <SectionProducts
-      prefix="Today's"
-      heading="Flash Sales"
+      label={t('flashSale.label')}
+      heading={t('flashSale.title')}
       timerComponent={
-        !isLoading ? (
+        isError ? (
+          <ErrorTimer />
+        ) : !isLoading ? (
           <CountdownTimer onTimerEnd={onTimerEnd} endDate={flashSale.end} />
         ) : (
           <div>Loading...</div>
@@ -47,9 +58,7 @@ const FlashSales = () => {
       isLoading={isLoading}
       isError={isError}
       products={data && flashSale.products}
-      className={`${flashEnd ? 'pointer-events-none' : ''}`}
+      viewAllLink={!flashEnd ? '/flash-sales/' : ''}
     />
   );
-};
-
-export default FlashSales;
+}

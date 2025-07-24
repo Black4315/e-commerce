@@ -37,7 +37,7 @@ const GetOffer = () => {
             setIsValid(true);
 
             // If valid, you can send the email data to the backend here
-            console.log('Email is valid, sending to backend:', email);
+            // console.log('Email is valid, sending to backend:', email);
 
             // Example backend request (you can replace this with actual API logic)
             // fetch('/your-backend-endpoint', { method: 'POST', body: JSON.stringify({ email }) });

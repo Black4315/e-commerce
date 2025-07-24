@@ -32,3 +32,10 @@
 "link": "/my-reviews"
 
 "link": "/logout"
+
+
+link: /flash-sales/
+
+link : category/${slug}
+
+best-sellings/

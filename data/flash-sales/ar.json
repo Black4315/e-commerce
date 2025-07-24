@@ -5,9 +5,9 @@
         "products": [
             {
                 "id": 1,
-                "title": "يد تحكم HAVIT HV-G92",
-                "description": "يد تحكم عالية الجودة مناسبة للألعاب على الكمبيوتر واللابتوب.",
-                "image": "/images/gamepad.png",
+                "title": "لوحة ألعاب HAVIT HV-G92",
+                "description": "لوحة ألعاب عالية الجودة مناسبة لألعاب الكمبيوتر المحمول والمكتبي.",
+                "image": "/assets/products/images/g92-2-500x500 1.png",
                 "category": "إلكترونيات",
                 "originalPrice": 160,
                 "discountedPrice": 120,
@@ -16,14 +16,18 @@
                 "inStock": true,
                 "rating": 4.5,
                 "reviewsCount": 88,
-                "colors": [],
-                "sizes": []
+                "colors": [
+                    "أحمر",
+                    "أخضر"
+                ],
+                "sizes": [],
+                "isNew": true
             },
             {
                 "id": 2,
                 "title": "شاشة ألعاب IPS LCD",
-                "description": "شاشة عرض بدقة عالية مناسبة للألعاب الاحترافية.",
-                "image": "/images/monitor.png",
+                "description": "شاشة عالية الدقة مناسبة للألعاب الاحترافية.",
+                "image": "/assets/products/images/g27cq4-500x500 1.png",
                 "category": "إلكترونيات",
                 "originalPrice": 400,
                 "discountedPrice": 370,
@@ -33,13 +37,14 @@
                 "rating": 4.7,
                 "reviewsCount": 99,
                 "colors": [],
-                "sizes": []
+                "sizes": [],
+                "isNew": false
             },
             {
                 "id": 3,
-                "title": "كرسي مريح S-Series",
-                "description": "كرسي مكتبي مريح وعصري لتجربة جلوس مثالية.",
-                "image": "/images/chair.png",
+                "title": "كرسي مريح من سلسلة S",
+                "description": "كرسي مكتبي عصري ومريح لجلوس مثالي.",
+                "image": "/assets/products/images/sam-moghadam-khamseh-kvmdsTrGOBM-unsplash 1.png",
                 "category": "أثاث",
                 "originalPrice": 400,
                 "discountedPrice": 375,
@@ -49,16 +54,17 @@
                 "rating": 4.4,
                 "reviewsCount": 99,
                 "colors": [
-                    "أسود",
-                    "رمادي"
+                    "#000000",
+                    "#444"
                 ],
-                "sizes": []
+                "sizes": [],
+                "isNew": false
             },
             {
                 "id": 4,
                 "title": "لوحة مفاتيح سلكية AK-900",
-                "description": "لوحة مفاتيح مميزة بإضاءة RGB وأداء احترافي.",
-                "image": "/images/keyboard.png",
+                "description": "لوحة مفاتيح عالية الأداء بإضاءة RGB.",
+                "image": "/assets/products/images/ak-900-01-500x500 1.png",
                 "category": "إلكترونيات",
                 "originalPrice": 1160,
                 "discountedPrice": 960,
@@ -68,31 +74,110 @@
                 "rating": 4.8,
                 "reviewsCount": 75,
                 "colors": [],
-                "sizes": []
+                "sizes": [],
+                "isNew": false
             },
             {
                 "id": 5,
-                "title": "تيشيرت قطن",
-                "description": "تيشيرت قطن خفيف بجودة عالية.",
-                "image": "/images/tshirt.png",
-                "category": "ملابس",
-                "originalPrice": 50,
-                "discountedPrice": 35,
+                "title": "لوحة مفاتيح سلكية AK-900",
+                "description": "لوحة مفاتيح عالية الأداء بإضاءة RGB.",
+                "image": "/assets/products/images/ak-900-01-500x500 1.png",
+                "category": "إلكترونيات",
+                "originalPrice": 1160,
+                "discountedPrice": 960,
                 "currency": "USD",
-                "discountPercent": 30,
+                "discountPercent": 35,
                 "inStock": true,
-                "rating": 4.3,
-                "reviewsCount": 54,
-                "colors": [
-                    "أبيض",
-                    "أسود"
-                ],
-                "sizes": [
-                    "S",
-                    "M",
-                    "L",
-                    "XL"
-                ]
+                "rating": 4.8,
+                "reviewsCount": 75,
+                "colors": [],
+                "sizes": [],
+                "isNew": false
+            },
+            {
+                "id": 6,
+                "title": "لوحة مفاتيح سلكية AK-900",
+                "description": "لوحة مفاتيح عالية الأداء بإضاءة RGB.",
+                "image": "/assets/products/images/ak-900-01-500x500 1.png",
+                "category": "إلكترونيات",
+                "originalPrice": 1160,
+                "discountedPrice": 960,
+                "currency": "USD",
+                "discountPercent": 35,
+                "inStock": true,
+                "rating": 4.8,
+                "reviewsCount": 75,
+                "colors": [],
+                "sizes": [],
+                "isNew": false
+            },
+            {
+                "id": 7,
+                "title": "لوحة مفاتيح سلكية AK-900",
+                "description": "لوحة مفاتيح عالية الأداء بإضاءة RGB.",
+                "image": "/assets/products/images/ak-900-01-500x500 1.png",
+                "category": "إلكترونيات",
+                "originalPrice": 1160,
+                "discountedPrice": 960,
+                "currency": "USD",
+                "discountPercent": 35,
+                "inStock": true,
+                "rating": 4.8,
+                "reviewsCount": 75,
+                "colors": [],
+                "sizes": [],
+                "isNew": false
+            },
+            {
+                "id": 8,
+                "title": "لوحة مفاتيح سلكية AK-900",
+                "description": "لوحة مفاتيح عالية الأداء بإضاءة RGB.",
+                "image": "/assets/products/images/ak-900-01-500x500 1.png",
+                "category": "إلكترونيات",
+                "originalPrice": 1160,
+                "discountedPrice": 960,
+                "currency": "USD",
+                "discountPercent": 35,
+                "inStock": true,
+                "rating": 4.8,
+                "reviewsCount": 75,
+                "colors": [],
+                "sizes": [],
+                "isNew": false
+            },
+            {
+                "id": 9,
+                "title": "لوحة مفاتيح سلكية AK-900",
+                "description": "لوحة مفاتيح عالية الأداء بإضاءة RGB.",
+                "image": "/assets/products/images/ak-900-01-500x500 1.png",
+                "category": "إلكترونيات",
+                "originalPrice": 1160,
+                "discountedPrice": 960,
+                "currency": "USD",
+                "discountPercent": 35,
+                "inStock": true,
+                "rating": 4.8,
+                "reviewsCount": 75,
+                "colors": [],
+                "sizes": [],
+                "isNew": false
+            },
+            {
+                "id": 10,
+                "title": "لوحة مفاتيح سلكية AK-900",
+                "description": "لوحة مفاتيح عالية الأداء بإضاءة RGB.",
+                "image": "/assets/products/images/ak-900-01-500x500 1.png",
+                "category": "إلكترونيات",
+                "originalPrice": 1160,
+                "discountedPrice": 960,
+                "currency": "USD",
+                "discountPercent": 35,
+                "inStock": true,
+                "rating": 4.8,
+                "reviewsCount": 75,
+                "colors": [],
+                "sizes": [],
+                "isNew": false
             }
         ]
     }

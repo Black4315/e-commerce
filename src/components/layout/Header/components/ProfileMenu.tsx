@@ -5,10 +5,10 @@ import { MenuWrapper, SelectMenu } from "@/components/ui/SelectMenu"
 import React, { useState } from "react"
 import ActionNavItem from "./ActionNavItem"
 import { useGSAP } from "@gsap/react"
-import gsap from "gsap"
 import { useTranslations } from "next-intl"
 import { profileMenuIcons } from "@/constants/constanst"
 import Link from "next/link"
+import { anim } from "../utils/profileLiAnim"
 
 const ProfileMenu = () => {
     const [open, setopen] = useState(false)
@@ -31,7 +31,7 @@ const ProfileMenu = () => {
 
         <ActionNavItem
             href="#"
-            title="Profile"
+            title={ t('tooltip.profile') }
             Icon={UserIcon}
             alt="profile"
             width={28}
@@ -61,33 +61,3 @@ const ProfileMenu = () => {
 export default ProfileMenu
 
 
-const anim = (open:boolean) =>{
-    if (open) {
-        gsap.fromTo('.profile-menu-li', {
-            y: -10,
-            opacity: 0,
-            scale: 0.95,
-        }, {
-            y: 0,
-            scale: 1,
-            delay: 0.2,
-            duration: 0.1,
-            stagger: { each: 0.1, },
-            ease: "power2.in",
-            opacity: 1,
-        })
-    } else {
-        gsap.to('.profile-menu-li', {
-            y: -10,
-            opacity: 0,
-            scale: 0.95,
-            duration: 0.3,
-            ease: "power2.inOut",
-            stagger: {
-                each: 0.03,
-                from: "end",
-            },
-        })
-    }
-
-}
