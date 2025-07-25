@@ -1,16 +1,16 @@
 const ProductPrice = ({
-    discountedPrice,
+    price,
     originalPrice,
     discountPercent,
 }: {
-    discountedPrice: number;
+    price: number;
     originalPrice: number;
     discountPercent?: number;
 }) => {
     return discountPercent ? (
         <span className="flex gap-3">
             <span className="med-text text-secondary-3">
-                ${discountedPrice}
+                ${price}
             </span>
             <s className="med-text text-inactive">${originalPrice}</s>
         </span>

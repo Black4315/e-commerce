@@ -1,16 +1,49 @@
 [
     {
         "userId": 1,
-        "id": 201,
-        "name": "MacBook Air M3",
+        "productId": 201,
+        "name": "ماك بوك إير M3",
         "price": 1299,
-        "image": "/assets/products/macbook.jpg"
+        "quantity": 1,
+        "image": "/assets/products/macbook.jpg",
+        "originalPrice": 1299,
+        "price": 1299,
+        "currency": "USD",
+        "discountPercent": 0,
+        "inStock": true,
+        "rating": 4.9,
+        "reviewsCount": 2150,
+        "colors": [
+            "فضي",
+            "رمادي فضائي"
+        ],
+        "sizes": [
+            "256 جيجابايت",
+            "512 جيجابايت",
+            "1 تيرابايت"
+        ],
+        "isNew": true
     },
     {
         "userId": 1,
-        "id": 202,
-        "name": "Apple Watch Ultra",
+        "productId": 202,
+        "name": "ساعة أبل الترا",
         "price": 799,
-        "image": "/assets/products/watch.jpg"
+        "quantity": 1,
+        "image": "/assets/products/watch.jpg",
+        "originalPrice": 799,
+        "price": 799,
+        "currency": "USD",
+        "discountPercent": 0,
+        "inStock": true,
+        "rating": 4.8,
+        "reviewsCount": 1700,
+        "colors": [
+            "تيتانيوم"
+        ],
+        "sizes": [
+            "مقاس واحد"
+        ],
+        "isNew": false
     }
 ]

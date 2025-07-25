@@ -5,7 +5,7 @@ export type productType = {
     image: string;
     category: string;
     originalPrice: number;
-    discountedPrice: number;
+    price: number;
     currency: string;
     discountPercent: number;
     inStock: boolean;

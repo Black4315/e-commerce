@@ -10,7 +10,7 @@ import ProductPrice from './components/ProductPrice'
 import { useMobileCheck } from "@/hooks/useMobileCheck"
 import { cn } from "@/lib/utils"
 
-const ProductCard = (props: productType & {className?:string}) => {
+const ProductCard = (props: productType & { className?: string }) => {
     const isMobile = useMobileCheck()
     const {
         id,
@@ -19,7 +19,7 @@ const ProductCard = (props: productType & {className?:string}) => {
         image,
         category,
         originalPrice,
-        discountedPrice,
+        price,
         currency,
         discountPercent,
         inStock,
@@ -31,7 +31,7 @@ const ProductCard = (props: productType & {className?:string}) => {
     } = props
 
     return (
-        <div className={cn(`relative flex flex-col justify-between w-[270px] h-[350px] flex-shrink-0 rounded-xl overflow-hidden transition-apple duration-200 shadows-[0px_2px_6px_#00000029] shadow-[2px_4px_6px_rgba(0,0,0,0.06)] ${!isMobile && 'hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01] '}`,props.className)}>
+        <div className={cn(`relative flex flex-col justify-between w-[270px] h-[350px] flex-shrink-0 rounded-xl overflow-hidden transition-apple duration-200 shadows-[0px_2px_6px_#00000029] shadow-[2px_4px_6px_rgba(0,0,0,0.06)] ${!isMobile && 'hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01] '}`, props.className)}>
 
 
             <div className="relative bg-secondary-1 w-full group overflow-hidden flex-shrink-0 h-[262px]">
@@ -41,7 +41,7 @@ const ProductCard = (props: productType & {className?:string}) => {
                     image
                 }} />
 
-                <AddToCart />
+                <AddToCart item={props} />
 
                 {/* Buttons on top and badges*/}
                 <ProductActions {...{
@@ -58,7 +58,7 @@ const ProductCard = (props: productType & {className?:string}) => {
                     <div className={`flex ${!colors?.length ? 'flex-col gap-0.5' : 'items-center gap-3'}`}>
                         {/* remove discount if there is no discountPercent */}
                         <ProductPrice {...{
-                            discountedPrice,
+                            price,
                             originalPrice,
                             discountPercent,
                         }} />

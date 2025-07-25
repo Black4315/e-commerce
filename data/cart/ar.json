@@ -1,18 +1,48 @@
 [
     {
         "userId": 1,
-        "id": 101,
-        "name": "iPhone 15",
+        "productId": 101,
+        "name": "آيفون 15",
         "price": 999,
         "quantity": 1,
-        "image": "/assets/products/iphone.jpg"
+        "image": "/assets/products/iphone.jpg",
+        "originalPrice": 999,
+        "price": 999,
+        "currency": "USD",
+        "discountPercent": 0,
+        "inStock": true,
+        "rating": 4.8,
+        "reviewsCount": 3452,
+        "colors": [
+            "أسود",
+            "أبيض",
+            "أزرق"
+        ],
+        "sizes": [
+            "128 جيجابايت",
+            "256 جيجابايت",
+            "512 جيجابايت"
+        ],
+        "isNew": true
     },
     {
         "userId": 1,
-        "id": 102,
-        "name": "AirPods Pro",
+        "productId": 102,
+        "name": "ايربودز برو",
         "price": 199,
         "quantity": 2,
-        "image": "/assets/products/airpods.jpg"
+        "image": "/assets/products/airpods.jpg",
+        "originalPrice": 249,
+        "price": 199,
+        "currency": "USD",
+        "discountPercent": 20,
+        "inStock": true,
+        "rating": 4.7,
+        "reviewsCount": 7821,
+        "colors": [
+            "أبيض"
+        ],
+        "sizes": [],
+        "isNew": false
     }
 ]

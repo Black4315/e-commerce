@@ -74,6 +74,92 @@
 //     return ctx;
 // };
 
+
+
+
+
+
+
+// "use client";
+// import { CartItem } from "@/types/cartType";
+// import { createContext, useContext, useEffect, useState } from "react";
+// import { useUserContext } from "./UserContext";
+// import useFetchCart from "@/hooks/useFetchCart";
+// import { useLocale } from "next-intl";
+
+
+// interface CartContextType {
+//     cart: CartItem[];
+//     addToCart: (item: CartItem) => void;
+//     removeFromCart: (id: number) => void;
+//     clearCart: () => void;
+// }
+
+// const CartContext = createContext<CartContextType | undefined>(undefined);
+
+// export const CartProvider = ({ children }: { children: React.ReactNode }) => {
+//     const { user, isLoggedIn } = useUserContext();
+//     const [cart, setCart] = useState<CartItem[]>([]);
+
+//     //get loacle from next-intl
+//     const locale = useLocale();
+
+//     // Fetch cart data
+//     // This hook should return the cart data based on the locale and user
+//     const { data: fetchedCart, isSuccess } = useFetchCart(locale);
+
+//     // Filter user-specific cart once data is available
+//     useEffect(() => {
+//         if (user && isSuccess && fetchedCart) {
+//             const userCart = fetchedCart.filter((item) => item.userId === user.id);
+//             setCart(userCart);
+//         }
+//     }, [user, fetchedCart, isSuccess]);
+
+//     useEffect(() => {
+//         if (isLoggedIn && user) {
+//             // it will change to real for auth user when backend
+//             sessionStorage.setItem(`cart-${user.id}`, JSON.stringify(cart));
+//         } else {
+//             // save the cart until user next auth
+//             sessionStorage.setItem("cart", JSON.stringify(cart));
+//         }
+//     }, [isLoggedIn, cart, user?.id]);
+
+//     const addToCart = (item: CartItem) => {
+//         setCart((prev) => {
+//             const exists = prev.find((i) => i.id === item.id);
+//             if (exists) {
+//                 return prev.map((i) =>
+//                     i.id === item.id ? { ...i, quantity: i.quantity + item.quantity } : i
+//                 );
+//             }
+//             return [...prev, item];
+//         });
+//     };
+
+//     const removeFromCart = (id: number) => {
+//         setCart((prev) => prev.filter((i) => i.id !== id));
+//     };
+
+//     const clearCart = () => {
+//         setCart([]);
+//     };
+
+//     return (
+//         <CartContext.Provider value={{ cart, addToCart, removeFromCart, clearCart }}>
+//             {children}
+//         </CartContext.Provider>
+//     );
+// };
+
+// export const useCartContext = () => {
+//     const context = useContext(CartContext);
+//     if (!context) throw new Error('useCart must be used within CartProvider');
+//     return context;
+// };
+
+
 "use client";
 import { CartItem } from "@/types/cartType";
 import { createContext, useContext, useEffect, useState } from "react";
@@ -81,12 +167,20 @@ import { useUserContext } from "./UserContext";
 import useFetchCart from "@/hooks/useFetchCart";
 import { useLocale } from "next-intl";
 
+interface Coupon {
+    code: string;
+    discount: number; // Discount in percentage (e.g., 10 means 10%)
+}
 
 interface CartContextType {
     cart: CartItem[];
+    coupon: Coupon | null;
     addToCart: (item: CartItem) => void;
     removeFromCart: (id: number) => void;
+    updateQuantity: (id: number, quantity: number) => void;
     clearCart: () => void;
+    applyCoupon: (coupon: Coupon) => void;
+    removeCoupon: () => void;
 }
 
 const CartContext = createContext<CartContextType | undefined>(undefined);
@@ -94,28 +188,32 @@ const CartContext = createContext<CartContextType | undefined>(undefined);
 export const CartProvider = ({ children }: { children: React.ReactNode }) => {
     const { user, isLoggedIn } = useUserContext();
     const [cart, setCart] = useState<CartItem[]>([]);
+    const [coupon, setCoupon] = useState<Coupon | null>(null);
 
-    //get loacle from next-intl
+    // Get locale from next-intl
     const locale = useLocale();
 
-    // Fetch cart data
-    // This hook should return the cart data based on the locale and user
+    // Fetch cart data based on user and locale
     const { data: fetchedCart, isSuccess } = useFetchCart(locale);
 
-    // Filter user-specific cart once data is available
+
     useEffect(() => {
-        if (user && isSuccess && fetchedCart) {
+        if (isLoggedIn && user && isSuccess && fetchedCart) {
             const userCart = fetchedCart.filter((item) => item.userId === user.id);
             setCart(userCart);
+        } else if (!isLoggedIn) {
+            const sessionCart = sessionStorage.getItem("cart");
+            if (sessionCart) {
+                setCart(JSON.parse(sessionCart));
+            }
         }
-    }, [user, fetchedCart, isSuccess]);
+    }, [isLoggedIn, user, fetchedCart, isSuccess, locale]);
+
 
     useEffect(() => {
         if (isLoggedIn && user) {
-            // it will change to real for auth user when backend
             sessionStorage.setItem(`cart-${user.id}`, JSON.stringify(cart));
         } else {
-            // save the cart until user next auth
             sessionStorage.setItem("cart", JSON.stringify(cart));
         }
     }, [isLoggedIn, cart, user?.id]);
@@ -125,7 +223,9 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
             const exists = prev.find((i) => i.id === item.id);
             if (exists) {
                 return prev.map((i) =>
-                    i.id === item.id ? { ...i, quantity: i.quantity + item.quantity } : i
+                    i.id === item.id
+                        ? { ...i, quantity: i.quantity + item.quantity }
+                        : i
                 );
             }
             return [...prev, item];
@@ -136,12 +236,39 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
         setCart((prev) => prev.filter((i) => i.id !== id));
     };
 
+    const updateQuantity = (id: number, quantity: number) => {
+        setCart((prev) =>
+            prev.map((item) =>
+                item.id === id ? { ...item, quantity: quantity } : item
+            )
+        );
+    };
+
     const clearCart = () => {
         setCart([]);
     };
 
+    const applyCoupon = (coupon: Coupon) => {
+        setCoupon(coupon);
+    };
+
+    const removeCoupon = () => {
+        setCoupon(null);
+    };
+
+    // Calculate total price considering the coupon
+    const calculateTotalPrice = () => {
+        let total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+
+        if (coupon) {
+            total -= (total * coupon.discount) / 100;
+        }
+
+        return total;
+    };
+
     return (
-        <CartContext.Provider value={{ cart, addToCart, removeFromCart, clearCart }}>
+        <CartContext.Provider value={{ cart, coupon, addToCart, removeFromCart, updateQuantity, clearCart, applyCoupon, removeCoupon }}>
             {children}
         </CartContext.Provider>
     );

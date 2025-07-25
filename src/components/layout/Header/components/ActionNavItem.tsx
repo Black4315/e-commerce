@@ -15,8 +15,8 @@ const ActionNavItem = ({
     ...props
 }: ActionNavItem) => {
     return (
-        <li className={cn('', className)}>
-            <ActionsIconButton {...props} className={cn('max-sm:w-9 max-sm:mx-0.5 max-sm:h-9 rounded-full duration-200', btnClassName)} />
+        <li className={cn('!relative group', className)}>
+            <ActionsIconButton {...props} className={cn('max-sm:w-9 max-sm:mx-0.5 max-sm:h-9 rounded-full duration-200 ', btnClassName)} />
             {children}
         </li>
     )
