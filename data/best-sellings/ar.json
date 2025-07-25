@@ -8,6 +8,13 @@
                 "title": "معطف نورث",
                 "description": "معطف شتوي أنيق ودافئ للاستخدام اليومي.",
                 "image": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                "images": [
+                    "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                    "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                    "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                    "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                    "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png"
+                ],
                 "category": "الأزياء",
                 "originalPrice": 360,
                 "price": 260,
@@ -33,6 +40,13 @@
                 "title": "حقيبة سفر غوتشي",
                 "description": "حقيبة مصممة فاخرة بنقشة غوتشي الكلاسيكية.",
                 "image": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+                "images": [
+                    "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+                    "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+                    "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+                    "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+                    "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png"
+                ],
                 "category": "الإكسسوارات",
                 "originalPrice": 1160,
                 "price": 960,
@@ -52,6 +66,12 @@
                 "title": "مبرد معالج سائل RGB",
                 "description": "مبرد سائل عالي الأداء مع إضاءة RGB.",
                 "image": "/assets/products/images/gammaxx-l240-argb-1-500x500 1.png",
+                "images": [
+                    "/assets/products/images/gammaxx-l240-argb-1-500x500 1.png",
+                    "/assets/products/images/gammaxx-l240-argb-1-500x500 1.png",
+                    "/assets/products/images/gammaxx-l240-argb-1-500x500 1.png",
+                    "/assets/products/images/gammaxx-l240-argb-1-500x500 1.png"
+                ],
                 "category": "إلكترونيات",
                 "originalPrice": 170,
                 "price": 160,
@@ -71,6 +91,10 @@
                 "title": "رف كتب صغير",
                 "description": "رف كتب خشبي مدمج للمساحات الصغيرة.",
                 "image": "/assets/products/images/sam-moghadam-khamseh-L_7MQsHl_aU-unsplash 1.png",
+                "images": [
+                    "/assets/products/images/sam-moghadam-khamseh-L_7MQsHl_aU-unsplash 1.png",
+                    "/assets/products/images/sam-moghadam-khamseh-L_7MQsHl_aU-unsplash 1.png"
+                ],
                 "category": "الأثاث",
                 "originalPrice": 460,
                 "price": 360,

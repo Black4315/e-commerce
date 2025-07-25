@@ -1,5 +1,6 @@
 {
     "header": {
+        "logInBtn":"Log in",
         "nav": [
             {
                 "label": "Home",

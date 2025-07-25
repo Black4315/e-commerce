@@ -91,7 +91,7 @@ interface WishlistContextType {
 const WishlistContext = createContext<WishlistContextType | undefined>(undefined);
 
 export const WishlistProvider = ({ children }: { children: React.ReactNode }) => {
-    const { user } = useUserContext();
+    const { user, isLoggedIn } = useUserContext();
     const [wishlist, setWishlist] = useState<WishlistItem[]>([]);
 
     //get loacle from next-intl
@@ -102,11 +102,21 @@ export const WishlistProvider = ({ children }: { children: React.ReactNode }) =>
 
     // Filter user-specific wishlist once data is available
     useEffect(() => {
-        if (user && isSuccess && fetchedWishlist) {
+        if (isLoggedIn && user && isSuccess && fetchedWishlist) {
             const userWishlist = fetchedWishlist.filter((item) => item.userId === user.id);
             setWishlist(userWishlist);
+        } else if (!isLoggedIn) {
+            const sessionWishlist = sessionStorage.getItem("wishlist");
+            if (sessionWishlist) {
+                setWishlist(JSON.parse(sessionWishlist));
+            }
         }
-    }, [user, fetchedWishlist, isSuccess]);
+    }, [isLoggedIn, user, fetchedWishlist, isSuccess]);
+
+    // Add wisht list to session storage until users get auth
+    useEffect(() => {
+        sessionStorage.setItem("wishlist", JSON.stringify(wishlist));
+    }, [isLoggedIn, wishlist, user?.id]);
 
 
     const addToWishlist = (item: WishlistItem) => {

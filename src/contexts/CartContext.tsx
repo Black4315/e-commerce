@@ -196,7 +196,7 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
     // Fetch cart data based on user and locale
     const { data: fetchedCart, isSuccess } = useFetchCart(locale);
 
-
+    // Filter user-specific cart once data is available
     useEffect(() => {
         if (isLoggedIn && user && isSuccess && fetchedCart) {
             const userCart = fetchedCart.filter((item) => item.userId === user.id);
@@ -210,12 +210,9 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
     }, [isLoggedIn, user, fetchedCart, isSuccess, locale]);
 
 
+    // Add cart list to sessionStorage until user get auth
     useEffect(() => {
-        if (isLoggedIn && user) {
-            sessionStorage.setItem(`cart-${user.id}`, JSON.stringify(cart));
-        } else {
-            sessionStorage.setItem("cart", JSON.stringify(cart));
-        }
+        sessionStorage.setItem("cart", JSON.stringify(cart));
     }, [isLoggedIn, cart, user?.id]);
 
     const addToCart = (item: CartItem) => {

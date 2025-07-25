@@ -8,6 +8,13 @@
                 "title": "The North Coat",
                 "description": "Stylish and warm winter coat for everyday wear.",
                 "image": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                "images": [
+                    "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                    "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                    "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                    "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                    "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png"
+                ],
                 "category": "Fashion",
                 "originalPrice": 360,
                 "price": 260,
@@ -33,6 +40,13 @@
                 "title": "Gucci Duffle Bag",
                 "description": "Premium designer bag with classic Gucci pattern.",
                 "image": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+                "images": [
+                    "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+                    "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+                    "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+                    "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+                    "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png"
+                ],
                 "category": "Accessories",
                 "originalPrice": 1160,
                 "price": 960,
@@ -52,6 +66,12 @@
                 "title": "RGB Liquid CPU Cooler",
                 "description": "High performance liquid cooler with RGB lighting.",
                 "image": "/assets/products/images/gammaxx-l240-argb-1-500x500 1.png",
+                "images": [
+                    "/assets/products/images/gammaxx-l240-argb-1-500x500 1.png",
+                    "/assets/products/images/gammaxx-l240-argb-1-500x500 1.png",
+                    "/assets/products/images/gammaxx-l240-argb-1-500x500 1.png",
+                    "/assets/products/images/gammaxx-l240-argb-1-500x500 1.png"
+                ],
                 "category": "Electronics",
                 "originalPrice": 170,
                 "price": 160,
@@ -71,6 +91,10 @@
                 "title": "Small BookShelf",
                 "description": "Compact wooden bookshelf for small spaces.",
                 "image": "/assets/products/images/sam-moghadam-khamseh-L_7MQsHl_aU-unsplash 1.png",
+                "images": [
+                    "/assets/products/images/sam-moghadam-khamseh-L_7MQsHl_aU-unsplash 1.png",
+                    "/assets/products/images/sam-moghadam-khamseh-L_7MQsHl_aU-unsplash 1.png"
+                ],
                 "category": "Furniture",
                 "originalPrice": 460,
                 "price": 360,

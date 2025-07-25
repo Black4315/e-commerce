@@ -1,48 +1,44 @@
 [
     {
-        "userId": 1,
-        "productId": 101,
-        "name": "آيفون 15",
-        "price": 999,
-        "quantity": 1,
-        "image": "/assets/products/iphone.jpg",
-        "originalPrice": 999,
-        "price": 999,
+        "quantity":1,
+        "id": 13,
+        "title": "مبرد معالج سائل RGB",
+        "description": "مبرد سائل عالي الأداء مع إضاءة RGB.",
+        "image": "/assets/products/images/gammaxx-l240-argb-1-500x500 1.png",
+        "category": "إلكترونيات",
+        "originalPrice": 170,
+        "price": 160,
         "currency": "USD",
-        "discountPercent": 0,
-        "inStock": true,
-        "rating": 4.8,
-        "reviewsCount": 3452,
-        "colors": [
-            "أسود",
-            "أبيض",
-            "أزرق"
-        ],
-        "sizes": [
-            "128 جيجابايت",
-            "256 جيجابايت",
-            "512 جيجابايت"
-        ],
-        "isNew": true
-    },
-    {
-        "userId": 1,
-        "productId": 102,
-        "name": "ايربودز برو",
-        "price": 199,
-        "quantity": 2,
-        "image": "/assets/products/airpods.jpg",
-        "originalPrice": 249,
-        "price": 199,
-        "currency": "USD",
-        "discountPercent": 20,
+        "discountPercent": 6,
         "inStock": true,
         "rating": 4.7,
-        "reviewsCount": 7821,
+        "reviewsCount": 65,
         "colors": [
-            "أبيض"
+            "#000000"
         ],
         "sizes": [],
-        "isNew": false
+        "isNew": false,
+        "userId":1
+    },
+    {
+        "quantity":1,
+        "id": 14,
+        "title": "رف كتب صغير",
+        "description": "رف كتب خشبي مدمج للمساحات الصغيرة.",
+        "image": "/assets/products/images/sam-moghadam-khamseh-L_7MQsHl_aU-unsplash 1.png",
+        "category": "الأثاث",
+        "originalPrice": 460,
+        "price": 360,
+        "currency": "USD",
+        "discountPercent": 22,
+        "inStock": true,
+        "rating": 5,
+        "reviewsCount": 65,
+        "colors": [
+            "#A9745D"
+        ],
+        "sizes": [],
+        "isNew": false,
+        "userId":1
     }
 ]

@@ -9,18 +9,23 @@ import { useEffect, useState } from "react"
 import SideBarMenu from "@/components/layout/Header/components/MenuSideBar"
 import { useMobileCheck } from "@/hooks/useMobileCheck"
 import { cn } from "@/lib/utils"
+import Button from "@/components/ui/Button"
+import { useTranslations } from "next-intl"
 
 
 const Header = () => {
     const { user, isLoggedIn, login } = useUserContext(); // Assuming useUserContext is a custom hook to get user data
     const [hydrated, setHydrated] = useState(false);
     const isMobile = useMobileCheck(); // Assuming useMobileCheck is a custom hook to check if the device is mobile
-    // login()
+    const t = useTranslations('header')
+
+
     useEffect(() => { setHydrated(true); console.log("User:", user); }, [user, isLoggedIn]);
 
     useEffect(()=>{
         login() 
     },[])
+
     // Function to handle search
     // This can be passed down to SearchComponent to handle search queries
     const onSearch = (searchTerm: string) => {
@@ -48,7 +53,10 @@ const Header = () => {
                         {(hydrated && !isMobile) && <SearchComponent onSearch={onSearch} />}
                         <NavProfileActions>
                             <NavProfileActions.cart />
-                            {isLoggedIn && (<NavProfileActions.user />)}
+                            {isLoggedIn ? 
+                                (<NavProfileActions.user />) : 
+                                <Link href={'/login'} className="login-btn" children={t('logInBtn')}/>
+                            }
                         </NavProfileActions>
                     </div>
 

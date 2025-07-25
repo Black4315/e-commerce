@@ -1,48 +1,44 @@
 [
     {
-        "userId": 1,
-        "productId": 101,
-        "name": "iPhone 15",
-        "price": 999,
         "quantity": 1,
-        "image": "/assets/products/iphone.jpg",
-        "originalPrice": 999,
-        "price": 999,
+        "id": 13,
+        "title": "RGB Liquid CPU Cooler",
+        "description": "High performance liquid cooler with RGB lighting.",
+        "image": "/assets/products/images/gammaxx-l240-argb-1-500x500 1.png",
+        "category": "Electronics",
+        "originalPrice": 170,
+        "price": 160,
         "currency": "USD",
-        "discountPercent": 0,
-        "inStock": true,
-        "rating": 4.8,
-        "reviewsCount": 3452,
-        "colors": [
-            "black",
-            "white",
-            "blue"
-        ],
-        "sizes": [
-            "128GB",
-            "256GB",
-            "512GB"
-        ],
-        "isNew": true
-    },
-    {
-        "userId": 1,
-        "productId": 102,
-        "name": "AirPods Pro",
-        "price": 199,
-        "quantity": 2,
-        "image": "/assets/products/airpods.jpg",
-        "originalPrice": 249,
-        "price": 199,
-        "currency": "USD",
-        "discountPercent": 20,
+        "discountPercent": 6,
         "inStock": true,
         "rating": 4.7,
-        "reviewsCount": 7821,
+        "reviewsCount": 65,
         "colors": [
-            "white"
+            "#000000"
         ],
         "sizes": [],
-        "isNew": false
+        "isNew": false,
+        "userId": 1
+    },
+    {
+        "quantity": 1,
+        "id": 14,
+        "title": "Small BookShelf",
+        "description": "Compact wooden bookshelf for small spaces.",
+        "image": "/assets/products/images/sam-moghadam-khamseh-L_7MQsHl_aU-unsplash 1.png",
+        "category": "Furniture",
+        "originalPrice": 460,
+        "price": 360,
+        "currency": "USD",
+        "discountPercent": 22,
+        "inStock": true,
+        "rating": 5,
+        "reviewsCount": 65,
+        "colors": [
+            "#A9745D"
+        ],
+        "sizes": [],
+        "isNew": false,
+        "userId": 1
     }
 ]

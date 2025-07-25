@@ -1,7 +1,7 @@
 {
     "flashSale": {
         "start": "2025-07-17T00:00:00Z",
-        "end": "2025-07-20T23:59:59Z",
+        "end": "2025-07-26T23:59:59Z",
         "viewAll": "/flash-sales/",
         "products": [
             {
@@ -9,6 +9,13 @@
                 "title": "HAVIT HV-G92 Gamepad",
                 "description": "High quality gamepad suitable for PC and laptop gaming.",
                 "image": "/assets/products/images/g92-2-500x500 1.png",
+                "images": [
+                    "/assets/products/images/g92-2-500x500 1.png",
+                    "/assets/products/images/g92-2-500x500 1.png",
+                    "/assets/products/images/g92-2-500x500 1.png",
+                    "/assets/products/images/g92-2-500x500 1.png",
+                    "/assets/products/images/g92-2-500x500 1.png"
+                ],
                 "category": "Electronics",
                 "originalPrice": 160,
                 "price": 120,
@@ -29,6 +36,13 @@
                 "title": "IPS LCD Gaming Monitor",
                 "description": "High resolution display monitor suitable for pro gaming.",
                 "image": "/assets/products/images/g27cq4-500x500 1.png",
+                "images": [
+                    "/assets/products/images/g27cq4-500x500 1.png",
+                    "/assets/products/images/g27cq4-500x500 1.png",
+                    "/assets/products/images/g27cq4-500x500 1.png",
+                    "/assets/products/images/g27cq4-500x500 1.png",
+                    "/assets/products/images/g27cq4-500x500 1.png"
+                ],
                 "category": "Electronics",
                 "originalPrice": 400,
                 "price": 370,
@@ -46,6 +60,13 @@
                 "title": "S-Series Comfort Chair",
                 "description": "Modern comfortable office chair for perfect seating.",
                 "image": "/assets/products/images/sam-moghadam-khamseh-kvmdsTrGOBM-unsplash 1.png",
+                "images": [
+                    "/assets/products/images/sam-moghadam-khamseh-kvmdsTrGOBM-unsplash 1.png",
+                    "/assets/products/images/sam-moghadam-khamseh-kvmdsTrGOBM-unsplash 1.png",
+                    "/assets/products/images/sam-moghadam-khamseh-kvmdsTrGOBM-unsplash 1.png",
+                    "/assets/products/images/sam-moghadam-khamseh-kvmdsTrGOBM-unsplash 1.png",
+                    "/assets/products/images/sam-moghadam-khamseh-kvmdsTrGOBM-unsplash 1.png"
+                ],
                 "category": "Furniture",
                 "originalPrice": 400,
                 "price": 375,
@@ -66,6 +87,13 @@
                 "title": "AK-900 Wired Keyboard",
                 "description": "High performance keyboard with RGB lighting.",
                 "image": "/assets/products/images/ak-900-01-500x500 1.png",
+                "images": [
+                    "/assets/products/images/ak-900-01-500x500 1.png",
+                    "/assets/products/images/ak-900-01-500x500 1.png",
+                    "/assets/products/images/ak-900-01-500x500 1.png",
+                    "/assets/products/images/ak-900-01-500x500 1.png",
+                    "/assets/products/images/ak-900-01-500x500 1.png"
+                ],
                 "category": "Electronics",
                 "originalPrice": 1160,
                 "price": 960,
@@ -83,6 +111,13 @@
                 "title": "AK-900 Wired Keyboard",
                 "description": "High performance keyboard with RGB lighting.",
                 "image": "/assets/products/images/ak-900-01-500x500 1.png",
+                "images": [
+                    "/assets/products/images/ak-900-01-500x500 1.png",
+                    "/assets/products/images/ak-900-01-500x500 1.png",
+                    "/assets/products/images/ak-900-01-500x500 1.png",
+                    "/assets/products/images/ak-900-01-500x500 1.png",
+                    "/assets/products/images/ak-900-01-500x500 1.png"
+                ],
                 "category": "Electronics",
                 "originalPrice": 1160,
                 "price": 960,
@@ -100,6 +135,13 @@
                 "title": "AK-900 Wired Keyboard",
                 "description": "High performance keyboard with RGB lighting.",
                 "image": "/assets/products/images/ak-900-01-500x500 1.png",
+                "images": [
+                    "/assets/products/images/ak-900-01-500x500 1.png",
+                    "/assets/products/images/ak-900-01-500x500 1.png",
+                    "/assets/products/images/ak-900-01-500x500 1.png",
+                    "/assets/products/images/ak-900-01-500x500 1.png",
+                    "/assets/products/images/ak-900-01-500x500 1.png"
+                ],
                 "category": "Electronics",
                 "originalPrice": 1160,
                 "price": 960,
@@ -117,6 +159,13 @@
                 "title": "AK-900 Wired Keyboard",
                 "description": "High performance keyboard with RGB lighting.",
                 "image": "/assets/products/images/ak-900-01-500x500 1.png",
+                "images": [
+                    "/assets/products/images/ak-900-01-500x500 1.png",
+                    "/assets/products/images/ak-900-01-500x500 1.png",
+                    "/assets/products/images/ak-900-01-500x500 1.png",
+                    "/assets/products/images/ak-900-01-500x500 1.png",
+                    "/assets/products/images/ak-900-01-500x500 1.png"
+                ],
                 "category": "Electronics",
                 "originalPrice": 1160,
                 "price": 960,
@@ -134,6 +183,13 @@
                 "title": "AK-900 Wired Keyboard",
                 "description": "High performance keyboard with RGB lighting.",
                 "image": "/assets/products/images/ak-900-01-500x500 1.png",
+                "images": [
+                    "/assets/products/images/ak-900-01-500x500 1.png",
+                    "/assets/products/images/ak-900-01-500x500 1.png",
+                    "/assets/products/images/ak-900-01-500x500 1.png",
+                    "/assets/products/images/ak-900-01-500x500 1.png",
+                    "/assets/products/images/ak-900-01-500x500 1.png"
+                ],
                 "category": "Electronics",
                 "originalPrice": 1160,
                 "price": 960,
@@ -151,6 +207,13 @@
                 "title": "AK-900 Wired Keyboard",
                 "description": "High performance keyboard with RGB lighting.",
                 "image": "/assets/products/images/ak-900-01-500x500 1.png",
+                "images": [
+                    "/assets/products/images/ak-900-01-500x500 1.png",
+                    "/assets/products/images/ak-900-01-500x500 1.png",
+                    "/assets/products/images/ak-900-01-500x500 1.png",
+                    "/assets/products/images/ak-900-01-500x500 1.png",
+                    "/assets/products/images/ak-900-01-500x500 1.png"
+                ],
                 "category": "Electronics",
                 "originalPrice": 1160,
                 "price": 960,
@@ -168,6 +231,13 @@
                 "title": "AK-900 Wired Keyboard",
                 "description": "High performance keyboard with RGB lighting.",
                 "image": "/assets/products/images/ak-900-01-500x500 1.png",
+                "images": [
+                    "/assets/products/images/ak-900-01-500x500 1.png",
+                    "/assets/products/images/ak-900-01-500x500 1.png",
+                    "/assets/products/images/ak-900-01-500x500 1.png",
+                    "/assets/products/images/ak-900-01-500x500 1.png",
+                    "/assets/products/images/ak-900-01-500x500 1.png"
+                ],
                 "category": "Electronics",
                 "originalPrice": 1160,
                 "price": 960,

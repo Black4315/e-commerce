@@ -44,10 +44,7 @@ const ProductCard = (props: productType & { className?: string }) => {
                 <AddToCart item={props} />
 
                 {/* Buttons on top and badges*/}
-                <ProductActions {...{
-                    discountPercent,
-                    isNew,
-                }} />
+                <ProductActions props={props}/>
             </div>
 
             {/* Name, Price & Rating */}

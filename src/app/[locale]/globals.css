@@ -158,6 +158,10 @@ body {
     @apply not-italic font-medium text-sm md:text-base leading-5 md:leading-6 font-poppins;
   }
 
+  .login-btn{
+    @apply rounded px-2 py-0.5 transition-all bg-secondary-3 hover:bg-hover-button-2 text-center ms-3 text-text-1 text-[10px] sm:text-xs md:text-sm
+  }
+  
   .sale-ended {
     filter: brightness(0.7) grayscale(0.3);
     /* Brighter, less harsh */

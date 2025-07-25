@@ -1,49 +1,48 @@
 [
     {
-        "userId": 1,
-        "productId": 201,
-        "name": "MacBook Air M3",
-        "price": 1299,
-        "quantity": 1,
-        "image": "/assets/products/macbook.jpg",
-        "originalPrice": 1299,
-        "price": 1299,
+        "id": 11,
+        "title": "The North Coat",
+        "description": "Stylish and warm winter coat for everyday wear.",
+        "image": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+        "category": "Fashion",
+        "originalPrice": 360,
+        "price": 260,
         "currency": "USD",
-        "discountPercent": 0,
+        "discountPercent": 28,
         "inStock": true,
-        "rating": 4.9,
-        "reviewsCount": 2150,
+        "rating": 5,
+        "reviewsCount": 65,
         "colors": [
-            "Silver",
-            "Space Gray"
+            "#FF4F5A",
+            "#F5F5F5"
         ],
         "sizes": [
-            "256GB",
-            "512GB",
-            "1TB"
+            "S",
+            "M",
+            "L",
+            "XL"
         ],
-        "isNew": true
+        "isNew": true,
+        "userId":1
     },
     {
-        "userId": 1,
-        "productId": 202,
-        "name": "Apple Watch Ultra",
-        "price": 799,
-        "quantity": 1,
-        "image": "/assets/products/watch.jpg",
-        "originalPrice": 799,
-        "price": 799,
+        "id": 12,
+        "title": "Gucci Duffle Bag",
+        "description": "Premium designer bag with classic Gucci pattern.",
+        "image": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+        "category": "Accessories",
+        "originalPrice": 1160,
+        "price": 960,
         "currency": "USD",
-        "discountPercent": 0,
+        "discountPercent": 17,
         "inStock": true,
         "rating": 4.8,
-        "reviewsCount": 1700,
+        "reviewsCount": 85,
         "colors": [
-            "Titanium"
+            "#BFA06E"
         ],
-        "sizes": [
-            "One Size"
-        ],
-        "isNew": false
+        "sizes": [],
+        "isNew": false,
+        "userId":1
     }
 ]

@@ -1,49 +1,48 @@
 [
     {
-        "userId": 1,
-        "productId": 201,
-        "name": "ماك بوك إير M3",
-        "price": 1299,
-        "quantity": 1,
-        "image": "/assets/products/macbook.jpg",
-        "originalPrice": 1299,
-        "price": 1299,
+        "id": 11,
+        "title": "معطف نورث",
+        "description": "معطف شتوي أنيق ودافئ للاستخدام اليومي.",
+        "image": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+        "category": "الأزياء",
+        "originalPrice": 360,
+        "price": 260,
         "currency": "USD",
-        "discountPercent": 0,
+        "discountPercent": 28,
         "inStock": true,
-        "rating": 4.9,
-        "reviewsCount": 2150,
+        "rating": 5,
+        "reviewsCount": 65,
         "colors": [
-            "فضي",
-            "رمادي فضائي"
+            "#FF4F5A",
+            "#F5F5F5"
         ],
         "sizes": [
-            "256 جيجابايت",
-            "512 جيجابايت",
-            "1 تيرابايت"
+            "S",
+            "M",
+            "L",
+            "XL"
         ],
-        "isNew": true
+        "isNew": true,
+        "userId": 1
     },
     {
-        "userId": 1,
-        "productId": 202,
-        "name": "ساعة أبل الترا",
-        "price": 799,
-        "quantity": 1,
-        "image": "/assets/products/watch.jpg",
-        "originalPrice": 799,
-        "price": 799,
+        "id": 12,
+        "title": "حقيبة سفر غوتشي",
+        "description": "حقيبة مصممة فاخرة بنقشة غوتشي الكلاسيكية.",
+        "image": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+        "category": "الإكسسوارات",
+        "originalPrice": 1160,
+        "price": 960,
         "currency": "USD",
-        "discountPercent": 0,
+        "discountPercent": 17,
         "inStock": true,
         "rating": 4.8,
-        "reviewsCount": 1700,
+        "reviewsCount": 85,
         "colors": [
-            "تيتانيوم"
+            "#BFA06E"
         ],
-        "sizes": [
-            "مقاس واحد"
-        ],
-        "isNew": false
+        "sizes": [],
+        "isNew": false,
+        "userId": 1
     }
 ]

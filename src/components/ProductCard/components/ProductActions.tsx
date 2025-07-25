@@ -3,28 +3,27 @@ import Badge from "@/components/ProductCard/components/ui/Badge";
 import QuickViewBtn from "../../SectionProducts/components/QuickViewBtn"
 import WishListBtn from "./WishListBtn"
 import { useTranslations } from "next-intl";
+import { productType } from "../types/productType";
 
 const ProductActions = ({
-    discountPercent,
-    isNew,
+    props
 }: {
-    discountPercent?: number;
-    isNew?: boolean;
+    props: productType
 }) => {
     const t = useTranslations('homePage.product')
     return (
         <div className="w-full flex justify-between">
 
             <div className="absolute top-4 right-4 flex flex-col gap-2">
-                <WishListBtn />
+                <WishListBtn item={props} />
                 <QuickViewBtn />
             </div>
 
             {/* Discount badge && new badge */}
             <div className="absolute top-4 left-4 flex flex-col gap-3">
-                {discountPercent ? <Badge>-{discountPercent}%</Badge> : ''}
+                {props.discountPercent ? <Badge>-{props.discountPercent}%</Badge> : ''}
 
-                {isNew && <Badge className="bg-button-1 text-center" >{t('new')}</Badge>}
+                {props.isNew && <Badge className="bg-button-1 text-center" >{t('new')}</Badge>}
             </div>
         </div>
     )
