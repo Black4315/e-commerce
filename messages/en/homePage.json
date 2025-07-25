@@ -163,6 +163,30 @@
         "ourProducts": {
             "label": "Our Products",
             "title": "Explore Our Products"
-        }
+        },
+        "newArrival": {
+            "label": "Featured",
+            "title": "New Arrival"
+        },
+        "trustBadges": [
+            {
+                "id": 1,
+                "icon": "/assets/icons/icon-delivery.svg",
+                "title": "FREE AND FAST DELIVERY",
+                "description": "Free delivery for all orders over $140"
+            },
+            {
+                "id": 2,
+                "icon": "/assets/icons/Icon-Customer-service.svg",
+                "title": "24/7 CUSTOMER SERVICE",
+                "description": "Friendly 24/7 customer support"
+            },
+            {
+                "id": 3,
+                "icon": "/assets/icons/icon-secure.svg",
+                "title": "MONEY BACK GUARANTEE",
+                "description": "We return money within 30 days"
+            }
+        ]
     }
 }

@@ -8,7 +8,7 @@ type Props = {
 const OpenButton = ({ onClick }: Props) => (
     <button
         onClick={onClick}
-        className="py-2 max-sm:pr-1 text-2xl active:bg-black/5 text-black/70 hover:text-black transition-all rounded-full"
+        className="p-1 flex-center -m-1 max-sm:pr-1 text-2xl active:bg-black/5 text-black/70 hover:text-black transition-all rounded-full"
     >
         <HiOutlineMenuAlt1 />
     </button>

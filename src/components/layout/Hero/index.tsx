@@ -3,8 +3,10 @@ import BrowseByCategory from "@/features/BrowseByCategory"
 import CampaignOffer from "@/features/CampaignOffer"
 import Categorys from "@/features/Categories"
 import FlashSales from "@/features/FlashSalses"
+import NewArrival from "@/features/NewArrival"
 import OffersSlider from "@/features/OffersSlider"
 import OurProducts from "@/features/OurProducts"
+import TrustBadges from "@/features/TrustBadges"
 
 const Hero = () => {
   return (
@@ -19,6 +21,8 @@ const Hero = () => {
       <BestSellings />
       <CampaignOffer />
       <OurProducts />
+      <NewArrival />
+      <TrustBadges />
     </div>
 
   )

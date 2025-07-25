@@ -1,90 +1,32 @@
 {
-    "bestSellings": {
-        "bestSellingsIn": "هذا الشهر",
-        "viewAll": "/our-products/",
-        "products": [
-            {
-                "id": 11,
-                "title": "معطف نورث",
-                "description": "معطف شتوي أنيق ودافئ للاستخدام اليومي.",
-                "image": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-                "category": "الأزياء",
-                "originalPrice": 360,
-                "discountedPrice": 260,
-                "currency": "USD",
-                "discountPercent": 28,
-                "inStock": true,
-                "rating": 5,
-                "reviewsCount": 65,
-                "colors": [
-                    "#FF4F5A",
-                    "#F5F5F5"
-                ],
-                "sizes": [
-                    "S",
-                    "M",
-                    "L",
-                    "XL"
-                ],
-                "isNew": true
-            },
-            {
-                "id": 12,
-                "title": "حقيبة سفر غوتشي",
-                "description": "حقيبة مصممة فاخرة بنقشة غوتشي الكلاسيكية.",
-                "image": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
-                "category": "الإكسسوارات",
-                "originalPrice": 1160,
-                "discountedPrice": 960,
-                "currency": "USD",
-                "discountPercent": 17,
-                "inStock": true,
-                "rating": 4.8,
-                "reviewsCount": 85,
-                "colors": [
-                    "#BFA06E"
-                ],
-                "sizes": [],
-                "isNew": false
-            },
-            {
-                "id": 13,
-                "title": "مبرد معالج سائل RGB",
-                "description": "مبرد سائل عالي الأداء مع إضاءة RGB.",
-                "image": "/assets/products/images/gammaxx-l240-argb-1-500x500 1.png",
-                "category": "إلكترونيات",
-                "originalPrice": 170,
-                "discountedPrice": 160,
-                "currency": "USD",
-                "discountPercent": 6,
-                "inStock": true,
-                "rating": 4.7,
-                "reviewsCount": 65,
-                "colors": [
-                    "#000000"
-                ],
-                "sizes": [],
-                "isNew": false
-            },
-            {
-                "id": 14,
-                "title": "رف كتب صغير",
-                "description": "رف كتب خشبي مدمج للمساحات الصغيرة.",
-                "image": "/assets/products/images/sam-moghadam-khamseh-L_7MQsHl_aU-unsplash 1.png",
-                "category": "الأثاث",
-                "originalPrice": 460,
-                "discountedPrice": 360,
-                "currency": "USD",
-                "discountPercent": 22,
-                "inStock": true,
-                "rating": 5,
-                "reviewsCount": 65,
-                "colors": [
-                    "#A9745D"
-                ],
-                "sizes": [],
-                "isNew": false
-            }
-        ]
-    }
+    "NewArrival": [
+        {
+            "id": 1,
+            "title": "بلايستيشن 5",
+            "description": "إصدار الأسود والأبيض من PS5 متوفر الآن للبيع.",
+            "image": "/assets/products/images/ps5-slim-goedkope-playstation_large 1.svg",
+            "redirect": "/product/playstation-5"
+        },
+        {
+            "id": 2,
+            "title": "تشكيلة النساء",
+            "description": "تشكيلات نسائية مميزة تمنحك طابعًا مختلفًا.",
+            "image": "/assets/products/images/women-collections.svg",
+            "redirect": "/category/women"
+        },
+        {
+            "id": 3,
+            "title": "مكبرات الصوت",
+            "description": "مكبرات صوت لاسلكية من أمازون.",
+            "image": "/assets/products/images/69-694768_amazon-echo-png-clipart-transparent-amazon-echo-png 1.svg",
+            "redirect": "/product/amazon-speakers"
+        },
+        {
+            "id": 4,
+            "title": "عطر",
+            "description": "GUCCI INTENSE OUD EDP.",
+            "image": "/assets/products/images/652e82cd70aa6522dd785109a455904c.svg",
+            "redirect": "/product/gucci-intense-oud"
+        }
+    ]
 }

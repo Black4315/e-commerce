@@ -9,7 +9,7 @@ type ProductCardsProps = {
     rows?: number;
 }
 
-const ProductCards: React.FC<ProductCardsProps> = ({ data,rows }) => {
+const ProductCards: React.FC<ProductCardsProps> = ({ data, rows }) => {
 
     // Not all sections use the FlashSalesProvider,
     // so this context might not always be available.
@@ -18,8 +18,8 @@ const ProductCards: React.FC<ProductCardsProps> = ({ data,rows }) => {
     // The try-catch prevents the app from crashing in those cases.
     let flashEnd;
     try {
-        const context = useFlashSalesContext(); 
-        ({ flashEnd } = context);  
+        const context = useFlashSalesContext();
+        ({ flashEnd } = context);
     } catch (e) {
         // Optional: set defaults or log error
         flashEnd = null;
@@ -27,13 +27,17 @@ const ProductCards: React.FC<ProductCardsProps> = ({ data,rows }) => {
 
     return (
         <EmblaCarousel className={`p-5 -m-5 overflow-x-hidden`}>
-            <div className={`
-            ${rows && rows > 1 ? `grid grid-rows-${rows}`:'flex'} 
-            grid-flow-col 
-            auto-cols-auto 
-            gap-[30px] touch-pan-y touch-pinch-zoom `}>
+            <div
+                style={{
+                    display: rows && rows > 1 ? 'grid' : 'flex',
+                    gridTemplateRows:`repeat(${rows}, minmax(0, 1fr))`
+                }}
+                className={`
+                    grid-flow-col
+                    auto-cols-auto 
+                    gap-[30px] touch-pan-y touch-pinch-zoom `}>
                 {data?.map((props) => (
-                    <ProductCard key={props.id} {...props} className={flashEnd ? 'sale-ended':''} />
+                    <ProductCard key={props.id} {...props} className={flashEnd ? 'sale-ended' : ''} />
                 )) ?? null}
             </div>
         </EmblaCarousel>

@@ -7,8 +7,8 @@ type SectioProps = {
     label?: string | React.ReactNode;
     heading?: string;
     timerComponent?: React.ReactNode;
-    isbtns:boolean;
-} & React.ComponentProps<'section'> ;
+    isbtns: boolean;
+} & React.ComponentProps<'section'>;
 
 const Section = ({
     children,
@@ -25,7 +25,7 @@ const Section = ({
             className={cn('flex flex-col gap-8 mt-10 pb-10 md:gap-15 md:mt-18 md:pb-18 border-b border-border relative', className)}
             {...props}
         >
-            <div className="flex flex-col gap-6">
+            {(heading && label) && <div className="flex flex-col gap-6">
 
                 <div className="flex gap-4 md:gap-6 items-center">
                     {label && <div className="w-5 h-10 rounded bg-secondary-3" />}
@@ -40,7 +40,7 @@ const Section = ({
                     {isbtns && <CarouselButtons />}
                 </div>
 
-            </div>
+            </div>}
 
             {children}
         </section>

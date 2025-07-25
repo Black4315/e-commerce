@@ -2,18 +2,22 @@
 
 import { Skeleton } from "@mui/material";
 
-const ErrorProducts = () => {
+const ErrorProducts = ({ rows }: { rows?: number }) => {
   return (
     <>
-      <div className="flex gap-6 overflow-hidden mt-4 px-2 animate-pulse">
-        {Array.from({ length: 4 }).map((_, i) => (
-          <Skeleton
-            key={i}
-            variant="rounded"
-            width={270}
-            height={350}
-            sx={{ flexShrink: 0, borderRadius:'12px' }}
-          />
+      <div className="flex flex-col gap-[30px] mt-4">
+        {new Array(rows).fill(null).map((_, i) => (
+          <div key={i} className="flex gap-[30px] overflow-hidden px-2 animate-pulse">
+            {Array.from({ length: 4 }).map((_, i) => (
+              <Skeleton
+                key={i}
+                variant="rounded"
+                width={270}
+                height={350}
+                sx={{ flexShrink: 0, borderRadius: '12px' }}
+              />
+            ))}
+          </div>
         ))}
       </div>
 

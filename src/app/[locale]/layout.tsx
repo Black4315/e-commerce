@@ -1,3 +1,4 @@
+import { Inter, Poppins } from 'next/font/google';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
@@ -9,6 +10,18 @@ import Footer from '@/components/layout/Footer';
 import "@radix-ui/themes/styles.css";
 import './globals.css';
 
+// load fonts
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+});
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  variable: '--font-poppins',
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+});
+
 export default async function LocaleLayout({
   children,
   params
@@ -16,6 +29,7 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
 }) {
+
   // Ensure that the incoming `locale` is valid
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) {
@@ -24,7 +38,7 @@ export default async function LocaleLayout({
   const isRTL = locale === 'ar';
 
   return (
-    <html lang={locale} dir={isRTL ? 'rtl' : 'ltr'}>
+    <html lang={locale} dir={isRTL ? 'rtl' : 'ltr'} className={`${inter.className} ${poppins.className}`}>
       <body style={{ ['--origin-dir' as any]: isRTL ? 'left' : 'right' }} >
         <AppContextProvider>
           <Theme>

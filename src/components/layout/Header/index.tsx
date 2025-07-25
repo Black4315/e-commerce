@@ -18,6 +18,9 @@ const Header = () => {
     // login()
     useEffect(() => { setHydrated(true); console.log("User:", user); }, [user, isLoggedIn]);
 
+    useEffect(()=>{
+        login() 
+    },[])
     // Function to handle search
     // This can be passed down to SearchComponent to handle search queries
     const onSearch = (searchTerm: string) => {

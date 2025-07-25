@@ -163,6 +163,30 @@
         "ourProducts": {
             "label": "منتجاتنا",
             "title": "استكشف منتجاتنا"
-        }
+        },
+        "newArrival": {
+            "label": "مميز",
+            "title": "أحدث الإصدارات"
+        },
+        "trustBadges": [
+            {
+                "id": 1,
+                "icon": "/assets/icons/icon-delivery.svg",
+                "title": "توصيل سريع ومجاني",
+                "description": "توصيل مجاني لجميع الطلبات التي تزيد عن 140 دولار"
+            },
+            {
+                "id": 2,
+                "icon": "/assets/icons/Icon-Customer-service.svg",
+                "title": "خدمة العملاء على مدار الساعة",
+                "description": "دعم عملاء ودود على مدار الساعة"
+            },
+            {
+                "id": 3,
+                "icon": "/assets/icons/icon-secure.svg",
+                "title": "ضمان استرداد الأموال",
+                "description": "إرجاع الأموال خلال 30 يومًا"
+            }
+        ]
     }
 }

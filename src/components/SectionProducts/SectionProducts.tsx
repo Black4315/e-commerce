@@ -50,9 +50,9 @@ const SectionProducts: React.FC<SectionProductsProps> = ({
 
             {/* products slider */}
             {isError ? (
-                <ErrorProducts />
+                <ErrorProducts rows={rows}/>
             ) : isLoading ? (
-                <SkeltonProductCard />
+                <SkeltonProductCard rows={rows}/>
             ) : (
                 <>
                     <ProductCards data={products} rows={rows} />

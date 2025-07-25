@@ -1,5 +1,5 @@
 'use client'
-import Badge from "@/components/ui/Badge";
+import Badge from "@/components/ProductCard/components/ui/Badge";
 import QuickViewBtn from "../../SectionProducts/components/QuickViewBtn"
 import WishListBtn from "./WishListBtn"
 import { useTranslations } from "next-intl";

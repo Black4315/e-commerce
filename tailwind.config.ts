@@ -10,6 +10,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        inter: ['var(--font-inter)', 'sans-serif'],
+        poppins: ['var(--font-poppins)', 'sans-serif'],
+      },
       transitionTimingFunction: {
         apple: 'cubic-bezier(0, 0, 0.5, 1)',
       },

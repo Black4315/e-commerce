@@ -3,12 +3,18 @@ import { NextResponse } from 'next/server';
 import path from 'path';
 import { promises as fs } from 'fs';
 
-export async function GET(req: Request, { params }: { params: { name: string } }) {
+// Runs in the Node.js runtime (not edge)
+export const runtime = 'nodejs';
+
+export async function GET(
+    req: Request,
+    context :any
+) {
     const { searchParams } = new URL(req.url);
     const locale = searchParams.get('lang') || 'en';
+    const { name } = await context.params
 
-    // Dynamically load file based on the "name" parameter
-    const filePath = path.join(process.cwd(), 'data', params.name, `${locale}.json`);
+    const filePath = path.join(process.cwd(), 'data', name, `${locale}.json`);
 
     try {
         const data = await fs.readFile(filePath, 'utf-8');
