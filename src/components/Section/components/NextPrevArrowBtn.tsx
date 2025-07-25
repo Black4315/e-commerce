@@ -20,7 +20,7 @@ const NextPrevArrowBtn = ({
       {...props}
       id={id}
       className={cn(`${isRTL && 'rotate-180'} w-11.5 h-11.5 bg-secondary-1 transition-all hover:bg-black/10 rounded-full flex-center cursor-pointer`, className)}>
-      {typeBtn === 'next' ? <IconsarrowrightIcon /> : <Icons_arrowleftIcon />}
+      {typeBtn === 'next' ? <Icons_arrowleftIcon className="rotate-180" /> : <Icons_arrowleftIcon />}
     </button>
   )
 }
