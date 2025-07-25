@@ -1,6 +1,6 @@
 'use client'
 import Badge from "@/components/ProductCard/components/ui/Badge";
-import QuickViewBtn from "../../SectionProducts/components/QuickViewBtn"
+import QuickViewBtn from "./QuickViewBtn"
 import WishListBtn from "./WishListBtn"
 import { useTranslations } from "next-intl";
 import { productType } from "../types/productType";

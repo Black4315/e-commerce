@@ -2,10 +2,10 @@ import { BentoGridItem, BentoGrid } from '@/components/ui/bento-grid'
 import React from 'react'
 import { BentoGridItemType, } from '../types'
 
-const BentoGridItems = ({ NewArrival }: { NewArrival: BentoGridItemType[] }) => {
+const BentoGridItems = ({ NewArrival }: { NewArrival?: BentoGridItemType[] }) => {
     return (
         <BentoGrid>
-            {NewArrival.map((item, i) => (
+            {NewArrival?.map((item, i) => (
                 <BentoGridItem
                     id={item.id}
                     key={i}

@@ -91,11 +91,12 @@ export const SideBarMenu = ({
   return (
     <motion.aside
       className={cn(
-        "z-99 h-full common-padding py-4 fixed top-0 left-0 flex-col text-white bg-neutral-100/97 w-0 hidden shrink-0",
+        "z-99 h-full common-padding py-4 fixed top-0 left-0 flex-col text-white bg-neutral-100/97 w-svw hidden shrink-0",
         className)
       }
       animate={{
-        width: animate ? (open ? "100vw" : "0") : "100vw",
+        // width: animate ? (open ? "100vw" : "0") : "100vw",
+        left: animate ? (open ? '0' : '-100%') : '0',
         display: open ? "flex" : "none",
       }}
       {...props}

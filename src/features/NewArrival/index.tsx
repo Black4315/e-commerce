@@ -17,10 +17,10 @@ const NewArrival = () => {
   const { data, isLoading, isError, refetch } = useFetchNewArrival(locale) as UseQueryResult<NewArrival, Error>;
 
 
-  if (isLoading) return <LoadingNewArrival />;
-  if (isError || !data || !data.NewArrival) return <ErrorNewArrival refetch={refetch} />;
+  // if (isLoading) return <LoadingNewArrival />;
+  // if (isError || !data || !data.NewArrival) return <ErrorNewArrival refetch={refetch} />;
 
-  const { NewArrival } = data;
+  const NewArrival = data && data.NewArrival;
   return (
     <Section
       isbtns={false}
@@ -28,7 +28,11 @@ const NewArrival = () => {
       heading={t('title')}
       className='border-none'
     >
-      <BentoGridItems NewArrival={NewArrival} />
+      {
+        isError ? <ErrorNewArrival refetch={refetch} />
+        : isLoading ? <LoadingNewArrival />
+        : <BentoGridItems NewArrival={NewArrival} />
+      }
     </Section>
   )
 }
