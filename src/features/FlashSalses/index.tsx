@@ -7,6 +7,7 @@ import ErrorTimer from './components/ErrorTimer'
 import { flashDataType, flashSalesContextType } from './types'
 import { FlashSalesProvider, useFlashSalesContext } from './context/FlashSalesContext'
 import ErrorProducts from '@/components/SectionProducts/components/ErrorProducts'
+import LoadingTimer from './components/LoadingTimer'
 
 
 
@@ -17,7 +18,6 @@ export default function FlashSales() {
     </FlashSalesProvider>
   )
 };
-
 
 
 const FlashSalesSection = () => {
@@ -53,7 +53,7 @@ const FlashSalesSection = () => {
         ) : !isLoading ? (
           <CountdownTimer onTimerEnd={onTimerEnd} endDate={flashSale.end} />
         ) : (
-          <div>Loading...</div>
+          <LoadingTimer />
         )
       }
       isLoading={isLoading}

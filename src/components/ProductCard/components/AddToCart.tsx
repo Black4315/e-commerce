@@ -6,12 +6,18 @@ import { useTranslations } from "next-intl"
 import { productType } from "../types/productType"
 import { useState } from "react"
 import { useUserContext } from "@/contexts/UserContext"
+import { useProductContext } from "../context/ProductContext"
 
-const AddToCart = ({ item }: { item: productType }) => {
+const AddToCart = () => {
     const t = useTranslations('homePage.product')
     const isMobile = useMobileCheck()
+
+    //contexts
+    const item = useProductContext()
     const { cart, addToCart, removeFromCart } = useCartContext()
     const {user} = useUserContext()
+
+
     // check if it existing
     const [isExisting, setIsExisting] = useState(cart.some((e) => e.id == item.id))
 

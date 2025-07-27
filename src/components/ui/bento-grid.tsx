@@ -55,7 +55,7 @@ export const BentoGridItem = ({
             {/* image */}
             <div className={`absolute mb-0 flex-center md:self-center mdd:w-[500px] ${
                 [1, 2].includes(id) ? 'bottom-0 translate-y-0 w-10/12 max-md:w-[300px] max-md:h-[16rem]' : 'w-8/12 top-1/2 -translate-y-1/2 self-center max-md:h-[11rem] '
-            } `} >
+            } ${id == 2 && '!w-8/12'} `} >
                 <Image src={img} width={500} height={100} alt={'Bento Image'} className="object-contain h-full w-full z-10 " />
                 
                 {!([1,2].includes(id)) && <div className="bg-[#d9d9d9e6] blur-[100px] w-40 md:w-10/12 aspect-square opacity- absolute self-center top-1/2 -translate-y-1/2" />}

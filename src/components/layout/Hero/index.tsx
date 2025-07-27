@@ -6,6 +6,7 @@ import FlashSales from "@/features/FlashSalses"
 import NewArrival from "@/features/NewArrival"
 import OffersSlider from "@/features/OffersSlider"
 import OurProducts from "@/features/OurProducts"
+import StickyBtns from "@/features/StickyBtns"
 import TrustBadges from "@/features/TrustBadges"
 
 const Hero = () => {

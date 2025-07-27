@@ -29,7 +29,7 @@ const Section = ({
 
                 <div className="flex gap-4 md:gap-6 items-center">
                     {label && <div className="w-5 h-10 rounded bg-secondary-3" />}
-                    <span className="semi-text text-secondary-3">{label}</span>
+                    <span className="semi-text text-secondary-3 capitalize">{label}</span>
                 </div>
 
                 <div className="flex md:items-center gap-6 lg:gap-20 flex-wrap max-md:flex-col">

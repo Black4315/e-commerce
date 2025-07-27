@@ -1,12 +1,12 @@
-const ProductPrice = ({
-    price,
-    originalPrice,
-    discountPercent,
-}: {
-    price: number;
-    originalPrice: number;
-    discountPercent?: number;
-}) => {
+import { useProductContext } from "../context/ProductContext";
+
+const ProductPrice = () => {
+    const {
+        price,
+        originalPrice,
+        discountPercent,
+    } = useProductContext()
+
     return discountPercent ? (
         <span className="flex gap-3">
             <span className="med-text text-secondary-3">

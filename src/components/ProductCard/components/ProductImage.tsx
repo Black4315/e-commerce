@@ -1,9 +1,12 @@
 import { useMobileCheck } from "@/hooks/useMobileCheck";
 import Image from "next/image";
 import Link from "next/link";
+import { useProductContext } from "../context/ProductContext";
 
-const ProductImage = ({ id, title, image }: { id: number; title: string; image: string }) => {
+const ProductImage = () => {
     const isMobile = useMobileCheck()
+    const { id, title, image } = useProductContext()
+
     return (
         <Link
             href={`/product/${id}`}

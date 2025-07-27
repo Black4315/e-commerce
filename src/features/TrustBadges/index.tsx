@@ -12,7 +12,7 @@ const TrustBadges = () => {
     <Section
 
       isbtns={false}
-      className='flex-center flex-row flex-wrap justify-around gap-10 md:gap-16 pb-26 md:pb-36'
+      className='flex-center flex-row flex-wrap justify-around gap-10 md:gap-16 pb-26 md:pb-36 border-none'
     >
       {trustBadges.map(({ icon, title, description }: any, i: number) => (
         <BadgeItem

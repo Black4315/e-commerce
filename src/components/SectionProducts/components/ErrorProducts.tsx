@@ -7,7 +7,7 @@ const ErrorProducts = ({ rows }: { rows?: number }) => {
     <>
       <div className="flex flex-col gap-[30px] mt-4">
         {new Array(rows).fill(null).map((_, i) => (
-          <div key={i} className="flex gap-[30px] overflow-hidden px-2 animate-pulse">
+          <div key={i} className="flex gap-[30px] overflow-hidden px-2">
             {Array.from({ length: 4 }).map((_, i) => (
               <Skeleton
                 key={i}

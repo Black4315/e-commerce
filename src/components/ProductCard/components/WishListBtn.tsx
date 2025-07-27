@@ -5,12 +5,15 @@ import Button from "@/components/ui/Button"
 import { productType } from "../types/productType"
 import { useWishlist } from "@/contexts/WishListContext"
 import { useState } from "react"
+import { useProductContext } from "../context/ProductContext"
 
-const WishListBtn = ({ item }: { item: productType }) => {
+const WishListBtn = () => {
+  //contexts
+  const item = useProductContext()
   const { wishlist, addToWishlist, removeFromWishlist } = useWishlist()
+  
   const [isExisting, setIsExisting] = useState(wishlist.some((e) => e.id == item.id))
-
-
+  
   const click = () => {
     if (isExisting) {
       removeFromWishlist(item.id)

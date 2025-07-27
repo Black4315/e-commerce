@@ -131,6 +131,7 @@
         ],
         "shopNowBtn": "Shop now",
         "buyNowBtn": "Buy now",
+        "quickView":"Quick View",
         "flashSale": {
             "label": "Today's",
             "title": "Flash Sales",

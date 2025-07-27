@@ -24,20 +24,21 @@ type PropType = {
     btnClassName?:string;
     children: ReactNode
     options?: EmblaOptionsType
+    btns?:boolean;
 }
 
 
 const EmblaCarousel = forwardRef<EmblaCarouselHandle, PropType>(
-    ({ slides, options, children, className, btnClassName }, ref) => {
+    ({ slides, options, children, className, btnClassName, btns=true}, ref) => {
         const isMobile = useMobileCheck()
         const isRTL = useIsRTL()
 
         const [emblaRef, emblaApi] = useEmblaCarousel({
-            ...options,
             direction: isRTL ? 'rtl' : 'ltr',
-            watchDrag: isMobile,
-            dragFree: true,
+            // watchDrag: isMobile,
+            // dragFree: true,
             loop: false,
+            ...options,
         })
 
         const {
@@ -50,10 +51,10 @@ const EmblaCarousel = forwardRef<EmblaCarouselHandle, PropType>(
 
         return (
             <div className='relative'>
-                <div className={cn("md:ms-auto flex w-fit gap-2 max-md:self-center absolute -top-19.5 md:-top-[107px] md:end-0 right-1/2 max-md:translate-x-1/2 !z-10 bg-white",btnClassName)}>
+                {btns && <div className={cn("md:ms-auto flex w-fit gap-2 max-md:self-center absolute -top-19.5 md:-top-[107px] md:end-0 right-1/2 max-md:translate-x-1/2 !z-10 bg-white",btnClassName)}>
                     <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
                     <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
-                </div>
+                </div>}
                 <div className={cn("overflow-x-hidden", className)} ref={emblaRef}>
                     {children}
                 </div>
