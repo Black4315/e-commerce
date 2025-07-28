@@ -20,7 +20,7 @@
                 "price": 260,
                 "currency": "USD",
                 "discountPercent": 28,
-                "inStock": true,
+                "inStock": false,
                 "rating": 5,
                 "reviewsCount": 65,
                 "colors": [
@@ -33,18 +33,20 @@
                     "L",
                     "XL"
                 ],
-                "isNew": true
+                "isNew": true,
+                "taxes":0,
+                "soldNumber":5000
             },
             {
                 "id": 12,
                 "title": "Gucci Duffle Bag",
-                "description": "Premium designer bag with classic Gucci pattern.",
+                "description": "Elevate your style with this premium designer handbag featuring the iconic Gucci monogram pattern—a timeless symbol of luxury and sophistication. Crafted with meticulous attention to detail, this bag combines high-end Italian craftsmanship with classic elegance.",
                 "image": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
                 "images": [
                     "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
                     "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
                     "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
-                    "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+                    "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",              
                     "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
                     "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
                     "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
@@ -60,7 +62,7 @@
                 "discountPercent": 17,
                 "inStock": true,
                 "rating": 4.8,
-                "reviewsCount": 85,
+                "reviewsCount": 8500,
                 "colors": [
                     "#BFA06E"
                 ],

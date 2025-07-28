@@ -12,7 +12,7 @@ import { useAnimateOnChange } from '@/hooks/useAnimateOnChange';
 
 export default function ActionsNav({ children }: { children?: React.ReactNode }) {
   return (
-    <ul className="flex gap-1 items-center">
+    <ul className="flex max-xs:gap-[0px] gap-1 items-center">
       <ActionsNav.wishList />
       {children}
     </ul>

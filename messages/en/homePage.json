@@ -145,7 +145,14 @@
             "new": "NEW",
             "addCart": "Add To Cart",
             "viewAll": "View All Products",
-            "removeCart": "Remove From Cart"
+            "removeCart": "Remove From Cart",
+            "saleEnded":"SALE ENDED",
+            "soldOut": "SOLD OUT",
+            "outStock":"OUT OF STOCK",
+            "inStock":"IN STOCK",
+            "sold":"Sold",
+            "reviews":"Reviews",
+            "moreDetails":"More Details"
         },
         "browseByCategory": {
             "label": "categories",

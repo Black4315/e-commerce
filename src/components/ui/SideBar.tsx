@@ -99,6 +99,11 @@ export const SideBarMenu = ({
         left: animate ? (open ? '0' : '-100%') : '0',
         display: open ? "flex" : "none",
       }}
+
+      transition={{
+        ease:[0,0,0.5,1],
+        duration:0.3
+      }}
       {...props}
     >
       <>

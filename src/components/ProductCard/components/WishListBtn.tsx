@@ -7,9 +7,9 @@ import { useWishlist } from "@/contexts/WishListContext"
 import { useState } from "react"
 import { useProductContext } from "../context/ProductContext"
 
-const WishListBtn = () => {
+const WishListBtn = ({className, itemProd,}:{className?:string; itemProd?: productType;}) => {
   //contexts
-  const item = useProductContext()
+  const item = useProductContext()! || itemProd;
   const { wishlist, addToWishlist, removeFromWishlist } = useWishlist()
   
   const [isExisting, setIsExisting] = useState(wishlist.some((e) => e.id == item.id))
@@ -25,7 +25,7 @@ const WishListBtn = () => {
   }
 
   return (
-    <Button onClick={click} className={`${isExisting ? 'action-btn-select' : 'bg-white'} rounded-full w-8.5 h-8.5`}>
+    <Button onClick={click} className={`${isExisting ? 'action-btn-select' : 'bg-white'} rounded-full w-8.5 h-8.5 ${className}`}>
       <HeartsmallIcon className="w-6 h-6" />
     </Button>
   )

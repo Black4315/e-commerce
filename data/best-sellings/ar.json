@@ -20,7 +20,7 @@
                 "price": 260,
                 "currency": "USD",
                 "discountPercent": 28,
-                "inStock": true,
+                "inStock": false,
                 "rating": 5,
                 "reviewsCount": 65,
                 "colors": [
@@ -38,9 +38,15 @@
             {
                 "id": 12,
                 "title": "حقيبة سفر غوتشي",
-                "description": "حقيبة مصممة فاخرة بنقشة غوتشي الكلاسيكية.",
+                "description": "حقيبة مصممة فاخرة بنقشة غوتشي الكلاسيكية.حقيبة مصممة فاخرة بنقشة غوتشي الكلاسيكية.حقيبة مصممة فاخرة بنقشة غوتشي الكلاسيكية.حقيبة مصممة فاخرة بنقشة غوتشي الكلاسيكية.",
                 "image": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
                 "images": [
+                    "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+                    "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+                    "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+                    "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                    "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+                    "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
                     "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
                     "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
                     "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",

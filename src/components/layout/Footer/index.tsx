@@ -10,6 +10,7 @@ import Image from 'next/image'
 import { useMobileCheck } from '@/hooks/useMobileCheck'
 import { cn } from '@/lib/utils'
 import StickyBtns from '@/features/StickyBtns'
+import { LOGO_NAME } from '@/constants'
 
 const Footer = () => {
     const t = useTranslations('footer')
@@ -43,7 +44,7 @@ const Footer = () => {
 
                     <div className='flex flex-col gap-5 sm:gap-6 '>
                         <h1>
-                            <Link href={'/'} className='logo text-text-1 '>Exclusive</Link>
+                            <Link href={'/'} className='logo text-text-1 '>{LOGO_NAME}</Link>
                         </h1>
 
                         <h2>

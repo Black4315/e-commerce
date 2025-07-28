@@ -24,6 +24,7 @@ export default {
 
         'border': '#B3B3B3', // Assuming this is a neutral border color
         'inactive':'#808080',
+        "skeleton":"#e7e7e7",
 
         // Primary Colors
         'primary-1': '#FFFFFF', // Assuming the first primary is the white #FFFFFF

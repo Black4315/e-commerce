@@ -9,7 +9,7 @@ import 'animate.css';
 import { NextIntlClientProvider, useLocale } from "next-intl";
 const MySwal = withReactContent(Swal);
 
-export function showPop(content: React.ReactNode, isMobile: boolean , locale:string,) {
+export function showPop(content: React.ReactNode, isMobile: boolean , locale:string,messages:any) {
 
     MySwal.fire({
         html: `<div id="swal-react-root"></div>`,
@@ -48,7 +48,7 @@ export function showPop(content: React.ReactNode, isMobile: boolean , locale:str
                 const root = ReactDOM.createRoot(container);
                 container.style.height = '100%'
                 root.render(
-                    <NextIntlClientProvider locale={locale}>
+                    <NextIntlClientProvider locale={locale} messages={messages}>
 
                         <div className="relative w-full h-full p-4 text-center">
                             {/* Close Button */}

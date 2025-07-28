@@ -37,7 +37,7 @@ const ProductCards: React.FC<ProductCardsProps> = ({ data, rows }) => {
                     auto-cols-auto 
                     gap-[30px] touch-pan-y touch-pinch-zoom `}>
                 {data?.map((props) => (
-                    <ProductCard key={props.id} {...props} className={flashEnd ? 'sale-ended' : ''} />
+                    <ProductCard key={props.id} {...props} className={flashEnd ? 'sale-ended ' : ''} />
                 )) ?? null}
             </div>
         </EmblaCarousel>

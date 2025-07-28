@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from 'react';
 import IconsendIcon from '@/assets/icons/iconsend'; // Example import for icon
 import { useTranslations } from 'next-intl';
-import { useIsRTL } from '@/hooks/useIsRTL';
 
 const GetOffer = () => {
     // State for email, error message, and form validity
@@ -11,7 +10,6 @@ const GetOffer = () => {
     const [errorMessage, setErrorMessage] = useState('');
     const [isValid, setIsValid] = useState(true);
     const t = useTranslations('footer')
-    const isRTL = useIsRTL()
 
     // check if hydrated
     useEffect(()=> setHydrated(true),[])
@@ -70,7 +68,7 @@ const GetOffer = () => {
                         color: isValid ? '#FAFAFA' : '#DC2626', // Red border for invalid email
                     }}
                 >
-                    <IconsendIcon className={`${isRTL && 'rotate-180'}`}/>
+                    <IconsendIcon className={'rtl:rotate-180'}/>
                 </button>
             </form>
             <div className='text-danger-600 text-xs'>

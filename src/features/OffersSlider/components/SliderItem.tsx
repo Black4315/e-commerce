@@ -1,6 +1,5 @@
 "use client"
 
-import { useIsRTL } from "@/hooks/useIsRTL";
 import { SliderItemtype } from "../types/sliderItem"
 import { useTranslations } from "next-intl";
 import Image from "next/image";
@@ -9,7 +8,6 @@ import Link from "next/link";
 import IconsarrowrightIcon from "@/assets/icons/iconsarrowright";
 
 const SliderItem = ({ name, image, logo, offerBody, link }: SliderItemtype) => {
-    const isRTL = useIsRTL();
     const t = useTranslations('homePage')
 
     return (
@@ -26,16 +24,16 @@ const SliderItem = ({ name, image, logo, offerBody, link }: SliderItemtype) => {
                 }} />
 
                 {/* heading */}
-                <h1 className='heading text-text-1'>
+                <h1 className='heading-slider text-text-1'>
                     {offerBody}
                 </h1>
-                
+
                 {/* shop now link */}
                 <Link href={link} className='flex items-center gap-2 text-text-1 hover:text-hover-button-1 group transition-colors'>
                     <span className='title border-b my-1 border-text-1 group-hover:border-hover-button-1 transition-colors '>
                         {t('shopNowBtn')}
                     </span>
-                    <IconsarrowrightIcon className={`w-6 h-6 ${isRTL && 'rotate-180'}`} />
+                    <IconsarrowrightIcon className={`w-6 h-6 rtl:rotate-180`} />
                 </Link>
 
             </div>

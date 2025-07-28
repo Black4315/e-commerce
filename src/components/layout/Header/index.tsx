@@ -11,6 +11,7 @@ import { useMobileCheck } from "@/hooks/useMobileCheck"
 import { cn } from "@/lib/utils"
 import Button from "@/components/ui/Button"
 import { useTranslations } from "next-intl"
+import { LOGO_NAME } from "@/constants"
 
 
 const Header = () => {
@@ -23,7 +24,7 @@ const Header = () => {
     useEffect(() => { setHydrated(true); console.log("User:", user); }, [user, isLoggedIn]);
 
     useEffect(()=>{
-        login() 
+        // login() 
     },[])
 
     // Function to handle search
@@ -42,7 +43,7 @@ const Header = () => {
                 <div className="items-center justify-between flex w-full">
                     <div className="flex items-center gap-2">
                         <SideBarMenu className='lg:hidden' />
-                        <Link href={'/'} className='logo max-lg:mx-2'>Exclusive</Link>
+                        <Link href={'/'} className='logo max-lg:mx-2'>{LOGO_NAME}</Link>
                     </div>
 
                     <div className='hidden lg:block'>
@@ -55,7 +56,7 @@ const Header = () => {
                             <NavProfileActions.cart />
                             {isLoggedIn ? 
                                 (<NavProfileActions.user />) : 
-                                <Link href={'/login'} className="login-btn" children={t('logInBtn')}/>
+                                <Link href={'/login'} className="login-btn max-xs:w-13 max-xs:ms-1" children={t('logInBtn')}/>
                             }
                         </NavProfileActions>
                     </div>

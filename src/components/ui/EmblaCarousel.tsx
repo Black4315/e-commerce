@@ -35,8 +35,8 @@ const EmblaCarousel = forwardRef<EmblaCarouselHandle, PropType>(
 
         const [emblaRef, emblaApi] = useEmblaCarousel({
             direction: isRTL ? 'rtl' : 'ltr',
-            // watchDrag: isMobile,
-            // dragFree: true,
+            watchDrag: isMobile,
+            dragFree: true,
             loop: false,
             ...options,
         })

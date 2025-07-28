@@ -9,6 +9,7 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import "@radix-ui/themes/styles.css";
 import './globals.css';
+import { ModalProvider } from '@/components/ui/ModalPopup';
 
 // load fonts
 const inter = Inter({
@@ -42,14 +43,16 @@ export default async function LocaleLayout({
       <body style={{ ['--origin-dir' as any]: isRTL ? 'left' : 'right' }} >
         <AppContextProvider>
           <Theme>
-            <div className="page-container">
-              <TopHeader locale={locale} />
-              <Header />
-              <main className='main-content common-padding'>
-                {children}
-              </main>
-              <Footer />
-            </div>
+            <ModalProvider >
+              <div className="page-container">
+                <TopHeader locale={locale} />
+                <Header />
+                <main className='main-content common-padding'>
+                  {children}
+                </main>
+                <Footer />
+              </div>
+            </ModalProvider>
           </Theme>
         </AppContextProvider>
       </body>

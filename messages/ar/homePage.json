@@ -145,7 +145,14 @@
             "new": "جديد",
             "addCart": "اضف الى العربة",
             "viewAll": "عرض جميع المنتجات",
-            "removeCart": "إزالة من العربة"
+            "removeCart": "إزالة من العربة",
+            "saleEnded": "انتهى العرض",
+            "soldOut": "نفدت الكمية",
+            "outStock": "غير متوفر",
+            "inStock": "متوفر",
+            "sold":"مُباع",
+            "reviews":"المراجعات",
+            "moreDetails": "مزيد من التفاصيل"
         },
         "browseByCategory": {
             "label": "الفئات",
