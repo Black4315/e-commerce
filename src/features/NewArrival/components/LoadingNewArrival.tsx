@@ -1,9 +1,13 @@
+import { BentoGrid, BentoLoadingSkeleton } from '@/components/ui/bento-grid'
 import React from 'react'
 
 const LoadingNewArrival = () => {
   return (
-    <div>LoadingNewArrival</div>
+   <BentoGrid>
+      <BentoLoadingSkeleton />
+   </BentoGrid>
   )
 }
 
 export default LoadingNewArrival
+

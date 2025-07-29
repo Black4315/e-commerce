@@ -11,6 +11,8 @@ const ProductActions = () => {
 
     //contexts
     const item = useProductContext()
+
+    if(!item) return null
     return (
         <div className="w-full flex justify-between">
 

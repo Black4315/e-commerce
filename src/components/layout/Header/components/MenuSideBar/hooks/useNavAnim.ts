@@ -18,8 +18,8 @@ export default function useNavAnim(open: boolean, sidebarRef: any) {
             {
                 opacity: 1,
                 x: 0,
-                delay: 0.2,
-                duration: 0.5,
+                delay: 0.3,
+                duration: 0.4,
                 stagger: { each: 0.07 },
                 ease: "power3.out",
             }

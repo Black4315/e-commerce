@@ -14,7 +14,7 @@ export default function CustomImage(props: CustomImageProps) {
 
         {isLoading && (
             <div className="relative w-full h-full overflow-hidden">
-                <svg className="absolute inset-0 w-full h-full z-10 anim-fadeInOut " viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+                <svg className="absolute inset-0 w-full h-full bg-skeleton z-10 anim-fadeInOut " viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
                     <text
                         x="50"
                         width={10}

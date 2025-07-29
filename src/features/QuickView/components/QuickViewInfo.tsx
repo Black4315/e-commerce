@@ -13,6 +13,7 @@ const QuickViewInfo = ({
   rating,
   reviewsCount,
   link,
+  soldNumber
 }: {
   title: string
   description: string
@@ -20,12 +21,12 @@ const QuickViewInfo = ({
   rating: number
   reviewsCount: number
   link: string
+  soldNumber: number
 }) => {
   const t = useTranslations('homePage.product')
-  const soldNumber = 2000
 
   return (
-    <div className="*:mb-4 border-b border-border">
+    <div className="*:mb-4 border-b border-border max-md:mb-4 mb-6">
 
       <h3 className="heading md:text-3xl capitalize font-poppins text-ellipsis whitespace-nowrap overflow-hidden " >{title}</h3>
       <p className="reg-text overflow-hidden line-clamp-4 ">{description}</p>
@@ -35,7 +36,7 @@ const QuickViewInfo = ({
         <SoldNumbers soldNumber={soldNumber} />
       </div>
 
-      <div className="flex justify-between w-full">
+      <div className="flex items-center justify-between w-full">
         <QuickInStock inStock={inStock} />
         <Link href={link} className='flex items-center gap-2 text-secondary-3 group'>
           <span className='text-xs border-b my-1 border-0 hover:border-secondary-3 transition-all '>

@@ -1,12 +1,12 @@
 import { formatReviewCount } from "@/utils";
-import { useProductContext } from "../context/ProductContext";
+import { useOptionalProductContext } from "../context/ProductContext";
 import StarRating from "./StarRating";
 
 const ProductRating = (props:{rating?:number; reviewsCount?:number}) => {
     const {
         rating,
         reviewsCount,
-    } = useProductContext()! || props
+    } = useOptionalProductContext()! || props
 
     return (
         <div className="flex gap-3">

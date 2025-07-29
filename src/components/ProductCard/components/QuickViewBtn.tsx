@@ -17,7 +17,7 @@ const QuickViewBtn = () => {
     //  Button to trigger the modal
     <Button
       onClick={() => showModal(
-        <QuickView productInfo={item!} quickViewText={t('quickView')} />
+        <QuickView productInfo={item} quickViewText={t('quickView')} />
       )}
       className="rounded-full w-8.5 h-8.5 bg-white">
 

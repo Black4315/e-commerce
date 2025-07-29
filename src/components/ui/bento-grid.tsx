@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { Skeleton } from "@mui/material";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
@@ -43,8 +44,7 @@ export const BentoGridItem = ({
     return (
         <div
             className={cn(
-                `group/bento relative shadow-input row-span-1 flex flex-col justify-between rounded space-y-4 border border-neutral-200 overflow-hidden bg-black p-4 lg:p-8 transition duration-200  ${
-                    id == 1 ? 'md:row-span-2 md:col-span-2' :
+                `group/bento relative shadow-input row-span-1 flex flex-col justify-between rounded space-y-4 forced-colors:border border-neutral-200 overflow-hidden bg-black p-4 lg:p-8 transition-apple duration-200  ${id == 1 ? 'md:row-span-2 md:col-span-2' :
                     id == 2 ? 'md:col-span-2' : ""
                 }`,
                 className,
@@ -53,12 +53,11 @@ export const BentoGridItem = ({
             {header}
 
             {/* image */}
-            <div className={`absolute mb-0 flex-center md:self-center mdd:w-[500px] ${
-                [1, 2].includes(id) ? 'bottom-0 translate-y-0 w-10/12 max-md:w-[300px] max-md:h-[16rem]' : 'w-8/12 top-1/2 -translate-y-1/2 self-center max-md:h-[11rem] '
-            } ${id == 2 && '!w-8/12'} `} >
+            <div className={`absolute mb-0 flex-center md:self-center mdd:w-[500px] ${[1, 2].includes(id) ? 'bottom-0 translate-y-0 w-10/12 max-md:w-[300px] max-md:h-[16rem]' : 'w-8/12 top-1/2 -translate-y-1/2 self-center max-md:h-[11rem] '
+                } ${id == 2 && '!w-8/12'} `} >
                 <Image src={img} width={500} height={100} alt={'Bento Image'} className="object-contain h-full w-full z-10 " />
-                
-                {!([1,2].includes(id)) && <div className="bg-[#d9d9d9e6] blur-[100px] w-40 md:w-10/12 aspect-square opacity- absolute self-center top-1/2 -translate-y-1/2" />}
+
+                {!([1, 2].includes(id)) && <div className="bg-[#d9d9d9e6] blur-[100px] w-40 md:w-10/12 aspect-square opacity- absolute self-center top-1/2 -translate-y-1/2" />}
             </div>
 
             <div className=" relative transition-apple duration-200 group-hover/bento:translate-x-2 h-full flex flex-col justify-end gap-1 md:gap-2">
@@ -75,3 +74,20 @@ export const BentoGridItem = ({
         </div>
     );
 };
+
+export const BentoLoadingSkeleton = () => (
+
+    new Array(4).fill(null).map((_, i) => (
+        <div
+            key={i}
+            className={
+                `group/bento relative row-span-1 rounded  forced-colors:border border-neutral-200 overflow-hidden transition-apple duration-200  ${i == 0 ? 'md:row-span-2 md:col-span-2' :
+                    i == 1 ? 'md:col-span-2' : ""
+                }`
+            }
+        >
+            <Skeleton variant="rectangular" sx={{height:"100%"}}/>
+        </div>
+    ))
+
+)

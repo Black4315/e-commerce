@@ -11,6 +11,7 @@ import React, {
 import ReactDOM from 'react-dom';
 import { IoMdClose } from 'react-icons/io';
 import 'animate.css';
+import { useMobileCheck } from '@/hooks/useMobileCheck';
 
 const ModalContext = createContext<{
     showModal: (content: ReactNode, showAnim?: string, hidenim?: string) => void;
@@ -34,6 +35,7 @@ export const ModalProvider = ({ children }: { children: ReactNode }) => {
     const [modalState, setModalState] = useState<ModalData | null>(null);
     const [isClosing, setIsClosing] = useState(false);
     const modalContainerRef = useRef<HTMLElement | null>(null);
+    const isMobile = useMobileCheck()
 
     useEffect(() => {
         const container = document.createElement('div');
@@ -48,8 +50,8 @@ export const ModalProvider = ({ children }: { children: ReactNode }) => {
 
     const showModal = (
         content: React.ReactNode,
-        showAnim = 'animate__fadeInDown',
-        hideAnim = 'animate__fadeOutUp'
+        showAnim = !isMobile ? 'animate_fadeInUp' : 'animate__slideInUp',
+        hideAnim = !isMobile ? 'animate_fadeOutDown': 'animate__slideOutDown'
     ) => {
         setModalState({ content, showAnim, hideAnim });
         setIsClosing(false);
@@ -64,7 +66,7 @@ export const ModalProvider = ({ children }: { children: ReactNode }) => {
         setTimeout(() => {
             setModalState(null);
             setIsClosing(false);
-        }, 300);
+        }, 550);
     };
 
     return (
@@ -75,12 +77,14 @@ export const ModalProvider = ({ children }: { children: ReactNode }) => {
                 ReactDOM.createPortal(
                     <>
                         <div
-                            className="modal-container p-0 flex-center fixed inset-0 z-50"
+                            className={`modal-container p-0 flex-center fixed inset-0 z-50 ${isClosing && 'pointer-events-none'} ${isMobile && '!items-end'} `}
                         >
                             <div
                                 aria-labelledby="modal-title"
                                 aria-describedby="modal-html-container"
-                                className={`modal-popup z-50 !p-0 bg-white !w-fit !h-fit rounded-xl flex-center relative animate__animated ${isClosing ? modalState.hideAnim : modalState.showAnim
+                                className={` forced-colors:border overflow-hidden modal-popup z-50 !p-0 bg-white flex-center relative animate__animated 
+                                    ${!isMobile ? 'mx-4 rounded-xl h-[95svh] !w-fit lg:!h-fit' : "rounded-t-xl h-[85svh] w-screen "} 
+                                    ${isClosing ? modalState.hideAnim : modalState.showAnim
                                     } animate__faster`}
                                 role="dialog"
                                 aria-modal="true"
@@ -93,11 +97,11 @@ export const ModalProvider = ({ children }: { children: ReactNode }) => {
                                     <CloseSvg />
                                 </button>
 
-                                <div className="w-full h-full p-4 md:p-6 text-center overflow-auto">
+                                <div className="w-full h-full p-4 md:p-6 text-center overflow-y-auto scrollbar-thin ">
                                     {modalState.content}
                                 </div>
                             </div>
-                            <div className='absolute top-0 bottom-0 right-0 left-0 bg-black/50 inset-0 ' onClick={closeModal}/>
+                            <div className={`absolute top-0 bottom-0 right-0 left-0 bg-black/50 inset-0 transition-apple  animate__animated animate__faster ${isClosing ? 'animate__fadeOut' : 'animate__fadeIn'}`} onClick={closeModal}/>
                         </div>
                     </>,
                     modalContainerRef.current

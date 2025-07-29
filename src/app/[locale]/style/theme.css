@@ -1,0 +1,19 @@
+/* theme.css */
+
+:root {
+    --background: #ffffff;
+    --foreground: #171717;
+    --apple-transition: cubic-bezier(0, 0, .5, 1);
+
+    /* Optional custom fonts / breakpoints */
+    /* --font-poppins: "Poppins", sans-serif;
+  --font-inter: "Inter", sans-serif; */
+    --breakpoint-xs: 20rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
+    }
+}

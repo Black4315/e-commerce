@@ -27,7 +27,7 @@ const ProductCard = (props: productType & { className?: string }) => {
 
             <div
                 data-label={!inStock ? t('outStock') : ''}
-                className={cn(`relative flex flex-col justify-between w-[270px] h-[350px] flex-shrink-0 rounded-xl overflow-hidden transition-apple duration-200 shadows-[0px_2px_6px_#00000029] shadow-[2px_4px_6px_rgba(0,0,0,0.06)] ${!isMobile && 'hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01]'} ${!inStock && `after:content-[attr(data-label)] sale-ended `}`, props.className)}>
+                className={cn(`group forced-colors:border relative flex flex-col justify-between w-[270px] h-[350px] flex-shrink-0 rounded-xl overflow-hidden transition-apple duration-200 shadows-[0px_2px_6px_#00000029] shadow-[2px_4px_6px_rgba(0,0,0,0.06)] ${!isMobile && 'hover:shadow-[2px_4px_16px_#00000029] hover:scale-[1.01]'} ${!inStock && `after:content-[attr(data-label)] sale-ended `}`, props.className)}>
 
 
                 <div className="relative bg-secondary-1 w-full group overflow-hidden flex-shrink-0 h-[262px]">
@@ -39,7 +39,7 @@ const ProductCard = (props: productType & { className?: string }) => {
                 </div>
 
                 {/* Name, Price & Rating */}
-                <Link href={`/product/${id}`} className="flex flex-col h-full">
+                <Link href={`/product/${id}`} className="flex flex-col h-full group-[.sale-ended]:blur-[1.2px]">
                     <div className={`flex flex-col p-2 gap-0.5`}>
                         <h3 className="med-text capitalize">{title}</h3>
 

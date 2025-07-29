@@ -152,7 +152,8 @@
             "inStock":"IN STOCK",
             "sold":"Sold",
             "reviews":"Reviews",
-            "moreDetails":"More Details"
+            "moreDetails":"More Details",
+            "taxes":"Incl. import charges; est. other taxes"
         },
         "browseByCategory": {
             "label": "categories",

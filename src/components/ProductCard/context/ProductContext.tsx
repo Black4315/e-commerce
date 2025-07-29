@@ -7,9 +7,10 @@ export const ProductContext = createContext<productType | undefined>(undefined)
 
 export const useProductContext = () => {
     const ctx = useContext(ProductContext)
-    // if (ctx == undefined) throw new Error('useProductContext must used in ProductProvider')
+    if (ctx == undefined) throw new Error('useProductContext must used in ProductProvider')
     return ctx
 }
+export const useOptionalProductContext = () => useContext(ProductContext); // productType | undefined
 
 const ProductProvider = ({
     children,

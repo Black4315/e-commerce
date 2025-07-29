@@ -8,8 +8,10 @@ import { Theme } from '@radix-ui/themes';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import "@radix-ui/themes/styles.css";
-import './globals.css';
 import { ModalProvider } from '@/components/ui/ModalPopup';
+
+import './style/globals.css';
+
 
 // load fonts
 const inter = Inter({

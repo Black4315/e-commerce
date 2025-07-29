@@ -24,9 +24,9 @@ export default ImageViewSlider
 
 const MobileImageSlider = ({ images, alt }: { images: string[]; alt: string }) => (
     <EmblaCarousel btns={false} options={{ dragFree: false }}>
-        <div className='flex h-100 gap-4 md:gap-6'>
-            {images.map((item, i) => (
-                <div className='w-10/12 flex-shrink-0 bg-skeleton flex-center p-2 rounded-xl ' key={i}>
+        <div className='flex gap-4 md:gap-6'>
+            {images.slice(0, 5).map((item, i) => (
+                <div className='w-10/12 h-55 flex-shrink-0 bg-skeleton flex-center p-2 rounded-xl ' key={i}>
                     <CustomImage width={200} height={200} src={item} alt={alt} className='object-cover' />
                 </div>
             ))}
@@ -51,7 +51,7 @@ const DeskTopImageSlider = ({ images, alt }: { images: string[]; alt: string }) 
                 ))}
             </div>
 
-            <div className='sm:w-[472px] md:w-[536px] w-full h-full bg-skeleton flex-center p-2 rounded-xl cursor-zoom-in'>
+            <div className='sm:w-[472px]dd md:w-[536px] w-full h-full bg-skeleton flex-center p-2 rounded-xl cursor-zoom-in'>
                 <CustomImage width={200} height={200} src={images[current]} alt={alt} className='object-contain' />
             </div>
         </div>

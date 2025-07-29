@@ -1,1 +1,5 @@
 we should in real time projec separtae the cart from user and fetch with user id to have profisional project
+
+
+1 - zod schyma for invalid data fetch invalid format
+2 - make product more solid and taxes and sod numbers and etc

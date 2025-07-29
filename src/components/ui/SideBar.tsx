@@ -102,7 +102,7 @@ export const SideBarMenu = ({
 
       transition={{
         ease:[0,0,0.5,1],
-        duration:0.3
+        duration:0.4
       }}
       {...props}
     >

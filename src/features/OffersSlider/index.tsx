@@ -27,7 +27,7 @@ const OffersSlider = () => {
 
   return (
     <div className='pt-4 sm:pt-6 lg:pt-10 lg:ps-10 w-full'>
-      <ImageSliderWrapper className='max-lg:rounded-lg max-sm:h-95 max-md:h-110'>
+      <ImageSliderWrapper className='max-lg:rounded-lg max-sm:h-95 max-md:h-110 forced-colors:border'>
         <ImageSliderBody className="my-slider max-md:!relative">
           {data &&
             data.map(({ name, image, logo, offerBody, link }) => (
