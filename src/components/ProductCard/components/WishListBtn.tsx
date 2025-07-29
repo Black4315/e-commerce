@@ -6,9 +6,11 @@ import { productType } from "../types/productType"
 import { useWishlist } from "@/contexts/WishListContext"
 import { useState } from "react"
 import { useOptionalProductContext, useProductContext } from "../context/ProductContext"
+import { useUserContext } from "@/contexts/UserContext"
 
 const WishListBtn = ({className, itemProd,}:{className?:string; itemProd?: productType;}) => {
   //contexts
+  const {isLoggedIn} = useUserContext()
   const item = useOptionalProductContext() || itemProd;
   if (!item) return null
   
@@ -17,6 +19,7 @@ const WishListBtn = ({className, itemProd,}:{className?:string; itemProd?: produ
   const [isExisting, setIsExisting] = useState(wishlist.some((e) => e.id == item.id))
   
   const click = () => {
+    // if isLoggedIn
     if (isExisting) {
       removeFromWishlist(item.id)
       setIsExisting(false)

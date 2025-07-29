@@ -88,7 +88,6 @@ export const ModalProvider = ({ children }: { children: ReactNode }) => {
                                     } animate__faster`}
                                 role="dialog"
                                 aria-modal="true"
-                                style={{ display: 'grid' }}
                             >
                                 <button
                                     onClick={closeModal}

@@ -27,7 +27,7 @@ const MobileImageSlider = ({ images, alt }: { images: string[]; alt: string }) =
         <div className='flex gap-4 md:gap-6'>
             {images.slice(0, 5).map((item, i) => (
                 <div className='w-10/12 h-55 flex-shrink-0 bg-skeleton flex-center p-2 rounded-xl ' key={i}>
-                    <CustomImage width={200} height={200} src={item} alt={alt} className='object-cover' />
+                    <CustomImage width={200} height={200} src={item} alt={alt} className='object-contain w-full h-full' />
                 </div>
             ))}
         </div>

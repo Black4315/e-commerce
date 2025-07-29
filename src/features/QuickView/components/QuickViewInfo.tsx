@@ -26,9 +26,9 @@ const QuickViewInfo = ({
   const t = useTranslations('homePage.product')
 
   return (
-    <div className="*:mb-4 border-b border-border max-md:mb-4 mb-6">
+    <div className="*:mb-2 sm:*:mb-4 border-b border-border max-md:mb-4 mb-6">
 
-      <h3 className="heading md:text-3xl capitalize font-poppins text-ellipsis whitespace-nowrap overflow-hidden " >{title}</h3>
+      <h3 className="semi-heading capitalize leading-6 md:leading-8 md:mb-3 font-poppins text-ellipsis whitespace-nowrap overflow-hidden" >{title}</h3>
       <p className="reg-text overflow-hidden line-clamp-4 ">{description}</p>
 
       <div className="flex gap-2">

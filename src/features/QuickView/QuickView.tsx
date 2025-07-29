@@ -32,12 +32,12 @@ const QuickView = ({ productInfo, quickViewText }: { productInfo: productType; q
     const soldNumber = 2000
     return (
         <div className="h-full flex flex-col items-center ">
-            <h2 className="heading font-bold mb-6 md:mb-8 font-inter gap-2 flex-center">
+            <h2 className="semi-heading mb-4 md:mb-6 font-inter gap-2 flex-center">
                 <QuickViewIcon />
                 {quickViewText}
             </h2>
 
-            <div className={`flex gap-6 max-lg:h-full ${isMobile ? 'w-full flex-col ' : 'max-lg:max-w-158 max-lg:flex-col'}`}>
+            <div className={`flex gap-4 md:gap-6 max-lg:h-full ${isMobile ? 'w-full flex-col ' : 'max-lg:max-w-158 max-lg:flex-col'}`}>
                 <ImageViewSlider images={images} alt={title} />
 
                 <div className={`flex flex-col justify-between text-start max-lg:h-full ${isMobile ? 'w-full' : 'lg:min-w-80 lg:max-w-90'}`}>
@@ -46,8 +46,8 @@ const QuickView = ({ productInfo, quickViewText }: { productInfo: productType; q
                         <QuickPricing {...{ price, currency, taxes, discountPercent, originalPrice }}/>
                     </div>
 
-                    <div className={`mt-4 md:mt-6 max-sm:bg-white flex gap-2 ${isMobile ? 'max-md:mb-0 mb-6 ' :'max-md:mb-4 max-lg:mb-6 '}`}>
-                        <AddToCart itemProd={productInfo} show className="relative sm:h-15 rounded overflow-hidden" />
+                    <div className={`mt-4 md:mt-6 flex gap-2 ${isMobile ? 'max-md:mb-0 mb-6 ' :'max-md:mb-4 max-lg:mb-6 '}`}>
+                        <AddToCart itemProd={productInfo} show className="relative h-12 sm:h-15 rounded overflow-hidden " />
                         <WishListBtn itemProd={productInfo} className="rounded w-14 *:w-14 *:h-8.5 h-full "/>
                     </div>
                 </div>

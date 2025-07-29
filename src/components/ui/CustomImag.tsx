@@ -26,7 +26,7 @@ export default function CustomImage(props: CustomImageProps) {
                             fontFamily: 'Inter, sans-serif',
                             fontWeight: '700',
                             fill: '#0003',
-                            fontSize: '6px',
+                            fontSize: '8px',
                             textTransform: 'uppercase',
                         }}
                     >
