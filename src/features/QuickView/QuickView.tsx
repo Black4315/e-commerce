@@ -46,7 +46,7 @@ const QuickView = ({ productInfo, quickViewText }: { productInfo: productType; q
                         <QuickPricing {...{ price, currency, taxes, discountPercent, originalPrice }}/>
                     </div>
 
-                    <div className={`mt-4 md:mt-6 flex gap-2 ${isMobile ? 'max-md:mb-0 mb-6 ' :'max-md:mb-4 max-lg:mb-6 '}`}>
+                    <div className={`mt-4 md:mt-6 flex gap-2 ${isMobile ? 'max-md:mb-0 mb-6 max-md:sticky bottom-0 max-md:bg-white py-4 md:py-6' :'max-md:mb-4 max-lg:mb-6 '}`}>
                         <AddToCart itemProd={productInfo} show className="relative h-12 sm:h-15 rounded overflow-hidden " />
                         <WishListBtn itemProd={productInfo} className="rounded w-14 *:w-14 *:h-8.5 h-full "/>
                     </div>

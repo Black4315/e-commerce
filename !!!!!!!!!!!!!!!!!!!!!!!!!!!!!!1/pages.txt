@@ -1,6 +1,6 @@
 
 
-"link": "/login"
+"link": "/auth/login"
 
 "link": "/cart"
 
@@ -21,7 +21,7 @@
 
 "link": "/about"
 
-"link": "/signup"
+"link": "/auth/signup"
 
 "link": "/my-account"
 
@@ -31,7 +31,7 @@
 
 "link": "/my-reviews"
 
-"link": "/logout"
+"link": "/auth/logout"
 
 
 link: /flash-sales/

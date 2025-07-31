@@ -12,7 +12,7 @@ export const anim = (open: boolean) => {
             delay: 0.2,
             duration: 0.1,
             stagger: {
-                each: 0.1,
+                each: 0.06,
                 from: 'start',
                 grid: 'auto',
                 // ease: 'none',

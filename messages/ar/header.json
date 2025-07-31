@@ -16,7 +16,7 @@
             },
             {
                 "label": "تسجيل",
-                "link": "/signup"
+                "link": "/auth/signup"
             }
         ],
         "searchPlaceholder": "ماذا تبحث؟",
@@ -45,7 +45,7 @@
             },
             {
                 "label": "تسجيل الخروج",
-                "link": "/logout"
+                "link": "/auth/logout"
             }
         ]
     }

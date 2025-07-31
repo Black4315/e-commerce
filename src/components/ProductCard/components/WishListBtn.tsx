@@ -3,34 +3,41 @@
 import HeartsmallIcon from "@/assets/icons/heartsmall"
 import Button from "@/components/ui/Button"
 import { productType } from "../types/productType"
-import { useWishlist } from "@/contexts/WishListContext"
-import { useState } from "react"
-import { useOptionalProductContext, useProductContext } from "../context/ProductContext"
-import { useUserContext } from "@/contexts/UserContext"
+import { useOptionalProductContext } from "../context/ProductContext"
+import { pages } from "@/constants/pages"
+import { useWishlistToggle } from "../hooks/useWishlistToggle"
+import { useRouter } from "next/navigation"
+import toast from "react-hot-toast"
 
-const WishListBtn = ({className, itemProd,}:{className?:string; itemProd?: productType;}) => {
+const WishListBtn = ({ className, itemProd, }: { className?: string; itemProd?: productType; }) => {
   //contexts
-  const {isLoggedIn} = useUserContext()
+  const router = useRouter()
   const item = useOptionalProductContext() || itemProd;
   if (!item) return null
-  
-  const { wishlist, addToWishlist, removeFromWishlist } = useWishlist()
-  
-  const [isExisting, setIsExisting] = useState(wishlist.some((e) => e.id == item.id))
-  
-  const click = () => {
-    // if isLoggedIn
-    if (isExisting) {
-      removeFromWishlist(item.id)
-      setIsExisting(false)
-    } else {
-      addToWishlist(item)
-      setIsExisting(true)
-    }
-  }
 
+  const {
+    toggleWishlist,
+    isExisting,
+    isLoggedIn } = useWishlistToggle(item)
+
+  const handleClick = () => {
+    if (!isLoggedIn) {
+      router.push(pages.signup);
+      return;
+    }
+
+    toast.promise(
+      toggleWishlist(),
+      {
+        loading: isExisting ? 'Removing...' : 'Adding...',
+        success: isExisting ? 'Removed from wishlist!' : 'Added to wishlist!',
+        error: 'Could not update wishlist.',
+      }
+    );
+  };
+  
   return (
-    <Button onClick={click} className={`${isExisting ? 'action-btn-select' : 'bg-white'} rounded-full w-8.5 h-8.5 ${className}`}>
+    <Button onClick={handleClick} className={`${isExisting ? 'action-btn-select' : 'bg-white'} rounded-full w-8.5 h-8.5 ${className}`}>
       <HeartsmallIcon className="w-6 h-6" />
     </Button>
   )

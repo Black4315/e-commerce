@@ -29,7 +29,7 @@
                 },
                 {
                     "label": "Login / Register",
-                    "link": "/login"
+                    "link": "/auth/login"
                 },
                 {
                     "label": "Cart",

@@ -25,7 +25,7 @@
             "list": [
                 {
                     "label": "تسجيل الدخول / التسجيل",
-                    "link": "/login"
+                    "link": "/auth/login"
                 },
                 {
                     "label": "العربة",

@@ -16,7 +16,7 @@
             },
             {
                 "label": "Sign Up",
-                "link": "/signup"
+                "link": "/auth/signup"
             }
         ],
         "searchPlaceholder": "What are you looking for?",
@@ -44,7 +44,7 @@
                 "link": "/my-reviews"
             },{
                 "label": "Logout",
-                "link": "/logout"
+                "link": "/auth/logout"
             } 
         ]
     }

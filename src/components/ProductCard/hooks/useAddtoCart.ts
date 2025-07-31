@@ -16,16 +16,25 @@ export const useAddToCart = (item?: productType) => {
         }
     }, [cart, item]);
 
-    const Add = () => {
-        if (!item) return;
+     const Add = async () => {
+        if (!item) return Promise.reject("No item to add");
 
-        if (isExisting) {
-            removeFromCart(item.id);
-        } else {
-            addToCart({ userId: user?.id, quantity: 1, ...item });
+        try {
+            // ✅ Simulated API call — replace with real fetch/axios later
+            await new Promise((resolve) => setTimeout(resolve, 1000)); 
+
+            if (isExisting) {
+                removeFromCart(item.id);
+            } else {
+                addToCart({ userId: user?.id, quantity: 1, ...item });
+            }
+
+            setIsExisting((prev) => !prev);
+
+            return Promise.resolve(); // success
+        } catch (err) {
+            return Promise.reject(err); // failure
         }
-
-        setIsExisting((prev) => !prev);
     };
 
     return {

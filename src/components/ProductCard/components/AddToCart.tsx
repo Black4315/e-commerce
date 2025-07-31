@@ -6,6 +6,8 @@ import { productType } from "../types/productType"
 import { useOptionalProductContext, useProductContext } from "../context/ProductContext"
 import { useAddToCart } from "../hooks/useAddtoCart"
 import { cn } from "@/lib/utils"
+import toast, { Toaster } from 'react-hot-toast';
+
 
 const AddToCart = ({
     itemProd,
@@ -25,17 +27,19 @@ const AddToCart = ({
     const item = useOptionalProductContext() || itemProd;
     const { Add, isExisting } = useAddToCart(item)
 
-    // toast.promise(
-    //     saveSettings(settings),
-    //     {
-    //         loading: 'Saving...',
-    //         success: <b>Settings saved!</b>,
-    //         error: <b>Could not save.</b>,
-    //     }
-    // );
+    const handleClick = () => {
+        toast.promise(
+            Add(),
+            {
+                loading: isExisting ? 'Removing from cart...' : 'Adding to cart...',
+                success: isExisting ? 'Removed from cart!' : 'Added to cart!',
+                error: 'Could not update cart.',
+            }
+        );
+    };
 
     return (
-        <div onClick={Add} className={cn(`absolute bottom-0 w-full transition-apple duration-150 group-hover:opacity-100 group-hover:translate-y-0 group-hover:delay-500 group-hover:pointer-events-auto ${(!isMobile && !isExisting && !show && inStock) && 'translate-y-2.5 opacity-0 pointer-events-none'
+        <div onClick={handleClick} className={cn(`absolute bottom-0 w-full transition-apple duration-150 group-hover:opacity-100 group-hover:translate-y-0 group-hover:delay-500 group-hover:pointer-events-auto ${(!isMobile && !isExisting && !show && inStock) && 'translate-y-2.5 opacity-0 pointer-events-none'
             }`, className)}>
 
             <button className="uppercase w-full h-full med-text hover:bg-black/80 py-2 bg-black text-center text-text-1 z-10 transition-all">

@@ -86,8 +86,8 @@ export const SideBarMenu = ({
 
   useEffect(() => {
     open ? document.body.style.overflowY = 'hidden' : document.body.style.overflowY = 'auto';
-  },[open])
-  
+  }, [open])
+
   return (
     <motion.aside
       className={cn(
@@ -101,8 +101,8 @@ export const SideBarMenu = ({
       }}
 
       transition={{
-        ease:[0,0,0.5,1],
-        duration:0.4
+        ease: [0, 0, 0.5, 1],
+        duration: 0.4
       }}
       {...props}
     >
@@ -121,6 +121,9 @@ export const SideBarClose = () => {
 
   return (
     <motion.span
+      transition={{
+        delay: open ? 0.3 : 0
+      }}
       animate={{
         opacity: open ? 1 : 0,
       }}
@@ -133,8 +136,8 @@ export const SideBarClose = () => {
           role="button"
           onClick={() => setOpen(false)}
         />
-        <LocaleSwitcherSelect 
-          defaultValue={locale} 
+        <LocaleSwitcherSelect
+          defaultValue={locale}
           label="Select a locale"
           className="bg-black rounded hover:bg-black/80"
         />

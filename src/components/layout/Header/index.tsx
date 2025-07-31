@@ -24,7 +24,7 @@ const Header = () => {
     useEffect(() => { setHydrated(true); console.log("User:", user); }, [user, isLoggedIn]);
 
     useEffect(()=>{
-        // login() 
+        login() 
     },[])
 
     // Function to handle search
@@ -56,7 +56,7 @@ const Header = () => {
                             <NavProfileActions.cart />
                             {isLoggedIn ? 
                                 (<NavProfileActions.user />) : 
-                                <Link href={'/login'} className="login-btn max-xs:w-13 max-xs:ms-1" children={t('logInBtn')}/>
+                                <Link href={'/auth/login'} className="login-btn max-xs:w-13 max-xs:ms-1" children={t('logInBtn')}/>
                             }
                         </NavProfileActions>
                     </div>

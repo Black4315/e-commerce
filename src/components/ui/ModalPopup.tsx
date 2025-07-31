@@ -96,7 +96,7 @@ export const ModalProvider = ({ children }: { children: ReactNode }) => {
                                     <CloseSvg />
                                 </button>
 
-                                <div className="w-full h-full p-4 md:p-6 text-center overflow-y-auto scrollbar-thin ">
+                                <div className={`w-full h-full p-4 md:p-6 text-center overflow-y-auto scrollbar-thin ${isMobile&&'!pb-0'}`}>
                                     {modalState.content}
                                 </div>
                             </div>
