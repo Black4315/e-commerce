@@ -4,7 +4,7 @@ import { type NewArrival } from './types';
 import { UseQueryResult } from '@tanstack/react-query';
 import LoadingNewArrival from './components/LoadingNewArrival';
 import ErrorNewArrival from './components/ErrorNewArrival';
-import Section from '@/components/Section';
+import Section from '@/components/ui/Section';
 import BentoGridItems from './components/BentoGrid';
 import { useFetchNewArrival } from './hooks/useFetchNewArrival';
 
@@ -30,8 +30,8 @@ const NewArrival = () => {
     >
       {
         isError ? <ErrorNewArrival refetch={refetch} />
-        : isLoading ? <LoadingNewArrival />
-        : <BentoGridItems NewArrival={NewArrival} />
+          : isLoading ? <LoadingNewArrival />
+            : <BentoGridItems NewArrival={NewArrival} />
       }
     </Section>
   )

@@ -5,7 +5,7 @@ import React, {
     useState
 } from 'react'
 import { EmblaCarouselType } from 'embla-carousel'
-import NextPrevArrowBtn from '../Section/components/NextPrevArrowBtn'
+import NextPrevArrowBtn from './Section/components/NextPrevArrowBtn'
 
 type UsePrevNextButtonsType = {
     prevBtnDisabled: boolean
@@ -56,13 +56,13 @@ export const PrevButton: React.FC<PropType> = (props) => {
     const { children, ...restProps } = props
 
     return (
-           <NextPrevArrowBtn
-                typeBtn="prev"
-                className="emblaCarousel_PrevBtn"
-                id="prev"
-                {...restProps}
-            />
-           
+        <NextPrevArrowBtn
+            typeBtn="prev"
+            className="emblaCarousel_PrevBtn"
+            id="prev"
+            {...restProps}
+        />
+
     )
 }
 

@@ -5,6 +5,7 @@ import Icons_arrowleftIcon from "@/assets/icons/icons_arrowleft"
 import AddToCart from "../.."
 import ProductPricing from "@/components/Product/ProductPricing"
 import { useMobileCheck } from "@/hooks/useMobileCheck"
+import Cart1Icon from "@/assets/icons/Cart1"
 
 
 const ModalBtns = () => {
@@ -24,9 +25,9 @@ const ModalBtns = () => {
                     href={pages.cart}
                     width={28}
                     height={28}
-                    Icon={Icons_arrowleftIcon}
+                    Icon={Cart1Icon}
                     tooltipPlacement="top"
-                    className="h-auto ltr:rotate-180 w-14"
+                    className="h-auto  w-14"
                 />
             </div>
         </div>

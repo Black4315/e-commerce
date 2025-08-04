@@ -1,5 +1,5 @@
 'use client'
-import SectionProducts from "@/components/SectionProducts/SectionProducts"
+import SectionProducts from "@/components/ui/SectionProducts/SectionProducts"
 import { useLocale, useTranslations } from "next-intl";
 import { useFetchBestSellings } from "./hooks/useFetchBestSellings";
 import { productType } from "@/types/productType";

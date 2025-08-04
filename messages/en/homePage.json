@@ -164,8 +164,8 @@
             "taxes": "Incl. import charges; est. other taxes",
             "selectVariant": "Please select a variation",
             "limitedTime": "Limited time deal",
-            "color":"Color",
-            "sizes":"Sizes"
+            "color": "Color",
+            "sizes": "Sizes"
         },
         "browseByCategory": {
             "label": "categories",
@@ -222,5 +222,10 @@
             "qytDeced": " Quantity Decreased Successfuly",
             "maxItemsAllowed": "Only {count} item(s) available in stock."
         }
+    },
+    "Errors": {
+        "404Title": "404 Not Found",
+        "404Description": "Sorry, the page you were looking for does not exist.",
+        "goHome": "Back to home page"
     }
 }

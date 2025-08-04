@@ -1,12 +1,12 @@
 "use client"
-import SectionProducts from '@/components/SectionProducts/SectionProducts'
+import SectionProducts from '@/components/ui/SectionProducts/SectionProducts'
 import { useFetchFlashsales } from './hooks/useFetchFlashSales'
 import { useLocale, useTranslations } from 'next-intl'
 import CountdownTimer from './components/CountdownTimer'
 import ErrorTimer from './components/ErrorTimer'
 import { flashDataType, flashSalesContextType } from './types'
 import { FlashSalesProvider, useFlashSalesContext } from './context/FlashSalesContext'
-import ErrorProducts from '@/components/SectionProducts/components/ErrorProducts'
+import ErrorProducts from '@/components/ui/SectionProducts/components/ErrorProducts'
 import LoadingTimer from './components/LoadingTimer'
 
 

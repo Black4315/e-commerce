@@ -1,6 +1,6 @@
 'use client';
 
-import Section from "@/components/Section";
+import Section from "@/components/ui/Section";
 import CategorySlider from "./components/CategorySlider";
 import { useCallback, useState } from "react";
 import { EmblaCarouselHandle } from "@/components/ui/EmblaCarousel";

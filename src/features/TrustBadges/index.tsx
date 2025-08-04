@@ -1,7 +1,7 @@
 "use client"
 import { useTranslations } from 'next-intl'
 import BadgeItem from './components/BadgeItem'
-import Section from '@/components/Section'
+import Section from '@/components/ui/Section'
 
 const TrustBadges = () => {
   const t = useTranslations('homePage')
