@@ -4,7 +4,7 @@ import CustomImage from "@/components/ui/CustomImag"
 import { useProductContext } from "@/contexts/product/ProductContext"
 import { useProductSelection } from "@/contexts/product/ProductSelectionContext"
 import { useTranslations } from "next-intl"
-import MoreDetails from "../../MoreDetails"
+import MoreDetails from "../../../MoreDetails"
 
 const CartModalHeading = () => {
     const t = useTranslations('homePage.product')
@@ -13,7 +13,7 @@ const CartModalHeading = () => {
 
     const img = selectedVariant.images[0]
     return (
-        <div className="flex gap-3 h-30 mb-8 border-b border-border border-">
+        <div className="flex gap-3 h-30 border-b border-border border-">
             <div className="w-30 h-30 flex-center">
                 <CustomImage
                     src={img.url}
@@ -30,7 +30,7 @@ const CartModalHeading = () => {
                 <div className="text-neutral-500 text-start">
                     {t('color')}: <span className="text-[#0f1111] capitalize">{selectedVariant.colorName}</span>
                 </div>
-                <MoreDetails link={'/products/'+id} />
+                <MoreDetails link={'/products/' + id} />
             </div>
         </div>
     )

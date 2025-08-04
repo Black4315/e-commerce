@@ -6,7 +6,7 @@ import { useProductSelection } from "@/contexts/product/ProductSelectionContext"
 import { currencyOfPrice } from "@/utils"
 import { useTranslations } from "next-intl"
 
-const QuickPricing = () => {
+const ProductPricing = () => {
     //contexts
     const product = useProductContext()
     const productSelection = useProductSelection()
@@ -37,4 +37,4 @@ const QuickPricing = () => {
     )
 }
 
-export default QuickPricing
+export default ProductPricing

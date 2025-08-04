@@ -46,6 +46,7 @@ export const ChangeCartQuantity = ({
     <div className={cn("flex items-center justify-between gap-2 w-1/2 rounded-t-2xl bg-[#262626] box-border p-1.5 mx-auto border", className)}>
       <QuantityBtn
         onClick={handleDecrease}
+        disabled={loadingQyt}
         aria-label="Decrease quantity"
       >
         {qyt <= 1 ? <IcondeleteIcon className='w-5 ms-px' /> : <IconminusIcon className='w-5 ms-px' />}
@@ -58,6 +59,7 @@ export const ChangeCartQuantity = ({
       <QuantityBtn
         onClick={handleIncrease}
         aria-label="Increase quantity"
+        disabled={loadingQyt}
         className={(maxQyt ?? 1) <= qyt ? 'opacity-50 brightness-50' : ''}
       >
         <IconplusIcon className='w-5 ms-px' />

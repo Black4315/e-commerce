@@ -28,7 +28,6 @@ export const useAddToCart = (
         const existsItem = item && cart.find(
             i => (i.id === item.id && i.color == variant?.color && i.size == size?.size)
         );
-        console.log(size, left)
         setExists(!!existsItem);
         setquantity(existsItem?.quantity || 1);
         setItemsLeft(left)
@@ -42,7 +41,7 @@ export const useAddToCart = (
     const perform = async (add = true) => {
         if (!item || !variant) throw new Error("Missing product or variant");;
 
-        await new Promise(r => setTimeout(r, 600));
+        await new Promise(r => setTimeout(r, 1000));
 
         if (add) addToCart(
             buildCartItem(user, item, variant, isLoggedIn, size), variant, size?.size )
@@ -58,7 +57,7 @@ export const useAddToCart = (
     const performQyt = async (val: number) => {
         if (!item?.id) throw new Error("No item with this id");
 
-        await new Promise(r => setTimeout(r, 300));
+        await new Promise(r => setTimeout(r, 400));
 
         setquantity(val);
         updateQuantity(item.id, val, variant, size?.size);

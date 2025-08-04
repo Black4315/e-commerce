@@ -65,7 +65,7 @@ export default function AddToCart({
         <div
             className={cn(
                 'absolute bottom-0 w-full transition-apple duration-150 group-hover:opacity-100 group-hover:translate-y-0 group-hover:delay-500 group-hover:pointer-events-auto',
-                false && 'translate-y-2.5 opacity-0 pointer-events-none',
+                hidden && 'translate-y-2.5 opacity-0 pointer-events-none',
                 className
             )}
         >
@@ -75,7 +75,7 @@ export default function AddToCart({
                 onClose={closeModal}
                 content={<AddToCartModal />}
                 classes={{
-                    popup: 'max-sm:w-screen',
+                    popup: 'max-sm:w-screen !h-fit',
                 }}
             />
         </div>

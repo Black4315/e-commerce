@@ -102,13 +102,14 @@ export const ModalPopup = ({
                         onClick={handleClose}
                         className={cn("absolute top-4 right-4 text-gray-700 hover:text-black z-10",
                             isClosing? hideAnimClasses?.closeBtn:showAnimClasses?.closeBtn,
-                            classes?.closeBtn
+                            classes?.closeBtn,
+                            isMobile && 'top-2 right-2'
                         )}
                     >
                         <CloseSvg />
                     </button>
 
-                    <div className={`w-full h-full p-4 md:p-6 text-center overflow-y-auto scrollbar-thin ${isMobile && '!pb-0'}`}>
+                    <div className={`w-full h-full p-4 md:p-6 text-center overflow-y-auto scrollbar-thin ${isMobile && '!pb-0 max-md:p-3'}`}>
                         {content}
                     </div>
 

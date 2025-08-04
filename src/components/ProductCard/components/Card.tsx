@@ -4,7 +4,7 @@ import Link from "next/link";
 import AddToCart from "../../Product/AddToCart";
 import ProductCardActions from "./ProductCardActions";
 import ProductCardImage from "./ProductCardImage";
-import ProductPrice from "../../Product/ProductPrice";
+import ProductCardPrice from "./ProductCardPrice";
 import ProductRating from "../../Product/ProductRating";
 import ProductColors from "../../Product/ProductColors";
 import { cn } from "@/lib/utils";
@@ -49,11 +49,7 @@ const Card = ({
 
           <div className={`flex ${!colors?.length ? 'flex-col gap-0.5' : 'items-center gap-3'}`}>
             {/* remove discount if there is no discountPercent */}
-            <ProductPrice
-              discountPercent={discountPercent}
-              price={selectedVariant.price}
-              originalPrice={selectedVariant.originalPrice}
-            />
+            <ProductCardPrice />
 
             <ProductRating />
           </div>
