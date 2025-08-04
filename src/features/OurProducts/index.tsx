@@ -1,13 +1,13 @@
 'use client'
 import SectionProducts from "@/components/SectionProducts/SectionProducts"
 import { useLocale, useTranslations } from "next-intl";
-import { productType } from "@/components/ProductCard/types/productType";
+import { productType } from "@/types/productType";
 import { Skeleton } from "@mui/material";
 import { useFetchOurProducts } from "./hooks/useFetchOurProducts";
 
 type ourProductsType = {
     ourProducts: {
-        viewAll:string;
+        viewAll: string;
         products: productType[]
     }
 }

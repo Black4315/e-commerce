@@ -27,15 +27,15 @@
     20% {
         color: #db4444;
         fill: #db4444;
-        transform: scale(1.1) translateY(-2px);
+        /* transform: scale(1.1) ; */
     }
 
     40% {
-        transform: scale(0.95) translateY(1px);
+        /* transform: scale(0.95) ; */
     }
 
     60% {
-        transform: scale(1.05) translateY(-1px);
+        /* transform: scale(1.05) ; */
     }
 }
 
@@ -110,7 +110,7 @@
     }
 
     .animate_cartBump {
-        animation: cartBump 0.5s var(--apple-transition) 0s 2 forwards;
+        animation: cartBump 0.3s var(--apple-transition) 0s 2 forwards;
     }
 
     .animate_quickSlider {

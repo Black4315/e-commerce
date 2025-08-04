@@ -1,48 +1,52 @@
 [
     {
-        "id": 11,
-        "title": "The North Coat",
-        "description": "Stylish and warm winter coat for everyday wear.",
-        "image": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-        "category": "Fashion",
-        "originalPrice": 360,
-        "price": 260,
-        "currency": "USD",
-        "discountPercent": 28,
-        "inStock": true,
-        "rating": 5,
-        "reviewsCount": 65,
-        "colors": [
-            "#FF4F5A",
-            "#F5F5F5"
+        "userId":1,
+        "id": 1,
+        "title": "HAVIT HV-G92 Gamepad",
+        "handle": "havit-hv-g92-gamepad",
+        "description": "High quality gamepad suitable for PC and laptop gaming.",
+        "vendor": "HAVIT",
+        "category": "Electronics",
+        "tags": [
+            "gamepad",
+            "controller",
+            "gaming",
+            "pc"
         ],
-        "sizes": [
-            "S",
-            "M",
-            "L",
-            "XL"
+        "defaultVariantIndex": 0,
+        "hasVariations": false,
+        "variants": [
+            {
+                "sku": "HAVIT-G92",
+                "color": null,
+                "sizes": [],
+                "price": 120,
+                "originalPrice": 160,
+                "currency": "USD",
+                "quantityAvailable": 12,
+                "inStock": true,
+                "images": [
+                    {
+                        "url": "/assets/products/images/g92-2-500x500 1.png",
+                        "alt": "HAVIT HV-G92 Gamepad Front View"
+                    },
+                    {
+                        "url": "/assets/products/images/g92-2-500x500 1.png",
+                        "alt": "Side View"
+                    }
+                ]
+            }
         ],
-        "isNew": true,
-        "userId":1
-    },
-    {
-        "id": 12,
-        "title": "Gucci Duffle Bag",
-        "description": "Premium designer bag with classic Gucci pattern.",
-        "image": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
-        "category": "Accessories",
-        "originalPrice": 1160,
-        "price": 960,
-        "currency": "USD",
-        "discountPercent": 17,
-        "inStock": true,
-        "rating": 4.8,
-        "reviewsCount": 85,
-        "colors": [
-            "#BFA06E"
-        ],
-        "sizes": [],
+        "itemsLeft": 12,
+        "initialItems": 100,
         "isNew": false,
-        "userId":1
+        "discountPercent": 40,
+        "rating": 4.5,
+        "reviewsCount": 88,
+        "soldNumber": 1300,
+        "taxes": 0.15,
+        "weight": "0.45kg",
+        "material": "ABS Plastic",
+        "dimensions": "15x10x5 cm"
     }
 ]

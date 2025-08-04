@@ -1,7 +1,7 @@
 "use client";
-import { productType } from "@/components/ProductCard/types/productType";
+import { productType } from "@/types/productType";
 import ProductCard from "@/components/ProductCard";
-import EmblaCarousel, { EmblaCarouselHandle } from "../../ui/EmblaCarousel";
+import EmblaCarousel from "../../ui/EmblaCarousel";
 import { useFlashSalesContext } from "@/features/FlashSalses/context/FlashSalesContext";
 
 type ProductCardsProps = {
@@ -30,14 +30,14 @@ const ProductCards: React.FC<ProductCardsProps> = ({ data, rows }) => {
             <div
                 style={{
                     display: rows && rows > 1 ? 'grid' : 'flex',
-                    gridTemplateRows:`repeat(${rows}, minmax(0, 1fr))`
+                    gridTemplateRows: `repeat(${rows}, minmax(0, 1fr))`
                 }}
                 className={`
                     grid-flow-col
                     auto-cols-auto 
                     gap-[30px] touch-pan-y touch-pinch-zoom `}>
                 {data?.map((props) => (
-                    <ProductCard key={props.id} {...props} className={flashEnd ? 'sale-ended ' : ''} />
+                    <ProductCard key={props.id} product={{...props}} className={flashEnd ? 'sale-ended ' : ''} />
                 )) ?? null}
             </div>
         </EmblaCarousel>

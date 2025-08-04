@@ -18,9 +18,9 @@ export default function useNavAnim(open: boolean, sidebarRef: any) {
             {
                 opacity: 1,
                 x: 0,
-                delay: 0.3,
-                duration: 0.4,
-                stagger: { each: 0.07 },
+                delay: 0.2515,
+                duration: 0.3515,
+                stagger: { each: 0.06 },
                 ease: "power3.out",
             }
         );

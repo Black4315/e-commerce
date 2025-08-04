@@ -6,6 +6,10 @@
                 "link": "/category/womens-fashion",
                 "children": [
                     {
+                        "label": true,
+                        "name": "Women’s Fashion"
+                    },
+                    {
                         "name": "Dresses",
                         "link": "/category/womens-fashion/dresses"
                     },
@@ -51,6 +55,10 @@
                 "name": "Men’s Fashion",
                 "link": "/category/mens-fashion",
                 "children": [
+                    {
+                        "label": true,
+                        "name": "Men’s Fashion"
+                    },
                     {
                         "name": "T-Shirts & Polos",
                         "link": "/category/mens-fashion/tshirts-polos"
@@ -131,7 +139,7 @@
         ],
         "shopNowBtn": "Shop now",
         "buyNowBtn": "Buy now",
-        "quickView":"Quick View",
+        "quickView": "Quick View",
         "flashSale": {
             "label": "Today's",
             "title": "Flash Sales",
@@ -146,14 +154,18 @@
             "addCart": "Add To Cart",
             "viewAll": "View All Products",
             "removeCart": "Remove From Cart",
-            "saleEnded":"SALE ENDED",
+            "saleEnded": "SALE ENDED",
             "soldOut": "SOLD OUT",
-            "outStock":"OUT OF STOCK",
-            "inStock":"IN STOCK",
-            "sold":"Sold",
-            "reviews":"Reviews",
-            "moreDetails":"More Details",
-            "taxes":"Incl. import charges; est. other taxes"
+            "outStock": "OUT OF STOCK",
+            "inStock": "IN STOCK",
+            "sold": "Sold",
+            "reviews": "Reviews",
+            "moreDetails": "More Details",
+            "taxes": "Incl. import charges; est. other taxes",
+            "selectVariant": "Please select a variation",
+            "limitedTime": "Limited time deal",
+            "color":"Color",
+            "sizes":"Sizes"
         },
         "browseByCategory": {
             "label": "categories",
@@ -192,10 +204,23 @@
             },
             {
                 "id": 3,
-                "icon": "/assets/icons/icon-secure.svg",
+                "icon": "/assets/icons/Icon-secure.svg",
                 "title": "MONEY BACK GUARANTEE",
                 "description": "We return money within 30 days"
             }
-        ]
+        ],
+        "toast": {
+            "addingTo": "Adding To {e}",
+            "removingFrom": "Removing From {e}",
+            "addedTo": "Added To {e}",
+            "removedFrom": "Removed From {e}",
+            "cart": "Cart",
+            "wishlist": "Wishlist",
+            "incingQyt": "Increasing Item Quantity",
+            "decingQyt": "Decreasing Item Quantity",
+            "qytInced": " Quantity Increased Successfuly",
+            "qytDeced": " Quantity Decreased Successfuly",
+            "maxItemsAllowed": "Only {count} item(s) available in stock."
+        }
     }
 }

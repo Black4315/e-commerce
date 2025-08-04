@@ -1,44 +1,20 @@
 [
     {
-        "quantity":1,
-        "id": 13,
-        "title": "مبرد معالج سائل RGB",
-        "description": "مبرد سائل عالي الأداء مع إضاءة RGB.",
-        "image": "/assets/products/images/gammaxx-l240-argb-1-500x500 1.png",
-        "category": "إلكترونيات",
-        "originalPrice": 170,
-        "price": 160,
+        "userId": 1,
+        "canSaveForLater": true,
+        "sync": true,
+        "persistent": true,
+        "id": 1,
+        "title": "وحدة تحكم HAVIT HV-G92",
+        "sku": "HAVIT-G92",
+        "size": null,
+        "color": null,
+        "price": 120,
+        "originalPrice": 160,
+        "discountPercent": 40,
         "currency": "USD",
-        "discountPercent": 6,
-        "inStock": true,
-        "rating": 4.7,
-        "reviewsCount": 65,
-        "colors": [
-            "#000000"
-        ],
-        "sizes": [],
-        "isNew": false,
-        "userId":1
-    },
-    {
-        "quantity":1,
-        "id": 14,
-        "title": "رف كتب صغير",
-        "description": "رف كتب خشبي مدمج للمساحات الصغيرة.",
-        "image": "/assets/products/images/sam-moghadam-khamseh-L_7MQsHl_aU-unsplash 1.png",
-        "category": "الأثاث",
-        "originalPrice": 460,
-        "price": 360,
-        "currency": "USD",
-        "discountPercent": 22,
-        "inStock": true,
-        "rating": 5,
-        "reviewsCount": 65,
-        "colors": [
-            "#A9745D"
-        ],
-        "sizes": [],
-        "isNew": false,
-        "userId":1
+        "quantity": 1,
+        "image": "/assets/products/images/g92-2-500x500 1.png",
+        "inStock": true
     }
 ]

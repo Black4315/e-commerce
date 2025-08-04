@@ -1,5 +1,5 @@
-import React from "react";
-export function formatReviewCount(count: number) {
+
+export function formatCount(count: number) {
     if (count < 1_000) {
         return count.toString();
     } else if (count < 1_000_000) {
@@ -11,9 +11,9 @@ export function formatReviewCount(count: number) {
     }
 }
 
-export function currencyOfPrice(currency: string){
+export function currencyOfPrice(currency: string) {
     // Determine the currency symbol
-    const currencySymbol = currency.toLowerCase() === 'usd' ? '$' : currency.toUpperCase() +' ';
+    const currencySymbol = currency.toLowerCase() === 'usd' ? '$' : currency.toUpperCase() + ' ';
 
     return currencySymbol;
 }

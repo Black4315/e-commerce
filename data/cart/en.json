@@ -1,44 +1,24 @@
 [
     {
+        "userId": 1,
+        "canSaveForLater": true,
+        "sync": true,
+        "persistent": true,
+        "id": 1,
+        "title": "HAVIT HV-G92 Gamepad",
+        "sku": "HAVIT-G92",
+        "size": null,
+        "color": null,
+        "price": 120,
+        "originalPrice": 160,
+        "discountPercent": 40,
+        "currency":"USD",
         "quantity": 1,
-        "id": 13,
-        "title": "RGB Liquid CPU Cooler",
-        "description": "High performance liquid cooler with RGB lighting.",
-        "image": "/assets/products/images/gammaxx-l240-argb-1-500x500 1.png",
-        "category": "Electronics",
-        "originalPrice": 170,
-        "price": 160,
-        "currency": "USD",
-        "discountPercent": 6,
-        "inStock": true,
-        "rating": 4.7,
-        "reviewsCount": 65,
-        "colors": [
-            "#000000"
-        ],
-        "sizes": [],
-        "isNew": false,
-        "userId": 1
-    },
-    {
-        "quantity": 1,
-        "id": 14,
-        "title": "Small BookShelf",
-        "description": "Compact wooden bookshelf for small spaces.",
-        "image": "/assets/products/images/sam-moghadam-khamseh-L_7MQsHl_aU-unsplash 1.png",
-        "category": "Furniture",
-        "originalPrice": 460,
-        "price": 360,
-        "currency": "USD",
-        "discountPercent": 22,
-        "inStock": true,
-        "rating": 5,
-        "reviewsCount": 65,
-        "colors": [
-            "#A9745D"
-        ],
-        "sizes": [],
-        "isNew": false,
-        "userId": 1
+        "image": "/assets/products/images/g92-2-500x500 1.png",
+        "inStock": true
     }
+    
+
+
+
 ]

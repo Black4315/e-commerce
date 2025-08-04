@@ -44,6 +44,7 @@ ActionsNav.cart = ({ tooltip = true, iconClassName }: { tooltip?: boolean; iconC
   const t = useTranslations('header.tooltip')
   const { cart } = useCartContext()
 
+  const totalQuantity = cart.reduce((total, item) => total + (item.quantity ?? 0), 0);
   return (
     <ActionNavItem
       href="/cart"
@@ -54,7 +55,7 @@ ActionsNav.cart = ({ tooltip = true, iconClassName }: { tooltip?: boolean; iconC
       height={24}
       iconClassName={`max-sm:!w-6 ${iconClassName}`}
     >
-      {cart.length ? <NotificationBadge notificationsLen={cart.length} /> : ""}
+      {totalQuantity ? <NotificationBadge notificationsLen={totalQuantity} /> : ""}
     </ActionNavItem>
   )
 }

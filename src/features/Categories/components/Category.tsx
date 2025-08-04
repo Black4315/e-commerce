@@ -4,11 +4,12 @@ import DropDownIcon from "@/assets/icons/DropDown";
 
 type CategoryProps = {
     category: CategoryType;
+    onHover?: () => void;
 };
 
-const Category = ({ category }: CategoryProps) => {
+const Category = ({ category, onHover }: CategoryProps) => {
     return (
-        <div className="w-full group hover:text-secondary-3 transition-all">
+        <div onMouseEnter={onHover} className="w-full group hover:text-secondary-3 transition-all">
             <div className="flex justify-between cursor-pointer">
                 <h3 className="normal-text">
                     <Link href={category.link}>{category.name}</Link>

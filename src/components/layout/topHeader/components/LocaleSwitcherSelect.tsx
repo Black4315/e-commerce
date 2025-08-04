@@ -1,15 +1,11 @@
 "use client";
 
 import {
-  SelectCustom,
   SelectItem,
-  SelectTrigger,
-  SelectValue,
 } from "@/components/ui/select";
+import SwitcherSelect from "@/components/ui/SwitcherSelect";
 import { LOCALE_LABELS } from "@/constants";
 import { Locale, routing, usePathname, useRouter } from "@/i18n/navigation";
-import { cn } from "@/lib/utils";
-import { Select } from "@radix-ui/themes";
 import { useParams } from "next/navigation";
 
 type Props = {
@@ -36,21 +32,18 @@ export default function LocaleSwitcherSelect({ defaultValue, label, className }:
   }
 
   return (
-    <SelectCustom defaultValue={defaultValue} onValueChange={onSelectChange}>
-      <SelectTrigger
-        className={cn('min-w-[80px] max-md:text-xs max-w-fit hover:bg-white/5 transition-all rounded-[2px] select-none flex gap-1 cursor-pointer h-8 border-none bg-transparent focus:ring-0 focus:ring-offset-0',className)}
-        aria-label={label}
-      >
-        <SelectValue />
-      </SelectTrigger>
-      <Select.Content className="max-md:text-xs">
-        {routing.locales.map((locale) => (
-          <SelectItem key={locale} value={locale}>
-            {(LOCALE_LABELS[locale].charAt(0).toUpperCase() + LOCALE_LABELS[locale].slice(1)) || locale}
-          </SelectItem>
-        ))}
-        
-      </Select.Content>
-    </SelectCustom>
+    <SwitcherSelect
+      defaultValue={defaultValue}
+      onSelectChange={onSelectChange}
+      label={label}
+      className={className}
+    >
+
+      {routing.locales.map((locale) => (
+        <SelectItem key={locale} value={locale}>
+          {(LOCALE_LABELS[locale].charAt(0).toUpperCase() + LOCALE_LABELS[locale].slice(1)) || locale}
+        </SelectItem>
+      ))}
+    </SwitcherSelect>
   );
 }

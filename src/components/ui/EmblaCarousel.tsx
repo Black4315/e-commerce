@@ -51,7 +51,7 @@ const EmblaCarousel = forwardRef<EmblaCarouselHandle, PropType>(
 
         return (
             <div className='relative'>
-                {btns && <div className={cn("md:ms-auto flex w-fit gap-2 max-md:self-center absolute -top-19.5 md:-top-[107px] md:end-0 right-1/2 max-md:translate-x-1/2 !z-10 bg-white",btnClassName)}>
+                {btns && <div className={cn("md:ms-auto flex w-fit gap-2 max-md:self-center absolute -top-19.5 md:-top-[107px] md:end-0 max-md:justify-center max-md:w-full !z-10 bg-white",btnClassName)}>
                     <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
                     <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
                 </div>}

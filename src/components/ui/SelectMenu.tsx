@@ -80,8 +80,8 @@ export const Menu = ({
         <div className="relative">
             <motion.div
                 transition={{
-                    duration: 0.2,
-                    // ease: 'easeIn'
+                    duration: 0.2, 
+                    ease: [0.4, 0, 0.6, 1],
                 }}
                 animate={{
                     y: open ? 0 : -10,

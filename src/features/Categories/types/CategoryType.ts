@@ -1,6 +1,7 @@
 export type CategoryChild = {
+    label?: boolean;
     name: string;
-    link: string;
+    link?: string;
 };
 
 export type CategoryType = {

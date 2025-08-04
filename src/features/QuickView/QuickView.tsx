@@ -1,59 +1,38 @@
 import ImageViewSlider from "@/features/QuickView/components/imageViewSlider"
-import AddToCart from "../../components/ProductCard/components/AddToCart"
 import QuickViewIcon from "@/assets/icons/QuickView"
-import { productType } from "../../components/ProductCard/types/productType"
-import QuickViewInfo from "./components/QuickViewInfo"
-import WishListBtn from "@/components/ProductCard/components/WishListBtn"
-import Button from "@/components/ui/Button"
-import IconsarrowrightIcon from "@/assets/icons/iconsarrowright"
+import { ProductSelectionContextType, productType } from "@/types/productType"
 import { useMobileCheck } from "@/hooks/useMobileCheck"
-import QuickPricing from "./components/QuickPricing"
+import { useTranslations } from "next-intl"
+import QuickViewBody from "./components/QuickviewBody"
+import { useProductSelection } from "@/contexts/product/ProductSelectionContext"
 
-const QuickView = ({ productInfo, quickViewText }: { productInfo: productType; quickViewText: string }) => {
+export type QuickViewProps = {
+    productInfo: {
+        product: productType;
+        itemSelection: ProductSelectionContextType
+    };
+}
 
-    const {
-        id,
-        images,
-        title,
-        price,
-        description,
-        discountPercent,
-        originalPrice,
-        currency,
-        inStock,
-        rating,
-        reviewsCount
-    } = productInfo
+const QuickView = () => {
 
-    const link = `products/${id}`
+    const productSelection = useProductSelection()
+
+    const { images } = productSelection.selectedVariant
     const isMobile = useMobileCheck()
-
-    const taxes = 0.33
-    const soldNumber = 2000
+    const t = useTranslations('homePage')
     return (
         <div className="h-full flex flex-col items-center ">
-            <h2 className="semi-heading mb-4 md:mb-6 font-inter gap-2 flex-center">
+            {/* text head */}
+            <h2 className="semi-heading tracking-normal mb-4 md:mb-6 font-inter gap-2 flex-center">
                 <QuickViewIcon />
-                {quickViewText}
+                <span>{t('quickView')}</span>
             </h2>
 
-            <div className={`flex gap-4 md:gap-6 max-lg:h-full ${isMobile ? 'w-full flex-col ' : 'max-lg:max-w-158 max-lg:flex-col'}`}>
-                <ImageViewSlider images={images} alt={title} />
+            <div className={`flex gap-4 md:gap-6 max-lg:h-full ${isMobile ? 'w-full flex-col ' : 'max-md:w-full max-lg:max-w-158 max-lg:flex-col'}`}>
 
-                <div className={`flex flex-col justify-between text-start max-lg:h-full ${isMobile ? 'w-full' : 'lg:min-w-80 lg:max-w-90'}`}>
-                    <div className="flex flex-col h-full">
-                        <QuickViewInfo {...{ title, description, inStock, rating, reviewsCount, link, soldNumber }} />
-                        <QuickPricing {...{ price, currency, taxes, discountPercent, originalPrice }}/>
-                    </div>
-
-                    <div className={`mt-4 md:mt-6 flex gap-2 ${isMobile ? 'max-md:mb-0 mb-6 max-md:sticky bottom-0 max-md:bg-white py-4 md:py-6' :'max-md:mb-4 max-lg:mb-6 '}`}>
-                        <AddToCart itemProd={productInfo} show className="relative h-12 sm:h-15 rounded overflow-hidden " />
-                        <WishListBtn itemProd={productInfo} className="rounded w-14 *:w-14 *:h-8.5 h-full "/>
-                    </div>
-                </div>
-
+                <ImageViewSlider images={images} />
+                <QuickViewBody />
             </div>
-
         </div>
     )
 }

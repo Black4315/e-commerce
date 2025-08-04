@@ -101,10 +101,14 @@ body {
   }
 
   .nav-item {
-    @apply text-sm md:text-base leading-6 font-normal font-poppins relative hover:after:w-[105%] after:transition-all after:duration-300 after:ease-in-out;
+    @apply text-sm md:text-base leading-6 font-normal font-poppins relative hover:after:w-[105%];
   }
 
-  .nav-item::after {
+  .motion-border-b {
+    @apply after:transition-all after:duration-300 after:ease-in-out relative
+  }
+
+  .motion-border-b::after {
     @apply bg-[#808080];
     content: '';
     display: block;
@@ -113,6 +117,17 @@ body {
     position: absolute;
     bottom: -1px;
     left: 0;
+  }
+
+  .rounded-border::after {
+    @apply absolute -left-0.75 -top-0.75 block border border-[#808080] rounded-full opacity-0 transition-all;
+    content: '';
+    width: 150%;
+    height: 150%;
+  }
+
+  .rounded-border:hover::after {
+    @apply opacity-100;
   }
 
   .profileNav {
@@ -155,6 +170,14 @@ body {
     @apply not-italic font-semibold text-sm md:text-base leading-5 md:leading-6 font-poppins;
   }
 
+  .sm-text {
+    @apply not-italic font-normal text-xs md:text-sm leading-3 md:leading-4 font-poppins
+  }
+
+  .xs-text {
+    @apply not-italic font-normal text-[10px] md:text-xs leading-3 font-poppins
+  }
+
   .semi-heading {
     @apply not-italic font-semibold text-xl md:text-2xl leading-4 md:leading-6 tracking-wide font-inter;
   }
@@ -171,6 +194,9 @@ body {
     @apply not-italic font-semibold text-2xl md:text-4xl font-inter leading-8 md:leading-12 tracking-[0.0em];
   }
 
+  .ellipsis {
+    @apply text-ellipsis whitespace-nowrap overflow-hidden
+  }
   .will-animate {
     will-change: opacity, transform;
   }

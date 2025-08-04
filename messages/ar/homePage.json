@@ -6,6 +6,10 @@
                 "link": "/category/womens-fashion",
                 "children": [
                     {
+                        "label": true,
+                        "name": "أزياء النساء"
+                    },
+                    {
                         "name": "فساتين",
                         "link": "/category/womens-fashion/dresses"
                     },
@@ -51,6 +55,10 @@
                 "name": "أزياء الرجال",
                 "link": "/category/mens-fashion",
                 "children": [
+                    {
+                        "label": true,
+                        "name": "أزياء الرجال"
+                    },
                     {
                         "name": "تيشيرتات وبولو",
                         "link": "/category/mens-fashion/tshirts-polos"
@@ -150,16 +158,20 @@
             "soldOut": "نفدت الكمية",
             "outStock": "غير متوفر",
             "inStock": "متوفر",
-            "sold":"مُباع",
-            "reviews":"المراجعات",
+            "sold": "مُباع",
+            "reviews": "المراجعات",
             "moreDetails": "مزيد من التفاصيل",
-            "taxes": "بما في ذلك رسوم الاستيراد؛ تقدير الضرائب الأخرى"
+            "taxes": "بما في ذلك رسوم الاستيراد؛ تقدير الضرائب الأخرى",
+            "color": "اللون",
+            "sizes": "الأحجام",
+            "selectVariant": "يرجى اختيار نوع",
+            "limitedTime": "عرض لوقت محدود"
         },
         "browseByCategory": {
             "label": "الفئات",
             "title": "التصفح حسب الفئة",
-            "phones":"هواتف",
-            "computers":"أجهزة كمبيوتر",
+            "phones": "هواتف",
+            "computers": "أجهزة كمبيوتر",
             "smartwatch": "ساعات ذكية",
             "camera": "كاميرا",
             "headphones": "سماعات رأس",
@@ -196,6 +208,19 @@
                 "title": "ضمان استرداد الأموال",
                 "description": "إرجاع الأموال خلال 30 يومًا"
             }
-        ]
+        ],
+        "toast": {
+            "addingTo": "إضافة إلى {e}",
+            "removingFrom": "إزالة من {e}",
+            "addedTo": "تمت الإضافة إلى {e}",
+            "removedFrom": "تمت الإزالة من {e}",
+            "cart": "العربة",
+            "wishlist": "قائمة الرغبات",
+            "incingQyt": "جاري زيادة الكمية",
+            "decingQyt": "جاري تقليل الكمية",
+            "qytInced": "تمت زيادة الكمية بنجاح",
+            "qytDeced": "تم تقليل الكمية بنجاح",
+            "maxItemsAllowed": "الحد الأقصى المتاح هو {count} قطعة"
+        }
     }
 }

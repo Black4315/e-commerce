@@ -1,37 +1,39 @@
-import gsap from "gsap"
+import { gsap } from "@/gsap.config";
 
 export const anim = (open: boolean) => {
+
+    const targets = '.profile-menu-li';
+    const duration = 0.24;
+    const staggerAmount = 0.05;
+
     if (open) {
-        gsap.fromTo('.profile-menu-li', {
+        gsap.fromTo(targets, {
             y: -10,
             opacity: 0,
             scale: 0.95,
         }, {
             y: 0,
-            scale: 1,
-            delay: 0.2,
-            duration: 0.1,
-            stagger: {
-                each: 0.06,
-                from: 'start',
-                grid: 'auto',
-                // ease: 'none',
-            },
-            ease: "cubic-bezier(0, 0, .5, 1);",
             opacity: 1,
-        })
+            scale: 1,
+            duration: duration,
+            delay: 0.1,
+            ease: "back.out(1,2)",
+            stagger: {
+                each: staggerAmount,
+                from: 'start',
+            }
+        });
     } else {
-        gsap.to('.profile-menu-li', {
-            y: -10,
+        gsap.to(targets, {
+            y: -5,
             opacity: 0,
             scale: 0.95,
-            duration: 0.2,
-            ease: "power2.inOut",
+            duration: duration * 0.7,
+            ease: "power2.in",
             stagger: {
-                each: 0.03,
+                each: staggerAmount,
                 from: "end",
-            },
-        })
+            }
+        });
     }
-
-}
+};

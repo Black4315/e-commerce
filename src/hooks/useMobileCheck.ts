@@ -7,7 +7,7 @@ export function useMobileCheck() {
     const checkMobile = () => {
       if (typeof window === "undefined" || typeof navigator === "undefined") return false;
       const ua = navigator.userAgent || navigator.vendor || (window as any).opera;
-      // Checks for iOS, Android, Windows Phone
+      // checks for iOS, Android, Windows Phone
       return /android|iphone|ipad|ipod|windows phone/i.test(ua);
     };
     setIsMobile(checkMobile());

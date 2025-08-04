@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
-import { productType } from '../types/productType';
+import { productType } from '../../types/productType';
 import { useWishlist } from '@/contexts/WishListContext';
 import { useUserContext } from '@/contexts/UserContext';
 
 export const useWishlistToggle = (item: productType) => {
     const { wishlist, addToWishlist, removeFromWishlist } = useWishlist()
-    const { isLoggedIn , user} = useUserContext()
+    const { isLoggedIn, user } = useUserContext()
 
 
     const [isExisting, setIsExisting] = useState(wishlist.some((e) => e.id == item.id))
@@ -16,7 +16,7 @@ export const useWishlistToggle = (item: productType) => {
 
         try {
             // Simulated API delay
-            await new Promise((resolve) => setTimeout(resolve, 1000));
+            await new Promise((resolve) => setTimeout(resolve, 600));
 
             if (isExisting) {
                 removeFromWishlist(item.id);

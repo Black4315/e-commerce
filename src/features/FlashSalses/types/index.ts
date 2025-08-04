@@ -1,4 +1,4 @@
-import { productType } from "@/components/ProductCard/types/productType";
+import { productType } from "@/types/productType";
 
 export type flashDataType = {
     flashSale: {

@@ -40,11 +40,11 @@ export default async function LocaleLayout({
   const isRTL = locale === 'ar';
 
   return (
-    <html lang={locale} dir={isRTL ? 'rtl' : 'ltr'} > 
+    <html lang={locale} dir={isRTL ? 'rtl' : 'ltr'} >
       <body style={{ ['--origin-dir' as any]: isRTL ? 'left' : 'right' }} >
+        <Toaster /> 
+        
         <AppContextProvider>
-          <Toaster />
-          
           <div className="page-container">
             <TopHeader locale={locale} />
             <Header />
@@ -52,7 +52,7 @@ export default async function LocaleLayout({
             <main className='main-content common-padding'>
               {children}
             </main>
-            
+
             <Footer />
           </div>
         </AppContextProvider>

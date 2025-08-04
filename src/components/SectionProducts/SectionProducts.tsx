@@ -1,12 +1,10 @@
 "use client"
 import ProductCards from "./components/ProductCards";
-import { productType } from "../ProductCard/types/productType";
+import { productType } from "@/types/productType";
 import SkeltonProductCard from "./components/SkeltonProductCards";
 import ErrorProducts from "./components/ErrorProducts";
 import Link from "next/link";
 import Section from "../Section";
-import { useCallback, useEffect, useRef, useState } from "react";
-import { EmblaCarouselHandle } from "../ui/EmblaCarousel";
 import { useTranslations } from "next-intl";
 
 type SectionProductsProps = {
@@ -50,9 +48,9 @@ const SectionProducts: React.FC<SectionProductsProps> = ({
 
             {/* products slider */}
             {isError ? (
-                <ErrorProducts rows={rows}/>
+                <ErrorProducts rows={rows} />
             ) : isLoading ? (
-                <SkeltonProductCard rows={rows}/>
+                <SkeltonProductCard rows={rows} />
             ) : (
                 <>
                     <ProductCards data={products} rows={rows} />

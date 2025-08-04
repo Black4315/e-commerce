@@ -4,7 +4,7 @@ export interface ActionsIconButtonProps extends React.HTMLAttributes<HTMLButtonE
     href: string;
     title: string;
     Icon: React.FC<React.SVGProps<SVGSVGElement>>;
-    alt: string;
+    alt?: string;
     width: number;
     height: number;
     iconClassName?: string;

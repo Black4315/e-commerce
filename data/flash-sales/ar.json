@@ -1,254 +1,234 @@
 {
     "flashSale": {
         "start": "2025-07-17T00:00:00Z",
-        "end": "2025-07-26T23:59:59Z",
+        "end": "2025-08-07T23:59:59Z",
         "viewAll": "/flash-sales/",
         "products": [
             {
+                "flash": true,
+                "start": "2025-07-17T00:00:00Z",
+                "end": "2025-08-07T23:59:59Z",
                 "id": 1,
-                "title": "لوحة ألعاب HAVIT HV-G92",
-                "description": "لوحة ألعاب عالية الجودة مناسبة لألعاب الكمبيوتر المحمول والمكتبي.",
-                "image": "/assets/products/images/g92-2-500x500 1.png",
-                "images": [
-                    "/assets/products/images/g92-2-500x500 1.png",
-                    "/assets/products/images/g92-2-500x500 1.png",
-                    "/assets/products/images/g92-2-500x500 1.png",
-                    "/assets/products/images/g92-2-500x500 1.png",
-                    "/assets/products/images/g92-2-500x500 1.png"
+                "title": "وحدة تحكم HAVIT HV-G92",
+                "handle": "havit-hv-g92-gamepad",
+                "description": "وحدة تحكم عالية الجودة مناسبة للألعاب على الكمبيوتر الشخصي واللابتوب.",
+                "vendor": "HAVIT",
+                "category": "electronics",
+                "tags": [
+                    "gamepad",
+                    "controller",
+                    "gaming",
+                    "pc"
                 ],
-                "category": "إلكترونيات",
-                "originalPrice": 160,
-                "price": 120,
-                "currency": "USD",
+                "defaultVariantIndex": 0,
+                "hasVariations": false,
+                "variants": [
+                    {
+                        "sku": "HAVIT-G92",
+                        "colorName": null,
+                        "color": null,
+                        "sizes": [],
+                        "price": 120,
+                        "originalPrice": 160,
+                        "currency": "USD",
+                        "quantityAvailable": 12,
+                        "inStock": true,
+                        "images": [
+                            {
+                                "url": "/assets/products/images/g92-2-500x500 1.png",
+                                "alt": "وحدة تحكم HAVIT HV-G92 - العرض الأمامي"
+                            },
+                            {
+                                "url": "/assets/products/images/g92-2-500x500 1.png",
+                                "alt": "عرض جانبي"
+                            }
+                        ]
+                    }
+                ],
+                "itemsLeft": 12,
+                "initialItems": 100,
+                "isNew": false,
                 "discountPercent": 40,
-                "inStock": true,
                 "rating": 4.5,
                 "reviewsCount": 88,
-                "colors": [
-                    "أحمر",
-                    "أخضر"
-                ],
-                "sizes": [],
-                "isNew": true
+                "soldNumber": 1300,
+                "taxes": 0.15,
+                "weight": "0.45kg",
+                "material": "بلاستيك ABS",
+                "dimensions": "15x10x5 سم"
             },
             {
+                "flash": true,
+                "start": "2025-07-17T00:00:00Z",
+                "end": "2025-08-07T23:59:59Z",
                 "id": 2,
-                "title": "شاشة ألعاب IPS LCD",
-                "description": "شاشة عالية الدقة مناسبة للألعاب الاحترافية.",
-                "image": "/assets/products/images/g27cq4-500x500 1.png",
-                "images": [
-                    "/assets/products/images/g27cq4-500x500 1.png",
-                    "/assets/products/images/g27cq4-500x500 1.png",
-                    "/assets/products/images/g27cq4-500x500 1.png",
-                    "/assets/products/images/g27cq4-500x500 1.png",
-                    "/assets/products/images/g27cq4-500x500 1.png"
+                "title": "معطف نورث",
+                "handle": "the-north-coat",
+                "description": "معطف شتوي أنيق ودافئ للارتداء اليومي.",
+                "vendor": "The North Face x Gucci",
+                "category": "mens-fashion",
+                "tags": [
+                    "winter",
+                    "coat",
+                    "luxury",
+                    "gucci"
                 ],
-                "category": "إلكترونيات",
-                "originalPrice": 400,
-                "price": 370,
-                "currency": "USD",
-                "discountPercent": 30,
-                "inStock": true,
-                "rating": 4.7,
-                "reviewsCount": 99,
-                "colors": [],
-                "sizes": [],
-                "isNew": false
+                "hasVariations": true,
+                "defaultVariantIndex": 0,
+                "variants": [
+                    {
+                        "sku": "NORTHCOAT-RED",
+                        "color": "#FF4F5A",
+                        "colorName": "أحمر",
+                          "sizes": [
+                            {
+                                "size": "S",
+                                "quantity": 4
+                            },
+                            {
+                                "size": "M",
+                                "quantity": 1
+                            },
+                            {
+                                "size": "L",
+                                "quantity": 1
+                            },
+                            {
+                                "size": "XL",
+                                "quantity": 1
+                            },
+                            {
+                                "size": "XXL",
+                                "quantity": 0
+                            }
+                        ],
+                        "images": [
+                            {
+                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                                "alt": "عرض أمامي"
+                            },
+                            {
+                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                                "alt": "عرض خلفي"
+                            }
+                        ],
+                        "price": 260,
+                        "originalPrice": 360,
+                        "currency": "USD",
+                        "quantityAvailable": 7,
+                        "inStock": true
+                    },
+                    {
+                        "sku": "NORTHCOAT-WHITE",
+                        "colorName": "أبيض",
+                        "color": "#F5F5F5",
+                        "sizes": [
+                            {
+                                "size": "L",
+                                "quantity": 2
+                            },
+                            {
+                                "size": "XL",
+                                "quantity": 3
+                            }
+                        ],
+                        "images": [
+                            {
+                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                                "alt": "عرض أمامي"
+                            },
+                            {
+                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                                "alt": "عرض خلفي"
+                            }
+                        ],
+                        "price": 260,
+                        "originalPrice": 360,
+                        "currency": "USD",
+                        "quantityAvailable": 5,
+                        "inStock": true
+                    }
+                ],
+                "isNew": true,
+                "itemsLeft":12,                
+                "initialItems": 100,
+                "discountPercent": 0,
+                "rating": 4,
+                "reviewsCount": 2,
+                "soldNumber": 5000,
+                "taxes": 0.3,
+                "weight": "1.2kg",
+                "material": "خليط من البوليستر",
+                "dimensions": "60x40x10 سم"
             },
             {
+                "flash": true,
+                "start": "2025-07-17T00:00:00Z",
+                "end": "2025-08-07T23:59:59Z",
                 "id": 3,
-                "title": "كرسي مريح من سلسلة S",
-                "description": "كرسي مكتبي عصري ومريح لجلوس مثالي.",
-                "image": "/assets/products/images/sam-moghadam-khamseh-kvmdsTrGOBM-unsplash 1.png",
-                "images": [
-                    "/assets/products/images/sam-moghadam-khamseh-kvmdsTrGOBM-unsplash 1.png",
-                    "/assets/products/images/sam-moghadam-khamseh-kvmdsTrGOBM-unsplash 1.png",
-                    "/assets/products/images/sam-moghadam-khamseh-kvmdsTrGOBM-unsplash 1.png",
-                    "/assets/products/images/sam-moghadam-khamseh-kvmdsTrGOBM-unsplash 1.png",
-                    "/assets/products/images/sam-moghadam-khamseh-kvmdsTrGOBM-unsplash 1.png"
+                "title": "حقيبة غوتشي دفل",
+                "handle": "gucci-duffle-bag",
+                "description": "رفعوا أسلوبكم مع هذه الحقيبة الفاخرة من العلامة التجارية غوتشي والتي تتميز بنمط المونوغرام الشهير—رمز خالد للفخامة والأناقة. مصممة بدقة واهتمام بالتفاصيل، تجمع هذه الحقيبة بين الحرفية الإيطالية الرفيعة والأناقة الكلاسيكية.",
+                "vendor": "غوتشي",
+                "category": "womens-fashion",
+                "tags": [
+                    "bag",
+                    "duffle",
+                    "luxury",
+                    "designer"
                 ],
-                "category": "أثاث",
-                "originalPrice": 400,
-                "price": 375,
-                "currency": "USD",
-                "discountPercent": 25,
-                "inStock": true,
-                "rating": 4.4,
-                "reviewsCount": 99,
-                "colors": [
-                    "#000000",
-                    "#444"
+                "defaultVariantIndex": 0,
+                "hasVariations": false,
+                "variants": [
+                    {
+                        "sku": "GUCCI-BAG-GOLDEN_BROWN",
+                        "colorName": "بني-ذهبي",
+                        "color": "#BFA06E",
+                        "sizes": [],
+                        "price": 960,
+                        "originalPrice": 1160,
+                        "currency": "USD",
+                        "quantityAvailable": 24,
+                        "inStock": true,
+                        "images": [
+                            {
+                                "url": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+                                "alt": "عرض أمامي"
+                            },
+                            {
+                                "url": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+                                "alt": "عرض أمامي"
+                            },
+                            {
+                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                                "alt": "عرض خلفي"
+                            },
+                            {
+                                "url": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+                                "alt": "عرض أمامي"
+                            },
+                            {
+                                "url": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+                                "alt": "عرض أمامي"
+                            },
+                            {
+                                "url": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+                                "alt": "عرض أمامي"
+                            }
+                        ]
+                    }
                 ],
-                "sizes": [],
-                "isNew": false
-            },
-            {
-                "id": 4,
-                "title": "لوحة مفاتيح سلكية AK-900",
-                "description": "لوحة مفاتيح عالية الأداء بإضاءة RGB.",
-                "image": "/assets/products/images/ak-900-01-500x500 1.png",
-                "images": [
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png"
-                ],
-                "category": "إلكترونيات",
-                "originalPrice": 1160,
-                "price": 960,
-                "currency": "USD",
-                "discountPercent": 35,
-                "inStock": true,
+                "itemsLeft": 24,
+                "initialItems": 100,
+                "isNew": false,
+                "discountPercent": 17,
                 "rating": 4.8,
-                "reviewsCount": 75,
-                "colors": [],
-                "sizes": [],
-                "isNew": false
-            },
-            {
-                "id": 5,
-                "title": "لوحة مفاتيح سلكية AK-900",
-                "description": "لوحة مفاتيح عالية الأداء بإضاءة RGB.",
-                "image": "/assets/products/images/ak-900-01-500x500 1.png",
-                "images": [
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png"
-                ],
-                "category": "إلكترونيات",
-                "originalPrice": 1160,
-                "price": 960,
-                "currency": "USD",
-                "discountPercent": 35,
-                "inStock": true,
-                "rating": 4.8,
-                "reviewsCount": 75,
-                "colors": [],
-                "sizes": [],
-                "isNew": false
-            },
-            {
-                "id": 6,
-                "title": "لوحة مفاتيح سلكية AK-900",
-                "description": "لوحة مفاتيح عالية الأداء بإضاءة RGB.",
-                "image": "/assets/products/images/ak-900-01-500x500 1.png",
-                "images": [
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png"
-                ],
-                "category": "إلكترونيات",
-                "originalPrice": 1160,
-                "price": 960,
-                "currency": "USD",
-                "discountPercent": 35,
-                "inStock": true,
-                "rating": 4.8,
-                "reviewsCount": 75,
-                "colors": [],
-                "sizes": [],
-                "isNew": false
-            },
-            {
-                "id": 7,
-                "title": "لوحة مفاتيح سلكية AK-900",
-                "description": "لوحة مفاتيح عالية الأداء بإضاءة RGB.",
-                "image": "/assets/products/images/ak-900-01-500x500 1.png",
-                "images": [
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png"
-                ],
-                "category": "إلكترونيات",
-                "originalPrice": 1160,
-                "price": 960,
-                "currency": "USD",
-                "discountPercent": 35,
-                "inStock": true,
-                "rating": 4.8,
-                "reviewsCount": 75,
-                "colors": [],
-                "sizes": [],
-                "isNew": false
-            },
-            {
-                "id": 8,
-                "title": "لوحة مفاتيح سلكية AK-900",
-                "description": "لوحة مفاتيح عالية الأداء بإضاءة RGB.",
-                "image": "/assets/products/images/ak-900-01-500x500 1.png",
-                "images": [
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png"
-                ],
-                "category": "إلكترونيات",
-                "originalPrice": 1160,
-                "price": 960,
-                "currency": "USD",
-                "discountPercent": 35,
-                "inStock": true,
-                "rating": 4.8,
-                "reviewsCount": 75,
-                "colors": [],
-                "sizes": [],
-                "isNew": false
-            },
-            {
-                "id": 9,
-                "title": "لوحة مفاتيح سلكية AK-900",
-                "description": "لوحة مفاتيح عالية الأداء بإضاءة RGB.",
-                "image": "/assets/products/images/ak-900-01-500x500 1.png",
-                "images": [
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png"
-                ],
-                "category": "إلكترونيات",
-                "originalPrice": 1160,
-                "price": 960,
-                "currency": "USD",
-                "discountPercent": 35,
-                "inStock": true,
-                "rating": 4.8,
-                "reviewsCount": 75,
-                "colors": [],
-                "sizes": [],
-                "isNew": false
-            },
-            {
-                "id": 10,
-                "title": "لوحة مفاتيح سلكية AK-900",
-                "description": "لوحة مفاتيح عالية الأداء بإضاءة RGB.",
-                "image": "/assets/products/images/ak-900-01-500x500 1.png",
-                "images": [
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png"
-                ],
-                "category": "إلكترونيات",
-                "originalPrice": 1160,
-                "price": 960,
-                "currency": "USD",
-                "discountPercent": 35,
-                "inStock": true,
-                "rating": 4.8,
-                "reviewsCount": 75,
-                "colors": [],
-                "sizes": [],
-                "isNew": false
+                "reviewsCount": 8500,
+                "soldNumber": 2500,
+                "taxes": 0.25,
+                "weight": "1.1kg",
+                "material": "كانفاس مع حواف من الجلد",
+                "dimensions": "45x25x20 سم"
             }
         ]
     }

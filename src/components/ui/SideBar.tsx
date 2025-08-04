@@ -102,7 +102,7 @@ export const SideBarMenu = ({
 
       transition={{
         ease: [0, 0, 0.5, 1],
-        duration: 0.4
+        duration: 0.3515
       }}
       {...props}
     >
@@ -122,7 +122,8 @@ export const SideBarClose = () => {
   return (
     <motion.span
       transition={{
-        delay: open ? 0.3 : 0
+        delay: open ? 0.2515 : 0,
+        duration: 0.3515
       }}
       animate={{
         opacity: open ? 1 : 0,

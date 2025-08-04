@@ -1,22 +1,19 @@
 
 "use client"
 
+import { useProductContext } from "@/contexts/product/ProductContext"
+import { useProductSelection } from "@/contexts/product/ProductSelectionContext"
 import { currencyOfPrice } from "@/utils"
 import { useTranslations } from "next-intl"
 
-const QuickPricing = ({
-    currency,
-    discountPercent,
-    price,
-    originalPrice,
-    taxes
-}: {
-    currency: string
-    discountPercent: number
-    price: number
-    originalPrice: number
-    taxes: number
-}) => {
+const QuickPricing = () => {
+    //contexts
+    const product = useProductContext()
+    const productSelection = useProductSelection()
+
+    const { discountPercent, taxes } = product;
+    const { currency, price, originalPrice } = productSelection.selectedVariant;
+    
     const t = useTranslations('homePage.product')
     return (
         <>

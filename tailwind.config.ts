@@ -16,6 +16,7 @@ export default {
       },
       transitionTimingFunction: {
         apple: 'cubic-bezier(0, 0, 0.5, 1)',
+        s: 'cubic-bezier(0.4, 0, 0.6, 1)'
       },
       colors: {
         // Core Neutrals (Black & White)

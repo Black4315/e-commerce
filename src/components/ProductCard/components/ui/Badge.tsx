@@ -9,7 +9,7 @@ const Badge = ({
     children: React.ReactNode
 }) => {
     return (
-        <span className={cn(" p-1.5 font-poppins text-xs tracking-wide px-3 box-content text-text-1 rounded bg-secondary-3", className)}>
+        <span className={cn("w-fit p-1.5 font-poppins text-xs tracking-wide px-3 box-content text-text-1 rounded bg-secondary-3", className)}>
             {children}
         </span>
     )

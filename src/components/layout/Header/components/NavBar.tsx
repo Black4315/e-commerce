@@ -18,7 +18,7 @@ const NavBar = () => {
                 <Link
                     key={idx}
                     href={item.link}
-                    className={`text-black w-fit nav-item ${item.link === normPath ? 'after:w-[105%]' : ''}`}
+                    className={`text-black w-fit nav-item motion-border-b ${item.link === normPath ? 'after:w-[105%]' : ''}`}
                 >
                     {item.label}
                 </Link>
