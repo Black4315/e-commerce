@@ -18,9 +18,9 @@ const Hero = () => {
 
       <FlashSales />
       <BrowseByCategory />
-      {/* <BestSellings /> */}
+      <BestSellings />
       <CampaignOffer />
-      {/* <OurProducts /> */}
+      <OurProducts />
       <NewArrival />
       <TrustBadges />
     </div>

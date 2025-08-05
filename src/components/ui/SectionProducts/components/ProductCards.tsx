@@ -24,9 +24,9 @@ const ProductCards: React.FC<ProductCardsProps> = ({ data, rows }) => {
         // Optional: set defaults or log error
         flashEnd = null;
     }
-
+    
     return (
-        <EmblaCarousel className={`p-5 -m-5 overflow-x-hidden`}>
+        <EmblaCarousel className={`p-5 -m-5 overflow-x-hidden`} moreOneRow={!!(rows && rows > 1)} >
             <div
                 style={{
                     display: rows && rows > 1 ? 'grid' : 'flex',
@@ -36,8 +36,8 @@ const ProductCards: React.FC<ProductCardsProps> = ({ data, rows }) => {
                     grid-flow-col
                     auto-cols-auto 
                     gap-[30px] touch-pan-y touch-pinch-zoom `}>
-                {data?.map((props) => (
-                    <ProductCard key={props.id} product={{ ...props }} className={flashEnd ? 'sale-ended ' : ''} />
+                {data?.map((props,i) => (
+                    <ProductCard key={i} product={{ ...props }} className={flashEnd ? 'sale-ended ' : ''} />
                 )) ?? null}
             </div>
         </EmblaCarousel>

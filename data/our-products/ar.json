@@ -3,356 +3,585 @@
         "viewAll": "/our-products/",
         "products": [
             {
+                "flash": true,
+                "start": "2025-07-17T00:00:00Z",
+                "end": "2025-08-07T23:59:59Z",
                 "id": 1,
-                "title": "لوحة ألعاب HAVIT HV-G92",
-                "description": "لوحة ألعاب عالية الجودة مناسبة لألعاب الكمبيوتر المحمول والمكتبي.",
-                "image": "/assets/products/images/g92-2-500x500 1.png",
-                "images": [
-                    "/assets/products/images/g92-2-500x500 1.png",
-                    "/assets/products/images/g92-2-500x500 1.png",
-                    "/assets/products/images/g92-2-500x500 1.png",
-                    "/assets/products/images/g92-2-500x500 1.png",
-                    "/assets/products/images/g92-2-500x500 1.png"
+                "title": "وحدة تحكم HAVIT HV-G92",
+                "handle": "havit-hv-g92-gamepad",
+                "description": "وحدة تحكم عالية الجودة مناسبة للألعاب على الكمبيوتر الشخصي واللابتوب.",
+                "vendor": "HAVIT",
+                "category": "electronics",
+                "tags": [
+                    "gamepad",
+                    "controller",
+                    "gaming",
+                    "pc"
                 ],
-                "category": "إلكترونيات",
-                "originalPrice": 160,
-                "price": 120,
-                "currency": "USD",
+                "defaultVariantIndex": 0,
+                "hasVariations": false,
+                "variants": [
+                    {
+                        "sku": "HAVIT-G92",
+                        "colorName": null,
+                        "color": null,
+                        "sizes": [],
+                        "price": 120,
+                        "originalPrice": 160,
+                        "currency": "USD",
+                        "quantityAvailable": 12,
+                        "inStock": true,
+                        "images": [
+                            {
+                                "url": "/assets/products/images/g92-2-500x500 1.png",
+                                "alt": "وحدة تحكم HAVIT HV-G92 - العرض الأمامي"
+                            },
+                            {
+                                "url": "/assets/products/images/g92-2-500x500 1.png",
+                                "alt": "عرض جانبي"
+                            }
+                        ]
+                    }
+                ],
+                "itemsLeft": 12,
+                "initialItems": 100,
+                "isNew": false,
                 "discountPercent": 40,
-                "inStock": true,
                 "rating": 4.5,
                 "reviewsCount": 88,
-                "colors": [
-                    "أحمر",
-                    "أخضر"
-                ],
-                "sizes": [],
-                "isNew": true
+                "soldNumber": 1300,
+                "taxes": 0.15,
+                "weight": "0.45kg",
+                "material": "بلاستيك ABS",
+                "dimensions": "15x10x5 سم"
             },
             {
+                "flash": true,
+                "start": "2025-07-17T00:00:00Z",
+                "end": "2025-08-07T23:59:59Z",
                 "id": 2,
-                "title": "شاشة ألعاب IPS LCD",
-                "description": "شاشة عالية الدقة مناسبة للألعاب الاحترافية.",
-                "image": "/assets/products/images/g27cq4-500x500 1.png",
-                "images": [
-                    "/assets/products/images/g27cq4-500x500 1.png",
-                    "/assets/products/images/g27cq4-500x500 1.png",
-                    "/assets/products/images/g27cq4-500x500 1.png",
-                    "/assets/products/images/g27cq4-500x500 1.png",
-                    "/assets/products/images/g27cq4-500x500 1.png"
+                "title": "معطف نورث",
+                "handle": "the-north-coat",
+                "description": "معطف شتوي أنيق ودافئ للارتداء اليومي.",
+                "vendor": "The North Face x Gucci",
+                "category": "mens-fashion",
+                "tags": [
+                    "winter",
+                    "coat",
+                    "luxury",
+                    "gucci"
                 ],
-                "category": "إلكترونيات",
-                "originalPrice": 400,
-                "price": 370,
-                "currency": "USD",
+                "hasVariations": true,
+                "defaultVariantIndex": 0,
+                "variants": [
+                    {
+                        "sku": "NORTHCOAT-RED",
+                        "color": "#FF4F5A",
+                        "colorName": "أحمر",
+                        "sizes": [
+                            {
+                                "size": "S",
+                                "quantity": 4
+                            },
+                            {
+                                "size": "M",
+                                "quantity": 1
+                            },
+                            {
+                                "size": "L",
+                                "quantity": 1
+                            },
+                            {
+                                "size": "XL",
+                                "quantity": 1
+                            },
+                            {
+                                "size": "XXL",
+                                "quantity": 0
+                            }
+                        ],
+                        "images": [
+                            {
+                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                                "alt": "عرض أمامي"
+                            },
+                            {
+                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                                "alt": "عرض خلفي"
+                            }
+                        ],
+                        "price": 260,
+                        "originalPrice": 360,
+                        "currency": "USD",
+                        "quantityAvailable": 7,
+                        "inStock": true
+                    },
+                    {
+                        "sku": "NORTHCOAT-WHITE",
+                        "colorName": "أبيض",
+                        "color": "#F5F5F5",
+                        "sizes": [
+                            {
+                                "size": "L",
+                                "quantity": 2
+                            },
+                            {
+                                "size": "XL",
+                                "quantity": 3
+                            }
+                        ],
+                        "images": [
+                            {
+                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                                "alt": "عرض أمامي"
+                            },
+                            {
+                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                                "alt": "عرض خلفي"
+                            }
+                        ],
+                        "price": 260,
+                        "originalPrice": 360,
+                        "currency": "USD",
+                        "quantityAvailable": 5,
+                        "inStock": true
+                    }
+                ],
+                "isNew": true,
+                "itemsLeft": 12,
+                "initialItems": 100,
+                "discountPercent": 0,
+                "rating": 4,
+                "reviewsCount": 2,
+                "soldNumber": 5000,
+                "taxes": 0.3,
+                "weight": "1.2kg",
+                "material": "خليط من البوليستر",
+                "dimensions": "60x40x10 سم"
+            },
+            {
+                "flash": true,
+                "start": "2025-07-17T00:00:00Z",
+                "end": "2025-08-07T23:59:59Z",
+                "id": 3,
+                "title": "حقيبة غوتشي دفل",
+                "handle": "gucci-duffle-bag",
+                "description": "رفعوا أسلوبكم مع هذه الحقيبة الفاخرة من العلامة التجارية غوتشي والتي تتميز بنمط المونوغرام الشهير—رمز خالد للفخامة والأناقة. مصممة بدقة واهتمام بالتفاصيل، تجمع هذه الحقيبة بين الحرفية الإيطالية الرفيعة والأناقة الكلاسيكية.",
+                "vendor": "غوتشي",
+                "category": "womens-fashion",
+                "tags": [
+                    "bag",
+                    "duffle",
+                    "luxury",
+                    "designer"
+                ],
+                "defaultVariantIndex": 0,
+                "hasVariations": false,
+                "variants": [
+                    {
+                        "sku": "GUCCI-BAG-GOLDEN_BROWN",
+                        "colorName": "بني-ذهبي",
+                        "color": "#BFA06E",
+                        "sizes": [],
+                        "price": 960,
+                        "originalPrice": 1160,
+                        "currency": "USD",
+                        "quantityAvailable": 24,
+                        "inStock": true,
+                        "images": [
+                            {
+                                "url": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+                                "alt": "عرض أمامي"
+                            },
+                            {
+                                "url": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+                                "alt": "عرض أمامي"
+                            },
+                            {
+                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                                "alt": "عرض خلفي"
+                            },
+                            {
+                                "url": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+                                "alt": "عرض أمامي"
+                            },
+                            {
+                                "url": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+                                "alt": "عرض أمامي"
+                            },
+                            {
+                                "url": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+                                "alt": "عرض أمامي"
+                            }
+                        ]
+                    }
+                ],
+                "itemsLeft": 24,
+                "initialItems": 100,
+                "isNew": false,
+                "discountPercent": 17,
+                "rating": 4.8,
+                "reviewsCount": 8500,
+                "soldNumber": 2500,
+                "taxes": 0.25,
+                "weight": "1.1kg",
+                "material": "كانفاس مع حواف من الجلد",
+                "dimensions": "45x25x20 سم"
+            },
+            {
+                "flash": true,
+                "start": "2025-07-17T00:00:00Z",
+                "end": "2025-08-07T23:59:59Z",
+                "id": 4,
+                "title": "شاشة ألعاب IPS LCD",
+                "handle": "ips-lcd-gaming-monitor",
+                "description": "شاشة عرض عالية الدقة مناسبة للألعاب الاحترافية.",
+                "vendor": "IPS إلكترونيات",
+                "category": "electronics",
+                "tags": [
+                    "monitor",
+                    "gaming",
+                    "display",
+                    "lcd"
+                ],
+                "hasVariations": false,
+                "defaultVariantIndex": 0,
+                "variants": [
+                    {
+                        "sku": "IPS-MONITOR-01",
+                        "color": null,
+                        "colorName": null,
+                        "sizes": [],
+                        "images": [
+                            {
+                                "url": "/assets/products/images/g27cq4-500x500 1.png",
+                                "alt": "منظر أمامي"
+                            },
+                            {
+                                "url": "/assets/products/images/g27cq4-500x500 1.png",
+                                "alt": "منظر جانبي"
+                            }
+                        ],
+                        "price": 370,
+                        "originalPrice": 400,
+                        "currency": "USD",
+                        "quantityAvailable": 12,
+                        "inStock": true
+                    }
+                ],
+                "isNew": false,
+                "itemsLeft": 12,
+                "initialItems": 100,
                 "discountPercent": 30,
-                "inStock": true,
                 "rating": 4.7,
                 "reviewsCount": 99,
-                "colors": [],
-                "sizes": [],
-                "isNew": false
-            },
-            {
-                "id": 3,
-                "title": "كرسي مريح من سلسلة S",
-                "description": "كرسي مكتبي عصري ومريح لجلوس مثالي.",
-                "image": "/assets/products/images/sam-moghadam-khamseh-kvmdsTrGOBM-unsplash 1.png",
-                "images": [
-                    "/assets/products/images/sam-moghadam-khamseh-kvmdsTrGOBM-unsplash 1.png",
-                    "/assets/products/images/sam-moghadam-khamseh-kvmdsTrGOBM-unsplash 1.png",
-                    "/assets/products/images/sam-moghadam-khamseh-kvmdsTrGOBM-unsplash 1.png",
-                    "/assets/products/images/sam-moghadam-khamseh-kvmdsTrGOBM-unsplash 1.png",
-                    "/assets/products/images/sam-moghadam-khamseh-kvmdsTrGOBM-unsplash 1.png"
-                ],
-                "category": "أثاث",
-                "originalPrice": 400,
-                "price": 375,
-                "currency": "USD",
-                "discountPercent": 25,
-                "inStock": true,
-                "rating": 4.4,
-                "reviewsCount": 99,
-                "colors": [
-                    "#000000",
-                    "#444"
-                ],
-                "sizes": [],
-                "isNew": false
-            },
-            {
-                "id": 4,
-                "title": "لوحة مفاتيح سلكية AK-900",
-                "description": "لوحة مفاتيح عالية الأداء بإضاءة RGB.",
-                "image": "/assets/products/images/ak-900-01-500x500 1.png",
-                "images": [
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png"
-                ],
-                "category": "إلكترونيات",
-                "originalPrice": 1160,
-                "price": 960,
-                "currency": "USD",
-                "discountPercent": 35,
-                "inStock": true,
-                "rating": 4.8,
-                "reviewsCount": 75,
-                "colors": [],
-                "sizes": [],
-                "isNew": false
-            },
-            {
-                "id": 5,
-                "title": "لوحة مفاتيح سلكية AK-900",
-                "description": "لوحة مفاتيح عالية الأداء بإضاءة RGB.",
-                "image": "/assets/products/images/ak-900-01-500x500 1.png",
-                "images": [
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png"
-                ],
-                "category": "إلكترونيات",
-                "originalPrice": 1160,
-                "price": 960,
-                "currency": "USD",
-                "discountPercent": 35,
-                "inStock": true,
-                "rating": 4.8,
-                "reviewsCount": 75,
-                "colors": [],
-                "sizes": [],
-                "isNew": false
-            },
-            {
-                "id": 6,
-                "title": "لوحة مفاتيح سلكية AK-900",
-                "description": "لوحة مفاتيح عالية الأداء بإضاءة RGB.",
-                "image": "/assets/products/images/ak-900-01-500x500 1.png",
-                "images": [
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png"
-                ],
-                "category": "إلكترونيات",
-                "originalPrice": 1160,
-                "price": 960,
-                "currency": "USD",
-                "discountPercent": 35,
-                "inStock": true,
-                "rating": 4.8,
-                "reviewsCount": 75,
-                "colors": [],
-                "sizes": [],
-                "isNew": false
-            },
-            {
-                "id": 7,
-                "title": "لوحة مفاتيح سلكية AK-900",
-                "description": "لوحة مفاتيح عالية الأداء بإضاءة RGB.",
-                "image": "/assets/products/images/ak-900-01-500x500 1.png",
-                "images": [
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png"
-                ],
-                "category": "إلكترونيات",
-                "originalPrice": 1160,
-                "price": 960,
-                "currency": "USD",
-                "discountPercent": 35,
-                "inStock": true,
-                "rating": 4.8,
-                "reviewsCount": 75,
-                "colors": [],
-                "sizes": [],
-                "isNew": false
-            },
-            {
-                "id": 8,
-                "title": "لوحة مفاتيح سلكية AK-900",
-                "description": "لوحة مفاتيح عالية الأداء بإضاءة RGB.",
-                "image": "/assets/products/images/ak-900-01-500x500 1.png",
-                "images": [
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png"
-                ],
-                "category": "إلكترونيات",
-                "originalPrice": 1160,
-                "price": 960,
-                "currency": "USD",
-                "discountPercent": 35,
-                "inStock": true,
-                "rating": 4.8,
-                "reviewsCount": 75,
-                "colors": [],
-                "sizes": [],
-                "isNew": false
-            },
-            {
-                "id": 9,
-                "title": "لوحة مفاتيح سلكية AK-900",
-                "description": "لوحة مفاتيح عالية الأداء بإضاءة RGB.",
-                "image": "/assets/products/images/ak-900-01-500x500 1.png",
-                "images": [
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png"
-                ],
-                "category": "إلكترونيات",
-                "originalPrice": 1160,
-                "price": 960,
-                "currency": "USD",
-                "discountPercent": 35,
-                "inStock": true,
-                "rating": 4.8,
-                "reviewsCount": 75,
-                "colors": [],
-                "sizes": [],
-                "isNew": false
-            },
-            {
-                "id": 10,
-                "title": "لوحة مفاتيح سلكية AK-900",
-                "description": "لوحة مفاتيح عالية الأداء بإضاءة RGB.",
-                "image": "/assets/products/images/ak-900-01-500x500 1.png",
-                "images": [
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png",
-                    "/assets/products/images/ak-900-01-500x500 1.png"
-                ],
-                "category": "إلكترونيات",
-                "originalPrice": 1160,
-                "price": 960,
-                "currency": "USD",
-                "discountPercent": 35,
-                "inStock": true,
-                "rating": 4.8,
-                "reviewsCount": 75,
-                "colors": [],
-                "sizes": [],
-                "isNew": false
+                "soldNumber": 6000,
+                "taxes": 0.2,
+                "weight": "٤.٢ كجم",
+                "material": "بلاستيك + معدن",
+                "dimensions": "٦٠×٤٠×٢٠ سم"
             },
             {
                 "id": 11,
-                "title": "معطف نورث",
-                "description": "معطف شتوي أنيق ودافئ للاستخدام اليومي.",
-                "image": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-                "images": [
-                    "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-                    "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-                    "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-                    "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-                    "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png"
+                "title": "معطف نورث 2",
+                "handle": "the-north-coat",
+                "description": "معطف شتوي أنيق ودافئ للارتداء اليومي.",
+                "vendor": "The North Face x Gucci",
+                "category": "mens-fashion",
+                "tags": [
+                    "winter",
+                    "coat",
+                    "luxury",
+                    "gucci"
                 ],
-                "category": "الأزياء",
-                "originalPrice": 360,
-                "price": 260,
-                "currency": "USD",
-                "discountPercent": 28,
-                "inStock": true,
-                "rating": 5,
-                "reviewsCount": 65,
-                "colors": [
-                    "#FF4F5A",
-                    "#F5F5F5"
+                "hasVariations": true,
+                "defaultVariantIndex": 0,
+                "variants": [
+                    {
+                        "sku": "NORTHCOAT-RED",
+                        "color": "#FF4F5A",
+                        "colorName": "أحمر",
+                        "sizes": [
+                            {
+                                "size": "S",
+                                "quantity": 4
+                            },
+                            {
+                                "size": "M",
+                                "quantity": 1
+                            },
+                            {
+                                "size": "L",
+                                "quantity": 1
+                            },
+                            {
+                                "size": "XL",
+                                "quantity": 1
+                            },
+                            {
+                                "size": "XXL",
+                                "quantity": 0
+                            }
+                        ],
+                        "images": [
+                            {
+                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                                "alt": "عرض أمامي"
+                            },
+                            {
+                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                                "alt": "عرض خلفي"
+                            }
+                        ],
+                        "price": 260,
+                        "originalPrice": 360,
+                        "currency": "USD",
+                        "quantityAvailable": 7,
+                        "inStock": true
+                    },
+                    {
+                        "sku": "NORTHCOAT-WHITE",
+                        "colorName": "أبيض",
+                        "color": "#F5F5F5",
+                        "sizes": [
+                            {
+                                "size": "L",
+                                "quantity": 2
+                            },
+                            {
+                                "size": "XL",
+                                "quantity": 3
+                            }
+                        ],
+                        "images": [
+                            {
+                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                                "alt": "عرض أمامي"
+                            },
+                            {
+                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                                "alt": "عرض خلفي"
+                            }
+                        ],
+                        "price": 260,
+                        "originalPrice": 360,
+                        "currency": "USD",
+                        "quantityAvailable": 5,
+                        "inStock": true
+                    }
                 ],
-                "sizes": [
-                    "S",
-                    "M",
-                    "L",
-                    "XL"
-                ],
-                "isNew": true
-            },
-            {
-                "id": 12,
-                "title": "حقيبة سفر غوتشي",
-                "description": "حقيبة مصممة فاخرة بنقشة غوتشي الكلاسيكية.",
-                "image": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
-                "images": [
-                    "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
-                    "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
-                    "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
-                    "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
-                    "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png"
-                ],
-                "category": "الإكسسوارات",
-                "originalPrice": 1160,
-                "price": 960,
-                "currency": "USD",
-                "discountPercent": 17,
-                "inStock": true,
-                "rating": 4.8,
-                "reviewsCount": 85,
-                "colors": [
-                    "#BFA06E"
-                ],
-                "sizes": [],
-                "isNew": false
+                "isNew": true,
+                "itemsLeft": 12,
+                "initialItems": 100,
+                "discountPercent": 0,
+                "rating": 4,
+                "reviewsCount": 2,
+                "soldNumber": 5000,
+                "taxes": 0.3,
+                "weight": "1.2kg",
+                "material": "خليط من البوليستر",
+                "dimensions": "60x40x10 سم"
             },
             {
                 "id": 13,
-                "title": "مبرد معالج سائل RGB",
+                "title": "مبرد سائل للمعالج بإضاءة RGB",
+                "handle": "rgb-liquid-cpu-cooler",
                 "description": "مبرد سائل عالي الأداء مع إضاءة RGB.",
-                "image": "/assets/products/images/gammaxx-l240-argb-1-500x500 1.png",
-                "images": [
-                    "/assets/products/images/gammaxx-l240-argb-1-500x500 1.png",
-                    "/assets/products/images/gammaxx-l240-argb-1-500x500 1.png",
-                    "/assets/products/images/gammaxx-l240-argb-1-500x500 1.png",
-                    "/assets/products/images/gammaxx-l240-argb-1-500x500 1.png"
+                "vendor": "RGB Tech",
+                "category": "Electronics",
+                "tags": [
+                    "cooler",
+                    "liquid",
+                    "rgb",
+                    "cpu"
                 ],
-                "category": "إلكترونيات",
-                "originalPrice": 170,
-                "price": 160,
-                "currency": "USD",
+                "hasVariations": false,
+                "defaultVariantIndex": 0,
+                "variants": [
+                    {
+                        "sku": "RGB-CPUCOOLER-01",
+                        "color": "#000000",
+                        "colorName": "أسود",
+                        "sizes": [],
+                        "images": [
+                            {
+                                "url": "/assets/products/images/gammaxx-l240-argb-1-500x500 1.png",
+                                "alt": "الواجهة الأمامية"
+                            },
+                            {
+                                "url": "/assets/products/images/gammaxx-l240-argb-1-500x500 1.png",
+                                "alt": "الجانب الجانبي"
+                            }
+                        ],
+                        "price": 160,
+                        "originalPrice": 170,
+                        "currency": "USD",
+                        "quantityAvailable": 12,
+                        "inStock": true
+                    }
+                ],
+                "isNew": false,
+                "itemsLeft": 12,
+                "initialItems": 100,
                 "discountPercent": 6,
-                "inStock": true,
                 "rating": 4.7,
                 "reviewsCount": 65,
-                "colors": [
-                    "#000000"
-                ],
-                "sizes": [],
-                "isNew": false
+                "soldNumber": 3500,
+                "taxes": 0.2,
+                "weight": "1.4كجم",
+                "material": "ألمنيوم + بلاستيك",
+                "dimensions": "30×12×5 سم"
             },
             {
                 "id": 14,
                 "title": "رف كتب صغير",
+                "handle": "small-bookshelf",
                 "description": "رف كتب خشبي مدمج للمساحات الصغيرة.",
-                "image": "/assets/products/images/sam-moghadam-khamseh-L_7MQsHl_aU-unsplash 1.png",
-                "images": [
-                    "/assets/products/images/sam-moghadam-khamseh-L_7MQsHl_aU-unsplash 1.png",
-                    "/assets/products/images/sam-moghadam-khamseh-L_7MQsHl_aU-unsplash 1.png"
+                "vendor": "OakCraft",
+                "category": "Furniture",
+                "tags": [
+                    "bookshelf",
+                    "wood",
+                    "compact",
+                    "furniture"
                 ],
-                "category": "الأثاث",
-                "originalPrice": 460,
-                "price": 360,
-                "currency": "USD",
+                "hasVariations": false,
+                "defaultVariantIndex": 0,
+                "variants": [
+                    {
+                        "sku": "SHELF-SMALL-01",
+                        "color": "#A9745D",
+                        "colorName": "بني",
+                        "sizes": [],
+                        "images": [
+                            {
+                                "url": "/assets/products/images/sam-moghadam-khamseh-L_7MQsHl_aU-unsplash 1.png",
+                                "alt": "الواجهة الأمامية"
+                            },
+                            {
+                                "url": "/assets/products/images/sam-moghadam-khamseh-L_7MQsHl_aU-unsplash 1.png",
+                                "alt": "الجانب الجانبي"
+                            }
+                        ],
+                        "price": 360,
+                        "originalPrice": 460,
+                        "currency": "USD",
+                        "quantityAvailable": 20,
+                        "inStock": true
+                    }
+                ],
+                "isNew": false,
+                "itemsLeft": 20,
+                "initialItems": 100,
                 "discountPercent": 22,
-                "inStock": true,
                 "rating": 5,
                 "reviewsCount": 65,
-                "colors": [
-                    "#A9745D"
+                "soldNumber": 1200,
+                "taxes": 0.15,
+                "weight": "7.5كجم",
+                "material": "خشب صلب",
+                "dimensions": "80×30×100 سم"
+            },
+            {
+                "id": 15,
+                "title": "معطف نورث 3",
+                "handle": "the-north-coat",
+                "description": "معطف شتوي أنيق ودافئ للارتداء اليومي.",
+                "vendor": "The North Face x Gucci",
+                "category": "mens-fashion",
+                "tags": [
+                    "winter",
+                    "coat",
+                    "luxury",
+                    "gucci"
                 ],
-                "sizes": [],
-                "isNew": false
+                "hasVariations": true,
+                "defaultVariantIndex": 0,
+                "variants": [
+                    {
+                        "sku": "NORTHCOAT-RED",
+                        "color": "#FF4F5A",
+                        "colorName": "أحمر",
+                        "sizes": [
+                            {
+                                "size": "S",
+                                "quantity": 4
+                            },
+                            {
+                                "size": "M",
+                                "quantity": 1
+                            },
+                            {
+                                "size": "L",
+                                "quantity": 1
+                            },
+                            {
+                                "size": "XL",
+                                "quantity": 1
+                            },
+                            {
+                                "size": "XXL",
+                                "quantity": 0
+                            }
+                        ],
+                        "images": [
+                            {
+                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                                "alt": "عرض أمامي"
+                            },
+                            {
+                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                                "alt": "عرض خلفي"
+                            }
+                        ],
+                        "price": 260,
+                        "originalPrice": 360,
+                        "currency": "USD",
+                        "quantityAvailable": 7,
+                        "inStock": true
+                    },
+                    {
+                        "sku": "NORTHCOAT-WHITE",
+                        "colorName": "أبيض",
+                        "color": "#F5F5F5",
+                        "sizes": [
+                            {
+                                "size": "L",
+                                "quantity": 2
+                            },
+                            {
+                                "size": "XL",
+                                "quantity": 3
+                            }
+                        ],
+                        "images": [
+                            {
+                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                                "alt": "عرض أمامي"
+                            },
+                            {
+                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                                "alt": "عرض خلفي"
+                            }
+                        ],
+                        "price": 260,
+                        "originalPrice": 360,
+                        "currency": "USD",
+                        "quantityAvailable": 5,
+                        "inStock": true
+                    }
+                ],
+                "isNew": true,
+                "itemsLeft": 12,
+                "initialItems": 100,
+                "discountPercent": 0,
+                "rating": 4,
+                "reviewsCount": 2,
+                "soldNumber": 5000,
+                "taxes": 0.3,
+                "weight": "1.2kg",
+                "material": "خليط من البوليستر",
+                "dimensions": "60x40x10 سم"
             }
         ]
     }

@@ -5,7 +5,7 @@
         "viewAll": "/flash-sales/",
         "products": [
             {
-                "flash":true,
+                "flash": true,
                 "start": "2025-07-17T00:00:00Z",
                 "end": "2025-08-07T23:59:59Z",
                 "id": 1,
@@ -21,7 +21,7 @@
                     "pc"
                 ],
                 "defaultVariantIndex": 0,
-                "hasVariations":false,
+                "hasVariations": false,
                 "variants": [
                     {
                         "sku": "HAVIT-G92",
@@ -78,7 +78,7 @@
                 "variants": [
                     {
                         "sku": "NORTHCOAT-RED",
-                        "colorName":"red",
+                        "colorName": "red",
                         "color": "#FF4F5A",
                         "sizes": [
                             {
@@ -154,8 +154,8 @@
                     }
                 ],
                 "isNew": true,
-                "itemsLeft":12,
-                "initialItems":100,
+                "itemsLeft": 12,
+                "initialItems": 100,
                 "discountPercent": 0,
                 "rating": 4,
                 "reviewsCount": 2,
@@ -188,7 +188,7 @@
                         "sku": "GUCCI-BAG-GOLDEN_BROWN",
                         "colorName": "golden-brown",
                         "color": "#BFA06E",
-                        "sizes": [ ],
+                        "sizes": [],
                         "price": 960,
                         "originalPrice": 1160,
                         "currency": "USD",
@@ -233,6 +233,218 @@
                 "weight": "1.1kg",
                 "material": "Canvas with leather trim",
                 "dimensions": "45x25x20 cm"
+            },
+            {
+                "flash": true,
+                "start": "2025-07-17T00:00:00Z",
+                "end": "2025-08-07T23:59:59Z",
+                "id": 4,
+                "title": "IPS LCD Gaming Monitor",
+                "handle": "ips-lcd-gaming-monitor",
+                "description": "High resolution display monitor suitable for pro gaming.",
+                "vendor": "IPS Electronics",
+                "category": "electronics",
+                "tags": [
+                    "monitor",
+                    "gaming",
+                    "display",
+                    "lcd"
+                ],
+                "hasVariations": false,
+                "defaultVariantIndex": 0,
+                "variants": [
+                    {
+                        "sku": "IPS-MONITOR-01",
+                        "color": null,
+                        "colorName": null,
+                        "sizes": [],
+                        "images": [
+                            {
+                                "url": "/assets/products/images/g27cq4-500x500 1.png",
+                                "alt": "Front View"
+                            },
+                            {
+                                "url": "/assets/products/images/g27cq4-500x500 1.png",
+                                "alt": "Side View"
+                            }
+                        ],
+                        "price": 370,
+                        "originalPrice": 400,
+                        "currency": "USD",
+                        "quantityAvailable": 12,
+                        "inStock": true
+                    }
+                ],
+                "isNew": false,
+                "itemsLeft": 12,
+                "initialItems": 100,
+                "discountPercent": 30,
+                "rating": 4.7,
+                "reviewsCount": 99,
+                "soldNumber": 6000,
+                "taxes": 0.2,
+                "weight": "4.2kg",
+                "material": "Plastic + Metal",
+                "dimensions": "60x40x20 cm"
+            },
+            {
+                "flash": true,
+                "start": "2025-07-17T00:00:00Z",
+                "end": "2025-08-07T23:59:59Z",
+                "id": 4,
+                "title": "IPS LCD Gaming Monitor",
+                "handle": "ips-lcd-gaming-monitor",
+                "description": "High resolution display monitor suitable for pro gaming.",
+                "vendor": "IPS Electronics",
+                "category": "electronics",
+                "tags": [
+                    "monitor",
+                    "gaming",
+                    "display",
+                    "lcd"
+                ],
+                "hasVariations": false,
+                "defaultVariantIndex": 0,
+                "variants": [
+                    {
+                        "sku": "IPS-MONITOR-01",
+                        "color": null,
+                        "colorName": null,
+                        "sizes": [],
+                        "images": [
+                            {
+                                "url": "/assets/products/images/g27cq4-500x500 1.png",
+                                "alt": "Front View"
+                            },
+                            {
+                                "url": "/assets/products/images/g27cq4-500x500 1.png",
+                                "alt": "Side View"
+                            }
+                        ],
+                        "price": 370,
+                        "originalPrice": 400,
+                        "currency": "USD",
+                        "quantityAvailable": 12,
+                        "inStock": true
+                    }
+                ],
+                "isNew": false,
+                "itemsLeft": 12,
+                "initialItems": 100,
+                "discountPercent": 30,
+                "rating": 4.7,
+                "reviewsCount": 99,
+                "soldNumber": 6000,
+                "taxes": 0.2,
+                "weight": "4.2kg",
+                "material": "Plastic + Metal",
+                "dimensions": "60x40x20 cm"
+            },
+            {
+                "flash": true,
+                "start": "2025-07-17T00:00:00Z",
+                "end": "2025-08-07T23:59:59Z",
+                "id": 4,
+                "title": "IPS LCD Gaming Monitor",
+                "handle": "ips-lcd-gaming-monitor",
+                "description": "High resolution display monitor suitable for pro gaming.",
+                "vendor": "IPS Electronics",
+                "category": "electronics",
+                "tags": [
+                    "monitor",
+                    "gaming",
+                    "display",
+                    "lcd"
+                ],
+                "hasVariations": false,
+                "defaultVariantIndex": 0,
+                "variants": [
+                    {
+                        "sku": "IPS-MONITOR-01",
+                        "color": null,
+                        "colorName": null,
+                        "sizes": [],
+                        "images": [
+                            {
+                                "url": "/assets/products/images/g27cq4-500x500 1.png",
+                                "alt": "Front View"
+                            },
+                            {
+                                "url": "/assets/products/images/g27cq4-500x500 1.png",
+                                "alt": "Side View"
+                            }
+                        ],
+                        "price": 370,
+                        "originalPrice": 400,
+                        "currency": "USD",
+                        "quantityAvailable": 12,
+                        "inStock": true
+                    }
+                ],
+                "isNew": false,
+                "itemsLeft": 12,
+                "initialItems": 100,
+                "discountPercent": 30,
+                "rating": 4.7,
+                "reviewsCount": 99,
+                "soldNumber": 6000,
+                "taxes": 0.2,
+                "weight": "4.2kg",
+                "material": "Plastic + Metal",
+                "dimensions": "60x40x20 cm"
+            },
+            {
+                "flash": true,
+                "start": "2025-07-17T00:00:00Z",
+                "end": "2025-08-07T23:59:59Z",
+                "id": 4,
+                "title": "IPS LCD Gaming Monitor",
+                "handle": "ips-lcd-gaming-monitor",
+                "description": "High resolution display monitor suitable for pro gaming.",
+                "vendor": "IPS Electronics",
+                "category": "electronics",
+                "tags": [
+                    "monitor",
+                    "gaming",
+                    "display",
+                    "lcd"
+                ],
+                "hasVariations": false,
+                "defaultVariantIndex": 0,
+                "variants": [
+                    {
+                        "sku": "IPS-MONITOR-01",
+                        "color": null,
+                        "colorName": null,
+                        "sizes": [],
+                        "images": [
+                            {
+                                "url": "/assets/products/images/g27cq4-500x500 1.png",
+                                "alt": "Front View"
+                            },
+                            {
+                                "url": "/assets/products/images/g27cq4-500x500 1.png",
+                                "alt": "Side View"
+                            }
+                        ],
+                        "price": 370,
+                        "originalPrice": 400,
+                        "currency": "USD",
+                        "quantityAvailable": 12,
+                        "inStock": true
+                    }
+                ],
+                "isNew": false,
+                "itemsLeft": 12,
+                "initialItems": 100,
+                "discountPercent": 30,
+                "rating": 4.7,
+                "reviewsCount": 99,
+                "soldNumber": 6000,
+                "taxes": 0.2,
+                "weight": "4.2kg",
+                "material": "Plastic + Metal",
+                "dimensions": "60x40x20 cm"
             }
         ]
     }

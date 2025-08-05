@@ -19,17 +19,17 @@ export type EmblaCarouselHandle = {
 }
 
 type PropType = {
-    slides?: number[]
+    moreOneRow?: boolean;
     className?: string;
-    btnClassName?:string;
+    btnClassName?: string;
     children: ReactNode
     options?: EmblaOptionsType
-    btns?:boolean;
+    btns?: boolean;
 }
 
 
 const EmblaCarousel = forwardRef<EmblaCarouselHandle, PropType>(
-    ({ slides, options, children, className, btnClassName, btns=true}, ref) => {
+    ({ moreOneRow, options, children, className, btnClassName, btns = true }, ref) => {
         const isMobile = useMobileCheck()
         const isRTL = useIsRTL()
 
@@ -48,12 +48,19 @@ const EmblaCarousel = forwardRef<EmblaCarouselHandle, PropType>(
             onNextButtonClick
         } = usePrevNextButtons(emblaApi)
 
-
+        const click = useCallback(
+            (clickCllback: () => void) => { //  i did that if there is morethan one rows in embla due to it works with flex box not suppourt grid so i need to click twice to make it slide correctely
+                clickCllback()
+                
+                moreOneRow && clickCllback()
+            },
+            [moreOneRow]
+        )
         return (
             <div className='relative'>
-                {btns && <div className={cn("md:ms-auto flex w-fit gap-2 max-md:self-center absolute -top-19.5 md:-top-[107px] md:end-0 max-md:justify-center max-md:w-full !z-10 bg-white",btnClassName)}>
-                    <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
-                    <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
+                {btns && <div className={cn("md:ms-auto flex w-fit gap-2 max-md:self-center absolute -top-19.5 md:-top-[107px] md:end-0 max-md:justify-center max-md:w-full !z-10 bg-white", btnClassName)}>
+                    <PrevButton onClick={() => click(onPrevButtonClick)} disabled={prevBtnDisabled} />
+                    <NextButton onClick={() => click(onNextButtonClick)} disabled={nextBtnDisabled} />
                 </div>}
                 <div className={cn("overflow-x-hidden", className)} ref={emblaRef}>
                     {children}

@@ -229,6 +229,218 @@
                 "weight": "1.1kg",
                 "material": "كانفاس مع حواف من الجلد",
                 "dimensions": "45x25x20 سم"
+            },
+            {
+                "flash": true,
+                "start": "2025-07-17T00:00:00Z",
+                "end": "2025-08-07T23:59:59Z",
+                "id": 4,
+                "title": "شاشة ألعاب IPS LCD",
+                "handle": "ips-lcd-gaming-monitor",
+                "description": "شاشة عرض عالية الدقة مناسبة للألعاب الاحترافية.",
+                "vendor": "IPS إلكترونيات",
+                "category": "electronics",
+                "tags": [
+                    "monitor",
+                    "gaming",
+                    "display",
+                    "lcd"
+                ],
+                "hasVariations": false,
+                "defaultVariantIndex": 0,
+                "variants": [
+                    {
+                        "sku": "IPS-MONITOR-01",
+                        "color": null,
+                        "colorName": null,
+                        "sizes": [],
+                        "images": [
+                            {
+                                "url": "/assets/products/images/g27cq4-500x500 1.png",
+                                "alt": "منظر أمامي"
+                            },
+                            {
+                                "url": "/assets/products/images/g27cq4-500x500 1.png",
+                                "alt": "منظر جانبي"
+                            }
+                        ],
+                        "price": 370,
+                        "originalPrice": 400,
+                        "currency": "USD",
+                        "quantityAvailable": 12,
+                        "inStock": true
+                    }
+                ],
+                "isNew": false,
+                "itemsLeft": 12,
+                "initialItems": 100,
+                "discountPercent": 30,
+                "rating": 4.7,
+                "reviewsCount": 99,
+                "soldNumber": 6000,
+                "taxes": 0.2,
+                "weight": "٤.٢ كجم",
+                "material": "بلاستيك + معدن",
+                "dimensions": "٦٠×٤٠×٢٠ سم"
+            },
+            {
+                "flash": true,
+                "start": "2025-07-17T00:00:00Z",
+                "end": "2025-08-07T23:59:59Z",
+                "id": 4,
+                "title": "شاشة ألعاب IPS LCD",
+                "handle": "ips-lcd-gaming-monitor",
+                "description": "شاشة عرض عالية الدقة مناسبة للألعاب الاحترافية.",
+                "vendor": "IPS إلكترونيات",
+                "category": "electronics",
+                "tags": [
+                    "monitor",
+                    "gaming",
+                    "display",
+                    "lcd"
+                ],
+                "hasVariations": false,
+                "defaultVariantIndex": 0,
+                "variants": [
+                    {
+                        "sku": "IPS-MONITOR-01",
+                        "color": null,
+                        "colorName": null,
+                        "sizes": [],
+                        "images": [
+                            {
+                                "url": "/assets/products/images/g27cq4-500x500 1.png",
+                                "alt": "منظر أمامي"
+                            },
+                            {
+                                "url": "/assets/products/images/g27cq4-500x500 1.png",
+                                "alt": "منظر جانبي"
+                            }
+                        ],
+                        "price": 370,
+                        "originalPrice": 400,
+                        "currency": "USD",
+                        "quantityAvailable": 12,
+                        "inStock": true
+                    }
+                ],
+                "isNew": false,
+                "itemsLeft": 12,
+                "initialItems": 100,
+                "discountPercent": 30,
+                "rating": 4.7,
+                "reviewsCount": 99,
+                "soldNumber": 6000,
+                "taxes": 0.2,
+                "weight": "٤.٢ كجم",
+                "material": "بلاستيك + معدن",
+                "dimensions": "٦٠×٤٠×٢٠ سم"
+            },
+            {
+                "flash": true,
+                "start": "2025-07-17T00:00:00Z",
+                "end": "2025-08-07T23:59:59Z",
+                "id": 4,
+                "title": "شاشة ألعاب IPS LCD",
+                "handle": "ips-lcd-gaming-monitor",
+                "description": "شاشة عرض عالية الدقة مناسبة للألعاب الاحترافية.",
+                "vendor": "IPS إلكترونيات",
+                "category": "electronics",
+                "tags": [
+                    "monitor",
+                    "gaming",
+                    "display",
+                    "lcd"
+                ],
+                "hasVariations": false,
+                "defaultVariantIndex": 0,
+                "variants": [
+                    {
+                        "sku": "IPS-MONITOR-01",
+                        "color": null,
+                        "colorName": null,
+                        "sizes": [],
+                        "images": [
+                            {
+                                "url": "/assets/products/images/g27cq4-500x500 1.png",
+                                "alt": "منظر أمامي"
+                            },
+                            {
+                                "url": "/assets/products/images/g27cq4-500x500 1.png",
+                                "alt": "منظر جانبي"
+                            }
+                        ],
+                        "price": 370,
+                        "originalPrice": 400,
+                        "currency": "USD",
+                        "quantityAvailable": 12,
+                        "inStock": true
+                    }
+                ],
+                "isNew": false,
+                "itemsLeft": 12,
+                "initialItems": 100,
+                "discountPercent": 30,
+                "rating": 4.7,
+                "reviewsCount": 99,
+                "soldNumber": 6000,
+                "taxes": 0.2,
+                "weight": "٤.٢ كجم",
+                "material": "بلاستيك + معدن",
+                "dimensions": "٦٠×٤٠×٢٠ سم"
+            },
+            {
+                "flash": true,
+                "start": "2025-07-17T00:00:00Z",
+                "end": "2025-08-07T23:59:59Z",
+                "id": 4,
+                "title": "شاشة ألعاب IPS LCD",
+                "handle": "ips-lcd-gaming-monitor",
+                "description": "شاشة عرض عالية الدقة مناسبة للألعاب الاحترافية.",
+                "vendor": "IPS إلكترونيات",
+                "category": "electronics",
+                "tags": [
+                    "monitor",
+                    "gaming",
+                    "display",
+                    "lcd"
+                ],
+                "hasVariations": false,
+                "defaultVariantIndex": 0,
+                "variants": [
+                    {
+                        "sku": "IPS-MONITOR-01",
+                        "color": null,
+                        "colorName": null,
+                        "sizes": [],
+                        "images": [
+                            {
+                                "url": "/assets/products/images/g27cq4-500x500 1.png",
+                                "alt": "منظر أمامي"
+                            },
+                            {
+                                "url": "/assets/products/images/g27cq4-500x500 1.png",
+                                "alt": "منظر جانبي"
+                            }
+                        ],
+                        "price": 370,
+                        "originalPrice": 400,
+                        "currency": "USD",
+                        "quantityAvailable": 12,
+                        "inStock": true
+                    }
+                ],
+                "isNew": false,
+                "itemsLeft": 12,
+                "initialItems": 100,
+                "discountPercent": 30,
+                "rating": 4.7,
+                "reviewsCount": 99,
+                "soldNumber": 6000,
+                "taxes": 0.2,
+                "weight": "٤.٢ كجم",
+                "material": "بلاستيك + معدن",
+                "dimensions": "٦٠×٤٠×٢٠ سم"
             }
         ]
     }

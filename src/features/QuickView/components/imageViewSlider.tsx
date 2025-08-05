@@ -23,7 +23,7 @@ export default ImageViewSlider
 
 const MobileImageSlider = ({ images }: { images: ProductImage[]; }) => (
     <EmblaCarousel btns={false} options={{ dragFree: false }}>
-        <div className='flex gap-4 md:gap-6'>
+        <div className='flex gap-3 md:gap-6'>
 
             {images.slice(0, 5).map(({ url, alt }, i) => (
                 <div className='w-9/12 h-55 flex-shrink-0 bg-skeleton flex-center p-2 rounded-xl md:rounded-xl ' key={i}>

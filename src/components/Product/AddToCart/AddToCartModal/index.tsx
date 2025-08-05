@@ -8,9 +8,9 @@ import CartModalBody from "./components/CartModalBody"
 
 const AddToCartModal = () => {
   const t = useTranslations('homePage.product')
-
+  
   return (
-    <div className="h-full flex flex-col sm:w-120">
+    <div className="h-full flex flex-col">
       {/* text head */}
       <h2 className="semi-heading tracking-normal mb-6 font-poppins">
         {t('selectVariant')}

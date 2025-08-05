@@ -75,7 +75,7 @@ export default function AddToCart({
                 onClose={closeModal}
                 content={<AddToCartModal />}
                 classes={{
-                    popup: 'max-sm:w-screen !h-fit',
+                    popup: `max-sm:w-screen !h-fit ${!isMobile && 'sm:w-120'}`,
                 }}
             />
         </div>

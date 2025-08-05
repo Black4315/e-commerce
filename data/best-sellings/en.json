@@ -5,117 +5,313 @@
         "products": [
             {
                 "id": 11,
-                "title": "The North Coat",
+                "title": "The North Coat 2",
+                "handle": "the-north-coat",
                 "description": "Stylish and warm winter coat for everyday wear.",
-                "image": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-                "images": [
-                    "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-                    "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-                    "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-                    "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-                    "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png"
+                "vendor": "The North Face x Gucci",
+                "category": "mens-fashion",
+                "tags": [
+                    "winter",
+                    "coat",
+                    "luxury",
+                    "gucci"
                 ],
-                "category": "Fashion",
-                "originalPrice": 360,
-                "price": 260,
-                "currency": "USD",
-                "discountPercent": 28,
-                "inStock": false,
-                "rating": 5,
-                "reviewsCount": 65,
-                "colors": [
-                    "#FF4F5A",
-                    "#F5F5F5"
-                ],
-                "sizes": [
-                    "S",
-                    "M",
-                    "L",
-                    "XL"
+                "hasVariations": true,
+                "defaultVariantIndex": 0,
+                "variants": [
+                    {
+                        "sku": "NORTHCOAT-RED",
+                        "colorName": "red",
+                        "color": "#FF4F5A",
+                        "sizes": [
+                            {
+                                "size": "S",
+                                "quantity": 4
+                            },
+                            {
+                                "size": "M",
+                                "quantity": 1
+                            },
+                            {
+                                "size": "L",
+                                "quantity": 1
+                            },
+                            {
+                                "size": "XL",
+                                "quantity": 1
+                            },
+                            {
+                                "size": "XXL",
+                                "quantity": 0
+                            }
+                        ],
+                        "images": [
+                            {
+                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                                "alt": "Front View"
+                            },
+                            {
+                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                                "alt": "Back View"
+                            }
+                        ],
+                        "price": 260,
+                        "originalPrice": 360,
+                        "currency": "USD",
+                        "quantityAvailable": 7,
+                        "inStock": true
+                    },
+                    {
+                        "sku": "NORTHCOAT-WHITE",
+                        "color": "#F5F5F5",
+                        "colorName": "white",
+                        "sizes": [
+                            {
+                                "size": "M",
+                                "quantity": 0
+                            },
+                            {
+                                "size": "L",
+                                "quantity": 2
+                            },
+                            {
+                                "size": "XL",
+                                "quantity": 3
+                            }
+                        ],
+                        "images": [
+                            {
+                                "url": "/assets/products/images/ 672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                                "alt": "Front View"
+                            },
+                            {
+                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                                "alt": "Back View"
+                            }
+                        ],
+                        "price": 260,
+                        "originalPrice": 360,
+                        "currency": "USD",
+                        "quantityAvailable": 5,
+                        "inStock": true
+                    }
                 ],
                 "isNew": true,
-                "taxes":0,
-                "soldNumber":5000
-            },
-            {
-                "id": 12,
-                "title": "Gucci Duffle Bag",
-                "description": "Elevate your style with this premium designer handbag featuring the iconic Gucci monogram pattern—a timeless symbol of luxury and sophistication. Crafted with meticulous attention to detail, this bag combines high-end Italian craftsmanship with classic elegance.",
-                "image": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
-                "images": [
-                    "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
-                    "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
-                    "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
-                    "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",              
-                    "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
-                    "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
-                    "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
-                    "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
-                    "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
-                    "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
-                    "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png"
-                ],
-                "category": "Accessories",
-                "originalPrice": 1160,
-                "price": 960,
-                "currency": "USD",
-                "discountPercent": 17,
-                "inStock": true,
-                "rating": 4.8,
-                "reviewsCount": 8500,
-                "colors": [
-                    "#BFA06E"
-                ],
-                "sizes": [],
-                "isNew": false
+                "itemsLeft": 12,
+                "initialItems": 100,
+                "discountPercent": 0,
+                "rating": 4,
+                "reviewsCount": 2,
+                "soldNumber": 5000,
+                "taxes": 0.3,
+                "weight": "1.2kg",
+                "material": "Polyester Blend",
+                "dimensions": "60x40x10 cm"
             },
             {
                 "id": 13,
                 "title": "RGB Liquid CPU Cooler",
+                "handle": "rgb-liquid-cpu-cooler",
                 "description": "High performance liquid cooler with RGB lighting.",
-                "image": "/assets/products/images/gammaxx-l240-argb-1-500x500 1.png",
-                "images": [
-                    "/assets/products/images/gammaxx-l240-argb-1-500x500 1.png",
-                    "/assets/products/images/gammaxx-l240-argb-1-500x500 1.png",
-                    "/assets/products/images/gammaxx-l240-argb-1-500x500 1.png",
-                    "/assets/products/images/gammaxx-l240-argb-1-500x500 1.png"
-                ],
+                "vendor": "RGB Tech",
                 "category": "Electronics",
-                "originalPrice": 170,
-                "price": 160,
-                "currency": "USD",
+                "tags": [
+                    "cooler",
+                    "liquid",
+                    "rgb",
+                    "cpu"
+                ],
+                "hasVariations": false,
+                "defaultVariantIndex": 0,
+                "variants": [
+                    {
+                        "sku": "RGB-CPUCOOLER-01",
+                        "color": "#000000",
+                        "colorName": "black",
+                        "sizes": [],
+                        "images": [
+                            {
+                                "url": "/assets/products/images/gammaxx-l240-argb-1-500x500 1.png",
+                                "alt": "Front View"
+                            },
+                            {
+                                "url": "/assets/products/images/gammaxx-l240-argb-1-500x500 1.png",
+                                "alt": "Side View"
+                            }
+                        ],
+                        "price": 160,
+                        "originalPrice": 170,
+                        "currency": "USD",
+                        "quantityAvailable": 12,
+                        "inStock": true
+                    }
+                ],
+                "isNew": false,
+                "itemsLeft": 12,
+                "initialItems": 100,
                 "discountPercent": 6,
-                "inStock": true,
                 "rating": 4.7,
                 "reviewsCount": 65,
-                "colors": [
-                    "#000000"
-                ],
-                "sizes": [],
-                "isNew": false
+                "soldNumber": 3500,
+                "taxes": 0.2,
+                "weight": "1.4kg",
+                "material": "Aluminum + Plastic",
+                "dimensions": "30x12x5 cm"
             },
             {
                 "id": 14,
                 "title": "Small BookShelf",
+                "handle": "small-bookshelf",
                 "description": "Compact wooden bookshelf for small spaces.",
-                "image": "/assets/products/images/sam-moghadam-khamseh-L_7MQsHl_aU-unsplash 1.png",
-                "images": [
-                    "/assets/products/images/sam-moghadam-khamseh-L_7MQsHl_aU-unsplash 1.png",
-                    "/assets/products/images/sam-moghadam-khamseh-L_7MQsHl_aU-unsplash 1.png"
-                ],
+                "vendor": "OakCraft",
                 "category": "Furniture",
-                "originalPrice": 460,
-                "price": 360,
-                "currency": "USD",
+                "tags": [
+                    "bookshelf",
+                    "wood",
+                    "compact",
+                    "furniture"
+                ],
+                "hasVariations": false,
+                "defaultVariantIndex": 0,
+                "variants": [
+                    {
+                        "sku": "SHELF-SMALL-01",
+                        "color": "#A9745D",
+                        "colorName": "brown",
+                        "sizes": [],
+                        "images": [
+                            {
+                                "url": "/assets/products/images/sam-moghadam-khamseh-L_7MQsHl_aU-unsplash 1.png",
+                                "alt": "Front View"
+                            },
+                            {
+                                "url": "/assets/products/images/sam-moghadam-khamseh-L_7MQsHl_aU-unsplash 1.png",
+                                "alt": "Side View"
+                            }
+                        ],
+                        "price": 360,
+                        "originalPrice": 460,
+                        "currency": "USD",
+                        "quantityAvailable": 20,
+                        "inStock": true
+                    }
+                ],
+                "isNew": false,
+                "itemsLeft": 20,
+                "initialItems": 100,
                 "discountPercent": 22,
-                "inStock": true,
                 "rating": 5,
                 "reviewsCount": 65,
-                "colors": [
-                    "#A9745D"
+                "soldNumber": 1200,
+                "taxes": 0.15,
+                "weight": "7.5kg",
+                "material": "Solid Wood",
+                "dimensions": "80x30x100 cm"
+            },
+            {
+                "id": 15,
+                "title": "The North Coat 3",
+                "handle": "the-north-coat",
+                "description": "Stylish and warm winter coat for everyday wear.",
+                "vendor": "The North Face x Gucci",
+                "category": "mens-fashion",
+                "tags": [
+                    "winter",
+                    "coat",
+                    "luxury",
+                    "gucci"
                 ],
-                "sizes": [],
-                "isNew": false
+                "hasVariations": true,
+                "defaultVariantIndex": 0,
+                "variants": [
+                    {
+                        "sku": "NORTHCOAT-RED",
+                        "colorName": "red",
+                        "color": "#FF4F5A",
+                        "sizes": [
+                            {
+                                "size": "S",
+                                "quantity": 4
+                            },
+                            {
+                                "size": "M",
+                                "quantity": 1
+                            },
+                            {
+                                "size": "L",
+                                "quantity": 1
+                            },
+                            {
+                                "size": "XL",
+                                "quantity": 1
+                            },
+                            {
+                                "size": "XXL",
+                                "quantity": 0
+                            }
+                        ],
+                        "images": [
+                            {
+                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                                "alt": "Front View"
+                            },
+                            {
+                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                                "alt": "Back View"
+                            }
+                        ],
+                        "price": 260,
+                        "originalPrice": 360,
+                        "currency": "USD",
+                        "quantityAvailable": 7,
+                        "inStock": true
+                    },
+                    {
+                        "sku": "NORTHCOAT-WHITE",
+                        "color": "#F5F5F5",
+                        "colorName": "white",
+                        "sizes": [
+                            {
+                                "size": "M",
+                                "quantity": 0
+                            },
+                            {
+                                "size": "L",
+                                "quantity": 2
+                            },
+                            {
+                                "size": "XL",
+                                "quantity": 3
+                            }
+                        ],
+                        "images": [
+                            {
+                                "url": "/assets/products/images/ 672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                                "alt": "Front View"
+                            },
+                            {
+                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                                "alt": "Back View"
+                            }
+                        ],
+                        "price": 260,
+                        "originalPrice": 360,
+                        "currency": "USD",
+                        "quantityAvailable": 5,
+                        "inStock": true
+                    }
+                ],
+                "isNew": true,
+                "itemsLeft": 12,
+                "initialItems": 100,
+                "discountPercent": 0,
+                "rating": 4,
+                "reviewsCount": 2,
+                "soldNumber": 5000,
+                "taxes": 0.3,
+                "weight": "1.2kg",
+                "material": "Polyester Blend",
+                "dimensions": "60x40x10 cm"
             }
         ]
     }
