@@ -1,7 +1,7 @@
 import QuickViewInfo from "./QuickViewInfo"
-import ProductPricing from "@/components/Product/ProductPricing"
-import AddToCart from "@/components/Product/AddToCart"
-import WishListBtn from "@/components/Product/WishListBtn"
+import ProductPricing from "@/components/shared/Product/ProductPricing"
+import AddToCart from "@/components/shared/Product/AddToCart"
+import WishListBtn from "@/components/shared/Product/WishListBtn"
 import { useMobileCheck } from "@/hooks/useMobileCheck"
 
 const QuickViewBody = () => {

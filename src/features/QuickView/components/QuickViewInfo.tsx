@@ -1,10 +1,10 @@
 "use client"
-import ProductRating from "@/components/Product/ProductRating"
+import ProductRating from "@/components/shared/Product/ProductRating"
 import SoldNumbers from "./SoldNumbers"
 import QuickInStock from "./QuickInStock"
 import { useProductSelection } from "@/contexts/product/ProductSelectionContext"
 import { useProductContext } from "@/contexts/product/ProductContext"
-import MoreDetails from "@/components/Product/MoreDetails"
+import MoreDetails from "@/components/shared/Product/MoreDetails"
 
 const QuickViewInfo = () => {
   //contexts

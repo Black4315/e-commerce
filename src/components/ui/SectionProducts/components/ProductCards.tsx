@@ -1,6 +1,6 @@
 "use client";
 import { productType } from "@/types/productType";
-import ProductCard from "@/components/ProductCard";
+import ProductCard from "@/components/shared/ProductCard";
 import EmblaCarousel from "../../EmblaCarousel";
 import { useFlashSalesContext } from "@/features/FlashSalses/context/FlashSalesContext";
 
@@ -24,7 +24,7 @@ const ProductCards: React.FC<ProductCardsProps> = ({ data, rows }) => {
         // Optional: set defaults or log error
         flashEnd = null;
     }
-    
+
     return (
         <EmblaCarousel className={`p-5 -m-5 overflow-x-hidden`} moreOneRow={!!(rows && rows > 1)} >
             <div
@@ -36,7 +36,7 @@ const ProductCards: React.FC<ProductCardsProps> = ({ data, rows }) => {
                     grid-flow-col
                     auto-cols-auto 
                     gap-[30px] touch-pan-y touch-pinch-zoom `}>
-                {data?.map((props,i) => (
+                {data?.map((props, i) => (
                     <ProductCard key={i} product={{ ...props }} className={flashEnd ? 'sale-ended ' : ''} />
                 )) ?? null}
             </div>

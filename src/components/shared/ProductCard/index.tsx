@@ -1,6 +1,6 @@
 
-import { productType } from "../../types/productType"
-import ProductProvider from "../../contexts/product/ProductContext"
+import { productType } from "../../../types/productType"
+import ProductProvider from "../../../contexts/product/ProductContext"
 import Card from "./components/Card"
 import { ProductSelectionProvider } from "@/contexts/product/ProductSelectionContext"
 

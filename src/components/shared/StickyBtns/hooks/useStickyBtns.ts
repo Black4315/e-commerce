@@ -12,8 +12,9 @@ export function useStickyBtns() {
 
     useEffect(() => {
         const sroll = () => {
-            if (window.scrollY > 350) {
+            if (window.scrollY > 200) {
                 setshowBtns(true)
+                return
             } else {
                 setshowBtns(false)
             }

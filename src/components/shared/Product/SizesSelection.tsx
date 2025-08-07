@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl"
 import {
     SelectItem,
 } from "@/components/ui/select";
-import SwitcherSelect from "../ui/SwitcherSelect";
+import SwitcherSelect from "../../ui/SwitcherSelect";
 
 const SizesSelection = ({
     sizes,
@@ -63,8 +63,8 @@ export const SizesSwitcher = ({
                     </SelectItem>
                 ))}
             </SwitcherSelect>
-            <span className={`sm-text md:text-xs ${qty < 5 ? 'text-danger-600' : qty < 10 && 'text-warning-600' }`}>
-                {qty} unit{qty > 1 ?'s':''} remains
+            <span className={`sm-text md:text-xs ${qty < 5 ? 'text-danger-600' : qty < 10 && 'text-warning-600'}`}>
+                {qty} unit{qty > 1 ? 's' : ''} remains
             </span>
         </div>
     )

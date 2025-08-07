@@ -1,4 +1,4 @@
-import { ProductCardBadges } from "@/components/ProductCard/components/ProductCardBadges"
+import { ProductCardBadges } from "@/components/shared/ProductCard/components/ProductCardBadges"
 import CartModalSelSize from "./CartModalSelSize"
 import { useProductContext } from "@/contexts/product/ProductContext"
 

@@ -1,5 +1,5 @@
 import { formatCount } from "@/utils";
-import StarRating from "../ui/StarRating";
+import StarRating from "../../ui/StarRating";
 import { useProductContext } from "@/contexts/product/ProductContext";
 
 const ProductRating = () => {

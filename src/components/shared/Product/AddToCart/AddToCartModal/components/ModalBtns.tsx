@@ -3,13 +3,13 @@ import ActionsIconButton from "@/components/ui/ActionsIconButton"
 import { pages } from "@/constants/pages"
 import Icons_arrowleftIcon from "@/assets/icons/icons_arrowleft"
 import AddToCart from "../.."
-import ProductPricing from "@/components/Product/ProductPricing"
+import ProductPricing from "@/components/shared/Product/ProductPricing"
 import { useMobileCheck } from "@/hooks/useMobileCheck"
 import Cart1Icon from "@/assets/icons/Cart1"
 
 
 const ModalBtns = () => {
-    const isMobile =useMobileCheck()
+    const isMobile = useMobileCheck()
     return (
         <div className={`space-y-4  ${isMobile && 'mb-4'}`}>
             <div className="flex flex-col items-start"><ProductPricing /></div>

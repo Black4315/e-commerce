@@ -1,6 +1,6 @@
 import { useMobileCheck } from "@/hooks/useMobileCheck";
 import Link from "next/link";
-import { useProductContext } from "../../../contexts/product/ProductContext";
+import { useProductContext } from "../../../../contexts/product/ProductContext";
 import CustomImage from "@/components/ui/CustomImag";
 import { useProductSelection } from "@/contexts/product/ProductSelectionContext";
 

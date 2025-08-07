@@ -9,7 +9,7 @@ import { downloads, socialMedia } from '@/constants/constanst'
 import Image from 'next/image'
 import { useMobileCheck } from '@/hooks/useMobileCheck'
 import { cn } from '@/lib/utils'
-import StickyBtns from '@/features/StickyBtns'
+import StickyBtns from '@/components/shared/StickyBtns'
 import { LOGO_NAME } from '@/constants'
 
 const Footer = () => {
