@@ -13,7 +13,7 @@ const NavBar = () => {
     const normPath = pathname.replace(`/${locale}`, '') || '/';
 
     return (
-        <nav className="flex lg:items-center nav gap-8 max-lg:flex-col">
+        <nav className="flex lg:items-center nav gap-12 max-lg:flex-col">
             {nav.map((item, idx) => (
                 <Link
                     key={idx}

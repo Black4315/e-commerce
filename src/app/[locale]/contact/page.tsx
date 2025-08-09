@@ -1,13 +1,26 @@
+import { Breadcrumbs, Link, Typography } from "@mui/material";
 import { useTranslations } from "next-intl";
-import Link from "next/link";
+import ContactForm from "./components/ContactForm";
+import ContactInfo from "./components/ContactInfo";
 
 const Contact = () => {
-    const t = useTranslations('ContactPage');
+    const t = useTranslations('contact');
     return (
-        <div>
-            <h1>{t('title')}</h1>
-            <Link href="/">{t('home')}</Link>
-        </div>
+        <main className="common-padding">
+            <div className="screen-max-width">
+                <Breadcrumbs aria-label="breadcrumb">
+                    <Link underline="hover" color="inherit" href="/" className="font-poppins">
+                        {t('home')}
+                    </Link>
+                    <Typography sx={{ color: 'text.primary', fontFamily: "var(--font-poppins" }}>{t('contact')}</Typography>
+                </Breadcrumbs>
+
+                <div>
+                    <ContactInfo />
+                    <ContactForm />
+                </div>
+            </div>
+        </main>
     );
 }
 

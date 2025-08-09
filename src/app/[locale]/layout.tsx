@@ -9,20 +9,7 @@ import "@radix-ui/themes/styles.css";
 
 import './style/globals.css';
 import { Toaster } from 'react-hot-toast';
-import { Inter, Poppins } from 'next/font/google';
 
-// load fonts
-// className={`${inter.className} ${poppins.className}`}
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-});
-
-const poppins = Poppins({
-  subsets: ['latin'],
-  variable: '--font-poppins',
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-});
 
 export default async function LocaleLayout({
   children,
@@ -40,20 +27,20 @@ export default async function LocaleLayout({
   const isRTL = locale === 'ar';
 
   return (
-    <html lang={locale} dir={isRTL ? 'rtl' : 'ltr'} className={`${inter.className} ${poppins.className}`}>
+    <html lang={locale} dir={isRTL ? 'rtl' : 'ltr'}>
       <body style={{ ['--origin-dir' as any]: isRTL ? 'left' : 'right' }} >
-        <Toaster /> 
-        
+        <Toaster />
+
         <AppContextProvider>
           <div className="page-container">
+            
             <TopHeader locale={locale} />
             <Header />
-
-            <main className='main-content common-padding'>
+            <main className='main-content'>
               {children}
             </main>
-
             <Footer />
+
           </div>
         </AppContextProvider>
       </body>

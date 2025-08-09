@@ -41,7 +41,7 @@ const ProfileMenu = () => {
             onClick={(e) => setopen(!open)}
         >
             <SelectMenu {...{ open, setopen, clickOutsideHandler }}>
-                <MenuWrapper id="profile-menu" className={`bg-black/20 backdrop-blur-3xl rounded p-4 w-[220px]`}>
+                <MenuWrapper id="profile-menu" className={`bg-black/20 backdrop-blur-3xl rounded p-4 w-[225px]`}>
                     <ul className="flex items-start flex-col gap-3">
                         {profileNav.map(({label,link},idx)=>(
                             <li key={idx} className="profile-menu-li leading-5 tracking-wide text-text-1 font-poppins text-sm hover:text-hover-button-1 transition-colors cursor-pointer">

@@ -18,14 +18,17 @@ export default {
         apple: 'cubic-bezier(0, 0, 0.5, 1)',
         s: 'cubic-bezier(0.4, 0, 0.6, 1)'
       },
+      backgroundImage: {
+        'bluedrop': "radial-gradient(49% 81% at 10% 100%, #e0eff4 0%, #073AFF00 100%),radial-gradient(113% 91% at 10% 0%, #c1dee4 1%, #CBE4E8 99%),radial-gradient(142% 91% at 83% 7%, #CBE4E8 1%, #FF000000 99%);"
+      },
       colors: {
         // Core Neutrals (Black & White)
         'white': '#FFFFFF',
         'black': '#000000',
 
         'border': '#B3B3B3', // Assuming this is a neutral border color
-        'inactive':'#808080',
-        "skeleton":"#e7e7e7",
+        'inactive': '#808080',
+        "skeleton": "#e7e7e7",
 
         // Primary Colors
         'primary-1': '#FFFFFF', // Assuming the first primary is the white #FFFFFF
@@ -39,7 +42,7 @@ export default {
         // Text Colors
         'text': '#7D8184',
         'text-1': '#FAFAFA', // All text colors seem to be the same #D37643 based on the image
-        'text-2': '#D37643', // Duplicate for clarity, but same as text-1
+        'text-2': '#4D4D4D', // Duplicate for clarity, but same as text-1
         'text-3': '#AFAFAF', // Duplicate for clarity, but same as text-1
         'text-button-card': '#D37643', // Duplicate for clarity, but same as text-1
 
@@ -130,19 +133,19 @@ export default {
   plugins: [
     plugin(function ({ addBase, addComponents, addUtilities }) {
       addBase({});
-      
+
       addComponents({
 
 
       });
-      
+
       addUtilities({
         '.transition-apple': {
           transitionProperty: 'all',
           transitionTimingFunction: 'cubic-bezier(0, 0, 0.5, 1)',
         },
       })
-      
+
     }),
   ],
 };

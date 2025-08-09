@@ -12,32 +12,22 @@ import { cn } from "@/lib/utils"
 import Button from "@/components/ui/Button"
 import { useTranslations } from "next-intl"
 import { LOGO_NAME } from "@/constants"
+import { useHeader } from "./hooks/useHeader"
 
 
 const Header = () => {
-    const { user, isLoggedIn, login } = useUserContext(); // Assuming useUserContext is a custom hook to get user data
-    const [hydrated, setHydrated] = useState(false);
     const isMobile = useMobileCheck(); // Assuming useMobileCheck is a custom hook to check if the device is mobile
     const t = useTranslations('header')
+    const { user, isLoggedIn, login } = useUserContext(); // Assuming useUserContext is a custom hook to get user data
+    const { hydrated, isNavActions, onSearch } = useHeader();
 
-
-    useEffect(() => { setHydrated(true); console.log("User:", user); }, [user, isLoggedIn]);
-
-    useEffect(()=>{
-        login() 
-    },[])
-
-    // Function to handle search
-    // This can be passed down to SearchComponent to handle search queries
-    const onSearch = (searchTerm: string) => {
-        console.log("Search Term:", searchTerm);
-    }
+    // useEffect(() => { login(); console.log("User:", user); }, []);
 
     return (
         <header className={cn("h-20 border-b border-border bg-white py-4.5 common-padding flex items-end",
             isMobile ? 'h-35 justify-end px-3 py-3' : 'md:h-[100px]'
         )}>
-            
+
             <div className={`screen-max-width w-full flex ${isMobile ? 'flex-col' : ''}`}>
 
                 <div className="items-center justify-between flex w-full">
@@ -52,17 +42,17 @@ const Header = () => {
 
                     <div className='flex gap-3.5 items-center'>
                         {(hydrated && !isMobile) && <SearchComponent onSearch={onSearch} />}
-                        <NavProfileActions>
+                        {isNavActions && <NavProfileActions>
                             <NavProfileActions.cart />
-                            {isLoggedIn ? 
-                                (<NavProfileActions.user />) : 
-                                <Link href={'/auth/login'} className="login-btn max-xs:w-13 max-xs:ms-1" children={t('logInBtn')}/>
+                            {isLoggedIn ?
+                                (<NavProfileActions.user />) :
+                                <Link href={'/auth/login'} className="login-btn max-xs:w-13 max-xs:ms-1" children={t('logInBtn')} />
                             }
-                        </NavProfileActions>
+                        </NavProfileActions>}
                     </div>
 
                 </div>
-        
+
                 {/* iam changing only place of search component cuz we have another design for mobile to responsize */}
                 {(isMobile && hydrated) && <SearchComponent onSearch={onSearch} className="mt-3 mb-1" />}
             </div>

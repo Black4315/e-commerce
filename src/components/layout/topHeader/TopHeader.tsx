@@ -12,7 +12,7 @@ export default function TopHeader({ locale }: { locale: string }) {
   if (error) return <FetchErr />;
 
   return (
-    <div role="banner" className="text-text-1 bg-black p-3">
+    <div role="banner" className="text-text-1 bg-black py-2 p-3">
       <div className="screen-max-width flex items-center justify-between w-full font-poppins">
 
         <p className="flex-1 text-xs sm:text-sm leading-5 tracking-wide md:text-center lg:-mr-20 md:static md:translate-x-0">

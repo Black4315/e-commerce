@@ -8,7 +8,6 @@ import { useTranslations } from 'next-intl';
 import { useCartContext } from '@/contexts/CartContext';
 import NotificationBadge from '@/components/ui/notificationBadge';
 import { useWishlist } from '@/contexts/WishListContext';
-import { useAnimateOnChange } from '@/hooks/useAnimateOnChange';
 
 export default function ActionsNav({ children }: { children?: React.ReactNode }) {
   return (

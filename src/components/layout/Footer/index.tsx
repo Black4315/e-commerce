@@ -1,42 +1,29 @@
 "use client"
-import React, { useEffect, useRef, useState } from 'react'
+
 import CopyRight from './components/CopyRight'
 import Link from "next/link"
 import GetOffer from './components/GetOffer'
 import FooterElementList from './components/FooterElementList'
-import { useTranslations } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import { downloads, socialMedia } from '@/constants/constanst'
 import Image from 'next/image'
 import { useMobileCheck } from '@/hooks/useMobileCheck'
 import { cn } from '@/lib/utils'
 import StickyBtns from '@/components/shared/StickyBtns'
 import { LOGO_NAME } from '@/constants'
+import { useStickyBtns } from './hooks/useStickyBtns'
 
 const Footer = () => {
     const t = useTranslations('footer')
     const isMobile = useMobileCheck()
-
-    const footerRef = useRef(null);
-    const [hide, setHide] = useState(false);
-
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                setHide(entry.isIntersecting);
-            },
-            { threshold: 0 }
-        );
-
-        if (footerRef.current) observer.observe(footerRef.current);
-
-        return () => {
-            if (footerRef.current) observer.unobserve(footerRef.current);
-        };
-    }, []);
-
+   
+    const {
+        hide,
+        footerRef
+    } = useStickyBtns()
     return (
         <>
-            <StickyBtns hide={hide}/>
+            <StickyBtns hide={hide} />
             <footer className="footer bg-black text-text-1 py-5 common-padding flex flex-col font-poppins" ref={footerRef}>
                 <div className={cn(`screen-max-width w-full flex justify-between items-start max-lg:flex-col max-lg:gap-10 py-5 md:py-16`,
                     isMobile && `flex-col gap-10 py-5`

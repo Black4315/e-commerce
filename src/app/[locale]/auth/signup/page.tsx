@@ -1,8 +1,11 @@
+import AuthPageLayout from "@/features/Auth/components/AuthPageLayout"
+import SignupForm from "@/features/Auth/components/SignupForm"
+
 const SignUp = () => {
     return (
-        <div className="flex">
-            SignUp
-        </div>
+        <AuthPageLayout >
+            <SignupForm />
+        </AuthPageLayout>
     )
 }
 

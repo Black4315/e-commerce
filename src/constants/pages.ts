@@ -1,5 +1,6 @@
 export const pages = {
     login: '/auth/login',
+    forgetPass:"/auth/password_reset",
     logout: '/auth/logout',
     signup: '/auth/signup',
     cart: '/cart',

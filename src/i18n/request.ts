@@ -15,6 +15,8 @@ export default getRequestConfig(async ({requestLocale}) => {
       ...(await import(`../../messages/${locale}/header.json`)).default,
       ...(await import(`../../messages/${locale}/footer.json`)).default,
       ...(await import(`../../messages/${locale}/homePage.json`)).default,
+      ...(await import(`../../messages/${locale}/Auth.json`)).default,
+      ...(await import(`../../messages/${locale}/contact.json`)).default,
     }
   };
 });

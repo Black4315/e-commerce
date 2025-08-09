@@ -1,4 +1,4 @@
-export const createEmptyUser = (fullName: string, email: string, password: string) => {
+export const createEmptyUser = (fullName: string, password: string, email: string = "", phone: string = "",) => {
     return {
         id: Date.now(),
         firstName: fullName.split(" ")[0] || "",
@@ -7,8 +7,8 @@ export const createEmptyUser = (fullName: string, email: string, password: strin
         email,
         password, // <- Add password here
         role: "customer",
-        phone: "",
-        avatar: "/assets/users/default.png",
+        phone: phone,
+        avatar: `${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/assets/users/default.png`,
         createdAt: new Date().toISOString(),
         address: {
             street: "",
