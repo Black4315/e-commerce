@@ -1,15 +1,12 @@
-import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
-export function useHeader(){
-    const pathname = usePathname()
+export function useHeader() {
     const [hydrated, setHydrated] = useState(false);
-    const isNavActions = !pathname.includes('auth')
 
-    useEffect(()=>{
+    useEffect(() => {
         setHydrated(true);
-        
-    },[])
+
+    }, [])
     // Function to handle search
     // This can be passed down to SearchComponent to handle search queries
     const onSearch = (searchTerm: string) => {
@@ -18,7 +15,6 @@ export function useHeader(){
 
     return {
         hydrated,
-        isNavActions,
         onSearch
     }
 }

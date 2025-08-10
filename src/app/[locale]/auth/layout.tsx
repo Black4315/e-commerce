@@ -3,16 +3,13 @@ import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import '../style/globals.css';
 
-
-export default async function Layout({
+export default async function AuthLayout({
   children,
   params
 }: {
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
 }) {
-
-  // Ensure that the incoming `locale` is valid
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) {
     notFound();
@@ -21,11 +18,11 @@ export default async function Layout({
 
   return (
     <html lang={locale} dir={isRTL ? 'rtl' : 'ltr'}>
-      <body style={{ ['--origin-dir' as any]: isRTL ? 'left' : 'right' }} >
+      <body style={{ ['--origin-dir' as any]: isRTL ? 'left' : 'right' }}>
         <NextIntlClientProvider>
           {children}
         </NextIntlClientProvider>
       </body>
-    </html >
+    </html>
   );
 }

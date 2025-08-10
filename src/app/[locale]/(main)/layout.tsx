@@ -7,7 +7,7 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import "@radix-ui/themes/styles.css";
 
-import './style/globals.css';
+import '../style/globals.css';
 import { Toaster } from 'react-hot-toast';
 
 

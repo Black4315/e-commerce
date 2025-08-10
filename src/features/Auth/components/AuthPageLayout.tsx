@@ -13,16 +13,16 @@ const AuthPageLayout = ({
     useEffect(() => sethydrated(true), [])
 
     return (
-        <div className="my-20 relative common-padding">
+        <div className="relative common-padding h-screen">
 
             {/* blue backdrop  */}
-            <div className="w-[45%] lg:w-[50%] bg-bluedrop h-195 absolute start-0 hidden md:flex justify-end rounded-e ">
+            <div className="w-[45%] lg:w-[50%] bg-bluedrop h-screen fixed start-0 hidden md:flex flex-center rounded-e ">
                 <AuthPageImage />
             </div>
 
-            <div className="screen-max-width flex h-195 max-sm:!w-[unset] max-sm:!mx-4">
+            <div className="flex h-screen w-full">
                 <div className="w-[50%] hidden md:block"/>
-                <div className="flex-center h-full mx-auto max-md:w-full">
+                <div className="py-8 box-content my-auto w-full sm:w-fit sm:m-auto">
                     {hydrated ? children : <LoadingSpinner /> }
                 </div>
             </div>

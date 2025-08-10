@@ -8,8 +8,8 @@
 @import "./theme.css";
 
 body {
-  background: black;
-  color-scheme: dark;
+  background: white;
+  color-scheme: light;
   @apply text-black font-inter overflow-x-hidden;
 }
 

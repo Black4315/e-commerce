@@ -19,7 +19,7 @@ const Header = () => {
     const isMobile = useMobileCheck(); // Assuming useMobileCheck is a custom hook to check if the device is mobile
     const t = useTranslations('header')
     const { user, isLoggedIn, login } = useUserContext(); // Assuming useUserContext is a custom hook to get user data
-    const { hydrated, isNavActions, onSearch } = useHeader();
+    const { hydrated, onSearch } = useHeader();
 
     // useEffect(() => { login(); console.log("User:", user); }, []);
 
@@ -42,13 +42,13 @@ const Header = () => {
 
                     <div className='flex gap-3.5 items-center'>
                         {(hydrated && !isMobile) && <SearchComponent onSearch={onSearch} />}
-                        {isNavActions && <NavProfileActions>
+                        <NavProfileActions>
                             <NavProfileActions.cart />
                             {isLoggedIn ?
                                 (<NavProfileActions.user />) :
                                 <Link href={'/auth/login'} className="login-btn max-xs:w-13 max-xs:ms-1" children={t('logInBtn')} />
                             }
-                        </NavProfileActions>}
+                        </NavProfileActions>
                     </div>
 
                 </div>

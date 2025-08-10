@@ -51,10 +51,12 @@ const AuthForm = forwardRef<HTMLFormElement, AuthFormProps>(
                         <p className="reg-text">{subheading}</p>
                     )}
                 </header>
+
                 {errors.root && (
                     <div className="text-red-500">{errors.root.message}</div>
                 )}
-                <div className="form-content space-y-6 sm:space-y-10">
+
+                <div className="space-y-7">
                     {children}
                 </div>
             </form>

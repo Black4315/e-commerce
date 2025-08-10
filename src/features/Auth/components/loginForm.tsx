@@ -49,36 +49,45 @@ const LoginForm = () => {
       onSubmit={handleSubmit(onSubmit)}
       control={control}
     >
-
       <TextInput
         control={control}
         name='emailOrPhone'
         autoComplete="username"
         placeholder={t('emailOrPhone')}
       />
-
-      <div className='space-y-4 flex justify-end flex-col'>
-
-        <TextInput
-          control={control}
-          name='password'
-          type='password'
-          autoComplete='new-password'
-          placeholder={t('password')}
-        />
-        <Link href={pages.forgetPass} className='reg-text font-poppins text-secondary-3 text-end'>{t('forgetPass')}</Link>
-      </div>
-
+      <TextInput
+        control={control}
+        name='password'
+        type='password'
+        autoComplete='new-password'
+        placeholder={t('password')}
+      />
 
       <div className='space-y-4'>
-        <button className='auth-btn' type='submit' disabled={isSubmitting}>
-          {isSubmitting ? <LoadingSpinner className='w-4 -my-4' /> : t('createAcc')}
-        </button>
 
+        {/* login btn */}
+        <div className='grid grid-cols-2 items-center justify-between'>
+          <button className='auth-btn' type='submit' disabled={isSubmitting}>
+            {isSubmitting ? <LoadingSpinner className='w-4 -my-4' /> : t('login')}
+          </button>
+          <Link href={pages.forgetPass} className='reg-text font-poppins text-secondary-3 text-end'>{t('forgetPass')}</Link>
+        </div>
+
+        {/* login with goole */}
         <button className='auth-btn bg-white border border-[#999999] text-black space-x-2 sm:space-x-4'>
           <IconGoogleIcon className='max-sm:w-5 max-sm:h-5' />
           <span>{t('loginWithGoogle')}</span>
         </button>
+
+        {/* create acc */}
+        <div className='text-text-2 flex-center gap-4 !mt-8'>
+          <span className='reg-text font-poppins'>{t('newTo')}</span>
+          <Link href={pages.signup} className='med-text border-b hover:border-black transition-all hover:text-black'>
+
+            {t('createAccFormHead')}
+          </Link>
+        </div>
+
       </div>
 
     </AuthForm>
