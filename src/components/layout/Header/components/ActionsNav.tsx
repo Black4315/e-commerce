@@ -8,6 +8,9 @@ import { useTranslations } from 'next-intl';
 import { useCartContext } from '@/contexts/CartContext';
 import NotificationBadge from '@/components/ui/notificationBadge';
 import { useWishlist } from '@/contexts/WishListContext';
+import { useRouter } from 'next/navigation';
+import { useUserContext } from '@/contexts/UserContext';
+import { pages } from '@/constants/pages';
 
 export default function ActionsNav({ children }: { children?: React.ReactNode }) {
   return (
@@ -19,9 +22,11 @@ export default function ActionsNav({ children }: { children?: React.ReactNode })
 }
 
 
-ActionsNav.wishList = ({ tooltip = true, iconClassName }: { tooltip?: boolean; iconClassName?:string }) => {
+ActionsNav.wishList = ({ tooltip = true, iconClassName }: { tooltip?: boolean; iconClassName?: string }) => {
   const t = useTranslations('header.tooltip')
-  const {wishlist} = useWishlist()
+  const { wishlist } = useWishlist()
+  const router = useRouter()
+  const { isLoggedIn } = useUserContext()
 
   return (
     <ActionNavItem
@@ -32,6 +37,12 @@ ActionsNav.wishList = ({ tooltip = true, iconClassName }: { tooltip?: boolean; i
       width={28}
       height={28}
       className=''
+      onClick={() => {
+        if (!isLoggedIn) {
+          router.push(pages.signup);
+          return;
+        }
+      }}
       iconClassName={`max-sm:!w-6 ${iconClassName}`}
     >
       {wishlist.length ? <NotificationBadge notificationsLen={wishlist.length} /> : ""}
@@ -39,7 +50,7 @@ ActionsNav.wishList = ({ tooltip = true, iconClassName }: { tooltip?: boolean; i
   )
 }
 
-ActionsNav.cart = ({ tooltip = true, iconClassName }: { tooltip?: boolean; iconClassName?:string }) => {
+ActionsNav.cart = ({ tooltip = true, iconClassName }: { tooltip?: boolean; iconClassName?: string }) => {
   const t = useTranslations('header.tooltip')
   const { cart } = useCartContext()
 

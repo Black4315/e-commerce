@@ -21,7 +21,7 @@ const Header = () => {
     const { user, isLoggedIn, login } = useUserContext(); // Assuming useUserContext is a custom hook to get user data
     const { hydrated, onSearch } = useHeader();
 
-    // useEffect(() => { login(); console.log("User:", user); }, []);
+    useEffect(() => { login(); console.log("User:", user); }, []);
 
     return (
         <header className={cn("h-20 border-b border-border bg-white py-4.5 common-padding flex items-end",

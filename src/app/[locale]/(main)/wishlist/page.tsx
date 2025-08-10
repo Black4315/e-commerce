@@ -1,7 +1,12 @@
+import JustForU from "@/features/justForU"
+import WishListProducts from "./components/WishListProducts"
 
 const WishList = () => {
   return (
-    <div>WishList</div>
+    <div className="screen-max-width margin-spacey">
+      <WishListProducts />
+      <JustForU category="any" brand="any" />
+    </div>  
   )
 }
 

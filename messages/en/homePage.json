@@ -140,6 +140,8 @@
         "shopNowBtn": "Shop now",
         "buyNowBtn": "Buy now",
         "quickView": "Quick View",
+        "seeAll":"See All",
+        "justForU": "Just For You",
         "flashSale": {
             "label": "Today's",
             "title": "Flash Sales",
@@ -221,11 +223,18 @@
             "qytInced": " Quantity Increased Successfuly",
             "qytDeced": " Quantity Decreased Successfuly",
             "maxItemsAllowed": "Only {count} item(s) available in stock."
+        },
+
+        "wishlist": {
+            "wishlist": "Wishlist",
+            "moveToCart": "Move All To Cart"
         }
     },
+
     "Errors": {
         "404Title": "404 Not Found",
         "404Description": "Sorry, the page you were looking for does not exist.",
         "goHome": "Back to home page"
     }
+
 }

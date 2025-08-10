@@ -4,14 +4,17 @@ import HeartsmallIcon from "@/assets/icons/heartsmall"
 import Button from "@/components/ui/Button"
 import { pages } from "@/constants/pages"
 import { useWishlistToggle } from "@/hooks/product/useWishlistToggle"
-import { useRouter } from "next/navigation"
+import { usePathname, useRouter } from "next/navigation"
 import toast from "react-hot-toast"
 import { useTranslations } from "next-intl"
 import { useProductContext } from "@/contexts/product/ProductContext"
+import IcondeleteIcon from "@/assets/icons/icondelete"
 
-const WishListBtn = ({ className}: { className?: string;}) => {
+const WishListBtn = ({ className }: { className?: string; }) => {
   const t = useTranslations('homePage.toast')
   const router = useRouter()
+  const pathname = usePathname();
+  const isWishlistPage = pathname.includes(pages.wishlist);
 
   //contexts
   const item = useProductContext();
@@ -19,7 +22,8 @@ const WishListBtn = ({ className}: { className?: string;}) => {
   const {
     toggleWishlist,
     isExisting,
-    isLoggedIn } = useWishlistToggle(item)
+    isLoggedIn
+  } = useWishlistToggle(item)
 
   const handleClick = () => {
     if (!isLoggedIn) {
@@ -31,7 +35,7 @@ const WishListBtn = ({ className}: { className?: string;}) => {
     toast.promise(
       toggleWishlist(),
       {
-        loading: !isExisting ? `${t('addingTo', { e: t('wishlist') })}...` : `${t('removingFrom', { e: t('wishlist') }) }...`,
+        loading: !isExisting ? `${t('addingTo', { e: t('wishlist') })}...` : `${t('removingFrom', { e: t('wishlist') })}...`,
         success: !isExisting ? `${t('addedTo', { e: t('wishlist') })}` : `${t('removedFrom', { e: t('wishlist') })}`,
         error: 'Could not update wishlist.',
       }
@@ -39,8 +43,8 @@ const WishListBtn = ({ className}: { className?: string;}) => {
   };
 
   return (
-    <Button onClick={handleClick} className={`${isExisting ? 'action-btn-select' : 'bg-white'} rounded-full w-8.5 h-8.5 ${className}`}>
-      <HeartsmallIcon className="w-6 h-6" />
+    <Button onClick={handleClick} className={`${!isWishlistPage && isExisting ? 'action-btn-select' : 'bg-white'} rounded-full w-8.5 h-8.5 ${className}`}>
+      {isWishlistPage && isExisting ? <IcondeleteIcon className="w-6 h-6" /> : <HeartsmallIcon className="w-6 h-6" />}
     </Button>
   )
 }

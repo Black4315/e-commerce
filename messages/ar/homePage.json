@@ -140,6 +140,8 @@
         "shopNowBtn": "تسوق الآن",
         "buyNowBtn": "اشتري الآن",
         "quickView": "معاينة سريعة",
+        "seeAll": "رؤية الكل",
+        "justForU": "فقط من أجلك",
         "flashSale": {
             "label": "اليوم",
             "title": "الخصومات الفورية",
@@ -221,6 +223,10 @@
             "qytInced": "تمت زيادة الكمية بنجاح",
             "qytDeced": "تم تقليل الكمية بنجاح",
             "maxItemsAllowed": "الحد الأقصى المتاح هو {count} قطعة"
+        },
+        "wishlist": {
+            "wishlist": "قائمة الرغبات",
+            "moveToCart": "نقل الكل إلى عربة التسوق"
         }
     },
     "Errors": {

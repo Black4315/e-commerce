@@ -4,5 +4,6 @@ export const pages = {
     logout: '/auth/logout',
     signup: '/auth/signup',
     cart: '/cart',
-    flashSales: '/flash-sales'
+    flashSales: '/flash-sales',
+    wishlist:"/wishlist"
 }

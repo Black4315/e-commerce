@@ -6,21 +6,19 @@ import ContactInfo from "./components/ContactInfo";
 const Contact = () => {
     const t = useTranslations('contact');
     return (
-        <main className="common-padding">
-            <div className="screen-max-width">
-                <Breadcrumbs aria-label="breadcrumb">
-                    <Link underline="hover" color="inherit" href="/" className="font-poppins">
-                        {t('home')}
-                    </Link>
-                    <Typography sx={{ color: 'text.primary', fontFamily: "var(--font-poppins" }}>{t('contact')}</Typography>
-                </Breadcrumbs>
+        <div className="screen-max-width">
+            <Breadcrumbs aria-label="breadcrumb">
+                <Link underline="hover" color="inherit" href="/" className="font-poppins">
+                    {t('home')}
+                </Link>
+                <Typography sx={{ color: 'text.primary', fontFamily: "var(--font-poppins" }}>{t('contact')}</Typography>
+            </Breadcrumbs>
 
-                <div>
-                    <ContactInfo />
-                    <ContactForm />
-                </div>
+            <div>
+                <ContactInfo />
+                <ContactForm />
             </div>
-        </main>
+        </div>
     );
 }
 

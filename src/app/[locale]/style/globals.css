@@ -65,6 +65,9 @@ body {
     @apply px-4 sm:px-6;
   }
 
+  .margin-spacey{
+    @apply my-15 md:my-20 space-y-15 md:space-y-20
+  }
   .scrollbar-thin {
     overflow-x: hidden;
     scrollbar-width: thin;

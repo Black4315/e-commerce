@@ -3,13 +3,21 @@ import { productType } from "@/types/productType";
 import ProductCard from "@/components/shared/ProductCard";
 import EmblaCarousel from "../../EmblaCarousel";
 import { useFlashSalesContext } from "@/features/FlashSalses/context/FlashSalesContext";
+import EmptyState from "../../EmptyState";
+import Cart1Icon from "@/assets/icons/Cart1";
 
 type ProductCardsProps = {
     data?: productType[];
     rows?: number;
+    emptyState?:{
+        icon?:any,
+        title?:string;
+        description?:string;
+    }
+    btnsClassname?:string
 }
 
-const ProductCards: React.FC<ProductCardsProps> = ({ data, rows }) => {
+const ProductCards: React.FC<ProductCardsProps> = ({ btnsClassname, emptyState, data, rows }) => {
 
     // Not all sections use the FlashSalesProvider,
     // so this context might not always be available.
@@ -25,8 +33,21 @@ const ProductCards: React.FC<ProductCardsProps> = ({ data, rows }) => {
         flashEnd = null;
     }
 
+    // Empty state
+    if (!data || data.length === 0) {
+        return (
+            <div className="p-5">
+                <EmptyState
+                    title={emptyState?.title || "No products found"}
+                    description={emptyState?.description || "Check back later for new arrivals."}
+                    icon={emptyState?.icon || <Cart1Icon className="w-14 h-14"/>}
+                />
+            </div>
+        );
+    }
+
     return (
-        <EmblaCarousel className={`p-5 -m-5 overflow-x-hidden`} moreOneRow={!!(rows && rows > 1)} >
+        <EmblaCarousel btnClassName={btnsClassname} className={`p-5 -m-5 overflow-x-hidden`} moreOneRow={!!(rows && rows > 1)} >
             <div
                 style={{
                     display: rows && rows > 1 ? 'grid' : 'flex',

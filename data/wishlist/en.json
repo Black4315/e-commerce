@@ -1,52 +1,72 @@
 [
     {
-        "userId":1,
-        "id": 1,
-        "title": "HAVIT HV-G92 Gamepad",
-        "handle": "havit-hv-g92-gamepad",
-        "description": "High quality gamepad suitable for PC and laptop gaming.",
-        "vendor": "HAVIT",
-        "category": "Electronics",
+        "userId": 1,
+        "flash": true,
+        "start": "2025-07-17T00:00:00Z",
+        "end": "2025-08-07T23:59:59Z",
+        "id": 3,
+        "title": "Gucci Duffle Bag",
+        "handle": "gucci-duffle-bag",
+        "description": "Elevate your style with this premium designer handbag featuring the iconic Gucci monogram pattern—a timeless symbol of luxury and sophistication. Crafted with meticulous attention to detail, this bag combines high-end Italian craftsmanship with classic elegance.",
+        "vendor": "Gucci",
+        "category": "womens-fashion",
         "tags": [
-            "gamepad",
-            "controller",
-            "gaming",
-            "pc"
+            "bag",
+            "duffle",
+            "luxury",
+            "designer"
         ],
         "defaultVariantIndex": 0,
         "hasVariations": false,
         "variants": [
             {
-                "sku": "HAVIT-G92",
-                "color": null,
+                "sku": "GUCCI-BAG-GOLDEN_BROWN",
+                "colorName": "golden-brown",
+                "color": "#BFA06E",
                 "sizes": [],
-                "price": 120,
-                "originalPrice": 160,
+                "price": 960,
+                "originalPrice": 1160,
                 "currency": "USD",
-                "quantityAvailable": 12,
+                "quantityAvailable": 24,
                 "inStock": true,
                 "images": [
                     {
-                        "url": "/assets/products/images/g92-2-500x500 1.png",
-                        "alt": "HAVIT HV-G92 Gamepad Front View"
+                        "url": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+                        "alt": "Front View"
                     },
                     {
-                        "url": "/assets/products/images/g92-2-500x500 1.png",
-                        "alt": "Side View"
+                        "url": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+                        "alt": "Front View"
+                    },
+                    {
+                        "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                        "alt": "Back View"
+                    },
+                    {
+                        "url": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+                        "alt": "Front View"
+                    },
+                    {
+                        "url": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+                        "alt": "Front View"
+                    },
+                    {
+                        "url": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+                        "alt": "Front View"
                     }
                 ]
             }
         ],
-        "itemsLeft": 12,
+        "itemsLeft": 24,
         "initialItems": 100,
         "isNew": false,
-        "discountPercent": 40,
-        "rating": 4.5,
-        "reviewsCount": 88,
-        "soldNumber": 1300,
-        "taxes": 0.15,
-        "weight": "0.45kg",
-        "material": "ABS Plastic",
-        "dimensions": "15x10x5 cm"
+        "discountPercent": 17,
+        "rating": 4.8,
+        "reviewsCount": 8500,
+        "soldNumber": 2500,
+        "taxes": 0.25,
+        "weight": "1.1kg",
+        "material": "Canvas with leather trim",
+        "dimensions": "45x25x20 cm"
     }
 ]

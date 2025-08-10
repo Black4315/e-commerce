@@ -1,20 +1,25 @@
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, UseQueryResult } from "@tanstack/react-query";
+import { fetchAndValidate } from "./fetchAndValidate";
+import { ZodSchema, infer as zInfer } from "zod";
 
+export default function useFetchApi<T>(
+    queryKeys: readonly unknown[],
+    api: string,
+    locale: string,
+    schema?: ZodSchema<T>,
+    fallback?: T
+): UseQueryResult<T> {
+    api = api.replace(/\/$/, ""); // Remove trailing slash
 
-const fetchFunc = async (api: string, locale: string) => {
-    const res = await fetch(`${api}?lang=${locale}`);
-    if (!res.ok) throw new Error('Failed to fetch');
-    return res.json();
-};
-
-export default function fectchApi(querykeys: any[], api: string, locale: string) {
-    api = api.replace(/\/$/, ''); // Ensure trailing slash is removed from api if it exists
-
-    // Ensure a unique queryKey for each locale
-    const queryKey = [...querykeys, locale];
+    const queryKey = [...queryKeys, locale];
 
     return useQuery({
         queryKey,
-        queryFn: () => fetchFunc(api, locale),
+        queryFn: () =>
+            fetchAndValidate({
+                url: `${api}?lang=${locale}`,
+                schema,
+                fallback
+            }),
     });
 }

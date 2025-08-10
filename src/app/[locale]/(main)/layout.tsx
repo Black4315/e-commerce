@@ -36,7 +36,7 @@ export default async function LocaleLayout({
             
             <TopHeader locale={locale} />
             <Header />
-            <main className='main-content'>
+            <main className='main-content common-padding'>
               {children}
             </main>
             <Footer />
