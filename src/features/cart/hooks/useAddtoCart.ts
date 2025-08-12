@@ -1,37 +1,38 @@
-import { useCartContext } from "@/contexts/CartContext";
-import { useUserContext } from "@/contexts/UserContext";
+import { useCartContext } from "@/features/cart/contexts/CartContext";
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
-import { productType, Size, Variant } from "@/types/productType";
 import { useTranslations } from "next-intl";
-import { buildCartItem } from "@/lib/cart/buildCartItem";
+import { CartItem } from "../types/cartType";
 
 export const useAddToCart = (
-    item?: productType,
-    variant?: Variant,
-    size?: Size | null,
+    item: CartItem,
     hasVariationsSizes?:boolean,
 ) => {
     const t = useTranslations('homePage.toast')
     const { cart, addToCart, removeFromCart, updateQuantity } = useCartContext();
-    const { user, isLoggedIn } = useUserContext();
     const [exists, setExists] = useState(false);
     const [quantity, setquantity] = useState(1);
 
     // if hasVariationsSizes is false this mean there is no varients in product so pick the product itemsLeft
-    const left = (hasVariationsSizes ? size?.quantity : item?.itemsLeft  ) ?? 1;
+    const left = (hasVariationsSizes ? item?.selectedSize?.quantity : item?.itemsLeft) ?? 1;
     const [itemsLeft, setItemsLeft] = useState(left)
 
     // update exists and quantity at any render of cart or item 
     useEffect(() => {
         // i check the color and size cuz the user could want to add to cart same product,but with another color and size 
-        const existsItem = item && cart.find(
-            i => (i.id === item.id && i.color == variant?.color && i.size == size?.size)
-        );
+        const existsItem =
+          item &&
+          cart.find(
+            (i) =>
+              i.id === item.id &&
+              i.selectedVariant.color == item.selectedVariant.color &&
+              i.selectedSize?.size == item.selectedSize?.size
+          );
+
         setExists(!!existsItem);
         setquantity(existsItem?.quantity || 1);
         setItemsLeft(left)
-    }, [cart, item, variant, size]);
+    }, [cart, item]);
 
 
     /**
@@ -39,15 +40,14 @@ export const useAddToCart = (
      *  
      */
     const perform = async (add = true) => {
-        if (!item || !variant) throw new Error("Missing product or variant");;
+      if (!item) throw new Error("Missing product or variant");
 
-        await new Promise(r => setTimeout(r, 1000));
+      await new Promise((r) => setTimeout(r, 1000)); // TODO: Implement logic to validate
 
-        if (add) addToCart(
-            buildCartItem(user, item, variant, isLoggedIn, size), variant, size?.size )
-        else removeFromCart(item.id);
+      if (add) addToCart({ ...item });
+      else removeFromCart(item);
 
-        setExists(add);
+      setExists(add);
     };
 
     /**
@@ -55,12 +55,12 @@ export const useAddToCart = (
      *  
      */
     const performQyt = async (val: number) => {
-        if (!item?.id) throw new Error("No item with this id");
+      if (!item?.id) throw new Error("No item with this id");
 
-        await new Promise(r => setTimeout(r, 400));
+      await new Promise((r) => setTimeout(r, 400)); // TODO: Implement logic to validate
 
-        setquantity(val);
-        updateQuantity(item.id, val, variant, size?.size);
+      setquantity(val);
+      updateQuantity(item, val);
     }
 
     /**
@@ -98,12 +98,13 @@ export const useAddToCart = (
 
 
     return {
-        toggleCart,
-        updateQty,
-        exists,
-        quantity,
-        itemsLeft,
-        cart,
-        user,
+      toggleCart,
+      updateQty,
+      perform,
+      performQyt,
+      exists,
+      quantity,
+      itemsLeft,
+      cart,
     };
 };

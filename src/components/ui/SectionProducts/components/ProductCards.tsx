@@ -5,6 +5,7 @@ import EmblaCarousel from "../../EmblaCarousel";
 import { useFlashSalesContext } from "@/features/FlashSalses/context/FlashSalesContext";
 import EmptyState from "../../EmptyState";
 import Cart1Icon from "@/assets/icons/Cart1";
+import { useTranslations } from "next-intl";
 
 type ProductCardsProps = {
     data?: productType[];
@@ -34,12 +35,13 @@ const ProductCards: React.FC<ProductCardsProps> = ({ btnsClassname, emptyState, 
     }
 
     // Empty state
+    const t = useTranslations("emptyState");
     if (!data || data.length === 0) {
         return (
             <div className="p-5">
                 <EmptyState
-                    title={emptyState?.title || "No products found"}
-                    description={emptyState?.description || "Check back later for new arrivals."}
+                    title={emptyState?.title || t('global.title')}
+                    description={emptyState?.description || t('global.desc')}
                     icon={emptyState?.icon || <Cart1Icon className="w-14 h-14"/>}
                 />
             </div>

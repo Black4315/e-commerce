@@ -1,39 +1,58 @@
-import { useState, useEffect } from 'react';
-import { productType } from '../../types/productType';
-import { useWishlist } from '@/contexts/WishListContext';
-import { useUserContext } from '@/contexts/UserContext';
+import { useState, useEffect } from "react";
+import { productType } from "../../types/productType";
+import { useWishlist } from "@/contexts/WishListContext";
+import { useUserContext } from "@/contexts/UserContext";
+import toast from "react-hot-toast";
+import { useTranslations } from "next-intl";
 
 export const useWishlistToggle = (item: productType) => {
-    const { wishlist, addToWishlist, removeFromWishlist } = useWishlist()
-    const { isLoggedIn, user } = useUserContext()
+  const { wishlist, addToWishlist, removeFromWishlist } = useWishlist();
+  const { isLoggedIn, user } = useUserContext();
+  const t = useTranslations('homePage.toast')
 
+  const [isExisting, setIsExisting] = useState(
+    wishlist.some((e) => e.id == item.id)
+  );
 
-    const [isExisting, setIsExisting] = useState(wishlist.some((e) => e.id == item.id))
+  const toggleWishlistProm = async () => {
+    if (!item) return Promise.reject("No item");
 
+    try {
+      // Simulated API delay
+      await new Promise((resolve) => setTimeout(resolve, 600));
 
-    const toggleWishlist = async () => {
-        if (!item) return Promise.reject("No item");
+      if (isExisting) {
+        removeFromWishlist(item.id);
+      } else {
+        addToWishlist({ ...item, userId: user?.id });
+      }
 
-        try {
-            // Simulated API delay
-            await new Promise((resolve) => setTimeout(resolve, 600));
+      setIsExisting((prev) => !prev);
+      return Promise.resolve();
+    } catch (err) {
+      return Promise.reject(err);
+    }
+  };
 
-            if (isExisting) {
-                removeFromWishlist(item.id);
-            } else {
-                addToWishlist({ ...item, userId: user?.id });
-            }
+  const toggleWishlist = () => {
+    // t() to get translation of toast message
+    const promise = toggleWishlistProm();
 
-            setIsExisting((prev) => !prev);
-            return Promise.resolve();
-        } catch (err) {
-            return Promise.reject(err);
-        }
-    };
+    toast.promise(promise, {
+      loading: !isExisting
+        ? `${t("addingTo", { e: t("wishlist") })}...`
+        : `${t("removingFrom", { e: t("wishlist") })}...`,
+      success: !isExisting
+        ? `${t("addedTo", { e: t("wishlist") })}`
+        : `${t("removedFrom", { e: t("wishlist") })}`,
+      error: "Could not update wishlist.",
+    });
 
-    return {
-        toggleWishlist,
-        isExisting,
-        isLoggedIn
-    };
+    return promise;
+  };
+  return {
+    toggleWishlist,
+    isExisting,
+    isLoggedIn,
+  };
 };

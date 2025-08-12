@@ -1,6 +1,6 @@
 /* global.css */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap");
 
 @import "tailwindcss";
 @config '../../../../tailwind.config.ts';
@@ -15,8 +15,6 @@ body {
 
 /* Base styles */
 @layer base {
-
-
   ::-webkit-scrollbar {
     width: 10px;
     height: 16px;
@@ -38,7 +36,6 @@ body {
 
 /* Utility classes */
 @layer utilities {
-  
   .screen-max-width {
     max-width: 1170px;
     margin-inline-start: auto;
@@ -65,8 +62,8 @@ body {
     @apply px-4 sm:px-6;
   }
 
-  .margin-spacey{
-    @apply my-15 md:my-20 space-y-15 md:space-y-20
+  .margin-spacey {
+    @apply my-17 md:my-20 space-y-17 md:space-y-20;
   }
   .scrollbar-thin {
     overflow-x: hidden;
@@ -103,12 +100,12 @@ body {
   }
 
   .motion-border-b {
-    @apply after:transition-all after:duration-300 after:ease-in-out relative
+    @apply after:transition-all after:duration-300 after:ease-in-out relative;
   }
 
   .motion-border-b::after {
     @apply bg-[#808080];
-    content: '';
+    content: "";
     display: block;
     width: 0%;
     height: 1px;
@@ -119,7 +116,7 @@ body {
 
   .rounded-border::after {
     @apply absolute -left-0.75 -top-0.75 block border border-[#808080] rounded-full opacity-0 transition-all;
-    content: '';
+    content: "";
     width: 150%;
     height: 150%;
   }
@@ -129,7 +126,7 @@ body {
   }
 
   .profileNav {
-    @apply w-10 h-10 hover:bg-hover-button-2 cursor-pointer flex items-center justify-center transition-all flex-none order-2 flex-grow-0 rounded-full
+    @apply w-10 h-10 hover:bg-hover-button-2 cursor-pointer flex items-center justify-center transition-all flex-none order-2 flex-grow-0 rounded-full;
   }
 
   .action-btn-select {
@@ -169,11 +166,11 @@ body {
   }
 
   .sm-text {
-    @apply not-italic font-normal text-xs md:text-sm leading-3 md:leading-4 font-poppins
+    @apply not-italic font-normal text-xs md:text-sm leading-3 md:leading-4 font-poppins;
   }
 
   .xs-text {
-    @apply not-italic font-normal text-[10px] md:text-xs leading-3 font-poppins
+    @apply not-italic font-normal text-[10px] md:text-xs leading-3 font-poppins;
   }
 
   .semi-heading {
@@ -197,27 +194,56 @@ body {
   }
 
   .auth-btn {
-    @apply bg-secondary-3 hover:bg-hover-button-2 cursor-pointer transition-all text-text-1 flex justify-center items-center h-11 sm:h-13 w-full rounded font-medium text-sm md:text-base leading-5 md:leading-6 font-poppins
+    @apply bg-secondary-3 hover:bg-hover-button-2 cursor-pointer transition-all text-text-1 flex justify-center items-center h-11 sm:h-13 w-full rounded font-medium text-sm md:text-base leading-5 md:leading-6 font-poppins;
   }
 
   .auth-input {
     @apply w-full focus:outline-none focus:placeholder:text-secondary-3 border-b border-inactive py-1 placeholder:text-[#999999] placeholder:transition-all focus:text-secondary-3 autofill:!shadow-[0_0_0_30px_white_inset] autofill:focus:[-webkit-text-fill-color:#DB4444] autofill:[-webkit-text-fill-color:#808080] autofill:text-black;
   }
 
-
   input.auth-input[data-error="true"] {
-    @apply text-red-500 border-red-500
+    @apply text-red-500 border-red-500;
   }
 
   .ellipsis {
-    @apply text-ellipsis whitespace-nowrap overflow-hidden
+    @apply text-ellipsis whitespace-nowrap overflow-hidden;
   }
 
   .will-animate {
     will-change: opacity, transform;
   }
 
+  .tabel {
+    @apply w-full border-separate border-spacing-y-6 md:border-spacing-y-10;
+  }
 
+  .tr {
+    @apply w-full rounded shadow-[0px_1px_13px_rgba(0,0,0,0.05)] overflow-hidden;
+  }
+
+  .tr th,
+  .tr td {
+    @apply md:py-6 text-center capitalize;
+    vertical-align: middle;
+    max-width: 124px;
+  }
+
+  .tr th:first-child,
+  .tr td:first-child {
+    @apply md:ps-12 text-start;
+  }
+  .tr th:last-child,
+  .tr td:last-child {
+    @apply md:pe-12 text-end;
+  }
+
+  .tr td {
+    @apply not-italic font-normal text-sm md:text-base leading-5 md:leading-6 font-poppins;
+  }
+  .price-symbol {
+    @apply text-[8px] relative uppercase;
+    top: -0.6em;
+  }
   .sale-ended {
     filter: brightness(0.7) grayscale(0.3);
     /* Brighter, less harsh */

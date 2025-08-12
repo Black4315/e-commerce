@@ -13,6 +13,7 @@ type bestSellingsDataType = {
     products: productType[]
   }
 }
+
 const BestSellings = () => {
 
   // translations
@@ -20,13 +21,9 @@ const BestSellings = () => {
   const locale = useLocale();
 
   // fetching
-  const { data, isLoading, isError } = useFetchBestSellings(locale) as {
-    data: bestSellingsDataType;
-    isLoading: boolean;
-    isError: boolean;
-  }
-  //as UseQueryResult<bestSellingsDataType, Error>
-  const bestSellings = data && data.bestSellings;
+  const { data, isLoading, isError } = useFetchBestSellings(locale) 
+
+  const { bestSellings } = data ?? { bestSellings: { products: [], viewAll: '', bestSellingsIn: '' } };
 
   return (
     <SectionProducts
@@ -34,8 +31,8 @@ const BestSellings = () => {
       heading={t('title')}
       isLoading={isLoading}
       isError={isError}
-      products={data && bestSellings.products}
-      viewAllLink={data && bestSellings.viewAll}
+      products={bestSellings.products}
+      viewAllLink={bestSellings.viewAll}
     />
   )
 }

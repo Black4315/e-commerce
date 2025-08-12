@@ -5,13 +5,10 @@ import Button from "@/components/ui/Button"
 import { pages } from "@/constants/pages"
 import { useWishlistToggle } from "@/hooks/product/useWishlistToggle"
 import { usePathname, useRouter } from "next/navigation"
-import toast from "react-hot-toast"
-import { useTranslations } from "next-intl"
 import { useProductContext } from "@/contexts/product/ProductContext"
 import IcondeleteIcon from "@/assets/icons/icondelete"
 
 const WishListBtn = ({ className }: { className?: string; }) => {
-  const t = useTranslations('homePage.toast')
   const router = useRouter()
   const pathname = usePathname();
   const isWishlistPage = pathname.includes(pages.wishlist);
@@ -30,16 +27,7 @@ const WishListBtn = ({ className }: { className?: string; }) => {
       router.push(pages.signup);
       return;
     }
-
-    // t() to get translation of toast message
-    toast.promise(
-      toggleWishlist(),
-      {
-        loading: !isExisting ? `${t('addingTo', { e: t('wishlist') })}...` : `${t('removingFrom', { e: t('wishlist') })}...`,
-        success: !isExisting ? `${t('addedTo', { e: t('wishlist') })}` : `${t('removedFrom', { e: t('wishlist') })}`,
-        error: 'Could not update wishlist.',
-      }
-    );
+    toggleWishlist()
   };
 
   return (

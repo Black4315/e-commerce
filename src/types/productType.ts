@@ -19,6 +19,7 @@
 //     sizes?: string[];
 //     isNew: boolean;
 // };
+import { z } from "zod";
 
 
 export interface ProductSelectionContextType {
@@ -32,56 +33,65 @@ export interface ProductSelectionContextType {
     selectedVariant: Variant;
     selectedSizeQuantity: number | undefined;
     resetSelection: () => void;
-    hasVariationsSizes:boolean;
+    hasVariationsSizes: boolean;
 }
 
+export const productImageSchema = z.object({
+    url: z.string(), //.url(),
+    alt: z.string()
+});
 
-export interface Size {
-    size: string;
-    quantity: number;
-}
+export const sizeSchema = z.object({
+    size: z.string(),
+    quantity: z.number()
+});
 
-export interface Variant {
-    sku: string;
-    colorName:string| null;
-    color: string;
-    sizes: Size[];
-    price: number;
-    originalPrice: number;
-    currency: string;
-    images: ProductImage[];
-    quantityAvailable: number;
-    inStock: boolean;
-}
-export type ProductImage = {
-    url: string;
-    alt: string;
-};
+export const variantSchema = z.object({
+    sku: z.string(),
+    colorName: z.string().nullable(),
+    color: z.string().nullable(),
+    sizes: z.array(sizeSchema),
+    price: z.number(),
+    originalPrice: z.number(),
+    currency: z.string(),
+    images: z.array(productImageSchema),
+    quantityAvailable: z.number(),
+    inStock: z.boolean()
+});
 
-export type productType = {
-    flash?: boolean,
-    start?: string | Date,
-    end?: string | Date,
-    id: number;
-    title: string;
-    handle: string;
-    description: string;
-    vendor: string;
-    category: string;
-    tags: string[];
-    hasVariations: boolean;
-    defaultVariantIndex: number;
-    variants: Variant[];
-    quantityAvailable: number;
-    itemsLeft: number;
-    initialItems: number;
-    isNew: boolean;
-    discountPercent: number;
-    rating: number;
-    reviewsCount: number;
-    soldNumber: number;
-    taxes: number;
-    weight: string;
-    material: string;
-    dimensions: string;
-};
+export const productTypeSchema = z.object({
+    flash: z.boolean().optional(),
+    start: z.union([z.string(), z.date()]).optional(),
+    end: z.union([z.string(), z.date()]).optional(),
+    id: z.number(),
+    title: z.string(),
+    handle: z.string(),
+    description: z.string(),
+    vendor: z.string(),
+    category: z.string(),
+    tags: z.array(z.string()),
+    hasVariations: z.boolean(),
+    defaultVariantIndex: z.number(),
+    variants: z.array(variantSchema),
+    quantityAvailable: z.number().optional(),
+    itemsLeft: z.number(),
+    initialItems: z.number(),
+    isNew: z.boolean(),
+    discountPercent: z.number(),
+    rating: z.number(),
+    reviewsCount: z.number(),
+    soldNumber: z.number(),
+    taxes: z.number(),
+    weight: z.string(),
+    material: z.string(),
+    dimensions: z.string()
+});
+
+export type Size = z.infer<typeof sizeSchema>
+export type Variant = z.infer<typeof variantSchema>
+export type ProductImage = z.infer<typeof productImageSchema>
+export type productType = z.infer<typeof productTypeSchema>
+
+
+
+

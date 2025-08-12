@@ -24,7 +24,7 @@ const JustForU = ({
     return (
         <WishSection
             heading={t('justForU')}
-            btn={t('seeAll')}
+            btnAbove={t('seeAll')}
             btnProps={{
                 onClick: () =>
                     seeAllRedirect("related-items", {
@@ -41,9 +41,9 @@ const JustForU = ({
                 {isError ? (
                     <ErrorProducts />
                 ) : isLoading ? (
-                    <SkeltonProductCard  />
+                    <SkeltonProductCard />
                 ) : (
-                    <ProductCards data={data?.bestSellings.products} btnsClassname="hidden"/> )
+                    <ProductCards data={data?.bestSellings.products} btnsClassname="!-top-18.5 max-md:w-fit !end-0" />)
                 }
             </div>
 

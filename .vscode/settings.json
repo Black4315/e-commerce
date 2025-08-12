@@ -1,0 +1,10 @@
+{
+  "todo-tree.general.tags": ["TODO", "FIXME", "BUG", "NOTE"],
+  "todo-tree.highlights.defaultHighlight": {
+    "type": "text",
+    "icon": "check",
+    "foreground": "#ffcc00",
+    "background": "#00000000"
+  },
+  "todo-tree.tree.showScanModeButton": false
+}

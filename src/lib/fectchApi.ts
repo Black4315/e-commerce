@@ -3,23 +3,24 @@ import { fetchAndValidate } from "./fetchAndValidate";
 import { ZodSchema, infer as zInfer } from "zod";
 
 export default function useFetchApi<T>(
-    queryKeys: readonly unknown[],
-    api: string,
-    locale: string,
-    schema?: ZodSchema<T>,
-    fallback?: T
+  queryKeys: readonly unknown[],
+  api: string,
+  locale: string,
+  schema?: ZodSchema<T>,
+  fallback?: T
 ): UseQueryResult<T> {
-    api = api.replace(/\/$/, ""); // Remove trailing slash
+  api = api.replace(/\/$/, ""); // Remove trailing slash
 
-    const queryKey = [...queryKeys, locale];
+  const queryKey = [...queryKeys, locale];
 
-    return useQuery({
-        queryKey,
-        queryFn: () =>
-            fetchAndValidate({
-                url: `${api}?lang=${locale}`,
-                schema,
-                fallback
-            }),
-    });
+  return useQuery({
+    queryKey,
+    queryFn: () =>
+      fetchAndValidate({
+        url: `${api}?lang=${locale}`,
+        schema,
+        fallback,
+      }),
+    select: (data) => data ?? (fallback as T),
+  });
 }

@@ -6,7 +6,7 @@ import { useFetchCats } from './hooks/useFetchCats'
 import Category from './components/Category'
 import { CategoryType } from './types/CategoryType'
 import useDropDown from './hooks/useDropDown'
-import DropdownPanel from './components/CategoryDropdown/components/DropdownPanel'
+import DropdownPanel from './components/CategoryDropdown/DropdownPanel'
 
 const Categorys = () => {
   const t = useTranslations('homePage')

@@ -1,237 +1,274 @@
 {
-    "homePage": {
-        "categories": [
-            {
-                "name": "أزياء النساء",
-                "link": "/category/womens-fashion",
-                "children": [
-                    {
-                        "label": true,
-                        "name": "أزياء النساء"
-                    },
-                    {
-                        "name": "فساتين",
-                        "link": "/category/womens-fashion/dresses"
-                    },
-                    {
-                        "name": "بلوزات وتوبات",
-                        "link": "/category/womens-fashion/tops-blouses"
-                    },
-                    {
-                        "name": "بنطلونات وسراويل",
-                        "link": "/category/womens-fashion/pants-trousers"
-                    },
-                    {
-                        "name": "تنانير",
-                        "link": "/category/womens-fashion/skirts"
-                    },
-                    {
-                        "name": "ملابس خارجية",
-                        "link": "/category/womens-fashion/outerwear"
-                    },
-                    {
-                        "name": "أحذية",
-                        "link": "/category/womens-fashion/shoes"
-                    },
-                    {
-                        "name": "حقائب",
-                        "link": "/category/womens-fashion/bags"
-                    },
-                    {
-                        "name": "إكسسوارات",
-                        "link": "/category/womens-fashion/accessories"
-                    },
-                    {
-                        "name": "ملابس داخلية وملابس نوم",
-                        "link": "/category/womens-fashion/lingerie-sleepwear"
-                    },
-                    {
-                        "name": "مجوهرات",
-                        "link": "/category/womens-fashion/jewelry"
-                    }
-                ]
-            },
-            {
-                "name": "أزياء الرجال",
-                "link": "/category/mens-fashion",
-                "children": [
-                    {
-                        "label": true,
-                        "name": "أزياء الرجال"
-                    },
-                    {
-                        "name": "تيشيرتات وبولو",
-                        "link": "/category/mens-fashion/tshirts-polos"
-                    },
-                    {
-                        "name": "قمصان",
-                        "link": "/category/mens-fashion/shirts"
-                    },
-                    {
-                        "name": "جينز وسراويل",
-                        "link": "/category/mens-fashion/jeans-trousers"
-                    },
-                    {
-                        "name": "بدل وسترات",
-                        "link": "/category/mens-fashion/suits-blazers"
-                    },
-                    {
-                        "name": "ملابس خارجية",
-                        "link": "/category/mens-fashion/outerwear"
-                    },
-                    {
-                        "name": "أحذية",
-                        "link": "/category/mens-fashion/shoes"
-                    },
-                    {
-                        "name": "ساعات",
-                        "link": "/category/mens-fashion/watches"
-                    },
-                    {
-                        "name": "حقائب ومحافظ",
-                        "link": "/category/mens-fashion/bags-wallets"
-                    },
-                    {
-                        "name": "إكسسوارات",
-                        "link": "/category/mens-fashion/accessories"
-                    },
-                    {
-                        "name": "ملابس داخلية وجوارب",
-                        "link": "/category/mens-fashion/underwear-socks"
-                    }
-                ]
-            },
-            {
-                "name": "إلكترونيات",
-                "link": "/category/electronics",
-                "children": []
-            },
-            {
-                "name": "المنزل والديكور",
-                "link": "/category/home-lifestyle",
-                "children": []
-            },
-            {
-                "name": "الطب والرعاية الصحية",
-                "link": "/category/medicine",
-                "children": []
-            },
-            {
-                "name": "الرياضة والأنشطة الخارجية",
-                "link": "/category/sports-outdoor",
-                "children": []
-            },
-            {
-                "name": "الرضّع والألعاب",
-                "link": "/category/baby-toys",
-                "children": []
-            },
-            {
-                "name": "البقالة والحيوانات الأليفة",
-                "link": "/category/groceries-pets",
-                "children": []
-            },
-            {
-                "name": "الصحة والجمال",
-                "link": "/category/health-beauty",
-                "children": []
-            }
-        ],
-        "shopNowBtn": "تسوق الآن",
-        "buyNowBtn": "اشتري الآن",
-        "quickView": "معاينة سريعة",
-        "seeAll": "رؤية الكل",
-        "justForU": "فقط من أجلك",
-        "flashSale": {
-            "label": "اليوم",
-            "title": "الخصومات الفورية",
-            "days": "أيام",
-            "hours": "ساعات",
-            "minutes": "دقائق",
-            "seconds": "ثواني",
-            "salesEnd": "العرض انتهى"
-        },
-        "product": {
-            "new": "جديد",
-            "addCart": "اضف الى العربة",
-            "viewAll": "عرض جميع المنتجات",
-            "removeCart": "إزالة من العربة",
-            "saleEnded": "انتهى العرض",
-            "soldOut": "نفدت الكمية",
-            "outStock": "غير متوفر",
-            "inStock": "متوفر",
-            "sold": "مُباع",
-            "reviews": "المراجعات",
-            "moreDetails": "مزيد من التفاصيل",
-            "taxes": "بما في ذلك رسوم الاستيراد؛ تقدير الضرائب الأخرى",
-            "color": "اللون",
-            "sizes": "الأحجام",
-            "selectVariant": "يرجى اختيار نوع",
-            "limitedTime": "عرض لوقت محدود"
-        },
-        "browseByCategory": {
-            "label": "الفئات",
-            "title": "التصفح حسب الفئة",
-            "phones": "هواتف",
-            "computers": "أجهزة كمبيوتر",
-            "smartwatch": "ساعات ذكية",
-            "camera": "كاميرا",
-            "headphones": "سماعات رأس",
-            "gaming": "ألعاب"
-        },
-        "bestSellings": {
-            "label": "",
-            "title": "أفضل المنتجات مبيعا"
-        },
-        "ourProducts": {
-            "label": "منتجاتنا",
-            "title": "استكشف منتجاتنا"
-        },
-        "newArrival": {
-            "label": "مميز",
-            "title": "أحدث الإصدارات"
-        },
-        "trustBadges": [
-            {
-                "id": 1,
-                "icon": "/assets/icons/icon-delivery.svg",
-                "title": "توصيل سريع ومجاني",
-                "description": "توصيل مجاني لجميع الطلبات التي تزيد عن 140 دولار"
-            },
-            {
-                "id": 2,
-                "icon": "/assets/icons/Icon-Customer-service.svg",
-                "title": "خدمة العملاء على مدار الساعة",
-                "description": "دعم عملاء ودود على مدار الساعة"
-            },
-            {
-                "id": 3,
-                "icon": "/assets/icons/icon-secure.svg",
-                "title": "ضمان استرداد الأموال",
-                "description": "إرجاع الأموال خلال 30 يومًا"
-            }
-        ],
-        "toast": {
-            "addingTo": "إضافة إلى {e}",
-            "removingFrom": "إزالة من {e}",
-            "addedTo": "تمت الإضافة إلى {e}",
-            "removedFrom": "تمت الإزالة من {e}",
-            "cart": "العربة",
-            "wishlist": "قائمة الرغبات",
-            "incingQyt": "جاري زيادة الكمية",
-            "decingQyt": "جاري تقليل الكمية",
-            "qytInced": "تمت زيادة الكمية بنجاح",
-            "qytDeced": "تم تقليل الكمية بنجاح",
-            "maxItemsAllowed": "الحد الأقصى المتاح هو {count} قطعة"
-        },
-        "wishlist": {
-            "wishlist": "قائمة الرغبات",
-            "moveToCart": "نقل الكل إلى عربة التسوق"
-        }
+  "homePage": {
+    "categories": [
+      {
+        "name": "أزياء النساء",
+        "link": "/category/womens-fashion",
+        "children": [
+          {
+            "label": true,
+            "name": "أزياء النساء"
+          },
+          {
+            "name": "فساتين",
+            "link": "/category/womens-fashion/dresses"
+          },
+          {
+            "name": "بلوزات وتوبات",
+            "link": "/category/womens-fashion/tops-blouses"
+          },
+          {
+            "name": "بنطلونات وسراويل",
+            "link": "/category/womens-fashion/pants-trousers"
+          },
+          {
+            "name": "تنانير",
+            "link": "/category/womens-fashion/skirts"
+          },
+          {
+            "name": "ملابس خارجية",
+            "link": "/category/womens-fashion/outerwear"
+          },
+          {
+            "name": "أحذية",
+            "link": "/category/womens-fashion/shoes"
+          },
+          {
+            "name": "حقائب",
+            "link": "/category/womens-fashion/bags"
+          },
+          {
+            "name": "إكسسوارات",
+            "link": "/category/womens-fashion/accessories"
+          },
+          {
+            "name": "ملابس داخلية وملابس نوم",
+            "link": "/category/womens-fashion/lingerie-sleepwear"
+          },
+          {
+            "name": "مجوهرات",
+            "link": "/category/womens-fashion/jewelry"
+          }
+        ]
+      },
+      {
+        "name": "أزياء الرجال",
+        "link": "/category/mens-fashion",
+        "children": [
+          {
+            "label": true,
+            "name": "أزياء الرجال"
+          },
+          {
+            "name": "تيشيرتات وبولو",
+            "link": "/category/mens-fashion/tshirts-polos"
+          },
+          {
+            "name": "قمصان",
+            "link": "/category/mens-fashion/shirts"
+          },
+          {
+            "name": "جينز وسراويل",
+            "link": "/category/mens-fashion/jeans-trousers"
+          },
+          {
+            "name": "بدل وسترات",
+            "link": "/category/mens-fashion/suits-blazers"
+          },
+          {
+            "name": "ملابس خارجية",
+            "link": "/category/mens-fashion/outerwear"
+          },
+          {
+            "name": "أحذية",
+            "link": "/category/mens-fashion/shoes"
+          },
+          {
+            "name": "ساعات",
+            "link": "/category/mens-fashion/watches"
+          },
+          {
+            "name": "حقائب ومحافظ",
+            "link": "/category/mens-fashion/bags-wallets"
+          },
+          {
+            "name": "إكسسوارات",
+            "link": "/category/mens-fashion/accessories"
+          },
+          {
+            "name": "ملابس داخلية وجوارب",
+            "link": "/category/mens-fashion/underwear-socks"
+          }
+        ]
+      },
+      {
+        "name": "إلكترونيات",
+        "link": "/category/electronics",
+        "children": []
+      },
+      {
+        "name": "المنزل والديكور",
+        "link": "/category/home-lifestyle",
+        "children": []
+      },
+      {
+        "name": "الطب والرعاية الصحية",
+        "link": "/category/medicine",
+        "children": []
+      },
+      {
+        "name": "الرياضة والأنشطة الخارجية",
+        "link": "/category/sports-outdoor",
+        "children": []
+      },
+      {
+        "name": "الرضّع والألعاب",
+        "link": "/category/baby-toys",
+        "children": []
+      },
+      {
+        "name": "البقالة والحيوانات الأليفة",
+        "link": "/category/groceries-pets",
+        "children": []
+      },
+      {
+        "name": "الصحة والجمال",
+        "link": "/category/health-beauty",
+        "children": []
+      }
+    ],
+    "shopNowBtn": "تسوق الآن",
+    "buyNowBtn": "اشتري الآن",
+    "quickView": "معاينة سريعة",
+    "seeAll": "رؤية الكل",
+    "justForU": "فقط من أجلك",
+    "flashSale": {
+      "label": "اليوم",
+      "title": "الخصومات الفورية",
+      "days": "أيام",
+      "hours": "ساعات",
+      "minutes": "دقائق",
+      "seconds": "ثواني",
+      "salesEnd": "العرض انتهى"
     },
-    "Errors": {
-        "404Title": "غير موجود 404",
-        "404Description": "عذرًا، لا يمكننا العثور على الصفحة التي تبحث عنها. تحقق من الرابط أو عد إلى الصفحة الرئيسية.",
-        "goHome": "العودة إلى الصفحة الرئيسية"
+    "product": {
+      "new": "جديد",
+      "addCart": "اضف الى العربة",
+      "viewAll": "عرض جميع المنتجات",
+      "removeCart": "إزالة من العربة",
+      "saleEnded": "انتهى العرض",
+      "soldOut": "نفدت الكمية",
+      "outStock": "غير متوفر",
+      "inStock": "متوفر",
+      "sold": "مُباع",
+      "reviews": "المراجعات",
+      "moreDetails": "مزيد من التفاصيل",
+      "taxes": "بما في ذلك رسوم الاستيراد؛ تقدير الضرائب الأخرى",
+      "color": "اللون",
+      "sizes": "الأحجام",
+      "selectVariant": "يرجى اختيار نوع",
+      "limitedTime": "عرض لوقت محدود"
+    },
+    "browseByCategory": {
+      "label": "الفئات",
+      "title": "التصفح حسب الفئة",
+      "phones": "هواتف",
+      "computers": "أجهزة كمبيوتر",
+      "smartwatch": "ساعات ذكية",
+      "camera": "كاميرا",
+      "headphones": "سماعات رأس",
+      "gaming": "ألعاب"
+    },
+    "bestSellings": {
+      "label": "",
+      "title": "أفضل المنتجات مبيعا"
+    },
+    "ourProducts": {
+      "label": "منتجاتنا",
+      "title": "استكشف منتجاتنا"
+    },
+    "newArrival": {
+      "label": "مميز",
+      "title": "أحدث الإصدارات"
+    },
+    "trustBadges": [
+      {
+        "id": 1,
+        "icon": "/assets/icons/icon-delivery.svg",
+        "title": "توصيل سريع ومجاني",
+        "description": "توصيل مجاني لجميع الطلبات التي تزيد عن 140 دولار"
+      },
+      {
+        "id": 2,
+        "icon": "/assets/icons/Icon-Customer-service.svg",
+        "title": "خدمة العملاء على مدار الساعة",
+        "description": "دعم عملاء ودود على مدار الساعة"
+      },
+      {
+        "id": 3,
+        "icon": "/assets/icons/icon-secure.svg",
+        "title": "ضمان استرداد الأموال",
+        "description": "إرجاع الأموال خلال 30 يومًا"
+      }
+    ],
+    "toast": {
+      "addingTo": "إضافة إلى {e}",
+      "removingFrom": "إزالة من {e}",
+      "addedTo": "تمت الإضافة إلى {e}",
+      "removedFrom": "تمت الإزالة من {e}",
+      "cart": "العربة",
+      "wishlist": "قائمة الرغبات",
+      "incingQyt": "جاري زيادة الكمية",
+      "decingQyt": "جاري تقليل الكمية",
+      "qytInced": "تمت زيادة الكمية بنجاح",
+      "qytDeced": "تم تقليل الكمية بنجاح",
+      "maxItemsAllowed": "الحد الأقصى المتاح هو {count} قطعة"
     }
+  },
+  "wishlist": {
+    "wishlist": "قائمة الرغبات",
+    "moveToCart": "نقل الكل إلى عربة التسوق"
+  },
+  "emptyState": {
+    "global": {
+      "title": "لم يتم العثور على منتجات",
+      "desc": "تحقق مرة أخرى لاحقًا للحصول على أحدث الإصدارات."
+    },
+    "wishlist": {
+      "title": "قائمة الأمنيات الخاصة بك تشعر بالوحدة",
+      "desc": "يبدو أنك لم تضف أي شيء بعد. ابحث عن شيء تحبه!"
+    },
+    "cart": {
+      "title": "سلة التسوق فارغة",
+      "desc": "يبدو أنك لم تضف أي شيء بعد. لنبدأ التسوق الآن!"
+    }
+  },
+  "Errors": {
+    "404Title": "غير موجود 404",
+    "404Description": "عذرًا، لا يمكننا العثور على الصفحة التي تبحث عنها. تحقق من الرابط أو عد إلى الصفحة الرئيسية.",
+    "goHome": "العودة إلى الصفحة الرئيسية"
+  },
+  "breadCrumbs": {
+    "home": "الرئيسية",
+    "contact": "اتصل بنا",
+    "cart": "سلة التسوق",
+    "account": "الحساب",
+    "myAccount": "حسابي",
+    "product": "المنتج",
+    "viewCart": "عرض السلة",
+    "checkOut": "الدفع"
+  },
+  "cartPage": {
+    "thds": ["المنتج", "اللون", "المقاس", "السعر", "الكمية", "الإجمالي"],
+    "returnToShopBtn": "العودة إلى المتجر",
+    "updateCartBtn": "تحديث السلة",
+    "coponeCode": "رمز القسيمة",
+    "applyCopon": "تطبيق القسيمة",
+    "cartTotal": "إجمالي السلة",
+    "subTotal": "المجموع الفرعي",
+    "shipping": "الشحن",
+    "total": "الإجمالي",
+    "proceedCheck": "المتابعة إلى الدفع",
+    "taxes": "الضراىْب"
+  }
 }

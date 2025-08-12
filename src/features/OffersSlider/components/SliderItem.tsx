@@ -24,7 +24,7 @@ const SliderItem = ({ name, image, logo, offerBody, link }: SliderItemtype) => {
                 }} />
 
                 {/* heading */}
-                <h1 className='heading-slider text-text-1'>
+                <h1 className='heading-slider text-text-1 max-sm:line-clamp-1'>
                     {offerBody}
                 </h1>
 

@@ -1,52 +1,48 @@
-"use client"
-import SectionProducts from '@/components/ui/SectionProducts/SectionProducts'
-import { useFetchFlashsales } from './hooks/useFetchFlashSales'
-import { useLocale, useTranslations } from 'next-intl'
-import CountdownTimer from './components/CountdownTimer'
-import ErrorTimer from './components/ErrorTimer'
-import { flashDataType, flashSalesContextType } from './types'
-import { FlashSalesProvider, useFlashSalesContext } from './context/FlashSalesContext'
-import ErrorProducts from '@/components/ui/SectionProducts/components/ErrorProducts'
-import LoadingTimer from './components/LoadingTimer'
-
-
+"use client";
+import SectionProducts from "@/components/ui/SectionProducts/SectionProducts";
+import { useFetchFlashsales } from "./hooks/useFetchFlashSales";
+import { useLocale, useTranslations } from "next-intl";
+import CountdownTimer from "./components/CountdownTimer";
+import ErrorTimer from "./components/ErrorTimer";
+import {
+  FlashSalesProvider,
+  useFlashSalesContext,
+} from "./context/FlashSalesContext";
+import LoadingTimer from "./components/LoadingTimer";
 
 export default function FlashSales() {
   return (
     <FlashSalesProvider>
       <FlashSalesSection />
     </FlashSalesProvider>
-  )
-};
-
+  );
+}
 
 const FlashSalesSection = () => {
-  const { flashEnd, setFlashEnd } = useFlashSalesContext()
-
+  const { flashEnd, setFlashEnd } = useFlashSalesContext();
 
   // translations
-  const t = useTranslations('homePage')
+  const t = useTranslations("homePage");
   const locale = useLocale();
 
   // fetching
-  const { data, isLoading, isError } = useFetchFlashsales(locale) as {
-    data: flashDataType;
-    isLoading: boolean;
-    isError: boolean;
+  const { data, isLoading, isError } = useFetchFlashsales(locale);
+
+  const { flashSale } = data ?? {
+    flashSale: { start: "", end: "", products: [], viewAll: "" },
   };
-  const flashSale = data && data.flashSale;
 
   /**
    * class back function for set flash end to true to hide the section on timer ends
    */
   const onTimerEnd = () => {
-    setFlashEnd(true)
-  }
+    setFlashEnd(true);
+  };
 
   return (
     <SectionProducts
-      label={t('flashSale.label')}
-      heading={t('flashSale.title')}
+      label={t("flashSale.label")}
+      heading={t("flashSale.title")}
       timerComponent={
         isError ? (
           <ErrorTimer />
@@ -58,8 +54,8 @@ const FlashSalesSection = () => {
       }
       isLoading={isLoading}
       isError={isError}
-      products={data && flashSale.products}
-      viewAllLink={data && flashSale.viewAll}
+      products={flashSale.products}
+      viewAllLink={flashSale.viewAll}
     />
   );
-}
+};

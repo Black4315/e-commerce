@@ -11,25 +11,26 @@ type CustomImageProps = ImageProps;
 export default function CustomImage({ src, alt, ...props }: CustomImageProps) {
     const [isLoading, setIsLoading] = useState(true);
 
-    return (<>
-
-        {(isLoading) && (
-            <div className="relative w-full h-full anim-fadeInOut overflow-hidden bg-skeleton flex-center">
-                <LogoIcon className='text-[#0003] w-32 h-32' />
-            </div>)}
+    return (
+      <>
+        {isLoading && (
+          <div className="relative w-full h-full anim-fadeInOut overflow-hidden bg-skeleton flex-center">
+            <LogoIcon className="text-[#0003] w-32 h-32 object-contain" />
+          </div>
+        )}
 
         <Image
-            src={src || Logo}
-            alt={alt || 'Fallback image'}
-            {...props}
-            onLoad={() => setIsLoading(false)}
-            className={clsx(
-                props.className,
-                'transition-apple duration-200',
-                isLoading ? 'opacity-0 absolute' : 'opacity-100 relative',
-                !src && 'object-contain !w-32 !h-32'
-            )}
+          src={src || Logo}
+          alt={alt || "Fallback image"}
+          {...props}
+          onLoad={() => setIsLoading(false)}
+          className={clsx(
+            props.className,
+            "transition-apple duration-200",
+            isLoading ? "opacity-0 absolute" : "opacity-100 relative",
+            !src && "object-contain !w-32 !h-32"
+          )}
         />
-    </>
-    )
+      </>
+    );
 }

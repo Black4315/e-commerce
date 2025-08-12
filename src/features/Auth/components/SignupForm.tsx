@@ -56,59 +56,67 @@ const SignupForm = () => {
     }
 
     return (
-        <AuthForm
-            ref={formRef}
-            heading={t('createAccFormHead')}
-            subheading={t('createAccFormSubHead')}
-            onSubmit={handleSubmit(onSubmit)}
-            control={control}
-        >
+      <AuthForm
+        ref={formRef}
+        heading={t("createAccFormHead")}
+        subheading={t("createAccFormSubHead")}
+        onSubmit={handleSubmit(onSubmit)}
+        control={control}
+      >
+        {/* TODO: adjust the services and use axois and send to server */}
+        <TextInput
+          control={control}
+          name="name"
+          autoComplete="name"
+          placeholder={t("name")}
+        />
+        <TextInput
+          control={control}
+          name="emailOrPhone"
+          autoComplete="username"
+          placeholder={t("emailOrPhone")}
+        />
+        <TextInput
+          control={control}
+          name="password"
+          type="password"
+          autoComplete="new-password"
+          placeholder={t("password")}
+        />
+        <TextInput
+          control={control}
+          name="confirmPassword"
+          placeholder={t("confirmPassword")}
+          type="password"
+          autoComplete="new-password"
+        />
 
-            <TextInput
-                control={control}
-                name='name'
-                autoComplete='name'
-                placeholder={t('name')}
-            />
-            <TextInput
-                control={control}
-                name='emailOrPhone'
-                autoComplete="username"
-                placeholder={t('emailOrPhone')}
-            />
-            <TextInput
-                control={control}
-                name='password'
-                type='password'
-                autoComplete='new-password'
-                placeholder={t('password')}
-            />
-            <TextInput
-                control={control}
-                name="confirmPassword"
-                placeholder={t("confirmPassword")}
-                type="password"
-                autoComplete="new-password"
-            />
+        <div className="space-y-4">
+          <button className="auth-btn" type="submit" disabled={isSubmitting}>
+            {isSubmitting ? (
+              <LoadingSpinner className="w-4 -my-4" />
+            ) : (
+              t("createAcc")
+            )}
+          </button>
 
-            <div className='space-y-4'>
-                <button className='auth-btn' type='submit' disabled={isSubmitting}>
-                    {isSubmitting ? <LoadingSpinner className='w-4 -my-4' /> : t('createAcc')}
-                </button>
+          <button className="auth-btn bg-white border border-[#999999] text-black space-x-2 sm:space-x-4">
+            <IconGoogleIcon className="max-sm:w-5 max-sm:h-5" />
+            <span>{t("signWithGoogle")}</span>
+          </button>
 
-                <button className='auth-btn bg-white border border-[#999999] text-black space-x-2 sm:space-x-4'>
-                    <IconGoogleIcon className='max-sm:w-5 max-sm:h-5' />
-                    <span>{t('signWithGoogle')}</span>
-                </button>
-
-                <div className='text-text-2 flex-center gap-4 !mt-8'>
-                    <span className='reg-text font-poppins'>{t('haveAcc')}</span>
-                    <Link href={pages.login} className='med-text border-b hover:border-black transition-all hover:text-black'>{t('login')}</Link>
-                </div>
-            </div>
-
-        </AuthForm>
-    )
+          <div className="text-text-2 flex-center gap-4 !mt-8">
+            <span className="reg-text font-poppins">{t("haveAcc")}</span>
+            <Link
+              href={pages.login}
+              className="med-text border-b hover:border-black transition-all hover:text-black"
+            >
+              {t("login")}
+            </Link>
+          </div>
+        </div>
+      </AuthForm>
+    );
 }
 
 export default SignupForm

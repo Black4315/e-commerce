@@ -1,5 +1,5 @@
 import { CategoryChild } from '@/features/Categories/types/CategoryType';
-import '../style/dropdown.css';
+import './style/dropdown.css';
 import { AnimatePresence, motion, Variants } from 'motion/react';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
@@ -46,7 +46,7 @@ export default function DropdownPanel({ items, isActive }: Props) {
                                         key={i}
                                         variants={itemsVariants}
                                         transition={{ delay: -0.2 + i + 1 }}
-                                        exit={{ opacity: 0, y: -3 }}
+                                        exit={{ opacity: 0 }}
                                         className="hover:text-black will-animate  med-text md:text-sm font-semibold "
                                     >
                                         {label ?

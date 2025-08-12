@@ -7,13 +7,15 @@ const WishSection = ({
     redbadge,
     heading,
     children,
-    btn,
+    btnEndLine,
     btnProps,
+    btnAbove,
     ...props
 }: {
     redbadge?: boolean
     heading: string;
-    btn?: string;
+    btnEndLine?: string;
+    btnAbove?: string;
     btnProps?: ComponentProps<'button'>
 } & ComponentProps<'section'>) => {
     return (
@@ -21,16 +23,19 @@ const WishSection = ({
             <div className="grid gap-6 grid-cols-1 md:grid-cols-2 w-full justify-between items-center">
                 <div className="flex gap-4 md:gap-6 items-center">
                     {redbadge && <div className="w-5 h-10 rounded bg-secondary-3" />}
-                    <h3 className="font-normal text-lg md:text-xl leading-5 md:leading-6 capitalize"> {heading} </h3>
+                    <h3 className="font-normal text-xl font-poppins leading-6 capitalize"> {heading} </h3>
                 </div>
 
                 <div className="flex justify-end">
-
-                    {btn && <Button2 {...btnProps}>{btn}</Button2>}
+                    {btnEndLine && <Button2 className={cn('med-text', btnProps?.className)} {...btnProps}>{btnEndLine}</Button2>}
                 </div>
             </div>
             <div className="mt-10 md:mt-15">
                 {children}
+            </div>
+
+            <div className="flex justify-center mt-10 md:mt-15">
+                {btnAbove && <Button2 className={cn('med-text', btnProps?.className)} {...btnProps}>{btnAbove}</Button2>}
             </div>
         </section>
     )

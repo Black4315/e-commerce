@@ -1,6 +1,5 @@
-import ActionsIconButton from "@/components/ui/ActionsIconButton";
+import ActionsIconButton, { ActionsIconButtonProps } from "@/components/ui/ActionsIconButton";
 import { cn } from "@/lib/utils";
-import { ActionsIconButtonProps } from "@/types/ActionsIconButtonType"
 
 interface ActionNavItem extends ActionsIconButtonProps {
     className?: string;

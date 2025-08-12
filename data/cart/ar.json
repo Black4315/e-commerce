@@ -1,20 +1,78 @@
 [
-    {
-        "userId": 1,
-        "canSaveForLater": true,
-        "sync": true,
-        "persistent": true,
-        "id": 1,
-        "title": "وحدة تحكم HAVIT HV-G92",
+  {
+    "userId": 1,
+    "canSaveForLater": true,
+    "sync": true,
+    "persistent": true,
+    "selectedVariant":  {
+      "sku": "HAVIT-G92",
+      "colorName": null,
+      "color": null,
+      "sizes": [],
+      "price": 120,
+      "originalPrice": 160,
+      "currency": "USD",
+      "quantityAvailable": 12,
+      "inStock": true,
+      "images": [
+        {
+          "url": "/assets/products/images/g92-2-500x500 1.png",
+          "alt": "وحدة تحكم HAVIT HV-G92 - العرض الأمامي"
+        },
+        {
+          "url": "/assets/products/images/g92-2-500x500 1.png",
+          "alt": "عرض جانبي"
+        }
+      ]
+    },
+    "selectedSize": null,
+    "quantity": 1,
+
+    "flash": true,
+    "start": "2025-07-17T00:00:00Z",
+    "end": "2025-08-07T23:59:59Z",
+    "id": 1,
+    "title": "وحدة تحكم HAVIT HV-G92",
+    "handle": "havit-hv-g92-gamepad",
+    "description": "وحدة تحكم عالية الجودة مناسبة للألعاب على الكمبيوتر الشخصي واللابتوب.",
+    "vendor": "HAVIT",
+    "category": "electronics",
+    "tags": ["gamepad", "controller", "gaming", "pc"],
+    "defaultVariantIndex": 0,
+    "hasVariations": false,
+    "variants": [
+      {
         "sku": "HAVIT-G92",
-        "size": null,
+        "colorName": null,
         "color": null,
+        "sizes": [],
         "price": 120,
         "originalPrice": 160,
-        "discountPercent": 40,
         "currency": "USD",
-        "quantity": 1,
-        "image": "/assets/products/images/g92-2-500x500 1.png",
-        "inStock": true
-    }
+        "quantityAvailable": 12,
+        "inStock": true,
+        "images": [
+          {
+            "url": "/assets/products/images/g92-2-500x500 1.png",
+            "alt": "وحدة تحكم HAVIT HV-G92 - العرض الأمامي"
+          },
+          {
+            "url": "/assets/products/images/g92-2-500x500 1.png",
+            "alt": "عرض جانبي"
+          }
+        ]
+      }
+    ],
+    "itemsLeft": 12,
+    "initialItems": 100,
+    "isNew": false,
+    "discountPercent": 40,
+    "rating": 4.5,
+    "reviewsCount": 88,
+    "soldNumber": 1300,
+    "taxes": 0.15,
+    "weight": "0.45kg",
+    "material": "بلاستيك ABS",
+    "dimensions": "15x10x5 سم"
+  }
 ]

@@ -43,12 +43,13 @@ const LoginForm = () => {
 
   return (
     <AuthForm
-      ref={formRef}
-      heading={t('loginFormHead')}
-      subheading={t('createAccFormSubHead')}
-      onSubmit={handleSubmit(onSubmit)}
+    ref={formRef}
+    heading={t('loginFormHead')}
+    subheading={t('createAccFormSubHead')}
+    onSubmit={handleSubmit(onSubmit)}
       control={control}
-    >
+      >
+        {/* TODO: adjust the services and use axois and send to server */}
       <TextInput
         control={control}
         name='emailOrPhone'

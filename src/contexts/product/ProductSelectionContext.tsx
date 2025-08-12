@@ -33,7 +33,9 @@ export const ProductSelectionProvider = ({
         setSelectedSize(defaultSize);
     };
 
-    const colors: string[] = variants.filter(v => v.color !== null).map(v => v.color);
+    const colors: string[] = variants
+      .filter((v) => v.color !== null)
+      .map((v) => v.color !== null ? v.color : '');
     const sizes: Size[] = variants.flatMap(v => v.sizes);
 
     const hasVariationsSizes = !!(defaultSizes.length > 1)

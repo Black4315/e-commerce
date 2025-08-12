@@ -54,11 +54,11 @@ const SectionProducts: React.FC<SectionProductsProps> = ({
             ) : (
                 <>
                     <ProductCards data={products} rows={rows} />
-                    {viewAllLink && <div className="flex-center">
+                    {(viewAllLink && products.length) ? <div className="flex-center">
                         <Link href={viewAllLink} className="w-48 md:w-56 aspect-[4.6] med-text flex-center hover:bg-hover-button-2 transition-all bg-secondary-3 text-text-1 rounded">
                             {t('viewAll')}
                         </Link>
-                    </div>}
+                    </div>:''}
                 </>
             )}
         </Section>

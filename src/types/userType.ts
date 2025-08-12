@@ -1,47 +1,60 @@
-export interface Address {
-    street: string;
-    city: string;
-    postalCode: string;
-    country: string;
-    apartment?: string;
-    floor?: string;
-    landmark?: string;
-}
+import { z } from "zod";
 
-export interface BillingDetails {
-    fullName: string;
-    company?: string;
-    vatNumber?: string;
-    address: Address;
-}
+// Address schema
+export const addressSchema = z.object({
+    street: z.string(),
+    city: z.string(),
+    postalCode: z.string(),
+    country: z.string(),
+    apartment: z.string().optional(),
+    floor: z.string().optional(),
+    landmark: z.string().optional()
+});
 
-export interface PaymentMethod {
-    type: 'credit_card' | 'paypal';
-    isDefault: boolean;
-    details: {
-        cardNumber?: string;
-        expiry?: string;
-        cardHolder?: string;
-        billingAddress?: Address;
-        email?: string;
-    };
-}
+// BillingDetails schema
+export const billingDetailsSchema = z.object({
+    fullName: z.string(),
+    company: z.string().optional(),
+    vatNumber: z.string().optional(),
+    address: addressSchema
+});
 
-export interface User {
-    id: number;
-    firstName: string;
-    lastName: string;
-    fullName: string;
-    email: string;
-    password:string;
-    role: 'customer' | 'admin';
-    phone: string;
-    avatar: string;
-    createdAt: string;
-    address: Address;
-    billingDetails: BillingDetails;
-    payment: {
-        methods: PaymentMethod[];
-        lastUsed: string;
-    };
-}
+// PaymentMethod schema
+export const paymentMethodSchema = z.object({
+    type: z.enum(["credit_card", "paypal"]),
+    isDefault: z.boolean(),
+    details: z.object({
+        cardNumber: z.string().optional(),
+        expiry: z.string().optional(),
+        cardHolder: z.string().optional(),
+        billingAddress: addressSchema.optional(),
+        email: z.string().email().optional()
+    })
+});
+
+// User schema
+export const userSchema = z.object({
+    id: z.number(),
+    firstName: z.string(),
+    lastName: z.string(),
+    fullName: z.string(),
+    email: z.string().email(),
+    password: z.string(),
+    role: z.enum(["customer", "admin"]),
+    phone: z.string(),
+    avatar: z.string(), //.url(),
+    createdAt: z.string(),
+    address: addressSchema,
+    billingDetails: billingDetailsSchema,
+    payment: z.object({
+        methods: z.array(paymentMethodSchema),
+        lastUsed: z.string()
+    })
+});
+
+
+// types
+export type Address = z.infer<typeof addressSchema>;
+export type BillingDetails = z.infer<typeof billingDetailsSchema>;
+export type PaymentMethod = z.infer<typeof paymentMethodSchema>;
+export type User = z.infer<typeof userSchema>;

@@ -1,4 +1,4 @@
-import { z, ZodSchema } from "zod";
+import { ZodSchema } from "zod";
 
 type FetchAndValidateOptions<T> = {
     schema?: ZodSchema<T>;
@@ -22,14 +22,15 @@ export async function fetchAndValidate<T>({
     }
 
     const json = await res.json();
-    return json
-    // const parsed = schema.safeParse(json);
+    if(!schema) return json
 
-    // if (!parsed.success) {
-    //     console.error("❌ Invalid API response format", parsed.error.format());
-    //     if (fallback) return fallback;
-    //     throw new Error("Invalid API response format");
-    // }
+    const parsed = schema.safeParse(json);
+    console.log(parsed)
+    if (!parsed.success) {
+        console.error("❌ Invalid API response format", parsed.error);
+        if (fallback) return fallback;
+        throw new Error("Invalid API response format");
+    }
 
-    // return parsed.data;
+    return parsed.data;
 }

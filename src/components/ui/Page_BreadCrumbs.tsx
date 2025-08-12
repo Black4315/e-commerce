@@ -6,7 +6,7 @@ const PageBreadCrumbs = ({
     children,
     ...props
 }: {
-    breadcrumbsData: { label: string; link: string }[]
+    breadcrumbsData: { label: string; link?: string }[]
 } & ComponentProps<'div'>) => {
     return (
         <div className='margin-spacey screen-max-width' {...props}>
@@ -14,7 +14,7 @@ const PageBreadCrumbs = ({
                 {breadcrumbsData.map(({ label, link }, i) => (
                     (i != breadcrumbsData.length - 1) ? <Link underline="hover" color="inherit" href={link} className="sm-text capitalize">
                         {label}
-                    </Link> : <span className='capitalize sm-text'>{label}</span>
+                    </Link> : <span className='capitalize sm-text text-black'>{label}</span>
 
                 ))}
             </Breadcrumbs>

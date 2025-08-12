@@ -2,11 +2,8 @@
 
 import { useLocale, useTranslations } from "next-intl";
 import { useFetchCampaignOffer } from "./hooks/useFetchCampaignOffer";
-import { FlashSaleCampaign } from "./types";
-import CountDownTimer from "./components/CountDownTimer";
 import LoadingCampaign from "./components/LoadingCampaign";
 import ErrorCampaign from "./components/ErrorCampaign";
-import { UseQueryResult } from "@tanstack/react-query";
 import CampaignImage from "./components/CampaignImage";
 import CampaignInfo from "./components/CampaignInfo";
 import { CampaignOfferContext } from "./contexts";
@@ -18,7 +15,7 @@ const CampaignOffer = () => {
     const locale = useLocale();
 
     // fetching
-    const { data, isLoading, isError, refetch } = useFetchCampaignOffer(locale) as UseQueryResult<FlashSaleCampaign, Error>;
+    const { data, isLoading, isError, refetch } = useFetchCampaignOffer(locale)
 
 
     if (isLoading) return <LoadingCampaign />;

@@ -1,34 +1,38 @@
-export type FlashSaleCampaign = {
-    campaign: {
-        id: string;
-        status: "active" | "expired" | "upcoming";
-        type: string;
-        starts_at: string;
-        ends_at: string;
-        product: {
-            id: string;
-            name: string;
-            short_description: string;
-            image: string;
-            buy_now_url: string;
-        };
-        labels: {
-            category: string;
-            countdown: {
-                days: string;
-                hours: string;
-                minutes: string;
-                seconds: string;
-            };
-        };
-        countdown: {
-            enabled: boolean;
-            target_time: string;
-        };
-        fallback_after_expiry: {
-            message: string;
-            button: string;
-            redirect_url: string;
-        };
-    };
-};
+import { z } from "zod";
+
+export const flashSaleCampaignSchema = z.object({
+    campaign: z.object({
+        id: z.string(),
+        status: z.enum(["active", "expired", "upcoming"]),
+        type: z.string(),
+        starts_at: z.string(),
+        ends_at: z.string(),
+        product: z.object({
+            id: z.string(),
+            name: z.string(),
+            short_description: z.string(),
+            image: z.string(), //.url(),
+            buy_now_url: z.string(), //.url(),
+        }),
+        labels: z.object({
+            category: z.string(),
+            countdown: z.object({
+                days: z.string(),
+                hours: z.string(),
+                minutes: z.string(),
+                seconds: z.string(),
+            }),
+        }),
+        countdown: z.object({
+            enabled: z.boolean(),
+            target_time: z.string(),
+        }),
+        fallback_after_expiry: z.object({
+            message: z.string().default("This sale has ended"),
+            button: z.string(),
+            redirect_url: z.string(), //.url(),
+        }),
+    }),
+});
+
+export type FlashSaleCampaignType = z.infer<typeof flashSaleCampaignSchema>;
