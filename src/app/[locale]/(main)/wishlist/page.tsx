@@ -1,13 +1,13 @@
-import JustForU from "@/features/justForU"
-import WishListProducts from "./components/WishListProducts"
+import JustForU from "@/features/justForU";
+import WishListProducts from "../../../../features/wishlist/components/WishListProducts";
 
 const WishList = () => {
   return (
     <div className="screen-max-width margin-spacey">
       <WishListProducts />
       <JustForU category="any" brand="any" />
-    </div>  
-  )
-}
+    </div>
+  );
+};
 
-export default WishList
+export default WishList;

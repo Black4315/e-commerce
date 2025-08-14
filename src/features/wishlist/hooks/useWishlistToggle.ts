@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { productType } from "../../types/productType";
-import { useWishlist } from "@/contexts/WishListContext";
+import { productType } from "../../../types/productType";
+import { useWishlist } from "@/features/wishlist/contexts/WishListContext";
 import { useUserContext } from "@/contexts/UserContext";
 import toast from "react-hot-toast";
 import { useTranslations } from "next-intl";
@@ -8,7 +8,7 @@ import { useTranslations } from "next-intl";
 export const useWishlistToggle = (item: productType) => {
   const { wishlist, addToWishlist, removeFromWishlist } = useWishlist();
   const { isLoggedIn, user } = useUserContext();
-  const t = useTranslations('homePage.toast')
+  const t = useTranslations("homePage.toast");
 
   const [isExisting, setIsExisting] = useState(
     wishlist.some((e) => e.id == item.id)

@@ -10,6 +10,7 @@
     /* Optional custom fonts / breakpoints */
     --font-poppins: "Poppins", sans-serif;
     --font-inter: "Inter", sans-serif;
+    --breakpoint-xsm: 25rem;
     --breakpoint-xs: 20rem;
 }
 

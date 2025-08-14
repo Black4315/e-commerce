@@ -1,652 +1,608 @@
 {
-    "ourProducts": {
-        "viewAll": "/our-products/",
-        "products": [
-            {
-                "flash": true,
-                "start": "2025-07-17T00:00:00Z",
-                "end": "2025-08-07T23:59:59Z",
-                "id": 1,
-                "title": "HAVIT HV-G92 Gamepad",
-                "handle": "havit-hv-g92-gamepad",
-                "description": "High quality gamepad suitable for PC and laptop gaming.",
-                "vendor": "HAVIT",
-                "category": "electronics",
-                "tags": [
-                    "gamepad",
-                    "controller",
-                    "gaming",
-                    "pc"
-                ],
-                "defaultVariantIndex": 0,
-                "hasVariations": false,
-                "variants": [
-                    {
-                        "sku": "HAVIT-G92",
-                        "colorName": null,
-                        "color": null,
-                        "sizes": [],
-                        "price": 120,
-                        "originalPrice": 160,
-                        "currency": "USD",
-                        "quantityAvailable": 12,
-                        "inStock": true,
-                        "images": [
-                            {
-                                "url": "/assets/products/images/g92-2-500x500 1.png",
-                                "alt": "HAVIT HV-G92 Gamepad Front View"
-                            },
-                            {
-                                "url": "/assets/products/images/g92-2-500x500 1.png",
-                                "alt": "Side View"
-                            }
-                        ]
-                    }
-                ],
-                "itemsLeft": 12,
-                "initialItems": 100,
-                "isNew": false,
-                "discountPercent": 40,
-                "rating": 4.5,
-                "reviewsCount": 88,
-                "soldNumber": 1300,
-                "taxes": 0.15,
-                "weight": "0.45kg",
-                "material": "ABS Plastic",
-                "dimensions": "15x10x5 cm"
-            },
-            {
-                "flash": true,
-                "start": "2025-07-17T00:00:00Z",
-                "end": "2025-08-07T23:59:59Z",
-                "id": 2,
-                "title": "The North Coat",
-                "handle": "the-north-coat",
-                "description": "Stylish and warm winter coat for everyday wear.",
-                "vendor": "The North Face x Gucci",
-                "category": "mens-fashion",
-                "tags": [
-                    "winter",
-                    "coat",
-                    "luxury",
-                    "gucci"
-                ],
-                "hasVariations": true,
-                "defaultVariantIndex": 0,
-                "variants": [
-                    {
-                        "sku": "NORTHCOAT-RED",
-                        "colorName": "red",
-                        "color": "#FF4F5A",
-                        "sizes": [
-                            {
-                                "size": "S",
-                                "quantity": 4
-                            },
-                            {
-                                "size": "M",
-                                "quantity": 1
-                            },
-                            {
-                                "size": "L",
-                                "quantity": 1
-                            },
-                            {
-                                "size": "XL",
-                                "quantity": 1
-                            },
-                            {
-                                "size": "XXL",
-                                "quantity": 0
-                            }
-                        ],
-                        "images": [
-                            {
-                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-                                "alt": "Front View"
-                            },
-                            {
-                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-                                "alt": "Back View"
-                            }
-                        ],
-                        "price": 260,
-                        "originalPrice": 360,
-                        "currency": "USD",
-                        "quantityAvailable": 7,
-                        "inStock": true
-                    },
-                    {
-                        "sku": "NORTHCOAT-WHITE",
-                        "color": "#F5F5F5",
-                        "colorName": "white",
-                        "sizes": [
-                            {
-                                "size": "M",
-                                "quantity": 0
-                            },
-                            {
-                                "size": "L",
-                                "quantity": 2
-                            },
-                            {
-                                "size": "XL",
-                                "quantity": 3
-                            }
-                        ],
-                        "images": [
-                            {
-                                "url": "/assets/products/images/ 672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-                                "alt": "Front View"
-                            },
-                            {
-                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-                                "alt": "Back View"
-                            }
-                        ],
-                        "price": 260,
-                        "originalPrice": 360,
-                        "currency": "USD",
-                        "quantityAvailable": 5,
-                        "inStock": true
-                    }
-                ],
-                "isNew": true,
-                "itemsLeft": 12,
-                "initialItems": 100,
-                "discountPercent": 0,
-                "rating": 4,
-                "reviewsCount": 2,
-                "soldNumber": 5000,
-                "taxes": 0.3,
-                "weight": "1.2kg",
-                "material": "Polyester Blend",
-                "dimensions": "60x40x10 cm"
-            },
-            {
-                "flash": true,
-                "start": "2025-07-17T00:00:00Z",
-                "end": "2025-08-07T23:59:59Z",
-                "id": 3,
-                "title": "Gucci Duffle Bag",
-                "handle": "gucci-duffle-bag",
-                "description": "Elevate your style with this premium designer handbag featuring the iconic Gucci monogram pattern—a timeless symbol of luxury and sophistication. Crafted with meticulous attention to detail, this bag combines high-end Italian craftsmanship with classic elegance.",
-                "vendor": "Gucci",
-                "category": "womens-fashion",
-                "tags": [
-                    "bag",
-                    "duffle",
-                    "luxury",
-                    "designer"
-                ],
-                "defaultVariantIndex": 0,
-                "hasVariations": false,
-                "variants": [
-                    {
-                        "sku": "GUCCI-BAG-GOLDEN_BROWN",
-                        "colorName": "golden-brown",
-                        "color": "#BFA06E",
-                        "sizes": [],
-                        "price": 960,
-                        "originalPrice": 1160,
-                        "currency": "USD",
-                        "quantityAvailable": 24,
-                        "inStock": true,
-                        "images": [
-                            {
-                                "url": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
-                                "alt": "Front View"
-                            },
-                            {
-                                "url": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
-                                "alt": "Front View"
-                            },
-                            {
-                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-                                "alt": "Back View"
-                            },
-                            {
-                                "url": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
-                                "alt": "Front View"
-                            },
-                            {
-                                "url": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
-                                "alt": "Front View"
-                            },
-                            {
-                                "url": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
-                                "alt": "Front View"
-                            }
-                        ]
-                    }
-                ],
-                "itemsLeft": 24,
-                "initialItems": 100,
-                "isNew": false,
-                "discountPercent": 17,
-                "rating": 4.8,
-                "reviewsCount": 8500,
-                "soldNumber": 2500,
-                "taxes": 0.25,
-                "weight": "1.1kg",
-                "material": "Canvas with leather trim",
-                "dimensions": "45x25x20 cm"
-            },
-            {
-                "flash": true,
-                "start": "2025-07-17T00:00:00Z",
-                "end": "2025-08-07T23:59:59Z",
-                "id": 4,
-                "title": "IPS LCD Gaming Monitor",
-                "handle": "ips-lcd-gaming-monitor",
-                "description": "High resolution display monitor suitable for pro gaming.",
-                "vendor": "IPS Electronics",
-                "category": "electronics",
-                "tags": [
-                    "monitor",
-                    "gaming",
-                    "display",
-                    "lcd"
-                ],
-                "hasVariations": false,
-                "defaultVariantIndex": 0,
-                "variants": [
-                    {
-                        "sku": "IPS-MONITOR-01",
-                        "color": null,
-                        "colorName": null,
-                        "sizes": [],
-                        "images": [
-                            {
-                                "url": "/assets/products/images/g27cq4-500x500 1.png",
-                                "alt": "Front View"
-                            },
-                            {
-                                "url": "/assets/products/images/g27cq4-500x500 1.png",
-                                "alt": "Side View"
-                            }
-                        ],
-                        "price": 370,
-                        "originalPrice": 400,
-                        "currency": "USD",
-                        "quantityAvailable": 12,
-                        "inStock": true
-                    }
-                ],
-                "isNew": false,
-                "itemsLeft": 12,
-                "initialItems": 100,
-                "discountPercent": 30,
-                "rating": 4.7,
-                "reviewsCount": 99,
-                "soldNumber": 6000,
-                "taxes": 0.2,
-                "weight": "4.2kg",
-                "material": "Plastic + Metal",
-                "dimensions": "60x40x20 cm"
-            },
-            {
-                "id": 11,
-                "title": "The North Coat 2",
-                "handle": "the-north-coat",
-                "description": "Stylish and warm winter coat for everyday wear.",
-                "vendor": "The North Face x Gucci",
-                "category": "mens-fashion",
-                "tags": [
-                    "winter",
-                    "coat",
-                    "luxury",
-                    "gucci"
-                ],
-                "hasVariations": true,
-                "defaultVariantIndex": 0,
-                "variants": [
-                    {
-                        "sku": "NORTHCOAT-RED",
-                        "colorName": "red",
-                        "color": "#FF4F5A",
-                        "sizes": [
-                            {
-                                "size": "S",
-                                "quantity": 4
-                            },
-                            {
-                                "size": "M",
-                                "quantity": 1
-                            },
-                            {
-                                "size": "L",
-                                "quantity": 1
-                            },
-                            {
-                                "size": "XL",
-                                "quantity": 1
-                            },
-                            {
-                                "size": "XXL",
-                                "quantity": 0
-                            }
-                        ],
-                        "images": [
-                            {
-                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-                                "alt": "Front View"
-                            },
-                            {
-                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-                                "alt": "Back View"
-                            }
-                        ],
-                        "price": 260,
-                        "originalPrice": 360,
-                        "currency": "USD",
-                        "quantityAvailable": 7,
-                        "inStock": true
-                    },
-                    {
-                        "sku": "NORTHCOAT-WHITE",
-                        "color": "#F5F5F5",
-                        "colorName": "white",
-                        "sizes": [
-                            {
-                                "size": "M",
-                                "quantity": 0
-                            },
-                            {
-                                "size": "L",
-                                "quantity": 2
-                            },
-                            {
-                                "size": "XL",
-                                "quantity": 3
-                            }
-                        ],
-                        "images": [
-                            {
-                                "url": "/assets/products/images/ 672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-                                "alt": "Front View"
-                            },
-                            {
-                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-                                "alt": "Back View"
-                            }
-                        ],
-                        "price": 260,
-                        "originalPrice": 360,
-                        "currency": "USD",
-                        "quantityAvailable": 5,
-                        "inStock": true
-                    }
-                ],
-                "isNew": true,
-                "itemsLeft": 12,
-                "initialItems": 100,
-                "discountPercent": 0,
-                "rating": 4,
-                "reviewsCount": 2,
-                "soldNumber": 5000,
-                "taxes": 0.3,
-                "weight": "1.2kg",
-                "material": "Polyester Blend",
-                "dimensions": "60x40x10 cm"
-            },
-            {
-                "id": 13,
-                "title": "RGB Liquid CPU Cooler",
-                "handle": "rgb-liquid-cpu-cooler",
-                "description": "High performance liquid cooler with RGB lighting.",
-                "vendor": "RGB Tech",
-                "category": "Electronics",
-                "tags": [
-                    "cooler",
-                    "liquid",
-                    "rgb",
-                    "cpu"
-                ],
-                "hasVariations": false,
-                "defaultVariantIndex": 0,
-                "variants": [
-                    {
-                        "sku": "RGB-CPUCOOLER-01",
-                        "color": "#000000",
-                        "colorName": "black",
-                        "sizes": [],
-                        "images": [
-                            {
-                                "url": "/assets/products/images/gammaxx-l240-argb-1-500x500 1.png",
-                                "alt": "Front View"
-                            },
-                            {
-                                "url": "/assets/products/images/gammaxx-l240-argb-1-500x500 1.png",
-                                "alt": "Side View"
-                            }
-                        ],
-                        "price": 160,
-                        "originalPrice": 170,
-                        "currency": "USD",
-                        "quantityAvailable": 12,
-                        "inStock": true
-                    }
-                ],
-                "isNew": false,
-                "itemsLeft": 12,
-                "initialItems": 100,
-                "discountPercent": 6,
-                "rating": 4.7,
-                "reviewsCount": 65,
-                "soldNumber": 3500,
-                "taxes": 0.2,
-                "weight": "1.4kg",
-                "material": "Aluminum + Plastic",
-                "dimensions": "30x12x5 cm"
-            },
-            {
-                "id": 14,
-                "title": "Small BookShelf",
-                "handle": "small-bookshelf",
-                "description": "Compact wooden bookshelf for small spaces.",
-                "vendor": "OakCraft",
-                "category": "Furniture",
-                "tags": [
-                    "bookshelf",
-                    "wood",
-                    "compact",
-                    "furniture"
-                ],
-                "hasVariations": false,
-                "defaultVariantIndex": 0,
-                "variants": [
-                    {
-                        "sku": "SHELF-SMALL-01",
-                        "color": "#A9745D",
-                        "colorName": "brown",
-                        "sizes": [],
-                        "images": [
-                            {
-                                "url": "/assets/products/images/sam-moghadam-khamseh-L_7MQsHl_aU-unsplash 1.png",
-                                "alt": "Front View"
-                            },
-                            {
-                                "url": "/assets/products/images/sam-moghadam-khamseh-L_7MQsHl_aU-unsplash 1.png",
-                                "alt": "Side View"
-                            }
-                        ],
-                        "price": 360,
-                        "originalPrice": 460,
-                        "currency": "USD",
-                        "quantityAvailable": 20,
-                        "inStock": true
-                    }
-                ],
-                "isNew": false,
-                "itemsLeft": 20,
-                "initialItems": 100,
-                "discountPercent": 22,
-                "rating": 5,
-                "reviewsCount": 65,
-                "soldNumber": 1200,
-                "taxes": 0.15,
-                "weight": "7.5kg",
-                "material": "Solid Wood",
-                "dimensions": "80x30x100 cm"
-            },
-            {
-                "id": 15,
-                "title": "The North Coat 3",
-                "handle": "the-north-coat",
-                "description": "Stylish and warm winter coat for everyday wear.",
-                "vendor": "The North Face x Gucci",
-                "category": "mens-fashion",
-                "tags": [
-                    "winter",
-                    "coat",
-                    "luxury",
-                    "gucci"
-                ],
-                "hasVariations": true,
-                "defaultVariantIndex": 0,
-                "variants": [
-                    {
-                        "sku": "NORTHCOAT-RED",
-                        "colorName": "red",
-                        "color": "#FF4F5A",
-                        "sizes": [
-                            {
-                                "size": "S",
-                                "quantity": 4
-                            },
-                            {
-                                "size": "M",
-                                "quantity": 1
-                            },
-                            {
-                                "size": "L",
-                                "quantity": 1
-                            },
-                            {
-                                "size": "XL",
-                                "quantity": 1
-                            },
-                            {
-                                "size": "XXL",
-                                "quantity": 0
-                            }
-                        ],
-                        "images": [
-                            {
-                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-                                "alt": "Front View"
-                            },
-                            {
-                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-                                "alt": "Back View"
-                            }
-                        ],
-                        "price": 260,
-                        "originalPrice": 360,
-                        "currency": "USD",
-                        "quantityAvailable": 7,
-                        "inStock": true
-                    },
-                    {
-                        "sku": "NORTHCOAT-WHITE",
-                        "color": "#F5F5F5",
-                        "colorName": "white",
-                        "sizes": [
-                            {
-                                "size": "M",
-                                "quantity": 0
-                            },
-                            {
-                                "size": "L",
-                                "quantity": 2
-                            },
-                            {
-                                "size": "XL",
-                                "quantity": 3
-                            }
-                        ],
-                        "images": [
-                            {
-                                "url": "/assets/products/images/ 672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-                                "alt": "Front View"
-                            },
-                            {
-                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-                                "alt": "Back View"
-                            }
-                        ],
-                        "price": 260,
-                        "originalPrice": 360,
-                        "currency": "USD",
-                        "quantityAvailable": 5,
-                        "inStock": true
-                    }
-                ],
-                "isNew": true,
-                "itemsLeft": 12,
-                "initialItems": 100,
-                "discountPercent": 0,
-                "rating": 4,
-                "reviewsCount": 2,
-                "soldNumber": 5000,
-                "taxes": 0.3,
-                "weight": "1.2kg",
-                "material": "Polyester Blend",
-                "dimensions": "60x40x10 cm"
-            },{
-                "flash": true,
-                "start": "2025-07-17T00:00:00Z",
-                "end": "2025-08-07T23:59:59Z",
-                "id": 4,
-                "title": "IPS LCD Gaming Monitor",
-                "handle": "ips-lcd-gaming-monitor",
-                "description": "High resolution display monitor suitable for pro gaming.",
-                "vendor": "IPS Electronics",
-                "category": "electronics",
-                "tags": [
-                    "monitor",
-                    "gaming",
-                    "display",
-                    "lcd"
-                ],
-                "hasVariations": false,
-                "defaultVariantIndex": 0,
-                "variants": [
-                    {
-                        "sku": "IPS-MONITOR-01",
-                        "color": null,
-                        "colorName": null,
-                        "sizes": [],
-                        "images": [
-                            {
-                                "url": "/assets/products/images/g27cq4-500x500 1.png",
-                                "alt": "Front View"
-                            },
-                            {
-                                "url": "/assets/products/images/g27cq4-500x500 1.png",
-                                "alt": "Side View"
-                            }
-                        ],
-                        "price": 370,
-                        "originalPrice": 400,
-                        "currency": "USD",
-                        "quantityAvailable": 12,
-                        "inStock": true
-                    }
-                ],
-                "isNew": false,
-                "itemsLeft": 12,
-                "initialItems": 100,
-                "discountPercent": 30,
-                "rating": 4.7,
-                "reviewsCount": 99,
-                "soldNumber": 6000,
-                "taxes": 0.2,
-                "weight": "4.2kg",
-                "material": "Plastic + Metal",
-                "dimensions": "60x40x20 cm"
-            }
-        ]
-    }
+  "ourProducts": {
+    "viewAll": "/our-products/",
+    "products": [
+      {
+        "flash": true,
+        "start": "2025-07-17T00:00:00Z",
+        "end": "2025-08-07T23:59:59Z",
+        "id": 1,
+        "title": "HAVIT HV-G92 Gamepad",
+        "handle": "havit-hv-g92-gamepad",
+        "description": "High quality gamepad suitable for PC and laptop gaming.",
+        "vendor": "HAVIT",
+        "category": "electronics",
+        "tags": ["gamepad", "controller", "gaming", "pc"],
+        "defaultVariantIndex": 0,
+        "hasVariations": false,
+        "variants": [
+          {
+            "sku": "HAVIT-G92",
+            "colorName": "",
+            "color": "",
+            "sizes": [],
+            "price": 120,
+            "originalPrice": 160,
+            "currency": "USD",
+            "quantityAvailable": 12,
+            "inStock": true,
+            "images": [
+              {
+                "url": "/assets/products/images/g92-2-500x500 1.png",
+                "alt": "HAVIT HV-G92 Gamepad Front View"
+              },
+              {
+                "url": "/assets/products/images/g92-2-500x500 1.png",
+                "alt": "Side View"
+              }
+            ]
+          }
+        ],
+        "itemsLeft": 12,
+        "initialItems": 100,
+        "isNew": false,
+        "discountPercent": 40,
+        "rating": 4.5,
+        "reviewsCount": 88,
+        "soldNumber": 1300,
+        "taxes": 0.15,
+        "weight": "0.45kg",
+        "material": "ABS Plastic",
+        "dimensions": "15x10x5 cm"
+      },
+      {
+        "flash": true,
+        "start": "2025-07-17T00:00:00Z",
+        "end": "2025-08-07T23:59:59Z",
+        "id": 2,
+        "title": "The North Coat",
+        "handle": "the-north-coat",
+        "description": "Stylish and warm winter coat for everyday wear.",
+        "vendor": "The North Face x Gucci",
+        "category": "mens-fashion",
+        "tags": ["winter", "coat", "luxury", "gucci"],
+        "hasVariations": true,
+        "defaultVariantIndex": 0,
+        "variants": [
+          {
+            "sku": "NORTHCOAT-RED",
+            "colorName": "red",
+            "color": "#FF4F5A",
+            "sizes": [
+              {
+                "size": "S",
+                "quantity": 4
+              },
+              {
+                "size": "M",
+                "quantity": 1
+              },
+              {
+                "size": "L",
+                "quantity": 1
+              },
+              {
+                "size": "XL",
+                "quantity": 1
+              },
+              {
+                "size": "XXL",
+                "quantity": 0
+              }
+            ],
+            "images": [
+              {
+                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                "alt": "Front View"
+              },
+              {
+                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                "alt": "Back View"
+              }
+            ],
+            "price": 260,
+            "originalPrice": 360,
+            "currency": "USD",
+            "quantityAvailable": 7,
+            "inStock": true
+          },
+          {
+            "sku": "NORTHCOAT-WHITE",
+            "color": "#F5F5F5",
+            "colorName": "white",
+            "sizes": [
+              {
+                "size": "M",
+                "quantity": 0
+              },
+              {
+                "size": "L",
+                "quantity": 2
+              },
+              {
+                "size": "XL",
+                "quantity": 3
+              }
+            ],
+            "images": [
+              {
+                "url": "/assets/products/images/ 672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                "alt": "Front View"
+              },
+              {
+                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                "alt": "Back View"
+              }
+            ],
+            "price": 260,
+            "originalPrice": 360,
+            "currency": "USD",
+            "quantityAvailable": 5,
+            "inStock": true
+          }
+        ],
+        "isNew": true,
+        "itemsLeft": 12,
+        "initialItems": 100,
+        "discountPercent": 0,
+        "rating": 4,
+        "reviewsCount": 2,
+        "soldNumber": 5000,
+        "taxes": 0.3,
+        "weight": "1.2kg",
+        "material": "Polyester Blend",
+        "dimensions": "60x40x10 cm"
+      },
+      {
+        "flash": true,
+        "start": "2025-07-17T00:00:00Z",
+        "end": "2025-08-07T23:59:59Z",
+        "id": 3,
+        "title": "Gucci Duffle Bag",
+        "handle": "gucci-duffle-bag",
+        "description": "Elevate your style with this premium designer handbag featuring the iconic Gucci monogram pattern—a timeless symbol of luxury and sophistication. Crafted with meticulous attention to detail, this bag combines high-end Italian craftsmanship with classic elegance.",
+        "vendor": "Gucci",
+        "category": "womens-fashion",
+        "tags": ["bag", "duffle", "luxury", "designer"],
+        "defaultVariantIndex": 0,
+        "hasVariations": false,
+        "variants": [
+          {
+            "sku": "GUCCI-BAG-GOLDEN_BROWN",
+            "colorName": "golden-brown",
+            "color": "#BFA06E",
+            "sizes": [],
+            "price": 960,
+            "originalPrice": 1160,
+            "currency": "USD",
+            "quantityAvailable": 24,
+            "inStock": true,
+            "images": [
+              {
+                "url": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+                "alt": "Front View"
+              },
+              {
+                "url": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+                "alt": "Front View"
+              },
+              {
+                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                "alt": "Back View"
+              },
+              {
+                "url": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+                "alt": "Front View"
+              },
+              {
+                "url": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+                "alt": "Front View"
+              },
+              {
+                "url": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+                "alt": "Front View"
+              }
+            ]
+          }
+        ],
+        "itemsLeft": 24,
+        "initialItems": 100,
+        "isNew": false,
+        "discountPercent": 17,
+        "rating": 4.8,
+        "reviewsCount": 8500,
+        "soldNumber": 2500,
+        "taxes": 0.25,
+        "weight": "1.1kg",
+        "material": "Canvas with leather trim",
+        "dimensions": "45x25x20 cm"
+      },
+      {
+        "flash": true,
+        "start": "2025-07-17T00:00:00Z",
+        "end": "2025-08-07T23:59:59Z",
+        "id": 4,
+        "title": "IPS LCD Gaming Monitor",
+        "handle": "ips-lcd-gaming-monitor",
+        "description": "High resolution display monitor suitable for pro gaming.",
+        "vendor": "IPS Electronics",
+        "category": "electronics",
+        "tags": ["monitor", "gaming", "display", "lcd"],
+        "hasVariations": false,
+        "defaultVariantIndex": 0,
+        "variants": [
+          {
+            "sku": "IPS-MONITOR-01",
+            "color": "",
+            "colorName": "",
+            "sizes": [],
+            "images": [
+              {
+                "url": "/assets/products/images/g27cq4-500x500 1.png",
+                "alt": "Front View"
+              },
+              {
+                "url": "/assets/products/images/g27cq4-500x500 1.png",
+                "alt": "Side View"
+              }
+            ],
+            "price": 370,
+            "originalPrice": 400,
+            "currency": "USD",
+            "quantityAvailable": 12,
+            "inStock": true
+          }
+        ],
+        "isNew": false,
+        "itemsLeft": 12,
+        "initialItems": 100,
+        "discountPercent": 30,
+        "rating": 4.7,
+        "reviewsCount": 99,
+        "soldNumber": 6000,
+        "taxes": 0.2,
+        "weight": "4.2kg",
+        "material": "Plastic + Metal",
+        "dimensions": "60x40x20 cm"
+      },
+      {
+        "id": 11,
+        "title": "The North Coat 2",
+        "handle": "the-north-coat",
+        "description": "Stylish and warm winter coat for everyday wear.",
+        "vendor": "The North Face x Gucci",
+        "category": "mens-fashion",
+        "tags": ["winter", "coat", "luxury", "gucci"],
+        "hasVariations": true,
+        "defaultVariantIndex": 0,
+        "variants": [
+          {
+            "sku": "NORTHCOAT-RED",
+            "colorName": "red",
+            "color": "#FF4F5A",
+            "sizes": [
+              {
+                "size": "S",
+                "quantity": 4
+              },
+              {
+                "size": "M",
+                "quantity": 1
+              },
+              {
+                "size": "L",
+                "quantity": 1
+              },
+              {
+                "size": "XL",
+                "quantity": 1
+              },
+              {
+                "size": "XXL",
+                "quantity": 0
+              }
+            ],
+            "images": [
+              {
+                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                "alt": "Front View"
+              },
+              {
+                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                "alt": "Back View"
+              }
+            ],
+            "price": 260,
+            "originalPrice": 360,
+            "currency": "USD",
+            "quantityAvailable": 7,
+            "inStock": true
+          },
+          {
+            "sku": "NORTHCOAT-WHITE",
+            "color": "#F5F5F5",
+            "colorName": "white",
+            "sizes": [
+              {
+                "size": "M",
+                "quantity": 0
+              },
+              {
+                "size": "L",
+                "quantity": 2
+              },
+              {
+                "size": "XL",
+                "quantity": 3
+              }
+            ],
+            "images": [
+              {
+                "url": "/assets/products/images/ 672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                "alt": "Front View"
+              },
+              {
+                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                "alt": "Back View"
+              }
+            ],
+            "price": 260,
+            "originalPrice": 360,
+            "currency": "USD",
+            "quantityAvailable": 5,
+            "inStock": true
+          }
+        ],
+        "isNew": true,
+        "itemsLeft": 12,
+        "initialItems": 100,
+        "discountPercent": 0,
+        "rating": 4,
+        "reviewsCount": 2,
+        "soldNumber": 5000,
+        "taxes": 0.3,
+        "weight": "1.2kg",
+        "material": "Polyester Blend",
+        "dimensions": "60x40x10 cm"
+      },
+      {
+        "id": 13,
+        "title": "RGB Liquid CPU Cooler",
+        "handle": "rgb-liquid-cpu-cooler",
+        "description": "High performance liquid cooler with RGB lighting.",
+        "vendor": "RGB Tech",
+        "category": "Electronics",
+        "tags": ["cooler", "liquid", "rgb", "cpu"],
+        "hasVariations": false,
+        "defaultVariantIndex": 0,
+        "variants": [
+          {
+            "sku": "RGB-CPUCOOLER-01",
+            "color": "#000000",
+            "colorName": "black",
+            "sizes": [],
+            "images": [
+              {
+                "url": "/assets/products/images/gammaxx-l240-argb-1-500x500 1.png",
+                "alt": "Front View"
+              },
+              {
+                "url": "/assets/products/images/gammaxx-l240-argb-1-500x500 1.png",
+                "alt": "Side View"
+              }
+            ],
+            "price": 160,
+            "originalPrice": 170,
+            "currency": "USD",
+            "quantityAvailable": 12,
+            "inStock": true
+          }
+        ],
+        "isNew": false,
+        "itemsLeft": 12,
+        "initialItems": 100,
+        "discountPercent": 6,
+        "rating": 4.7,
+        "reviewsCount": 65,
+        "soldNumber": 3500,
+        "taxes": 0.2,
+        "weight": "1.4kg",
+        "material": "Aluminum + Plastic",
+        "dimensions": "30x12x5 cm"
+      },
+      {
+        "id": 14,
+        "title": "Small BookShelf",
+        "handle": "small-bookshelf",
+        "description": "Compact wooden bookshelf for small spaces.",
+        "vendor": "OakCraft",
+        "category": "Furniture",
+        "tags": ["bookshelf", "wood", "compact", "furniture"],
+        "hasVariations": false,
+        "defaultVariantIndex": 0,
+        "variants": [
+          {
+            "sku": "SHELF-SMALL-01",
+            "color": "#A9745D",
+            "colorName": "brown",
+            "sizes": [],
+            "images": [
+              {
+                "url": "/assets/products/images/sam-moghadam-khamseh-L_7MQsHl_aU-unsplash 1.png",
+                "alt": "Front View"
+              },
+              {
+                "url": "/assets/products/images/sam-moghadam-khamseh-L_7MQsHl_aU-unsplash 1.png",
+                "alt": "Side View"
+              }
+            ],
+            "price": 360,
+            "originalPrice": 460,
+            "currency": "USD",
+            "quantityAvailable": 20,
+            "inStock": true
+          }
+        ],
+        "isNew": false,
+        "itemsLeft": 20,
+        "initialItems": 100,
+        "discountPercent": 22,
+        "rating": 5,
+        "reviewsCount": 65,
+        "soldNumber": 1200,
+        "taxes": 0.15,
+        "weight": "7.5kg",
+        "material": "Solid Wood",
+        "dimensions": "80x30x100 cm"
+      },
+      {
+        "id": 15,
+        "title": "The North Coat 3",
+        "handle": "the-north-coat",
+        "description": "Stylish and warm winter coat for everyday wear.",
+        "vendor": "The North Face x Gucci",
+        "category": "mens-fashion",
+        "tags": ["winter", "coat", "luxury", "gucci"],
+        "hasVariations": true,
+        "defaultVariantIndex": 0,
+        "variants": [
+          {
+            "sku": "NORTHCOAT-RED",
+            "colorName": "red",
+            "color": "#FF4F5A",
+            "sizes": [
+              {
+                "size": "S",
+                "quantity": 4
+              },
+              {
+                "size": "M",
+                "quantity": 1
+              },
+              {
+                "size": "L",
+                "quantity": 1
+              },
+              {
+                "size": "XL",
+                "quantity": 1
+              },
+              {
+                "size": "XXL",
+                "quantity": 0
+              }
+            ],
+            "images": [
+              {
+                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                "alt": "Front View"
+              },
+              {
+                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                "alt": "Back View"
+              }
+            ],
+            "price": 260,
+            "originalPrice": 360,
+            "currency": "USD",
+            "quantityAvailable": 7,
+            "inStock": true
+          },
+          {
+            "sku": "NORTHCOAT-WHITE",
+            "color": "#F5F5F5",
+            "colorName": "white",
+            "sizes": [
+              {
+                "size": "M",
+                "quantity": 0
+              },
+              {
+                "size": "L",
+                "quantity": 2
+              },
+              {
+                "size": "XL",
+                "quantity": 3
+              }
+            ],
+            "images": [
+              {
+                "url": "/assets/products/images/ 672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                "alt": "Front View"
+              },
+              {
+                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                "alt": "Back View"
+              }
+            ],
+            "price": 260,
+            "originalPrice": 360,
+            "currency": "USD",
+            "quantityAvailable": 5,
+            "inStock": true
+          }
+        ],
+        "isNew": true,
+        "itemsLeft": 12,
+        "initialItems": 100,
+        "discountPercent": 0,
+        "rating": 4,
+        "reviewsCount": 2,
+        "soldNumber": 5000,
+        "taxes": 0.3,
+        "weight": "1.2kg",
+        "material": "Polyester Blend",
+        "dimensions": "60x40x10 cm"
+      },
+      {
+        "flash": true,
+        "start": "2025-07-17T00:00:00Z",
+        "end": "2025-08-07T23:59:59Z",
+        "id": 4,
+        "title": "IPS LCD Gaming Monitor",
+        "handle": "ips-lcd-gaming-monitor",
+        "description": "High resolution display monitor suitable for pro gaming.",
+        "vendor": "IPS Electronics",
+        "category": "electronics",
+        "tags": ["monitor", "gaming", "display", "lcd"],
+        "hasVariations": false,
+        "defaultVariantIndex": 0,
+        "variants": [
+          {
+            "sku": "IPS-MONITOR-01",
+            "color": "",
+            "colorName": "",
+            "sizes": [],
+            "images": [
+              {
+                "url": "/assets/products/images/g27cq4-500x500 1.png",
+                "alt": "Front View"
+              },
+              {
+                "url": "/assets/products/images/g27cq4-500x500 1.png",
+                "alt": "Side View"
+              }
+            ],
+            "price": 370,
+            "originalPrice": 400,
+            "currency": "USD",
+            "quantityAvailable": 12,
+            "inStock": true
+          }
+        ],
+        "isNew": false,
+        "itemsLeft": 12,
+        "initialItems": 100,
+        "discountPercent": 30,
+        "rating": 4.7,
+        "reviewsCount": 99,
+        "soldNumber": 6000,
+        "taxes": 0.2,
+        "weight": "4.2kg",
+        "material": "Plastic + Metal",
+        "dimensions": "60x40x20 cm"
+      }
+    ]
+  }
 }

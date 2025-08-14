@@ -10,11 +10,13 @@ import React from "react";
 
 const TotalCheckout = ({
   subTotal,
+  total,
   shipping,
   currency,
   taxes,
 }: {
   subTotal: number;
+  total:number;
   shipping: number;
   taxes: number;
   currency: string;
@@ -25,7 +27,7 @@ const TotalCheckout = ({
     { label: t("subTotal"), value: subTotal },
     { label: t("shipping"), value: shipping },
     { label: t("taxes"), value: taxes },
-    { label: t("total"), value: subTotal + shipping + taxes },
+    { label: t("total"), value: total },
   ];
   return (
     <div className="px-4 md:px-6 py-6 md:py-8 text-black border-1 rounded max-md:w-full lg:w-110 shrink-1">

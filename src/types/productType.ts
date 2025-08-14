@@ -26,10 +26,10 @@ export interface ProductSelectionContextType {
     variants: Variant[];
     colors: string[];
     sizes: Size[];
-    selectedColor: string | null;
-    setSelectedColor: (color: string | null) => void;
-    selectedSize: Size | null;
-    setSelectedSize: (size: Size | null) => void;
+    selectedColor: string;
+    setSelectedColor: (color: string) => void;
+    selectedSize: Size ;
+    setSelectedSize: (size: Size) => void;
     selectedVariant: Variant;
     selectedSizeQuantity: number | undefined;
     resetSelection: () => void;
@@ -48,8 +48,8 @@ export const sizeSchema = z.object({
 
 export const variantSchema = z.object({
     sku: z.string(),
-    colorName: z.string().nullable(),
-    color: z.string().nullable(),
+    colorName: z.string(),
+    color: z.string(),
     sizes: z.array(sizeSchema),
     price: z.number(),
     originalPrice: z.number(),
@@ -91,7 +91,10 @@ export type Size = z.infer<typeof sizeSchema>
 export type Variant = z.infer<typeof variantSchema>
 export type ProductImage = z.infer<typeof productImageSchema>
 export type productType = z.infer<typeof productTypeSchema>
-
+export const noSize = (variant:Variant) => ({
+  size: "",
+  quantity: variant.quantityAvailable,
+});
 
 
 

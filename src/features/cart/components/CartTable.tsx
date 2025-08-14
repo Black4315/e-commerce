@@ -54,7 +54,7 @@ export const Tablebody = ({
   cart:CartItem[];
   isLoading:boolean
 }) => {
-
+  
   if (isLoading) {
     return new Array(3).fill(null).map((_, i) => <CartLoadngItem key={i} />);
   }
@@ -62,4 +62,44 @@ export const Tablebody = ({
   return cart.map((item, i) => {
     return <CartTdItem key={i} item={item} />;
   });
+};
+
+
+
+CartTable.MobileVersion = ({
+  cart,
+  isLoading,
+}: {
+  cart: CartItem[];
+  isLoading: boolean;
+}) => {
+  const t = useTranslations("emptyState");
+
+  if (isLoading) return (
+      <div className="flex flex-col gap-4">
+        {new Array(3).fill(null).map((_, i) => (
+          <CartLoadngItem.mobile key={i} />
+        ))}
+      </div>
+    );
+
+
+  if (!cart.length) {
+    return (
+      <EmptyState
+        title={t("cart.title")}
+        description={t("cart.desc")}
+        icon={<Cart1Icon className="w-14 h-14" />}
+      />
+    );
+  }
+
+  return (
+    <div className="flex flex-col gap-4">
+      {cart.map((item, i) => (
+        <CartTdItem.mobile key={i} item={item} />
+      ))}
+    </div>
+  );
+  
 };

@@ -7,7 +7,7 @@ import NavProfileActions from "./components/ActionsNav"
 import { useUserContext } from "@/contexts/UserContext"
 import { useEffect, useState } from "react"
 import SideBarMenu from "@/components/layout/Header/components/MenuSideBar"
-import { useMobileCheck } from "@/hooks/useMobileCheck"
+import { useMobileCheck } from "@/contexts/MobileCheckContext";
 import { cn } from "@/lib/utils"
 import Button from "@/components/ui/Button"
 import { useTranslations } from "next-intl"
@@ -25,7 +25,7 @@ const Header = () => {
 
     return (
         <header className={cn("h-20 border-b border-border bg-white py-4.5 common-padding flex items-end",
-            isMobile ? 'h-35 justify-end px-3 py-3' : 'md:h-[100px]'
+            isMobile ? 'h-fit justify-end px-3 py-3' : 'md:h-[100px]'
         )}>
 
             <div className={`screen-max-width w-full flex ${isMobile ? 'flex-col' : ''}`}>

@@ -35,7 +35,7 @@ const QuickViewInfo = () => {
         <QuickInStock inStock={inStock} />
         <MoreDetails link={link} />
       </div>
-
+      {/* TODO:add size select adn color */}
     </div>
 
   )

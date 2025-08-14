@@ -8,7 +8,7 @@ import ProductCardPrice from "./ProductCardPrice";
 import ProductRating from "../../Product/ProductRating";
 import ProductColors from "../../Product/ProductColors";
 import { cn } from "@/lib/utils";
-import { useMobileCheck } from "@/hooks/useMobileCheck";
+import { useMobileCheck } from "@/contexts/MobileCheckContext";
 import { useTranslations } from "next-intl";
 import { useProductContext } from "@/contexts/product/ProductContext";
 import { useProductSelection } from "@/contexts/product/ProductSelectionContext";
@@ -51,7 +51,7 @@ const Card = ({ className }: { className?: string }) => {
         className="flex flex-col h-full group-[.sale-ended]:blur-[1.2px]"
       >
         <div className={`flex flex-col p-2 gap-0.5`}>
-          <h3 className="med-text capitalize">{title}</h3>
+          <h3 className="med-text max-xsm:text-sm capitalize">{title}</h3>
 
           <div
             className={`flex ${

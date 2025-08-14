@@ -11,9 +11,11 @@ const CartLoadngItem = () => {
         </div>
       </td>
 
-      {Array(5).fill(null).map((_,i) => (
-          <td key={i} >
-            <Skeleton className={i==4 ? "ms-auto" :"mx-auto"} width={75} />
+      {Array(5)
+        .fill(null)
+        .map((_, i) => (
+          <td key={i}>
+            <Skeleton className={i == 4 ? "ms-auto" : "mx-auto"} width={40} />
           </td>
         ))}
     </tr>
@@ -21,3 +23,14 @@ const CartLoadngItem = () => {
 };
 
 export default CartLoadngItem;
+
+CartLoadngItem.mobile = () => (
+  <div className="flex gap-3 py-3 px-2.5 rounded shadowd-[0px_1px_13px_rgba(0,0,0,0.05)]">
+    <Skeleton variant="rectangular" width={72} height={72} />
+    <div className="flex flex-col gap-1 w-full">
+      <Skeleton width={"100%"} />
+      <Skeleton width={"40%"} />
+      <Skeleton width={"40%"} />
+    </div>
+  </div>
+);

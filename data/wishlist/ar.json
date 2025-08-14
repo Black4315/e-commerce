@@ -1,71 +1,67 @@
 [
     {
-        "flash": true,
-        "start": "2025-07-17T00:00:00Z",
-        "end": "2025-08-07T23:59:59Z",
-        "id": 3,
-        "title": "حقيبة غوتشي دفل",
-        "handle": "gucci-duffle-bag",
-        "description": "رفعوا أسلوبكم مع هذه الحقيبة الفاخرة من العلامة التجارية غوتشي والتي تتميز بنمط المونوغرام الشهير—رمز خالد للفخامة والأناقة. مصممة بدقة واهتمام بالتفاصيل، تجمع هذه الحقيبة بين الحرفية الإيطالية الرفيعة والأناقة الكلاسيكية.",
-        "vendor": "غوتشي",
-        "category": "womens-fashion",
-        "tags": [
-            "bag",
-            "duffle",
-            "luxury",
-            "designer"
-        ],
-        "defaultVariantIndex": 0,
-        "hasVariations": false,
-        "variants": [
+      "userId": 1,
+      "flash": true,
+      "start": "2025-07-17T00:00:00Z",
+      "end": "2025-08-07T23:59:59Z",
+      "id": 3,
+      "title": "حقيبة غوتشي دفل",
+      "handle": "gucci-duffle-bag",
+      "description": "رفعوا أسلوبكم مع هذه الحقيبة الفاخرة من العلامة التجارية غوتشي والتي تتميز بنمط المونوغرام الشهير—رمز خالد للفخامة والأناقة. مصممة بدقة واهتمام بالتفاصيل، تجمع هذه الحقيبة بين الحرفية الإيطالية الرفيعة والأناقة الكلاسيكية.",
+      "vendor": "غوتشي",
+      "category": "womens-fashion",
+      "tags": ["bag", "duffle", "luxury", "designer"],
+      "defaultVariantIndex": 0,
+      "hasVariations": false,
+      "variants": [
+        {
+          "sku": "GUCCI-BAG-GOLDEN_BROWN",
+          "colorName": "بني-ذهبي",
+          "color": "#BFA06E",
+          "sizes": [],
+          "price": 960,
+          "originalPrice": 1160,
+          "currency": "USD",
+          "quantityAvailable": 24,
+          "inStock": true,
+          "images": [
             {
-                "sku": "GUCCI-BAG-GOLDEN_BROWN",
-                "colorName": "بني-ذهبي",
-                "color": "#BFA06E",
-                "sizes": [],
-                "price": 960,
-                "originalPrice": 1160,
-                "currency": "USD",
-                "quantityAvailable": 24,
-                "inStock": true,
-                "images": [
-                    {
-                        "url": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
-                        "alt": "عرض أمامي"
-                    },
-                    {
-                        "url": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
-                        "alt": "عرض أمامي"
-                    },
-                    {
-                        "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-                        "alt": "عرض خلفي"
-                    },
-                    {
-                        "url": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
-                        "alt": "عرض أمامي"
-                    },
-                    {
-                        "url": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
-                        "alt": "عرض أمامي"
-                    },
-                    {
-                        "url": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
-                        "alt": "عرض أمامي"
-                    }
-                ]
+              "url": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+              "alt": "عرض أمامي"
+            },
+            {
+              "url": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+              "alt": "عرض أمامي"
+            },
+            {
+              "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+              "alt": "عرض خلفي"
+            },
+            {
+              "url": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+              "alt": "عرض أمامي"
+            },
+            {
+              "url": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+              "alt": "عرض أمامي"
+            },
+            {
+              "url": "/assets/products/images/547953_9C2ST_8746_001_082_0000_Light-Gucci-Savoy-medium-duffle-bag 1.png",
+              "alt": "عرض أمامي"
             }
-        ],
-        "itemsLeft": 24,
-        "initialItems": 100,
-        "isNew": false,
-        "discountPercent": 17,
-        "rating": 4.8,
-        "reviewsCount": 8500,
-        "soldNumber": 2500,
-        "taxes": 0.25,
-        "weight": "1.1kg",
-        "material": "كانفاس مع حواف من الجلد",
-        "dimensions": "45x25x20 سم"
+          ]
+        }
+      ],
+      "itemsLeft": 24,
+      "initialItems": 100,
+      "isNew": false,
+      "discountPercent": 17,
+      "rating": 4.8,
+      "reviewsCount": 8500,
+      "soldNumber": 2500,
+      "taxes": 0.25,
+      "weight": "1.1kg",
+      "material": "كانفاس مع حواف من الجلد",
+      "dimensions": "45x25x20 سم"
     }
 ]

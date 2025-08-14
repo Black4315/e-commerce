@@ -1,6 +1,6 @@
 "use client";
 
-import { useMobileCheck } from "@/hooks/useMobileCheck";
+import { useMobileCheck } from "@/contexts/MobileCheckContext";
 import { useTranslations } from "next-intl";
 import { useProductContext } from "@/contexts/product/ProductContext";
 import { useAddToCart } from "@/features/cart/hooks/useAddtoCart";
@@ -33,7 +33,8 @@ export default function AddToCart({
   // contexts
   const item = useProductContext();
   const { user, isLoggedIn } = useUserContext();
-  const { selectedVariant, selectedSize, hasVariationsSizes } = useProductSelection();
+  const { selectedVariant, selectedSize, hasVariationsSizes } =
+    useProductSelection();
   const variant = selectedVariant;
 
   // custom hooks

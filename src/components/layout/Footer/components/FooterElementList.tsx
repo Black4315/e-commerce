@@ -1,7 +1,7 @@
 
 import Link from 'next/link';
 import { cn } from '@/lib/utils'; // assuming className merge utility
-import { useMobileCheck } from '@/hooks/useMobileCheck';
+import { useMobileCheck } from '@/contexts/MobileCheckContext';
 import CustomAccordion from '@/components/ui/CustomAccordion';
 
 type FooterElementListProps = {

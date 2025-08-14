@@ -7,7 +7,7 @@ import ActionNavItem from "./ActionNavItem";
 import { useTranslations } from "next-intl";
 import { useCartContext } from "@/features/cart/contexts/CartContext";
 import NotificationBadge from "@/components/ui/notificationBadge";
-import { useWishlist } from "@/contexts/WishListContext";
+import { useWishlist } from "@/features/wishlist/contexts/WishListContext";
 import { useRouter } from "next/navigation";
 import { useUserContext } from "@/contexts/UserContext";
 import { pages } from "@/constants/pages";

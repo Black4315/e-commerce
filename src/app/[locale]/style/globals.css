@@ -223,18 +223,18 @@ body {
 
   .tr th,
   .tr td {
-    @apply md:py-6 text-center capitalize;
+    @apply py-4 md:py-6 text-center capitalize;
     vertical-align: middle;
     max-width: 124px;
   }
 
   .tr th:first-child,
   .tr td:first-child {
-    @apply md:ps-12 text-start;
+    @apply ps-8 md:ps-12 text-start;
   }
   .tr th:last-child,
   .tr td:last-child {
-    @apply md:pe-12 text-end;
+    @apply pe-8 md:pe-12 text-end;
   }
 
   .tr td {

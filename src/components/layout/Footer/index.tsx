@@ -7,7 +7,7 @@ import FooterElementList from "./components/FooterElementList";
 import { useLocale, useTranslations } from "next-intl";
 import { downloads, socialMedia } from "@/constants/constanst";
 import Image from "next/image";
-import { useMobileCheck } from "@/hooks/useMobileCheck";
+import { useMobileCheck } from "@/contexts/MobileCheckContext";
 import { cn } from "@/lib/utils";
 import StickyBtns from "@/components/shared/StickyBtns";
 import { LOGO_NAME } from "@/constants";

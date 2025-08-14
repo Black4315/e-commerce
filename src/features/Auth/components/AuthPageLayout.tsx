@@ -16,7 +16,7 @@ const AuthPageLayout = ({
         <div className="relative common-padding h-screen">
 
             {/* blue backdrop  */}
-            <div className="w-[45%] lg:w-[50%] bg-bluedrop h-screen fixed start-0 hidden md:flex flex-center rounded-e ">
+            <div className="w-[45%] lg:w-[50%] bg-bluedrop h-screen fixed start-0 hidden md:flex justify-center items-center rounded-e ">
                 <AuthPageImage />
             </div>
 

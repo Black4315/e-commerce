@@ -4,7 +4,7 @@ import { pages } from "@/constants/pages";
 import Icons_arrowleftIcon from "@/assets/icons/icons_arrowleft";
 import AddToCart from "../../AddToCart";
 import ProductPricing from "@/components/shared/Product/ProductPricing";
-import { useMobileCheck } from "@/hooks/useMobileCheck";
+import { useMobileCheck } from "@/contexts/MobileCheckContext";
 import Cart1Icon from "@/assets/icons/Cart1";
 
 const ModalBtns = () => {

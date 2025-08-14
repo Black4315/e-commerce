@@ -23,7 +23,7 @@ const CouponForm = () => {
         onSubmit={handleSubmit}
         method="POST"
         aria-labelledby="coupon-form"
-        className="h-12 md:h-14 flex gap-4 items-center"
+        className="h-10 md:h-14 flex gap-4 items-center"
       >
         {/* TODO: adjust the services and use axois and send to server */}
         <input

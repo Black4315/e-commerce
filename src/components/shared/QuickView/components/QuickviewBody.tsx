@@ -1,8 +1,8 @@
 import QuickViewInfo from "./QuickViewInfo";
 import ProductPricing from "@/components/shared/Product/ProductPricing";
 import AddToCart from "@/features/cart/components/AddToCart";
-import WishListBtn from "@/components/shared/Product/WishListBtn";
-import { useMobileCheck } from "@/hooks/useMobileCheck";
+import WishListBtn from "@/features/wishlist/components/WishListBtn";
+import { useMobileCheck } from "@/contexts/MobileCheckContext";
 
 const QuickViewBody = () => {
   const isMobile = useMobileCheck();

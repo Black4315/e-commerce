@@ -20,7 +20,10 @@ interface CartContextType {
   clearCart: () => void;
   applyCoupon: (coupon: Coupon) => void;
   removeCoupon: () => void;
-  isLoading:boolean;
+  calculateTotalPrice: () => number;
+  isLoading: boolean;
+  subTotal: number;
+  totalTaxes: number;
 }
 
 const CartContext = createContext<CartContextType | undefined>(undefined);
@@ -80,9 +83,9 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
     setCart((prev) =>
       prev.filter(
         (i) =>
-          i.id !== id &&
-          i.selectedVariant.sku != selectedVariant.sku &&
-          i.selectedSize != selectedSize
+          i.id != id &&
+          i.selectedVariant.sku != selectedVariant.sku ||
+          i.selectedSize?.size != selectedSize?.size 
       )
     );
   };
@@ -117,7 +120,10 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
   // Calculate total price considering the coupon
   const calculateTotalPrice = () => {
     let total = cart.reduce(
-      (sum, item) => sum + item.selectedVariant.price * item.quantity,
+      (sum, item) =>
+        sum +
+        (item.selectedVariant.price * item.quantity +
+          item.taxes * item.quantity),
       0
     );
 
@@ -125,8 +131,15 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
       total -= (total * coupon.discount) / 100;
     }
 
-    return total;
+    return +total.toFixed(2);
   };
+
+  const subTotal = +cart
+    .reduce((sum, curr) => curr.selectedVariant.price * curr.quantity + sum, 0)
+    .toFixed(2);
+  const totalTaxes = +cart
+    .reduce((sum, curr) => curr.taxes * curr.quantity + sum, 0)
+    .toFixed(2);
 
   return (
     <CartContext.Provider
@@ -139,7 +152,10 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
         clearCart,
         applyCoupon,
         removeCoupon,
+        calculateTotalPrice,
         isLoading,
+        subTotal,
+        totalTaxes,
       }}
     >
       {children}

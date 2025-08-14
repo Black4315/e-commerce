@@ -64,6 +64,7 @@ const SignupForm = () => {
         control={control}
       >
         {/* TODO: adjust the services and use axois and send to server */}
+        {/* TODO: Email is invalid or already taken */}
         <TextInput
           control={control}
           name="name"

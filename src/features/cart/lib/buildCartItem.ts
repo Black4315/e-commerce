@@ -1,4 +1,4 @@
-import { productType, Size, Variant } from "@/types/productType";
+import { noSize, productType, Size, Variant } from "@/types/productType";
 import { User } from "@/types/userType";
 
 export function buildCartItem(
@@ -14,7 +14,7 @@ export function buildCartItem(
     sync: isLoggedIn,
     persistent: isLoggedIn,
     selectedVariant: variant,
-    selectedSize: size ?? null,
+    selectedSize: size ?? noSize(variant),
     quantity: 1,
     ...item,
   };

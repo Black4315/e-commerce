@@ -42,7 +42,7 @@ export default function TextInput({
           className={cn('auth-input peer', className)}
         />
 
-        <div className='motion-border-b peer-focus:after:w-full after:bg-secondary-3 after:bottom-0 after:duration-200' />
+        <div className='motion-border-b peer-focus:after:w-full after:bg-secondary-3 after:bottom-0 after:duration-200 peer-data-[error=true]:after:bg-red-500' />
 
         <EyeShowPass type={inputProps.type} visible={visible} toggleVisibility={togglePasswordVisibility} />
 

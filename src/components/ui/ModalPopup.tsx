@@ -3,7 +3,7 @@
 import React, { useState, useRef, useEffect, ReactNode } from "react";
 import { IoMdClose } from "react-icons/io";
 import "animate.css";
-import { useMobileCheck } from "@/hooks/useMobileCheck";
+import { useMobileCheck } from "@/contexts/MobileCheckContext";
 import { Portal } from "./Portal";
 import { cn } from "@/lib/utils";
 

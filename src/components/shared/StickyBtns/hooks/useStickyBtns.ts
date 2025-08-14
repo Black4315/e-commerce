@@ -1,5 +1,5 @@
 import { useCartContext } from "@/features/cart/contexts/CartContext";
-import { useWishlist } from "@/contexts/WishListContext";
+import { useWishlist } from "@/features/wishlist/contexts/WishListContext";
 import { useAnimateOnChange } from "@/hooks/useAnimateOnChange";
 import { useLocale } from "next-intl";
 import { usePathname } from "next/navigation";

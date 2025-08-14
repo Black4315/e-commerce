@@ -4,7 +4,6 @@
 // import { useUserContextContext } from "./UserContext";
 // import { WishlistItem } from "@/types/wishlist";
 
-
 // interface WishlistContextType {
 //     wishlist: WishlistItem[];
 //     addToWishlist: (item: WishlistItem) => void;
@@ -72,79 +71,85 @@
 //     if (!ctx) throw new Error("useWishlist must be used inside WishlistProvider");
 //     return ctx;
 // };
-"use client"
-import { createContext, useContext, useEffect, useState } from 'react';
-import { useUserContext } from './UserContext';
-import { WishlistItem } from '@/types/wishlistType';
-import useFetchWishList from '@/hooks/useFetchWishList';
-import { useLocale } from 'next-intl';
-
-
+"use client";
+import { createContext, useContext, useEffect, useState } from "react";
+import { useUserContext } from "../../../contexts/UserContext";
+import { WishlistItem } from "@/types/wishlistType";
+import useFetchWishList from "@/hooks/useFetchWishList";
+import { useLocale } from "next-intl";
 
 interface WishlistContextType {
-    wishlist: WishlistItem[];
-    addToWishlist: (item: WishlistItem) => void;
-    removeFromWishlist: (id: number) => void;
-    clearWishlist: () => void;
+  wishlist: WishlistItem[];
+  addToWishlist: (item: WishlistItem) => void;
+  removeFromWishlist: (id: number) => void;
+  clearWishlist: () => void;
 }
 
-const WishlistContext = createContext<WishlistContextType | undefined>(undefined);
+const WishlistContext = createContext<WishlistContextType | undefined>(
+  undefined
+);
 
-export const WishlistProvider = ({ children }: { children: React.ReactNode }) => {
-    const { user, isLoggedIn } = useUserContext();
-    const [wishlist, setWishlist] = useState<WishlistItem[]>([]);
+export const WishlistProvider = ({
+  children,
+}: {
+  children: React.ReactNode;
+}) => {
+  const { user, isLoggedIn } = useUserContext();
+  const [wishlist, setWishlist] = useState<WishlistItem[]>([]);
 
-    //get loacle from next-intl
-    const locale = useLocale()
+  //get loacle from next-intl
+  const locale = useLocale();
 
-    // Fetch wishlist data
-    const { data: fetchedWishlist, isSuccess } = useFetchWishList(locale);
+  // Fetch wishlist data
+  const { data: fetchedWishlist, isSuccess } = useFetchWishList(locale);
 
-    // Filter user-specific wishlist once data is available
-    useEffect(() => {
-        if (isLoggedIn && user && isSuccess && fetchedWishlist) {
-            const userWishlist = fetchedWishlist.filter((item) => item.userId === user.id);
-            setWishlist(userWishlist);
-        } else if (!isLoggedIn) {
-            const sessionWishlist = sessionStorage.getItem("wishlist");
-            if (sessionWishlist) {
-                setWishlist(JSON.parse(sessionWishlist));
-            }
-        }
-    }, [isLoggedIn, user, fetchedWishlist, isSuccess]);
+  // Filter user-specific wishlist once data is available
+  useEffect(() => {
+    if (isLoggedIn && user && isSuccess && fetchedWishlist) {
+      const userWishlist = fetchedWishlist.filter(
+        (item) => item.userId === user.id
+      );
+      setWishlist(userWishlist);
+    } else if (!isLoggedIn) {
+      const sessionWishlist = sessionStorage.getItem("wishlist");
+      if (sessionWishlist) {
+        setWishlist(JSON.parse(sessionWishlist));
+      }
+    }
+  }, [isLoggedIn, user, fetchedWishlist, isSuccess]);
 
-    // Add wisht list to session storage until users get auth
-    useEffect(() => {
-        sessionStorage.setItem("wishlist", JSON.stringify(wishlist));
-    }, [isLoggedIn, wishlist, user?.id]);
+  // Add wisht list to session storage until users get auth
+  useEffect(() => {
+    sessionStorage.setItem("wishlist", JSON.stringify(wishlist));
+  }, [isLoggedIn, wishlist, user?.id]);
 
+  const addToWishlist = (item: WishlistItem) => {
+    setWishlist((prev) => {
+      if (prev.some((i) => i.id === item.id)) return prev;
+      return [...prev, item];
+    });
+  };
 
-    const addToWishlist = (item: WishlistItem) => {
-        setWishlist((prev) => {
-            if (prev.some((i) => i.id === item.id)) return prev;
-            return [...prev, item];
-        });
-    };
+  const removeFromWishlist = (id: number) => {
+    setWishlist((prev) => prev.filter((item) => item.id !== id));
+  };
 
-    const removeFromWishlist = (id: number) => {
-        setWishlist((prev) => prev.filter((item) => item.id !== id));
-    };
+  const clearWishlist = () => {
+    setWishlist([]);
+  };
 
-    const clearWishlist = () => {
-        setWishlist([]);
-    };
-
-    return (
-        <WishlistContext.Provider
-            value={{ wishlist, addToWishlist, removeFromWishlist, clearWishlist }}
-        >
-            {children}
-        </WishlistContext.Provider>
-    );
+  return (
+    <WishlistContext.Provider
+      value={{ wishlist, addToWishlist, removeFromWishlist, clearWishlist }}
+    >
+      {children}
+    </WishlistContext.Provider>
+  );
 };
 
 export const useWishlist = () => {
-    const context = useContext(WishlistContext);
-    if (!context) throw new Error('useWishlist must be used within WishlistProvider');
-    return context;
+  const context = useContext(WishlistContext);
+  if (!context)
+    throw new Error("useWishlist must be used within WishlistProvider");
+  return context;
 };
