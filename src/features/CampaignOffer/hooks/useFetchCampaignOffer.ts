@@ -1,6 +1,14 @@
 import fectchApi from "@/lib/fectchApi";
-import { flashSaleCampaignSchema, FlashSaleCampaignType } from "../types";
+import {
+  FlashSaleCampaignTypeSchema,
+  FlashSaleCampaignTypeType,
+} from "../types";
 
 export function useFetchCampaignOffer(locale: string) {
-    return fectchApi<FlashSaleCampaignType>(['campaign-offer'], '/api/campaign-offer/', locale, flashSaleCampaignSchema)
+  return fectchApi<FlashSaleCampaignTypeType>(
+    ["campaign-offer"],
+    "/api/campaign-offer/",
+    locale,
+    FlashSaleCampaignTypeSchema
+  );
 }

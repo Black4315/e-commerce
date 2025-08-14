@@ -1,4 +1,4 @@
-import { useMobileCheck } from "./useMobileCheck";
+import { useMobileCheck } from "@/contexts/MobileCheckContext"; 
 
 export function useHover(className: string) {
     const isMobile = useMobileCheck();
