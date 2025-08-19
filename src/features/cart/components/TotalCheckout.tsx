@@ -1,6 +1,6 @@
 "use client";
 
-import Price from "@/components/shared/Product/Price";
+import Price from "@/entities/Product/components/Price";
 import Button2 from "@/components/ui/Button2";
 import { pages } from "@/constants/pages";
 import { currencyOfPrice } from "@/utils";
@@ -16,7 +16,7 @@ const TotalCheckout = ({
   taxes,
 }: {
   subTotal: number;
-  total:number;
+  total: number;
   shipping: number;
   taxes: number;
   currency: string;

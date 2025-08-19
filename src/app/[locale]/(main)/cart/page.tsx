@@ -1,8 +1,8 @@
 "use client";
 import { useTranslations } from "next-intl";
 import PageBreadCrumbs from "@/components/ui/Page_BreadCrumbs";
-import CartTable from "../../../../features/cart/components/CartTable";
-import UpdateCartBtn from "../../../../features/cart/components/CartBtns";
+import CartTable from "./components/CartTable";
+import UpdateCartBtn from "../../../../features/cart/components/UpdateCartBtn";
 import CoponForm from "@/features/cart/components/CoponForm";
 import TotalCheckout from "@/features/cart/components/TotalCheckout";
 import { useCartContext } from "@/features/cart/contexts/CartContext";

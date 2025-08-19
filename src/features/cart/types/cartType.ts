@@ -1,4 +1,8 @@
-import { productTypeSchema, sizeSchema, variantSchema } from "@/types/productType";
+import {
+  productTypeSchema,
+  sizeSchema,
+  variantSchema,
+} from "@/entities/Product/types/productType";
 import z from "zod";
 
 // CartItem schema

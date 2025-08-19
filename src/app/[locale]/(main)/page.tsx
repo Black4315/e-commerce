@@ -5,7 +5,7 @@ import CampaignOffer from '@/features/CampaignOffer';
 import FlashSales from '@/features/FlashSalses';
 import NewArrival from '@/features/NewArrival';
 import OurProducts from '@/features/OurProducts';
-import TrustBadges from '@/features/TrustBadges';
+import TrustBadges from '@/components/shared/TrustBadges';
 
 export default function HomePage() {
   return (

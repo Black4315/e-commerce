@@ -3,7 +3,7 @@ import ProductCards from "@/components/ui/SectionProducts/components/ProductCard
 import SkeltonProductCard from "@/components/ui/SectionProducts/components/SkeltonProductCards";
 import { useWishlist } from "@/features/wishlist/contexts/WishListContext";
 import { useHydrated } from "@/hooks/useHydrated";
-import WishSection from "../../../components/ui/WishSection";
+import MiniSection from "../../../components/ui/MiniSection";
 import { useTranslations } from "next-intl";
 import WishlistIcon from "@/assets/icons/Wishlist";
 
@@ -13,7 +13,7 @@ const WishListProducts = () => {
   const t = useTranslations("");
 
   return (
-    <WishSection heading={t("wishlist.wishlist") + ` (${wishlist.length})`}>
+    <MiniSection heading={t("wishlist.wishlist") + ` (${wishlist.length})`}>
       <div className="">
         {!hydrated ? (
           <SkeltonProductCard />
@@ -29,7 +29,7 @@ const WishListProducts = () => {
           />
         )}
       </div>
-    </WishSection>
+    </MiniSection>
   );
 };
 

@@ -54,6 +54,9 @@ export const ModalPopup = ({
       container.id = "modal-root";
       document.body.appendChild(container);
     }
+
+    container.style.position = "fixed";
+    container.style.zIndex = "1000";
     modalContainerRef.current = container;
   }, []);
 
@@ -133,7 +136,7 @@ export const ModalPopup = ({
             </button>
 
             <div
-              className={`w-full h-full p-4 md:p-6 text-center overflow-y-auto scrollbar-thin ${
+              className={`w-full h-full p-3 md:p-4 text-center overflow-y-auto scrollbar-thin ${
                 isMobile && "!pb-0 max-md:p-3"
               }`}
             >

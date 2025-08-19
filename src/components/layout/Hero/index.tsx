@@ -1,5 +1,5 @@
-import Categorys from "@/features/Categories"
-import OffersSlider from "@/features/OffersSlider"
+import Categorys from "@/entities/Categories";
+import OffersSlider from "@/features/OffersSlider";
 
 const Hero = () => {
   return (
@@ -7,7 +7,7 @@ const Hero = () => {
       <Categorys />
       <OffersSlider />
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

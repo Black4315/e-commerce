@@ -63,23 +63,31 @@ body {
   }
 
   .margin-spacey {
-    @apply my-17 md:my-20 space-y-17 md:space-y-20;
+    @apply my-17 md:my-20 !space-y-17 md:!space-y-20;
   }
+
   .scrollbar-thin {
+    /* padding-inline-end: 4px; */
     overflow-x: hidden;
-    scrollbar-width: thin;
-    scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
   }
 
   .scrollbar-thin::-webkit-scrollbar {
+    width: 3px;
     height: 6px;
   }
 
   .scrollbar-thin::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: #75757500;
     border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
   }
 
+  .scrollbar-thin:hover ::-webkit-scrollbar-thumb {
+    background-color: #7575755f;
+    opacity: 1;
+  }
+ 
   .direction-right {
     direction: ltr;
   }

@@ -1,10 +1,10 @@
 "use client";
 
 import CustomImage from "@/components/ui/CustomImag";
-import { useProductContext } from "@/contexts/product/ProductContext";
-import { useProductSelection } from "@/contexts/product/ProductSelectionContext";
+import { useProductContext } from "@/entities/Product/contexts/ProductContext";
+import { useProductSelection } from "@/entities/Product/contexts/ProductSelectionContext";
 import { useTranslations } from "next-intl";
-import MoreDetails from "../../../../../components/shared/Product/MoreDetails";
+import MoreDetails from "../../../../../entities/Product/components/MoreDetails";
 
 const CartModalHeading = () => {
   const t = useTranslations("homePage.product");

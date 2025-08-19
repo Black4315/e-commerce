@@ -1,4 +1,9 @@
-import { noSize, productType, Size, Variant } from "@/types/productType";
+import {
+  noSize,
+  productType,
+  Size,
+  Variant,
+} from "@/entities/Product/types/productType";
 import { User } from "@/types/userType";
 
 export function buildCartItem(

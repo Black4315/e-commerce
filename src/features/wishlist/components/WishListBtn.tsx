@@ -5,28 +5,33 @@ import Button from "@/components/ui/Button";
 import { pages } from "@/constants/pages";
 import { useWishlistToggle } from "@/features/wishlist/hooks/useWishlistToggle";
 import { usePathname, useRouter } from "next/navigation";
-import { useProductContext } from "@/contexts/product/ProductContext";
+import { useProductContext } from "@/entities/Product/contexts/ProductContext";
 import IcondeleteIcon from "@/assets/icons/icondelete";
-import { productType } from "@/types/productType";
+import { productType } from "@/entities/Product/types/productType";
 import { CartItem } from "@/features/cart/types/cartType";
 
-const WishListBtn = ({item:exItem, className }: {item?:productType|CartItem; className?: string }) => {
+const WishListBtn = ({
+  item: exItem,
+  className,
+}: {
+  item?: productType | CartItem;
+  className?: string;
+}) => {
   const router = useRouter();
   const pathname = usePathname();
   const isWishlistPage = pathname.includes(pages.wishlist);
 
   //contexts
-  const item = () =>{
+  const item = () => {
     try {
-      const item = useProductContext()
-      return item
-    }catch(error)
-    {
-      return exItem as productType
+      const item = useProductContext();
+      return item;
+    } catch (error) {
+      return exItem as productType;
     }
   };
-  if(!item()) return null;
-  
+  if (!item()) return null;
+
   const { toggleWishlist, isExisting, isLoggedIn } = useWishlistToggle(item());
 
   const handleClick = () => {

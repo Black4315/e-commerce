@@ -2,10 +2,10 @@
 
 import { useMobileCheck } from "@/contexts/MobileCheckContext";
 import { useTranslations } from "next-intl";
-import { useProductContext } from "@/contexts/product/ProductContext";
+import { useProductContext } from "@/entities/Product/contexts/ProductContext";
 import { useAddToCart } from "@/features/cart/hooks/useAddtoCart";
 import { cn } from "@/lib/utils";
-import { useProductSelection } from "@/contexts/product/ProductSelectionContext";
+import { useProductSelection } from "@/entities/Product/contexts/ProductSelectionContext";
 import { ChangeCartQuantity } from "./ChangeCartQuantity";
 import AddButton from "./AddButton";
 import { ModalPopup } from "@/components/ui/ModalPopup";

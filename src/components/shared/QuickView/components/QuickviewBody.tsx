@@ -1,5 +1,5 @@
 import QuickViewInfo from "./QuickViewInfo";
-import ProductPricing from "@/components/shared/Product/ProductPricing";
+import ProductPricing from "@/entities/Product/components/ProductPricing";
 import AddToCart from "@/features/cart/components/AddToCart";
 import WishListBtn from "@/features/wishlist/components/WishListBtn";
 import { useMobileCheck } from "@/contexts/MobileCheckContext";

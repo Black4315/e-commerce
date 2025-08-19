@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { productType } from "../../../types/productType";
+import { productType } from "../../../entities/Product/types/productType";
 import { useWishlist } from "@/features/wishlist/contexts/WishListContext";
 import { useUserContext } from "@/contexts/UserContext";
 import toast from "react-hot-toast";

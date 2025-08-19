@@ -1,7 +1,7 @@
 "use client";
 
-import { useProductSelection } from "@/contexts/product/ProductSelectionContext";
-import SizesSelection from "../../../../../components/shared/Product/SizesSelection";
+import { useProductSelection } from "@/entities/Product/contexts/ProductSelectionContext";
+import SizesSelection from "../../../../../entities/Product/components/SizesSelection";
 import { Skeleton } from "@mui/material";
 
 const CartModalSelSize = () => {

@@ -4,7 +4,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 import { useUserContext } from "@/contexts/UserContext";
 import useFetchCart from "@/hooks/useFetchCart";
 import { useLocale } from "next-intl";
-import { Size, Variant } from "@/types/productType";
+import { Size, Variant } from "@/entities/Product/types/productType";
 
 interface Coupon {
   code: string;
@@ -83,9 +83,8 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
     setCart((prev) =>
       prev.filter(
         (i) =>
-          i.id != id &&
-          i.selectedVariant.sku != selectedVariant.sku ||
-          i.selectedSize?.size != selectedSize?.size 
+          (i.id != id && i.selectedVariant.sku != selectedVariant.sku) ||
+          i.selectedSize?.size != selectedSize?.size
       )
     );
   };

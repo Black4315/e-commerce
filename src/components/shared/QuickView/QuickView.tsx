@@ -1,10 +1,13 @@
 import ImageViewSlider from "@/components/shared/QuickView/components/imageViewSlider";
 import QuickViewIcon from "@/assets/icons/QuickView";
-import { ProductSelectionContextType, productType } from "@/types/productType";
+import {
+  ProductSelectionContextType,
+  productType,
+} from "@/entities/Product/types/productType";
 import { useMobileCheck } from "@/contexts/MobileCheckContext";
 import { useTranslations } from "next-intl";
 import QuickViewBody from "./components/QuickviewBody";
-import { useProductSelection } from "@/contexts/product/ProductSelectionContext";
+import { useProductSelection } from "@/entities/Product/contexts/ProductSelectionContext";
 
 export type QuickViewProps = {
   productInfo: {

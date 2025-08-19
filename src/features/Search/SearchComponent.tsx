@@ -22,7 +22,8 @@ const SearchComponent = ({ onSearch, className }: searchProps) => {
         onSearch(query.trim());
         setQuery(''); // Clear the input after search
     }
-
+    // TODO: add gsap animation to search input
+    // TODO: add search request services and search results page
     return (
         <form 
             ref={formRef}

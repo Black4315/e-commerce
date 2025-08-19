@@ -1,4 +1,4 @@
-import { productTypeSchema } from "@/types/productType";
+import { productTypeSchema } from "@/entities/Product/types/productType";
 import z from "zod";
 
 export type ourProductsType = z.infer<typeof ourProductsTypeSchema>;

@@ -28,11 +28,11 @@
             "inStock": true,
             "images": [
               {
-                "url": "/assets/products/images/g92-2-500x500 1.png",
+                "url": "/assets/products/images/image 63.svg",
                 "alt": "وحدة تحكم HAVIT HV-G92 - العرض الأمامي"
               },
               {
-                "url": "/assets/products/images/g92-2-500x500 1.png",
+                "url": "/assets/products/images/image 57.svg",
                 "alt": "عرض جانبي"
               }
             ]
@@ -59,7 +59,7 @@
         "handle": "the-north-coat",
         "description": "معطف شتوي أنيق ودافئ للارتداء اليومي.",
         "vendor": "The North Face x Gucci",
-        "category": "mens-fashion",
+        "category": "أزياء رجالية",
         "tags": ["winter", "coat", "luxury", "gucci"],
         "hasVariations": true,
         "defaultVariantIndex": 0,
@@ -158,7 +158,7 @@
         "handle": "gucci-duffle-bag",
         "description": "رفعوا أسلوبكم مع هذه الحقيبة الفاخرة من العلامة التجارية غوتشي والتي تتميز بنمط المونوغرام الشهير—رمز خالد للفخامة والأناقة. مصممة بدقة واهتمام بالتفاصيل، تجمع هذه الحقيبة بين الحرفية الإيطالية الرفيعة والأناقة الكلاسيكية.",
         "vendor": "غوتشي",
-        "category": "womens-fashion",
+        "category": "woأزياء رجالية",
         "tags": ["bag", "duffle", "luxury", "designer"],
         "defaultVariantIndex": 0,
         "hasVariations": false,
@@ -267,7 +267,7 @@
         "handle": "the-north-coat",
         "description": "معطف شتوي أنيق ودافئ للارتداء اليومي.",
         "vendor": "The North Face x Gucci",
-        "category": "mens-fashion",
+        "category": "أزياء رجالية",
         "tags": ["winter", "coat", "luxury", "gucci"],
         "hasVariations": true,
         "defaultVariantIndex": 0,
@@ -453,7 +453,7 @@
         "handle": "the-north-coat",
         "description": "معطف شتوي أنيق ودافئ للارتداء اليومي.",
         "vendor": "The North Face x Gucci",
-        "category": "mens-fashion",
+        "category": "أزياء رجالية",
         "tags": ["winter", "coat", "luxury", "gucci"],
         "hasVariations": true,
         "defaultVariantIndex": 0,
