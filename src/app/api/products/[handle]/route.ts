@@ -4,7 +4,7 @@ import { promises as fs } from "fs";
 import { z } from "zod"; // Zod import
 import { productType, productTypeSchema } from "@/entities/Product/types/productType";
 
-export async function GET(req: Request, context: { params: { handle: string } }) {
+export async function GET(req: Request, context: any) {
   const { searchParams } = new URL(req.url);
   const locale = searchParams.get("lang") || "en";
   const { handle } = await context.params;
