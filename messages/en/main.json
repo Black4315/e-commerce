@@ -142,6 +142,7 @@
     "quickView": "Quick View",
     "seeAll": "See All",
     "justForU": "Just For You",
+    "relatedItems": "Related Item",
     "flashSale": {
       "label": "Today's",
       "title": "Flash Sales",
@@ -167,7 +168,18 @@
       "selectVariant": "Please select a variation",
       "limitedTime": "Limited time deal",
       "color": "Color",
-      "sizes": "Sizes"
+      "colors": "Colors",
+      "sizes": "Sizes",
+      "nocolors": "No Colors",
+      "nosizes": "No Sizes",
+      "buynow": "Buy Now",
+      "deliv": "Delivery",
+      "freeDeliv": "Free Delivery",
+      "checkDelivAvalable": "Enter your postal code to check for Delivery Availablity",
+      "returnDelivery":"Return Delivery",
+      "returnDeliveryDesc":"Free 30 Days Delivery Returns.",
+      "returnDeliveryDetails":"We give Free 30 Days Delivery Returns,We give Free 30 Days Delivery Returns,We give Free 30 Days Delivery Returns,We give Free 30 Days Delivery Returns,We give Free 30 Days Delivery Returns,asdfasdf",
+      "details":"Details"
     },
     "browseByCategory": {
       "label": "categories",

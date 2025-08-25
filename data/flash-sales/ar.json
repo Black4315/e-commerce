@@ -1,7 +1,7 @@
 {
   "flashSale": {
     "start": "2025-07-17T00:00:00Z",
-    "end": "2025-08-07T23:59:59Z",
+    "end": "2025-09-15T23:59:59Z",
     "viewAll": "/flash-sales/",
     "products": [
       {
@@ -31,11 +31,23 @@
             "images": [
               {
                 "url": "/assets/products/images/image 63.svg",
-                "alt": "وحدة تحكم HAVIT HV-G92 - العرض الأمامي"
+                "alt": "HAVIT HV-G92 Gamepad Front View"
               },
               {
                 "url": "/assets/products/images/image 57.svg",
-                "alt": "عرض جانبي"
+                "alt": "Side View"
+              },
+              {
+                "url": "/assets/products/images/image 58.svg",
+                "alt": "Side View"
+              },
+              {
+                "url": "/assets/products/images/image 59.svg",
+                "alt": "Side View"
+              },
+              {
+                "url": "/assets/products/images/image 61.svg",
+                "alt": "Side View"
               }
             ]
           }

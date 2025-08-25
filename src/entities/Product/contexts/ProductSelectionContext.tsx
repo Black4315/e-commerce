@@ -1,5 +1,5 @@
-'use client'
-import { createContext, useContext, useState, ReactNode } from "react";
+"use client";
+import { createContext, useContext, useState, ReactNode, useRef } from "react";
 import {
   noSize,
   ProductSelectionContextType,
@@ -26,30 +26,27 @@ export const ProductSelectionProvider = ({
   const defaultSizes = defaultVariant.sizes;
 
   const halfIndex = defaultSizes ? Math.floor(defaultSizes.length / 2) : 0;
-  const defaultColor = defaultVariant?.color ?? "";
-  const defaultSize =
-    defaultSizes.length > 0
-      ? defaultVariant.sizes[halfIndex]
-      : noSize(defaultVariant);
+  const defaultSize = defaultSizes.length > 0 ? defaultVariant.sizes[halfIndex] : noSize(defaultVariant);
 
-  const [selectedColor, setSelectedColor] = useState<string>(defaultColor);
+  const [selectedSku, setSelectedSku] = useState<string>( defaultVariant?.sku ?? "" );
   const [selectedSize, setSelectedSize] = useState<Size>(defaultSize);
-
-  const selectedVariant =
-    variants.find((v) => v.color === selectedColor) || defaultVariant;
+  
+  const selectedVariant = useRef(variants.find((v) => v.sku === selectedSku) || defaultVariant).current;
+  const selectedColor = useRef(selectedVariant.color).current;
   const selectedSizeQuantity = selectedVariant?.sizes.find(
     (s) => s.size === selectedSize?.size
   )?.quantity;
 
   const resetSelection = () => {
-    setSelectedColor(defaultColor);
+    setSelectedSku(defaultVariant?.sku ?? "");
     setSelectedSize(defaultSize);
   };
 
   const colors: string[] = variants
     .filter((v) => v.color !== "")
     .map((v) => (v.color !== "" ? v.color : ""));
-  const sizes: Size[] = variants.flatMap((v) => v.sizes);
+  const skusWithColors: any[] = variants.map((v) => ({ sku:v.sku, color: v.color ?? "" }));
+  const sizes: Size[] = selectedVariant.sizes;
 
   const hasVariationsSizes = !!(defaultSizes.length > 1);
   return (
@@ -57,7 +54,6 @@ export const ProductSelectionProvider = ({
       value={{
         variants,
         selectedColor,
-        setSelectedColor,
         selectedSize,
         setSelectedSize,
         selectedVariant,
@@ -65,6 +61,9 @@ export const ProductSelectionProvider = ({
         resetSelection,
         colors,
         sizes,
+        skusWithColors,
+        selectedSku,
+        setSelectedSku,
         hasVariationsSizes,
       }}
     >

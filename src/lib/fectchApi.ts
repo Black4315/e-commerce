@@ -17,7 +17,9 @@ export default function useFetchApi<T>(
     queryKey,
     queryFn: () =>
       fetchAndValidate({
-        url: `${api}?lang=${locale}`,
+        url: `${api}${
+          api.includes("?") ? `&lang=${locale}` : `?lang=${locale}`
+        }`,
         schema,
         fallback,
       }),

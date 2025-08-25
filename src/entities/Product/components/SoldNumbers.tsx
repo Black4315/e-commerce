@@ -7,7 +7,6 @@ const SoldNumbers = ({ soldNumber }: { soldNumber: number }) => {
     const t = useTranslations('homePage.product')
     return (
         <p className="semi-text text-inactive text-sm">
-            <span className="me-2">|</span>
             <span>{formatCount(soldNumber)}{soldNumber > 1000 ? "+" : ""} {t('sold')}</span>
         </p>
     )

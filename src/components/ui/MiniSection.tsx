@@ -23,9 +23,8 @@ const MiniSection = ({
       <div className="grid gap-6 grid-cols-1 md:grid-cols-2 w-full justify-between items-center">
         <div className="flex gap-4 md:gap-6 items-center">
           {redbadge && <div className="w-5 h-10 rounded bg-secondary-3" />}
-          <h3 className="font-normal text-xl font-poppins leading-6 capitalize">
-            {" "}
-            {heading}{" "}
+          <h3 className="font-semibold text-base font-poppins leading-6 capitalize text-secondary-3">
+            {heading}
           </h3>
         </div>
 

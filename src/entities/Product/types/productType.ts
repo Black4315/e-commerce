@@ -23,17 +23,19 @@ import { z } from "zod";
 
 
 export interface ProductSelectionContextType {
-    variants: Variant[];
-    colors: string[];
-    sizes: Size[];
-    selectedColor: string;
-    setSelectedColor: (color: string) => void;
-    selectedSize: Size ;
-    setSelectedSize: (size: Size) => void;
-    selectedVariant: Variant;
-    selectedSizeQuantity: number | undefined;
-    resetSelection: () => void;
-    hasVariationsSizes: boolean;
+  variants: Variant[];
+  colors: string[];
+  skusWithColors: {sku:string, color:string}[];
+  sizes: Size[];
+  selectedColor: string;
+  selectedSize: Size;
+  setSelectedSize: (size: Size) => void;
+  selectedVariant: Variant;
+  selectedSizeQuantity: number | undefined;
+  resetSelection: () => void;
+  selectedSku: string;
+  setSelectedSku: (color: string) => void;
+  hasVariationsSizes: boolean;
 }
 
 export const productImageSchema = z.object({

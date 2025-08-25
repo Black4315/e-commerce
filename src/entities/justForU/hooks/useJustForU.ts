@@ -12,10 +12,15 @@ export const bestSellingsDataSchema = z.object({
   }),
 });
 
-export function useJustForU(locale: string, brand: string, category: string) {
+export function useJustForU(
+  queryKeys: readonly unknown[],
+  locale: string,
+  brand: string,
+  category: string
+) {
   return fectchApi<apiRes>(
-    ["just-for-you"],
-    `/api/best-sellings?category=${category}-laptops&brand=${brand}`,
+    queryKeys,
+    `/api/best-sellings?category=${category}&brand=${brand}`,
     locale,
     bestSellingsDataSchema
   );

@@ -100,10 +100,10 @@ export const ModalPopup = ({
       <Portal container={modalContainerRef.current || portalcontainer}>
         <div
           className={cn(
-            `modal-container p-0 flex-center fixed inset-0`,
+            `modal-container p-0 flex justify-center fixed inset-0`,
             isClosing ? hideAnimClasses?.container : showAnimClasses?.container,
             isClosing && "pointer-events-none",
-            isMobile && "!items-end",
+            !isMobile ? "py-3 overflow-y-auto custom-scroll" : "!items-end",
             classes?.container
           )}
         >
@@ -111,9 +111,9 @@ export const ModalPopup = ({
             aria-labelledby="modal-title"
             aria-describedby="modal-html-container"
             className={cn(
-              `forced-colors:border overflow-hidden modal-popup z-50 !p-0 bg-white flex-center relative animate__animated animate__faster`,
+              `forced-colors:border overflow-hidden modal-popup z-50 !p-0 bg-white flex justify-center items-center relative animate__animated animate__faster`,
               !isMobile
-                ? "mx-4 rounded-xl w-fit lg:h-fit"
+                ? "mx-4 rounded-xl w-fit lg:h-fit my-auto"
                 : "rounded-t-xl h-[85svh] w-screen",
               isClosing ? hideAnim : showAnim,
               classes?.popup
@@ -147,7 +147,7 @@ export const ModalPopup = ({
           {/* back drop */}
           <div
             className={cn(
-              `absolute top-0 bottom-0 right-0 left-0 bg-black/50 inset-0 transition-apple  animate__animated animate__faster`,
+              `fixed top-0 bottom-0 start-0 end-0 bg-black/50 transition-apple animate__animated animate__faster`,
               isClosing
                 ? hideAnimClasses?.backdrop || "animate__fadeOut"
                 : showAnimClasses?.backdrop || "animate__fadeIn",

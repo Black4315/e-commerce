@@ -26,11 +26,23 @@
         "images": [
           {
             "url": "/assets/products/images/image 63.svg",
-            "alt": "وحدة تحكم HAVIT HV-G92 - العرض الأمامي"
+            "alt": "HAVIT HV-G92 Gamepad Front View"
           },
           {
             "url": "/assets/products/images/image 57.svg",
-            "alt": "عرض جانبي"
+            "alt": "Side View"
+          },
+          {
+            "url": "/assets/products/images/image 58.svg",
+            "alt": "Side View"
+          },
+          {
+            "url": "/assets/products/images/image 59.svg",
+            "alt": "Side View"
+          },
+          {
+            "url": "/assets/products/images/image 61.svg",
+            "alt": "Side View"
           }
         ]
       }
@@ -155,7 +167,7 @@
     "handle": "gucci-duffle-bag",
     "description": "رفعوا أسلوبكم مع هذه الحقيبة الفاخرة من العلامة التجارية غوتشي والتي تتميز بنمط المونوغرام الشهير—رمز خالد للفخامة والأناقة. مصممة بدقة واهتمام بالتفاصيل، تجمع هذه الحقيبة بين الحرفية الإيطالية الرفيعة والأناقة الكلاسيكية.",
     "vendor": "غوتشي",
-    "category": "woأزياء رجالية",
+    "category": "ازياء نساىْية",
     "tags": ["bag", "duffle", "luxury", "designer"],
     "defaultVariantIndex": 0,
     "hasVariations": false,

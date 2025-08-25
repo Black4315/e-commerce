@@ -1,12 +1,12 @@
 "use client"
-import ImageViewSlider from "@/components/shared/QuickView/components/imageViewSlider";
 import PageBreadCrumbs from "@/components/ui/Page_BreadCrumbs";
 import ProductProvider from "@/entities/Product/contexts/ProductContext";
 import { ProductSelectionProvider } from "@/entities/Product/contexts/ProductSelectionContext";
 import { productTypeSchema } from "@/entities/Product/types/productType";
 import useFetchApi from "@/lib/fectchApi";
 import React from "react";
-import ImageView from "./components/ImageView";
+import ProductContent from "./components/ProductContent";
+import { useTranslations } from "next-intl";
 
 const Product = ({
   params,
@@ -14,7 +14,7 @@ const Product = ({
   params: Promise<{ locale: string; handle: string }>;
 }) => {
   const { locale, handle } = React.use(params);
-
+  const t = useTranslations("breadCrumbs");
   // fetch product
   const {
     data: product,
@@ -43,7 +43,7 @@ const Product = ({
       >
         <PageBreadCrumbs
           breadcrumbsData={[
-            { label: "Home", link: "/" },
+            { label: t("home"), link: "/" },
             {
               label: product.category,
               link: "/category/" + product?.category.toLocaleLowerCase(),
@@ -51,9 +51,7 @@ const Product = ({
             { label: product.title },
           ]}
         >
-          <div className="flex max-lg:flex-col items-center justify-between"> 
-            <ImageView />
-          </div>
+          <ProductContent />
         </PageBreadCrumbs>
       </ProductSelectionProvider>
     </ProductProvider>

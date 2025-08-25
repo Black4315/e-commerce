@@ -7,22 +7,26 @@ export const anim = (open: boolean) => {
     const staggerAmount = 0.05;
 
     if (open) {
-        gsap.fromTo(targets, {
+        gsap.fromTo(
+          targets,
+          {
             y: -10,
             opacity: 0,
             scale: 0.95,
-        }, {
+          },
+          {
             y: 0,
             opacity: 1,
             scale: 1,
             duration: duration,
             delay: 0.1,
-            ease: "back.out(1,2)",
+            ease: "easeS",
             stagger: {
-                each: staggerAmount,
-                from: 'start',
-            }
-        });
+              each: staggerAmount,
+              from: "start",
+            },
+          }
+        );
     } else {
         gsap.to(targets, {
             y: -5,

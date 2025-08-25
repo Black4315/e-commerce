@@ -142,6 +142,7 @@
     "quickView": "معاينة سريعة",
     "seeAll": "رؤية الكل",
     "justForU": "فقط من أجلك",
+    "relatedItems": "Related Item",
     "flashSale": {
       "label": "اليوم",
       "title": "الخصومات الفورية",
@@ -165,9 +166,13 @@
       "moreDetails": "مزيد من التفاصيل",
       "taxes": "بما في ذلك رسوم الاستيراد؛ تقدير الضرائب الأخرى",
       "color": "اللون",
+      "colors": "ألألوان",
       "sizes": "الأحجام",
       "selectVariant": "يرجى اختيار نوع",
-      "limitedTime": "عرض لوقت محدود"
+      "limitedTime": "عرض لوقت محدود",
+      "nocolors": "لا يوجد اللوان",
+      "nosizes": "لا يوجد أحجام",
+      "buynow": "أشتري ألان"
     },
     "browseByCategory": {
       "label": "الفئات",

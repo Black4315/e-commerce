@@ -17,7 +17,7 @@ const ModalBtns = () => {
       <div className={`flex gap-2`}>
         <AddToCart
           className="relative h-12 sm:h-15 w-full rounded overflow-hidden md:*:text-base "
-          qtyClassName="h-12 sm:h-15 w-full rounded *:rounded"
+          qtyProps={{className:"h-12 sm:h-15 w-full rounded *:rounded"}}
           insideModal
           show
         />

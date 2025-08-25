@@ -26,7 +26,9 @@ const QuickViewBody = () => {
       >
         <AddToCart
           className="relative h-12 sm:h-15 w-full rounded overflow-hidden md:*:text-base "
-          qtyClassName="h-12 sm:h-15 w-full rounded *:rounded"
+          qtyProps={{
+            className: "h-12 sm:h-15 w-full rounded *:rounded",
+          }}
           show
         />
         <WishListBtn className="rounded w-14 *:w-14 *:h-8.5 h-full " />

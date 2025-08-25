@@ -8,16 +8,31 @@ import ProductCards from "@/components/ui/SectionProducts/components/ProductCard
 import ErrorProducts from "@/components/ui/SectionProducts/components/ErrorProducts";
 import SkeltonProductCard from "@/components/ui/SectionProducts/components/SkeltonProductCards";
 
-const JustForU = ({ category, brand }: { category: string; brand: string }) => {
+const JustForU = ({
+  queryKeys,
+  heading,
+  category,
+  brand,
+}: {
+  queryKeys: readonly unknown[];
+  heading: string;
+  category: string;
+  brand: string;
+}) => {
   const t = useTranslations("homePage");
   const locale = useLocale();
   const seeAllRedirect = useSeeAllRedirect();
 
-  const { data, isLoading, isError } = useJustForU(locale, category, brand);
-
+  const { data, isLoading, isError } = useJustForU(
+    queryKeys,
+    locale,
+    category,
+    brand
+  );
+  console.log(locale)
   return (
     <MiniSection
-      heading={t("justForU")}
+      heading={heading}
       btnAbove={t("seeAll")}
       btnProps={{
         onClick: () =>

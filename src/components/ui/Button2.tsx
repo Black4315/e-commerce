@@ -9,7 +9,8 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   ariaLabel?: string; // optional aria-label override
 }
 
-export default function Button2({
+export default function 
+Button2({
   className,
   children,
   ariaLabel,
@@ -22,7 +23,7 @@ export default function Button2({
       aria-label={ariaLabel}
       role="button"
       className={cn(
-        `py-3 reg-text sm:py-4 px-8 sm:px-12 cursor-pointer flex-center transition-all 
+        `py-3 reg-text sm:py-4 px-8 sm:px-12 cursor-pointer flex-center transition-all disabled:opacity-50 disabled:pointer-events-none
          flex-none order-2 flex-grow-0 rounded selected:bg-button-2 border border-inactive 
          focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary`,
         isMobile

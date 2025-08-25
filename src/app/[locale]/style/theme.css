@@ -1,22 +1,26 @@
 /* theme.css */
 
-
 :root {
-    --background: #ffffff;
-    --foreground: #171717;
-    --apple-transition: cubic-bezier(0, 0, .5, 1);
-    --s-transition: cubic-bezier(0.4, 0, 0.6, 1);
+  --background: #ffffff;
+  --foreground: #171717;
+  --apple-transition: cubic-bezier(0, 0, 0.5, 1);
+  --s-transition: cubic-bezier(0.4, 0, 0.6, 1);
 
-    /* Optional custom fonts / breakpoints */
-    --font-poppins: "Poppins", sans-serif;
-    --font-inter: "Inter", sans-serif;
-    --breakpoint-xsm: 25rem;
-    --breakpoint-xs: 20rem;
+  /* Optional custom fonts / breakpoints */
+  --font-poppins: "Poppins", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --breakpoint-xsm: 25rem;
+  --breakpoint-xs: 20rem;
+}
+
+@theme {
+  --color-secondary-3: #db4444;
+  --color-hover-button-2: #eb5757;
 }
 
 @media (prefers-color-scheme: dark) {
-    :root {
-        --background: #0a0a0a;
-        --foreground: #ededed;
-    }
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
 }
