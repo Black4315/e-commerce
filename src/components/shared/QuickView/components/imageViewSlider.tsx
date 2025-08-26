@@ -24,7 +24,7 @@ const ImageViewSlider = ({
 export default ImageViewSlider;
 
 const MobileImageSlider = ({ images }: { images: ProductImage[] }) => (
-  <EmblaCarousel btns={false} options={{ dragFree: false }}>
+  <EmblaCarousel btns={false} dots options={{ dragFree: false }}>
     <div className="flex gap-3 md:gap-4">
       {images.map(({ url, alt }, i) => (
         <div
@@ -53,24 +53,34 @@ const DeskTopImageSlider = ({
 }) => {
   const [current, setcurrent] = useState(0);
 
+  // start with 4 placeholder objects
+  let safeImages = Array(4).fill({ url: "", alt: "" });
+
+  // add real images from the start of the array
+  images.slice(0, maxImageNumber ?? 4).forEach((image,i) => {
+    safeImages[i] = image; 
+  });
+
   return (
     <div className="flex max-sm:w-full gap-3 md:gap-4 h-[484px] md:h-[496px]">
       <div className="flex flex-col gap-3 md:gap-4 scrollbar-thin flex-shrink-0 rtl:[direction:ltr] ltr:[direction:rtl] pe-1">
-        {images.slice(0, maxImageNumber ?? 4).map(({ url, alt }, i) => (
+        {safeImages.map(({ url, alt }, i) => (
           <div
             key={i}
-            className={`${
-              i == current && "animate_quickSlider"
-            } blur-[1.5px] grayscale-25 w-31 h-28 aspect-square bg-skeleton flex-center p-3 rounded-xl cursor-pointer transition-apple flex-shrdink-0`}
-            onMouseMove={() => setcurrent(i)}
+            className={`${i == current && "animate_quickSlider"} ${
+              url && "cursor-pointer"
+            } blurdd-[1.5px] grayscaledd-25 w-31 h-28 aspect-square bg-skeleton flex-center p-3 rounded-xl  transition-apple flex-shrdink-0`}
+            onMouseMove={() => url && setcurrent(i)}
           >
-            <Image
-              width={50}
-              height={50}
-              src={url}
-              alt={alt}
-              className="object-contain w-9/12"
-            />
+            {url && (
+              <Image
+                width={50}
+                height={50}
+                src={url}
+                alt={alt}
+                className="object-contain w-9/12"
+              />
+            )}
           </div>
         ))}
       </div>

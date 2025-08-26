@@ -83,23 +83,37 @@ export const SizesSwitcher = ({
   setSize: (size: Size | any) => void;
 }) => {
   const t = useTranslations("homePage.product");
+  const qty = selctedSize.quantity
 
   return (
-    <ul className="flex gap-6 items-center flex-wrap">
-      {sizes.map((size, i) => (
-        <li key={i}>
-          <Button2
-            onClick={() => setSize(size)}
-            disabled={size.quantity <= 0}
-            title={size.quantity <= 0 ? t("outStock") : ""}
-            className={`${
-              size.size == selctedSize.size ? "action-btn-select" : ""
-            } w-8 h-8 !p-0`}
-          >
-            {size.size}
-          </Button2>
-        </li>
-      ))}
-    </ul>
+    <div className="flex items-center gap-4">
+      <ul className="flex gap-6 items-center flex-wrap">
+        {sizes.map((size, i) => (
+          <li key={i}>
+            <Button2
+              onClick={() => setSize(size)}
+              disabled={size.quantity <= 0}
+              title={size.quantity <= 0 ? t("outStock") : ""}
+              className={`${
+                size.size == selctedSize.size ? "action-btn-select" : ""
+              } w-8 h-8 !p-0`}
+            >
+              {size.size}
+            </Button2>
+          </li>
+        ))}
+      </ul>
+      <span
+        className={`sm-text text-[10px] md:text-xs whitespace-nowrap ${
+          qty < 5
+            ? "text-danger-600"
+            : qty <= 10
+            ? "text-warning-600"
+            : qty > 10 && "text-success-500"
+        }`}
+      >
+        {qty > 50 ? "few" : qty} unit{qty > 1 ? "s" : ""} remains
+      </span>
+    </div>
   );
 }

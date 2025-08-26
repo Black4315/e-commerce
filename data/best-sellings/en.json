@@ -80,14 +80,14 @@
                             }
                         ],
                         "images": [
-                            {
-                                "url": "/assets/products/images/ 672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-                                "alt": "Front View"
-                            },
-                            {
-                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-                                "alt": "Back View"
-                            }
+                          {
+                            "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat_white.png",
+                            "alt": "Front View"
+                          },
+                          {
+                            "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat_white.png",
+                            "alt": "Back View"
+                          }
                         ],
                         "price": 260,
                         "originalPrice": 360,
@@ -285,14 +285,14 @@
                             }
                         ],
                         "images": [
-                            {
-                                "url": "/assets/products/images/ 672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-                                "alt": "Front View"
-                            },
-                            {
-                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-                                "alt": "Back View"
-                            }
+                          {
+                            "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat_white.png",
+                            "alt": "Front View"
+                          },
+                          {
+                            "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat_white.png",
+                            "alt": "Back View"
+                          }
                         ],
                         "price": 260,
                         "originalPrice": 360,

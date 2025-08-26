@@ -10,7 +10,7 @@ const ProductContent = () => {
   const isMobile = useMobileCheck()
   return (
     <>
-      <section className="pb-10 md:pb-15 spacy-y-12 md:space-y-20">
+      <section className="pb-10 md:pb-15 space-y-12 md:space-y-20">
         <div
           className={`flex max-lg:flex-col gap-14 justify-between ${
             isMobile && "flex-col"

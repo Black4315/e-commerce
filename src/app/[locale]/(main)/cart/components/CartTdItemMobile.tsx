@@ -18,9 +18,9 @@ const CartTdItemMobile = ({
     <div className="flex gap-3 py-3 px-2.5 rounded shadows-[0px_1px_13px_rgba(0,0,0,0.05)]">
       <Link
         href={"/products/" + item.handle}
-        className="text-sm font-semibold line-clamp-2 shrink-0"
+        className="text-sm font-semibold line-clamp-2 shrink-0 flex-center"
       >
-        <div className="w-18 h-18 flex-center">
+        <div className="w-18 h-18">
           <CustomImage
             className="object-contain w-full h-full"
             src={item.selectedVariant.images[0].url}
@@ -44,7 +44,7 @@ const CartTdItemMobile = ({
         <div className="flex justify-between items-end max-xs:flex-col gap-2">
           <div className="flex flex-col max-xs:self-start">
             <span
-              className="med-text "
+              className="med-text text-shadow-black/20 text-shadow-sm"
               style={{ color: item.selectedVariant.color ?? "" }}
             >
               <span className="text-black">{thds[1]}: </span>

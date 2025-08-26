@@ -6,10 +6,9 @@ import { ChangeCartQuantity } from "@/features/cart/components/AddToCart/ChangeC
 import { CartItem } from "@/features/cart/types/cartType";
 import Link from "next/link";
 import { TdAction } from "./TdAction";
-import { useCartItemLogic } from "../../../../../features/cart/hooks/useCartItemHook";
+import { useCartItemLogic } from "@/features/cart/hooks/useCartItemHook";
 import CartTdItemMobile from "./CartTdItemMobile";
-import { CartItemPresentationalProps } from "../../../../../features/cart/types/CartPage";
-import WishListBtn from "@/features/wishlist/components/WishListBtn";
+import { CartItemPresentationalProps } from "@/features/cart/types/CartPage";
 
 const CartTdItemDesktop = ({
   item,
@@ -18,6 +17,8 @@ const CartTdItemDesktop = ({
   quantity,
 }: CartItemPresentationalProps) => (
   <tr className="tr group">
+
+    {/* title */}
     <td className="relative overflow-hidden">
       <TdAction deletClick={() => handleUpdateQty(0)} item={item} />
       <Link
@@ -39,9 +40,13 @@ const CartTdItemDesktop = ({
         </div>
       </Link>
     </td>
-    <td style={{ color: item.selectedVariant.color ?? "" }}>
+
+    {/* color */}
+    <td style={{ color: item.selectedVariant.color ?? "" }} className="text-shadow-black/20 text-shadow-sm">
       {item.selectedVariant.colorName}
     </td>
+
+    {/* size */}
     <td>{item.selectedSize?.size ?? ""}</td>
     <td>
       <Price
@@ -49,6 +54,8 @@ const CartTdItemDesktop = ({
         price={item.selectedVariant.price.toFixed(2)}
       />
     </td>
+
+    {/* cart quanity */}
     <td>
       <ChangeCartQuantity
         quantity={quantity}
@@ -58,6 +65,8 @@ const CartTdItemDesktop = ({
         className="w-[120px]"
       />
     </td>
+
+    {/* price */}
     <td>
       <Price
         currency={item.selectedVariant.currency}

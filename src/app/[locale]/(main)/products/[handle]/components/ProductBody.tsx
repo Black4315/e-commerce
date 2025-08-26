@@ -21,10 +21,8 @@ const ProductBody = () => {
         <ProductTitle title={title} className="mb-3" />
 
         <div className="flex gap-2 items-center flex-wrap">
-          <ProductRating />
-          <span className="me-2 text-inactive">|</span>
-          <SoldNumbers soldNumber={soldNumber} />
-          <span className="me-2 text-inactive">|</span>
+          <ProductRating /> <span className="me-2 text-inactive">|</span>
+          <SoldNumbers soldNumber={soldNumber} /> <span className="me-2 text-inactive">|</span>
           <QuickInStock inStock={selectedVariant.inStock} />
         </div>
 

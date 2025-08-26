@@ -84,7 +84,7 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
       prev.filter(
         (i) =>
           (i.id != id && i.selectedVariant.sku != selectedVariant.sku) ||
-          i.selectedSize?.size != selectedSize?.size
+          i.selectedSize?.size != selectedSize?.size || i.selectedVariant.sku != selectedVariant.sku
       )
     );
   };

@@ -5,29 +5,28 @@ import { useProductSelection } from "@/entities/Product/contexts/ProductSelectio
 import { useTranslations } from "next-intl";
 
 const SizesColors = () => {
-  const { title, description, soldNumber } = useProductContext();
   const {
     setSelectedSize,
     sizes,
     selectedSize,
-    selectedVariant,
+    selectedVariant:{quantityAvailable},
     skusWithColors,
     colors,
     setSelectedSku,
     selectedSku,
   } = useProductSelection();
   const t = useTranslations("homePage.product");
-    console.log(selectedVariant);
 
   return (
     <div className="my-6 space-y-6">
-      <div className="flex items-center gap-6">
+      <div className="flex items-start gap-6">
         <h3 className="reg-text md:text-xl text-lg">{t("colors")}:</h3>
 
         {colors.length ? (
           <ColorsSelection
             skusWithColors={skusWithColors}
             sku={selectedSku}
+            quanity={quantityAvailable}
             setSku={setSelectedSku}
           />
         ) : (
@@ -35,7 +34,7 @@ const SizesColors = () => {
         )}
       </div>
 
-      <div className="flex items-center gap-6">
+      <div className="flex items-start gap-6">
         <h3 className="reg-text md:text-xl text-lg">{t("sizes")}:</h3>
 
         {sizes.length ? (
