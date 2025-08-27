@@ -28,23 +28,23 @@ export default function ActionsIconButton({
   tooltipPlacement = "bottom",
   ...props
 }: ActionsIconButtonProps) {
+  const iconEl = Icon ? (
+    <Icon
+      className={iconClassName}
+      style={{
+        width,
+        height,
+        stroke: "currentColor",
+      }}
+    />
+  ) : null;
+
+  const content = href ? <Link href={href}>{iconEl}</Link> : iconEl;
+
   return (
     <CustomTooltip title={title} placement={tooltipPlacement}>
       <Button {...props}>
-        {href && (
-          <Link href={href}>
-            {Icon && (
-              <Icon
-                className={iconClassName}
-                style={{
-                  width: width,
-                  height: height,
-                  stroke: "currentColor",
-                }}
-              />
-            )}
-          </Link>
-        )}
+        {content}
         {children}
       </Button>
     </CustomTooltip>

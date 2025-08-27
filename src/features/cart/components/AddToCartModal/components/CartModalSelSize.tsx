@@ -18,7 +18,7 @@ const CartModalSelSize = () => {
         sizes={selectedVariant.sizes}
         size={selectedSize}
         setSize={setSelectedSize}
-        dropDown
+        dropDown = {false}
       />
     </div>
   );

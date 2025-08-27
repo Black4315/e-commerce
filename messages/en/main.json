@@ -176,10 +176,10 @@
       "deliv": "Delivery",
       "freeDeliv": "Free Delivery",
       "checkDelivAvalable": "Enter your postal code to check for Delivery Availablity",
-      "returnDelivery":"Return Delivery",
-      "returnDeliveryDesc":"Free 30 Days Delivery Returns.",
-      "returnDeliveryDetails":"We give Free 30 Days Delivery Returns,We give Free 30 Days Delivery Returns,We give Free 30 Days Delivery Returns,We give Free 30 Days Delivery Returns,We give Free 30 Days Delivery Returns,asdfasdf",
-      "details":"Details"
+      "returnDelivery": "Return Delivery",
+      "returnDeliveryDesc": "Free 30 Days Delivery Returns.",
+      "returnDeliveryDetails": "We offer free returns within 30 days of delivery. You can return items easily during this period for a full refund. Your satisfaction and convenience are our priority.",
+      "details": "Details"
     },
     "browseByCategory": {
       "label": "categories",

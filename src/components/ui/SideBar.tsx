@@ -8,6 +8,7 @@ import { AnimatePresence, motion } from "motion/react";
 import Link from "next/link";
 import LocaleSwitcherSelect from "../layout/topHeader/components/LocaleSwitcherSelect";
 import { useLocale } from "next-intl";
+import { Portal } from "./Portal";
 
 interface SidebarContextProps {
   open: boolean;
@@ -91,18 +92,17 @@ export const SideBarMenu = ({
   return (
     <motion.aside
       className={cn(
-        "z-99 h-full common-padding py-4 fixed top-0 left-0 flex-col text-white bg-neutral-100/97 w-svw hidden shrink-0",
-        className)
-      }
+        "z-99 h-screen common-padding py-4 fixed top-0 left-0 flex-col text-white backdrop-blur-xl bg-secondary-1/85 w-svw hidden shrink-0",
+        className
+      )}
       animate={{
         // width: animate ? (open ? "100vw" : "0") : "100vw",
-        left: animate ? (open ? '0' : '-100%') : '0',
+        left: animate ? (open ? "0" : "-100%") : "0",
         display: open ? "flex" : "none",
       }}
-
       transition={{
         ease: [0, 0, 0.5, 1],
-        duration: 0.3515
+        duration: 0.3515,
       }}
       {...props}
     >
@@ -148,7 +148,9 @@ export const SideBarClose = () => {
 }
 
 export const SideBarBody = (props: React.ComponentProps<typeof motion.aside>) => (
-  <SideBarMenu {...props} />
+  <Portal>
+    <SideBarMenu {...props} />
+  </Portal>
 )
 
 

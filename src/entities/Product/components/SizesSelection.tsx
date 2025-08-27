@@ -86,8 +86,8 @@ export const SizesSwitcher = ({
   const qty = selctedSize.quantity
 
   return (
-    <div className="flex items-center gap-4">
-      <ul className="flex gap-6 items-center flex-wrap">
+    <div className="flex gap-4">
+      <ul className="flex gap-4 md:gap-6 items-center flex-wrap w-fit">
         {sizes.map((size, i) => (
           <li key={i}>
             <Button2
@@ -104,7 +104,7 @@ export const SizesSwitcher = ({
         ))}
       </ul>
       <span
-        className={`sm-text text-[10px] md:text-xs whitespace-nowrap ${
+        className={`sm-text text-[10px] md:text-xs whitespace-nowrap mt-2 ${
           qty < 5
             ? "text-danger-600"
             : qty <= 10

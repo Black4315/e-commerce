@@ -2,7 +2,7 @@ import { useQuery, UseQueryResult } from "@tanstack/react-query";
 import { fetchAndValidate } from "./fetchAndValidate";
 import { ZodSchema, infer as zInfer } from "zod";
 
-export default function useFetchApi<T>(
+export default function fetchApi<T>(
   queryKeys: readonly unknown[],
   api: string,
   locale: string,

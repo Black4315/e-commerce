@@ -95,7 +95,7 @@ const EmblaCarousel = forwardRef<EmblaCarouselHandle, PropType>(
       [moreOneRow]
     );
     return (
-      <div className={`relative ${dots && ' mb-4'}`}>
+      <div className={`relative ${dots && " mb-4"}`}>
         {btns && (
           <div
             className={cn(
@@ -115,7 +115,7 @@ const EmblaCarousel = forwardRef<EmblaCarouselHandle, PropType>(
         )}
 
         {dots && (
-          <div className="flex gap-2 items-center absolute -bottom-5 start-1/2 -translate-x-1/2">
+          <div className="flex gap-2 items-center absolute -bottom-5 rtl:end-1/2 ltr:start-1/2 -translate-x-1/2">
             <DotsProgress
               scrollProgress={scrollProgress}
               scrollSnaps={scrollSnaps}
@@ -139,7 +139,6 @@ const EmblaCarousel = forwardRef<EmblaCarouselHandle, PropType>(
 );
 export default EmblaCarousel;
 
-
 export const DotsProgress = ({
   scrollProgress,
   scrollSnaps,
@@ -149,16 +148,15 @@ export const DotsProgress = ({
   scrollSnaps: any[];
   max?: number;
 }) => {
-  const total =
-    scrollSnaps.length % 2 == 0 ? scrollSnaps.length - 1 : scrollSnaps.length;
-  const cappedMax = Math.max(0,Math.min(max, total + 1));
+  const total = scrollSnaps.length;
+  const cappedMax = Math.max(0, Math.min(max, total));
 
   // Normalize scrollProgress (0–100%) into dot space (0 to max-1)
   // if ((scrollProgress / 100) * total) = 2 and max = 3 =>>>>>>> progress should be 0.5 by i-1 / n-1 = 0.5
   // i didnt make i-1 here cuz it start from 0
   const progressRatio = Math.min(
     1,
-    Math.round((scrollProgress / 100) * total) / (cappedMax - 1)
+    Math.round((scrollProgress / 100) * (total - 1)) / (cappedMax - 1)
   );
   const activeDot = progressRatio * cappedMax;
 
@@ -171,7 +169,7 @@ export const DotsProgress = ({
       {[...Array(cappedMax)].map((_, i) => (
         <div
           key={i}
-          className="block w-2 h-2 ease-linear bg-black rounded-full shrink-0 z-2 transition-all delay-250"
+          className="block w-2 h-2 ease-linear bg-black rounded-full shrink-0 z-2 transition-all delay-150"
           style={{
             background: i <= activeDot ? "#DB4444" : "black",
           }}

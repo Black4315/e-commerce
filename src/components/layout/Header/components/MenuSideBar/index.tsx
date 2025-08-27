@@ -31,7 +31,7 @@ const SideBarMenu = ({ className, children }: SideBarMenuProps) => {
             <OpenButton onClick={() => setopen(!open)} />
 
             <SideBar open={open} setOpen={setopen}>
-                <SideBarBody>
+                <SideBarBody className="pt-6">
                     <div ref={sidebarRef} className="mt-10 w-auto ">
                         <NavBar />
                     </div>

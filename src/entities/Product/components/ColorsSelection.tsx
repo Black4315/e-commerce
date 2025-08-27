@@ -10,7 +10,7 @@ const ColorsSelection = ({
   setSku: (color: string | any) => void;
 }) => {
   return (
-    <div className="flex items-center gap-4">
+    <div className="flex gap-4">
       <ul className="flex gap-4 items-center flex-wrap">
         {skusWithColors.map(({ sku, color }, i) => (
           <li key={i}>
@@ -27,7 +27,7 @@ const ColorsSelection = ({
         ))}
       </ul>
       <span
-        className={`sm-text text-[10px] md:text-xs whitespace-nowrap ${
+        className={`sm-text text-[10px] md:text-xs whitespace-nowrap mt-1 ${
           qty < 5
             ? "text-danger-600"
             : qty <= 10

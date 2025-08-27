@@ -3,7 +3,7 @@ import PageBreadCrumbs from "@/components/ui/Page_BreadCrumbs";
 import ProductProvider from "@/entities/Product/contexts/ProductContext";
 import { ProductSelectionProvider } from "@/entities/Product/contexts/ProductSelectionContext";
 import { productTypeSchema } from "@/entities/Product/types/productType";
-import useFetchApi from "@/lib/fectchApi";
+import fetchApi from "@/lib/fectchApi";
 import React from "react";
 import ProductContent from "./components/ProductContent";
 import { useTranslations } from "next-intl";
@@ -20,12 +20,7 @@ const Product = ({
     data: product,
     isLoading,
     isError,
-  } = useFetchApi(
-    [handle],
-    `/api/products/${handle}`,
-    locale,
-    productTypeSchema
-  );
+  } = fetchApi([handle], `/api/products/${handle}`, locale, productTypeSchema);
 
   if ( isLoading ){
     return <div>Loading...</div>

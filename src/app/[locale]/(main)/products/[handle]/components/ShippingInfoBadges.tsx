@@ -38,9 +38,9 @@ const ShippingInfoBadges = () => {
               placement="top"
               title={t("returnDeliveryDetails")}
             >
-              <span className="underline cursor-pointer ms-2">
+              <button className="underline ms-2">
                 {t("details")}
-              </span>
+              </button>
             </Tooltip>
           </p>
         </div>

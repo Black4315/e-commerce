@@ -28,7 +28,7 @@ const MobileImageSlider = ({ images }: { images: ProductImage[] }) => (
     <div className="flex gap-3 md:gap-4">
       {images.map(({ url, alt }, i) => (
         <div
-          className="w-9/12 max-w-150 h-55 shrink-0 bg-skeleton flex-center p-2 rounded-xl md:rounded-xl "
+          className="w-11/12 max-w-150 h-55 shrink-0 bg-skeleton flex-center p-2 rounded-xl md:rounded-xl "
           key={i}
         >
           <CustomImage

@@ -1,63 +1,76 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import NavBar from "./components/NavBar"
-import SearchComponent from "../../../features/Search/SearchComponent"
-import NavProfileActions from "./components/ActionsNav"
-import { useUserContext } from "@/contexts/UserContext"
-import { useEffect, useState } from "react"
-import SideBarMenu from "@/components/layout/Header/components/MenuSideBar"
+import Link from "next/link";
+import NavBar from "./components/NavBar";
+import SearchComponent from "../../../features/Search/SearchComponent";
+import NavProfileActions from "./components/ActionsNav";
+import { useUserContext } from "@/contexts/UserContext";
+import { useEffect, useState } from "react";
+import SideBarMenu from "@/components/layout/Header/components/MenuSideBar";
 import { useMobileCheck } from "@/contexts/MobileCheckContext";
-import { cn } from "@/lib/utils"
-import Button from "@/components/ui/Button"
-import { useTranslations } from "next-intl"
-import { LOGO_NAME } from "@/constants"
-import { useHeader } from "./hooks/useHeader"
-
+import { cn } from "@/lib/utils";
+import Button from "@/components/ui/Button";
+import { useTranslations } from "next-intl";
+import { LOGO_NAME } from "@/constants";
+import { useHeader } from "./hooks/useHeader";
 
 const Header = () => {
-    const isMobile = useMobileCheck(); // Assuming useMobileCheck is a custom hook to check if the device is mobile
-    const t = useTranslations('header')
-    const { user, isLoggedIn, login } = useUserContext(); // Assuming useUserContext is a custom hook to get user data
-    const { hydrated, onSearch } = useHeader();
+  const isMobile = useMobileCheck(); // Assuming useMobileCheck is a custom hook to check if the device is mobile
+  const t = useTranslations("header");
+  const { user, isLoggedIn, login } = useUserContext(); // Assuming useUserContext is a custom hook to get user data
+  const { hydrated, onSearch } = useHeader();
 
-    useEffect(() => { login(); console.log("User:", user); }, []);
+  useEffect(() => {
+    login();
+    console.log("User:", user);
+  }, []);
 
-    return (
-        <header className={cn("h-20 border-b border-border bg-white py-4.5 common-padding flex items-end",
-            isMobile ? 'h-fit justify-end px-3 py-3' : 'md:h-[100px]'
-        )}>
+  return (
+    <header
+      className={cn(
+        "h-20 border-b border-border bg-white/80 backdrop-blur-[20px] py-4.5 common-padding flex items-end sticky top-0 z-99",
+        isMobile ? "h-fit justify-end px-3 py-3 pt-6" : "md:h-[100px]"
+      )}
+    >
+      <div
+        className={`screen-max-width w-full flex ${isMobile ? "flex-col" : ""}`}
+      >
+        <div className="items-center justify-between flex w-full">
+          <div className="flex items-center gap-2">
+            <SideBarMenu className="lg:hidden" />
+            <Link href={"/"} className="logo max-lg:mx-2">
+              {LOGO_NAME}
+            </Link>
+          </div>
 
-            <div className={`screen-max-width w-full flex ${isMobile ? 'flex-col' : ''}`}>
+          <div className="hidden lg:block">
+            <NavBar />
+          </div>
 
-                <div className="items-center justify-between flex w-full">
-                    <div className="flex items-center gap-2">
-                        <SideBarMenu className='lg:hidden' />
-                        <Link href={'/'} className='logo max-lg:mx-2'>{LOGO_NAME}</Link>
-                    </div>
+          <div className="flex gap-3.5 items-center">
+            {hydrated && !isMobile && <SearchComponent onSearch={onSearch} />}
+            <NavProfileActions>
+              <NavProfileActions.cart />
+              {isLoggedIn ? (
+                <NavProfileActions.user />
+              ) : (
+                <Link
+                  href={"/auth/login"}
+                  className="login-btn max-xs:w-13 max-xs:ms-1"
+                  children={t("logInBtn")}
+                />
+              )}
+            </NavProfileActions>
+          </div>
+        </div>
 
-                    <div className='hidden lg:block'>
-                        <NavBar />
-                    </div>
+        {/* iam changing only place of search component cuz we have another design for mobile to responsize */}
+        {isMobile && hydrated && (
+          <SearchComponent onSearch={onSearch} className="mt-3 mb-1" />
+        )}
+      </div>
+    </header>
+  );
+};
 
-                    <div className='flex gap-3.5 items-center'>
-                        {(hydrated && !isMobile) && <SearchComponent onSearch={onSearch} />}
-                        <NavProfileActions>
-                            <NavProfileActions.cart />
-                            {isLoggedIn ?
-                                (<NavProfileActions.user />) :
-                                <Link href={'/auth/login'} className="login-btn max-xs:w-13 max-xs:ms-1" children={t('logInBtn')} />
-                            }
-                        </NavProfileActions>
-                    </div>
-
-                </div>
-
-                {/* iam changing only place of search component cuz we have another design for mobile to responsize */}
-                {(isMobile && hydrated) && <SearchComponent onSearch={onSearch} className="mt-3 mb-1" />}
-            </div>
-        </header>
-    )
-}
-
-export default Header
+export default Header;
