@@ -1,14 +1,14 @@
 "use client";
-import { CartItem } from "@/features/cart/types/cartType";
-import { createContext, useContext, useEffect, useState } from "react";
-import { useUserContext } from "@/contexts/UserContext";
-import useFetchCart from "@/hooks/useFetchCart";
+
+import { createContext, useContext, useEffect, useRef, useState } from "react";
 import { useLocale } from "next-intl";
-import { Size, Variant } from "@/entities/Product/types/productType";
+import { useUserContext } from "@/contexts/UserContext";
+import useFetchCart from "@/features/cart/hooks/useFetchCart";
+import { CartItem } from "@/features/cart/types/cartType";
 
 interface Coupon {
   code: string;
-  discount: number; // Discount in percentage (e.g., 10 means 10%)
+  discount: number; // e.g. 10 => 10%
 }
 
 interface CartContextType {
@@ -28,65 +28,106 @@ interface CartContextType {
 
 const CartContext = createContext<CartContextType | undefined>(undefined);
 
+/* ---------- helpers ---------- */
+const areSameCartItem = (
+  a: CartItem,
+  b: Pick<CartItem, "id" | "selectedVariant" | "selectedSize">
+) => {
+  return (
+    a.id === b.id &&
+    a.selectedVariant?.sku === b.selectedVariant?.sku &&
+    (a.selectedSize?.size ?? "") === (b.selectedSize?.size ?? "")
+  );
+};
+
 export const CartProvider = ({ children }: { children: React.ReactNode }) => {
   const { user, isLoggedIn } = useUserContext();
+  const locale = useLocale();
+
+  const { data: fetchedCart, isSuccess, isLoading } = useFetchCart(locale);
+
   const [cart, setCart] = useState<CartItem[]>([]);
   const [coupon, setCoupon] = useState<Coupon | null>(null);
 
-  // Get locale from next-intl
-  const locale = useLocale();
+  // Prevent overwriting local changes on subsequent refetches:
+  const hasInitializedFromServerRef = useRef(false);
+  const lastUserIdRef = useRef<string | number | null | undefined>(undefined);
 
-  // Fetch cart data based on user and locale
-  const { data: fetchedCart, isSuccess, isLoading } = useFetchCart(locale);
-
-  // Filter user-specific cart once data is available
+  /* ---------- initialize cart (server or session) ---------- */
   useEffect(() => {
+    // If user is not logged in, restore guest cart from sessionStorage
+    if (!isLoggedIn) {
+      try {
+        const sessionCart = sessionStorage.getItem("cart");
+        if (sessionCart) setCart(JSON.parse(sessionCart));
+      } catch (e) {
+        console.warn("Failed to parse session cart", e);
+      }
+      // reset server-init state when logging out / guest
+      hasInitializedFromServerRef.current = false;
+      lastUserIdRef.current = undefined;
+      return;
+    }
+
+    // logged-in flow: initialize from server once per user
     if (isLoggedIn && user && isSuccess && fetchedCart) {
-      const userCart = fetchedCart.filter((item) => item.userId === user.id);
-      setCart(userCart);
-    } else if (!isLoggedIn) {
-      const sessionCart = sessionStorage.getItem("cart");
-      if (sessionCart) {
-        setCart(JSON.parse(sessionCart));
+      // if user changed, allow re-initialization
+      if (lastUserIdRef.current !== user.id) {
+        hasInitializedFromServerRef.current = false;
+      }
+
+      if (!hasInitializedFromServerRef.current) {
+        const userCart = fetchedCart.filter((it: any) => it.userId === user.id);
+        setCart(userCart);
+        hasInitializedFromServerRef.current = true;
+        lastUserIdRef.current = user.id;
       }
     }
-  }, [isLoggedIn, user, fetchedCart, isSuccess, locale]);
+    // only run when login/user/fetchedCart changes
+  }, [isLoggedIn, user?.id, fetchedCart, isSuccess, locale]);
 
-  // Add cart list to sessionStorage until user get auth
+  /* ---------- persist guest cart to sessionStorage ---------- */
   useEffect(() => {
-    sessionStorage.setItem("cart", JSON.stringify(cart));
-  }, [isLoggedIn, cart, user?.id]);
+    if (!isLoggedIn) {
+      try {
+        sessionStorage.setItem("cart", JSON.stringify(cart));
+      } catch (e) {
+        console.warn("Failed to save cart to sessionStorage", e);
+      }
+    }
+  }, [isLoggedIn, cart]);
 
+  // cart operations (using comparator)
   const addToCart = (item: CartItem) => {
     setCart((prev) => {
-      const exists = prev.find(
-        (i) =>
-          i.id === item.id &&
-          i.selectedVariant.sku == item.selectedVariant.sku &&
-          i.selectedSize == item.selectedSize
-      );
-      if (exists) {
-        return prev.map((i) =>
-          i.id === item.id
-            ? {
-                ...i,
-                quantity: i.quantity + item.quantity,
-              }
-            : i
-        );
+      const idx = prev.findIndex((i) => areSameCartItem(i, item));
+      if (idx >= 0) {
+        const next = [...prev];
+        next[idx] = {
+          ...next[idx],
+          quantity: next[idx].quantity + item.quantity,
+        };
+        return next;
       }
       return [...prev, item];
     });
+    // TODO: if logged in, also call API to persist
+    // NOTE: If logged-in, you probably should call your API here to persist the change,
+    // then invalidate/refetch the server cart (or use optimistic update + revert on error).
   };
 
   const removeFromCart = ({ id, selectedVariant, selectedSize }: CartItem) => {
     setCart((prev) =>
       prev.filter(
         (i) =>
-          (i.id != id && i.selectedVariant.sku != selectedVariant.sku) ||
-          i.selectedSize?.size != selectedSize?.size || i.selectedVariant.sku != selectedVariant.sku
+          !areSameCartItem(i, {
+            id,
+            selectedVariant,
+            selectedSize,
+          })
       )
     );
+    // TODO: if logged in, also call API to persist
   };
 
   const updateQuantity = (
@@ -95,49 +136,38 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
   ) => {
     setCart((prev) =>
       prev.map((i) =>
-        i.id === id &&
-        i.selectedVariant.sku == selectedVariant.sku &&
-        i.selectedSize == selectedSize
-          ? { ...i, quantity: quantity }
+        areSameCartItem(i, { id, selectedVariant, selectedSize })
+          ? { ...i, quantity }
           : i
       )
     );
+    // TODO: if logged in, also call API to persist
   };
 
-  const clearCart = () => {
-    setCart([]);
-  };
+  const clearCart = () => setCart([]); // TODO: if logged in, also call API to persist
+  const applyCoupon = (c: Coupon) => setCoupon(c); // TODO: if logged in, also call API to persist
+  const removeCoupon = () => setCoupon(null); // TODO: if logged in, also call API to persist
 
-  const applyCoupon = (coupon: Coupon) => {
-    setCoupon(coupon);
-  };
-
-  const removeCoupon = () => {
-    setCoupon(null);
-  };
-
-  // Calculate total price considering the coupon
   const calculateTotalPrice = () => {
     let total = cart.reduce(
       (sum, item) =>
         sum +
-        (item.selectedVariant.price * item.quantity +
-          item.taxes * item.quantity),
+        item.selectedVariant.price * item.quantity +
+        (item.taxes ?? 0) * item.quantity,
       0
     );
-
     if (coupon) {
       total -= (total * coupon.discount) / 100;
     }
-
     return +total.toFixed(2);
   };
 
   const subTotal = +cart
-    .reduce((sum, curr) => curr.selectedVariant.price * curr.quantity + sum, 0)
+    .reduce((sum, curr) => sum + curr.selectedVariant.price * curr.quantity, 0)
     .toFixed(2);
+
   const totalTaxes = +cart
-    .reduce((sum, curr) => curr.taxes * curr.quantity + sum, 0)
+    .reduce((sum, curr) => sum + (curr.taxes ?? 0) * curr.quantity, 0)
     .toFixed(2);
 
   return (

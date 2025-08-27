@@ -1,4 +1,4 @@
-import { useQuery, UseQueryResult } from "@tanstack/react-query";
+import { useQuery, UseQueryOptions, UseQueryResult } from "@tanstack/react-query";
 import { fetchAndValidate } from "./fetchAndValidate";
 import { ZodSchema, infer as zInfer } from "zod";
 
@@ -7,7 +7,10 @@ export default function fetchApi<T>(
   api: string,
   locale: string,
   schema?: ZodSchema<T>,
-  fallback?: T
+  useQueryOptions: Omit<
+  UseQueryOptions<T, Error, T, typeof queryKeys>,
+  "queryKey" | "queryFn"> = {},
+  fallback?: T,
 ): UseQueryResult<T> {
   api = api.replace(/\/$/, ""); // Remove trailing slash
 
@@ -24,5 +27,6 @@ export default function fetchApi<T>(
         fallback,
       }),
     select: (data) => data ?? (fallback as T),
+    ...useQueryOptions,
   });
 }

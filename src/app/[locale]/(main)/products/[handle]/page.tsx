@@ -1,12 +1,11 @@
-"use client"
+"use client";
 import PageBreadCrumbs from "@/components/ui/Page_BreadCrumbs";
 import ProductProvider from "@/entities/Product/contexts/ProductContext";
 import { ProductSelectionProvider } from "@/entities/Product/contexts/ProductSelectionContext";
-import { productTypeSchema } from "@/entities/Product/types/productType";
-import fetchApi from "@/lib/fectchApi";
 import React from "react";
 import ProductContent from "./components/ProductContent";
 import { useTranslations } from "next-intl";
+import { useFetchProduct } from "./hooks/useFetchProduct";
 
 const Product = ({
   params,
@@ -15,17 +14,18 @@ const Product = ({
 }) => {
   const { locale, handle } = React.use(params);
   const t = useTranslations("breadCrumbs");
+
   // fetch product
   const {
     data: product,
     isLoading,
     isError,
-  } = fetchApi([handle], `/api/products/${handle}`, locale, productTypeSchema);
+  } = useFetchProduct(locale, handle)
 
-  if ( isLoading ){
-    return <div>Loading...</div>
+  if (isLoading) {
+    return <div>Loading...</div>;
   }
-  
+
   if (isError || !product) {
     return <div>Error loading product</div>;
   }

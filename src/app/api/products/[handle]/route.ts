@@ -18,20 +18,20 @@ export async function GET(req: Request, context: any) {
 
   try {
     const data = await fs.readFile(filePath, "utf-8");
-    const parsedData = JSON.parse(data);
+    const result = JSON.parse(data);
 
-    // Validate the data with Zod
-    const result = z.array(productTypeSchema).safeParse(parsedData);
+    // // Validate the data with Zod
+    // const result = z.array(productTypeSchema).safeParse(parsedData);
 
-    if (!result.success) {
-      return NextResponse.json(
-        { error: "Invalid data format", details: result.error },
-        { status: 400 }
-      );
-    }
+    // if (!result.success) {
+    //   return NextResponse.json(
+    //     { error: "Invalid data format", details: result.error },
+    //     { status: 400 }
+    //   );
+    // }
 
     // Now we know parsedData is a valid array of products
-    const filtered = result.data.filter((item: productType) => item.handle === handle);
+    const filtered = result.filter((item: productType) => item.handle === handle);
 
     if (filtered.length === 0) {
       return NextResponse.json({ error: "Item not found" }, { status: 404 });

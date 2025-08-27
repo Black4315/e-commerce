@@ -34,22 +34,22 @@ export const paymentMethodSchema = z.object({
 
 // User schema
 export const userSchema = z.object({
-    id: z.number(),
-    firstName: z.string(),
-    lastName: z.string(),
-    fullName: z.string(),
-    email: z.string().email(),
-    password: z.string(),
-    role: z.enum(["customer", "admin"]),
-    phone: z.string(),
-    avatar: z.string(), //.url(),
-    createdAt: z.string(),
-    address: addressSchema,
-    billingDetails: billingDetailsSchema,
-    payment: z.object({
-        methods: z.array(paymentMethodSchema),
-        lastUsed: z.string()
-    })
+  id: z.union([z.number(), z.string(), z.null(), z.undefined()]),
+  firstName: z.string(),
+  lastName: z.string(),
+  fullName: z.string(),
+  email: z.string().email(),
+  password: z.string(),
+  role: z.enum(["customer", "admin"]),
+  phone: z.string(),
+  avatar: z.string(), //.url(),
+  createdAt: z.string(),
+  address: addressSchema,
+  billingDetails: billingDetailsSchema,
+  payment: z.object({
+    methods: z.array(paymentMethodSchema),
+    lastUsed: z.string(),
+  }),
 });
 
 

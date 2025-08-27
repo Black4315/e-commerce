@@ -25,7 +25,7 @@ export async function fetchAndValidate<T>({
     if(!schema) return json
 
     const parsed = schema.safeParse(json);
-    console.log(parsed)
+
     if (!parsed.success) {
         console.error("❌ Invalid API response format", parsed.error);
         if (fallback) return fallback;

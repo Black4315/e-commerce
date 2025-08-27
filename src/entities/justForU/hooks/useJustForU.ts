@@ -1,4 +1,4 @@
-import fectchApi from "@/lib/fectchApi";
+import fetchApi from "@/lib/fetchApi"
 import { productTypeSchema } from "@/entities/Product/types/productType";
 import z from "zod";
 
@@ -18,7 +18,7 @@ export function useJustForU(
   brand: string,
   category: string
 ) {
-  return fectchApi<apiRes>(
+  return fetchApi<apiRes>(
     queryKeys,
     `/api/best-sellings?category=${category}&brand=${brand}`,
     locale,
