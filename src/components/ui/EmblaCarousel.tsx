@@ -95,7 +95,7 @@ const EmblaCarousel = forwardRef<EmblaCarouselHandle, PropType>(
       [moreOneRow]
     );
     return (
-      <div className={`relative ${dots && " mb-4"}`}>
+      <div className={`relative ${dots && " mb-9"}`}>
         {btns && (
           <div
             className={cn(

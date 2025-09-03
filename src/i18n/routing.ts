@@ -17,5 +17,5 @@ export const routing = defineRouting({
 
     // FIXME: set to true if you want automatic locale detection based on the user's preferences
     // and the Accept-Language header
-    localeDetection:false
+    // localeDetection:false
 });

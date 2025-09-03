@@ -19,7 +19,7 @@
                 "link": "/auth/signup"
             }
         ],
-        "searchPlaceholder": "ماذا تبحث؟",
+        "searchPlaceholder":"عن ماذا تبحث؟",
         "tooltip": {
             "cart": "عربة التسوق",
             "profile": "الملف الشخصي",

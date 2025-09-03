@@ -29,7 +29,7 @@ const JustForU = ({
     category,
     brand
   );
-  console.log(locale)
+
   return (
     <MiniSection
       heading={heading}

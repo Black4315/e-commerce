@@ -2,6 +2,8 @@
 
 // TODO: add categry url , shipping $ and (info for every varient sizes like in stock discount,etc..)
 add those to product
+
+// TODO: add "aboutItem":["",""] to every one , and add weight and demintions to "productDetails":{"dimentions":"any"}
 Yes — your structure is already solid, but if you want it to feel *production-grade* and cover more real-world e-commerce needs, you could enhance it with:
 
 ---

@@ -9,7 +9,6 @@ import ProductPricing from "@/entities/Product/components/ProductPricing";
 import SizesColors from "./SizesColors";
 import Actions from "./Actions";
 import ShippingInfoBadges from "./ShippingInfoBadges";
-import { ProductCardBadges } from "@/entities/Product/components/ProductCard/components/ProductCardBadges";
 
 const ProductBody = () => {
   const { title, description, soldNumber } = useProductContext();
@@ -22,7 +21,8 @@ const ProductBody = () => {
 
         <div className="flex gap-2 items-center flex-wrap">
           <ProductRating /> <span className="me-2 text-inactive">|</span>
-          <SoldNumbers soldNumber={soldNumber} /> <span className="me-2 text-inactive">|</span>
+          <SoldNumbers soldNumber={soldNumber} />{" "}
+          <span className="me-2 text-inactive">|</span>
           <QuickInStock inStock={selectedVariant.inStock} />
         </div>
 
@@ -30,12 +30,11 @@ const ProductBody = () => {
         <ProductPricing />
       </div>
 
-      <div className="h-full flex flex-col justify-between">
+      <div className="h-full flex flex-col justify-between mb-10">
         <SizesColors />
-        {/* <Badges /> */}
-        {/* <ProductCardBadges /> */}
         <Actions />
       </div>
+      <ShippingInfoBadges />
     </div>
   );
 };

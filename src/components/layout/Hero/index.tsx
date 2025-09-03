@@ -4,7 +4,9 @@ import OffersSlider from "@/features/OffersSlider";
 const Hero = () => {
   return (
     <section className="categorys-offers-slider flex pb-10 md:pb-18 relative">
-      <Categorys />
+      <div className="hidden md:block">
+        <Categorys />
+      </div>
       <OffersSlider />
     </section>
   );

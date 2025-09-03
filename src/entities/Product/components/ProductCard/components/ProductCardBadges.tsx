@@ -39,7 +39,7 @@ ProductCardBadges.limited = ({ className }: { className?: string }) => {
     <Link href={pages.flashSales}>
       <Badge
         className={cn(
-          "bg-[#CC0C39] hover:bg-[#a80c30] transition rounded-full px-2 h-fit py-1 max-md:text-text-[10px]",
+          "bg-limited-color hover:bg-[#a80c30] transition rounded-full px-2 h-fit py-1 max-md:text-text-[10px]",
           className
         )}
       >

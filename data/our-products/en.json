@@ -1,15 +1,21 @@
 {
   "ourProducts": {
-    "viewAll": "/our-products/",
+    "viewAll": "/shop/",
     "products": [
       {
         "flash": true,
         "start": "2025-07-17T00:00:00Z",
-        "end": "2025-08-07T23:59:59Z",
+        "end": "2025-09-15T23:59:59Z",
         "id": 1,
         "title": "HAVIT HV-G92 Gamepad",
         "handle": "havit-hv-g92-gamepad",
-        "description": "High quality gamepad suitable for PC and laptop gaming.",
+        "description": "DOUBLE SHOCK 5 controllers feature a classic design Combatible with PlayStation 5, with full vibration support and analog sticks, enhancing the gaming experience. They are an affordable alternative to official controllers, supporting most games on the respective PlayStation devices for each version, with limited compatibility for PC and Android in some cases. They connect easily via Bluetooth or cable, making them ideal for multiplayer sessions or as a backup controller.",
+        "aboutItem": [
+          "They include the traditional buttons (circle, triangle, square, and X), shoulder buttons (L1, L2, R1, and R2), and analog sticks, making them Compatible with PlayStation games.",
+          "support the vibration function, enhancing the gaming experience by providing realistic feedback during gameplay, The vibration feature enhances the feeling of effects in games, such as impacts and explosions",
+          "All controllers include analog sticks for precise control, which is essential for games that require accurate movement, such as shooting or driving games, Additionally, each version has a D-pad for games that require digital control",
+          "These controllers are suitable for multiplayer sessions or as a backup controller without the need for a high budget, Although connection methods vary between versions (wired or wireless), all controllers support quick and easy connection:"
+        ],
         "vendor": "HAVIT",
         "category": "electronics",
         "tags": ["gamepad", "controller", "gaming", "pc"],
@@ -58,6 +64,15 @@
         "reviewsCount": 88,
         "soldNumber": 1300,
         "taxes": 0.15,
+        "productDetails": [
+          ["Batteries", "1 Lithium Polymer batteries required. (included)"],
+          ["Package Dimensions", "19.4 x 19.3 x 6.9 cm; 10 g"],
+          ["Package material", "ABS Plastic"],
+          ["Package weight", "0.45kg"],
+          ["Release date", "10 November 2024"],
+          ["ASIN", "B0DY5JXHGP"],
+          ["Country of origin", "China"]
+        ],
         "weight": "0.45kg",
         "material": "ABS Plastic",
         "dimensions": "15x10x5 cm"

@@ -28,7 +28,7 @@ const SearchComponent = ({ onSearch, className }: searchProps) => {
         <form 
             ref={formRef}
             onSubmit={handleSearch} 
-            className={cn("flex items-center gap-3 box-border bg-secondary-1 rounded py-1 pr-3 pl-5",className)}>
+            className={cn("flex items-center gap-3 box-border bg-secondary-1 rounded-3xl py-1 pe-1 ps-3",className)}>
             <input
                 type="text"
                 value={query}

@@ -81,7 +81,7 @@ const LoginForm = () => {
         </button>
 
         {/* create acc */}
-        <div className='text-text-2 flex-center gap-4 !mt-8'>
+        <div className='text-text-2 flex-center gap-2 !mt-8 flex-wrap'>
           <span className='reg-text font-poppins'>{t('newTo')}</span>
           <Link href={pages.signup} className='med-text border-b hover:border-black transition-all hover:text-black'>
 

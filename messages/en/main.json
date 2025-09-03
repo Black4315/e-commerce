@@ -10,6 +10,10 @@
             "name": "Women’s Fashion"
           },
           {
+            "name": "Shop",
+            "link": "/category/womens-fashion"
+          },
+          {
             "name": "Dresses",
             "link": "/category/womens-fashion/dresses"
           },
@@ -58,6 +62,10 @@
           {
             "label": true,
             "name": "Men’s Fashion"
+          },
+          {
+            "name": "Shop",
+            "link": "/category/mens-fashion"
           },
           {
             "name": "T-Shirts & Polos",
@@ -179,7 +187,10 @@
       "returnDelivery": "Return Delivery",
       "returnDeliveryDesc": "Free 30 Days Delivery Returns.",
       "returnDeliveryDetails": "We offer free returns within 30 days of delivery. You can return items easily during this period for a full refund. Your satisfaction and convenience are our priority.",
-      "details": "Details"
+      "details": "Details",
+      "aboutItem": "About this item",
+      "productDetails" : "Product details",
+      "productDescription" : "Product description"
     },
     "browseByCategory": {
       "label": "categories",
@@ -262,6 +273,7 @@
   },
   "breadCrumbs": {
     "home": "Home",
+    "shop": "Shop",
     "contact": "Contact",
     "cart": "Cart",
     "account": "Account",

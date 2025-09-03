@@ -1,36 +1,49 @@
 import { ZodSchema } from "zod";
 
 type FetchAndValidateOptions<T> = {
-    schema?: ZodSchema<T>;
-    url: string;
-    init?: RequestInit;
-    fallback?: T;
+  schema?: ZodSchema<T>;
+  url: string;
+  init?: RequestInit;
+  fallback?: T;
 };
 
 export async function fetchAndValidate<T>({
-    schema,
-    url,
-    init,
-    fallback
+  schema,
+  url,
+  init,
+  fallback,
 }: FetchAndValidateOptions<T>): Promise<T> {
-    const res = await fetch(url, init);
+  let res: Response;
+  try {
+    res = await fetch(url, init);
+  } catch (e) {
+    throw new Error(`Network error: failed to reach ${url}`);
+  }
 
-    if (!res.ok) {
-        console.error(`❌ Network error: ${res.status} ${res.statusText}`);
-        if (fallback) return fallback;
-        throw new Error("Network error");
-    }
+  if (!res.ok) {
+    const err = new Error(`❌ Network error: ${res.status} ${res.statusText}`);
+    (err as any).status = res.status;
+    (err as any).name = "HttpError";
 
-    const json = await res.json();
-    if(!schema) return json
+    console.error(err.message);
+    if (fallback) return fallback;
+    throw err;
+  }
 
-    const parsed = schema.safeParse(json);
+  const json = await res.json();
+  if (!schema) return json;
 
-    if (!parsed.success) {
-        console.error("❌ Invalid API response format", parsed.error);
-        if (fallback) return fallback;
-        throw new Error("Invalid API response format");
-    }
+  const parsed = schema.safeParse(json);
 
-    return parsed.data;
+  if (!parsed.success) {
+    const err = new Error("❌ Invalid API response format");
+    (err as any).name = "ZodError";
+    (err as any).error = parsed.error;
+
+    console.error(err.message, (err as any).error);
+    if (fallback) return fallback;
+    throw err;
+  }
+
+  return parsed.data;
 }

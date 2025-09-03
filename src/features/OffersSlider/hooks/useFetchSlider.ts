@@ -9,9 +9,9 @@ export function useFetchSlider(locale: string) {
     locale,
     z.array(SliderItemSchema),
     {
-      staleTime: 1000 * 30, // 30 seconds
-      gcTime: 1000 * 60 * 5, // 5 minutes
-      refetchInterval: 1000 * 30, // auto refresh every 30s
+      // staleTime: 1000 * 30, // 30 seconds
+      // gcTime: 1000 * 60 * 5, // 5 minutes
+      // refetchInterval: 1000 * 30, // auto refresh every 30s
       refetchOnWindowFocus: true,
       // retry: 1,
     }

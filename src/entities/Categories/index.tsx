@@ -3,7 +3,7 @@ import fetchApi from "@/lib/fetchApi";
 import { useLocale, useTranslations } from "next-intl";
 import React from "react";
 import { useFetchCats } from "./hooks/useFetchCats";
-import Category from "./components/Category";
+import Category, { CategoryMobile } from "./components/Category";
 import { CategoryType } from "./types/CategoryType";
 import useDropDown from "./hooks/useDropDown";
 import DropdownPanel from "./components/CategoryDropdown/DropdownPanel";
@@ -29,7 +29,7 @@ const Categorys = () => {
   return (
     <div
       onMouseLeave={() => setActive(null)}
-      className="pt-10 pe-4 h-fit border-e border-border hidden lg:block"
+      className={`pt-10 h-fit border-e border-border pe-4`}
     >
       <div className="flex flex-col items-start p-0 gap-4 w-[217px] ">
         {categorys.map((category, i) => (

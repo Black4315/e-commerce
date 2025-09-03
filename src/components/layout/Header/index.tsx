@@ -28,7 +28,7 @@ const Header = () => {
   return (
     <header
       className={cn(
-        "h-20 border-b border-border bg-white/80 backdrop-blur-[20px] py-4.5 common-padding flex items-end sticky top-0 z-99",
+        "header common-padding",
         isMobile ? "h-fit justify-end px-3 py-3 pt-6" : "md:h-[100px]"
       )}
     >
@@ -37,13 +37,15 @@ const Header = () => {
       >
         <div className="items-center justify-between flex w-full">
           <div className="flex items-center gap-2">
-            <SideBarMenu className="lg:hidden" />
+            <SideBarMenu
+              className={`lg:hidden ${isMobile && "!block"}`}
+            />
             <Link href={"/"} className="logo max-lg:mx-2">
               {LOGO_NAME}
             </Link>
           </div>
 
-          <div className="hidden lg:block">
+          <div className={`hidden lg:block ${isMobile && "!hidden"}`}>
             <NavBar />
           </div>
 

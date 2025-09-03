@@ -8,9 +8,9 @@ export function useFetchBestSellings(locale: string) {
     locale,
     bestSellingsDataSchema,
     {
-      staleTime: 1000 * 60 * 5, // 5 minutes → consider fresh
-      gcTime: 1000 * 60 * 30, // 30 minutes in cache
-      refetchOnWindowFocus: false, // don't auto refetch when switching tabs
+      // staleTime: 1000 * 60 * 5, // 5 minutes → consider fresh
+      // gcTime: 1000 * 60 * 30, // 30 minutes in cache
+      // refetchOnWindowFocus: false, // don't auto refetch when switching tabs
       // retry: 1, // retry once on error
     }
   );

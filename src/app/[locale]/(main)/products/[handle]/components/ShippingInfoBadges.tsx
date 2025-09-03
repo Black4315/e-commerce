@@ -6,7 +6,7 @@ import Image from "next/image";
 const ShippingInfoBadges = () => {
   const t = useTranslations("homePage.product");
   return (
-    <div className="rounded border border-border *:not-last:border-b *:border-border *:p-4 *:py-6 w-fit">
+    <div className="rounded border border-border *:not-last:border-b *:border-border *:p-4 *:py-6">
       {/* free delivery badge */}
       <div className="flex gap-4">
         <Image

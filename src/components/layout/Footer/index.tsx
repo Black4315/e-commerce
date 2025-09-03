@@ -21,6 +21,7 @@ const Footer = () => {
     <>
       <StickyBtns hide={hide} />
       <footer
+        id="main-footer"
         className="footer bg-black text-text-1 py-5 common-padding flex flex-col font-poppins"
         ref={footerRef}
       >
@@ -64,7 +65,7 @@ const Footer = () => {
 
           <Download />
         </div>
-        
+
         <CopyRight />
       </footer>
     </>

@@ -9,8 +9,9 @@ const ProductTitle = ({
   return (
     <h3
       {...props}
+      title={title}
       className={cn(
-        "semi-heading capitalize leading-6 md:leading-8 md:mb-3 font-poppins ellipsis",
+        "semi-heading capitalize leading-6 md:leading-8 md:mb-3 font-poppins ",
         className
       )}
     >

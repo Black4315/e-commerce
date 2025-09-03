@@ -6,6 +6,6 @@ export const pages = {
   cart: "/cart",
   flashSales: "/flash-sales",
   wishlist: "/wishlist",
-  ourProducts:"/our-products",
-  checkout:"/checkout"
+  shop: "/shop",
+  checkout: "/checkout",
 };
