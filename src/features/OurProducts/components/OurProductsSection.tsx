@@ -1,10 +1,9 @@
 "use client";
 import SectionProducts from "@/components/ui/SectionProducts/SectionProducts";
 import { useLocale, useTranslations } from "next-intl";
-import { useFetchOurProducts } from "./hooks/useFetchOurProducts";
+import { useFetchOurProducts } from "../hooks/useFetchOurProducts";
 
-
-const OurProducts = () => {
+const OurProductsSection = () => {
   // translations
   const t = useTranslations("homePage.ourProducts");
   const locale = useLocale();
@@ -29,4 +28,4 @@ const OurProducts = () => {
   );
 };
 
-export default OurProducts;
+export default OurProductsSection;

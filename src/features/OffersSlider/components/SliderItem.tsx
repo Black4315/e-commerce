@@ -19,9 +19,9 @@ const SliderItem = ({ name, image, logo, offerBody, link }: SliderItemtype) => {
           <Image
             src={image}
             width={350}
-            height={50}
+            height={350}
             alt={name}
-            className="object-contain w-full"
+            className="object-contain w-full h-full"
           />
         </div>
 

@@ -1,0 +1,37 @@
+{
+  "contact": {
+    "phone":"Phone",
+    "email":"Email" ,
+    "infos": [
+      {
+        "label": "Call To Us",
+        "eles": [
+          "We are available 24/7, 7 days a week.",
+          "+8801611112222"
+        ]
+      },
+      {
+        "label": "Write To US",
+        "eles": [
+          "Fill out our form and we will contact you within 24 hours.",
+          "customer@exclusive.com",
+          "support@exclusive.com"
+        ]
+      }
+    ],
+
+    "form": {
+      "yourE": "Your {e}",
+      "name": "Name",
+      "eamil": "Email",
+      "phone": "Phone",
+      "mess": "Messages"
+    }
+  },
+  "about":{
+    "ourStory":"Our Story",
+    "firstP":"Launched in 2015, Exclusive is South Asia's premier online shopping marketplace with an active presence in Bangladesh. Supported by a wide range of tailored marketing, data and service solutions, Exclusive has 10,500 sellers and 300 brands and serves 3 million customers across the region.",
+    "secondP":"Exclusive has more than 1 Million products to offer, growing at a very fast rate. Exclusive offers a diverse assortment in categories ranging from consumer electronics to fashion and household goods. We also provide a complete range of services for businesses.",
+    "stats":["Sellers active on our site","Monthly Product Sale","Customer active in our site","Annual gross sale in our site"]
+  }
+}

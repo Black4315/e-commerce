@@ -1,5 +1,5 @@
 import Categorys from "@/entities/Categories";
-import OffersSlider from "@/features/OffersSlider";
+import OffersSlider from "@/features/OffersSlider/components/OffersSlider";
 
 const Hero = () => {
   return (

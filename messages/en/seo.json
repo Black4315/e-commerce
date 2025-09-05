@@ -1,0 +1,41 @@
+{
+"seo": {
+  "main": {
+    "defaultTitle": "Premium E-Commerce Platform",
+    "description": "Shop with Exclusive – South Asia's leading e-commerce platform.",
+    "keywords": ["Exclusive", "E-Commerce", "Online Shopping", "Electronics"],
+    "ogDescription": "Discover premium products with Exclusive.",
+    "ogAlt": "Premium Shopping Experience",
+    "twitterDescription": "Shop premium products online with Exclusive."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "Get in touch with {site}. Contact us for inquiries, support, or partnership opportunities.",
+    "ogAlt": "Contact {site}",
+    "twitterDescription": "Reach out to {site} for inquiries, support, or collaboration."
+  },
+  "about": {
+    "title": "About Us",
+    "description": "Learn more about {{siteName}}. Discover our story, mission, vision, and the values that drive us forward.",
+    "ogDescription": "Explore {{siteName}} and learn about our journey, mission, and commitment to delivering excellence.",
+    "twitterDescription": "Get to know {{siteName}} — our mission, our values, and the people behind our success.",
+    "ogAlt": "About {{siteName}}"
+  },
+  "auth": {
+    "signup": {
+      "title": "Create Your Account",
+      "description": "Join {{siteName}} today. Create your account to explore our products and enjoy a personalized shopping experience.",
+      "ogDescription": "Sign up on {{siteName}} to unlock exclusive offers and manage your profile with ease.",
+      "twitterDescription": "Start your journey with {{siteName}}. Create your free account today.",
+      "ogAlt": "Signup page for {{siteName}}"
+    },
+    "login": {
+      "title": "Login to Your Account",
+      "description": "Access your {{siteName}} account to manage orders, track shipments, and enjoy seamless shopping.",
+      "ogDescription": "Login to {{siteName}} to stay connected with your shopping journey.",
+      "twitterDescription": "Sign in to your {{siteName}} account and enjoy a smooth shopping experience.",
+      "ogAlt": "Login page for {{siteName}}"
+    }
+  }
+}
+}

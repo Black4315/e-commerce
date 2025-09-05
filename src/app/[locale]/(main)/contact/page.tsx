@@ -1,25 +1,35 @@
-import { Breadcrumbs, Link, Typography } from "@mui/material";
 import { useTranslations } from "next-intl";
 import ContactForm from "./components/ContactForm";
 import ContactInfo from "./components/ContactInfo";
+import PageBreadCrumbs from "@/components/ui/Page_BreadCrumbs";
+import { headers } from "next/headers";
+import { isMobileUserAgent } from "@/utils/mobileCheck";
+import { generateMetadataContact } from "./seo/metaData";
 
-const Contact = () => {
-    const t = useTranslations('contact');
-    return (
-        <div className="screen-max-width">
-            <Breadcrumbs aria-label="breadcrumb">
-                <Link underline="hover" color="inherit" href="/" className="font-poppins">
-                    {t('home')}
-                </Link>
-                <Typography sx={{ color: 'text.primary', fontFamily: "var(--font-poppins" }}>{t('contact')}</Typography>
-            </Breadcrumbs>
+export const generateMetadata = generateMetadataContact;
+export default async function Contact() {
+  const userAgent = (await headers()).get("user-agent") || "";
+  const isMobile = isMobileUserAgent(userAgent);
 
-            <div>
-                <ContactInfo />
-                <ContactForm />
-            </div>
-        </div>
-    );
+  return <ContactPageContent isMobile={isMobile} />;
 }
 
-export default Contact
+const ContactPageContent = ({ isMobile }: { isMobile: boolean }) => {
+  "use client";
+  const t = useTranslations("breadCrumbs");
+
+  return (
+    <PageBreadCrumbs
+      breadcrumbsData={[
+        { label: t("home"), link: "/" },
+        { label: t("contact") },
+      ]}
+      isMobile={isMobile}
+    >
+      <div className="flex md:max-h-120 gap-8 max-md:flex-col ">
+        <ContactInfo />
+        <ContactForm />
+      </div>
+    </PageBreadCrumbs>
+  );
+};

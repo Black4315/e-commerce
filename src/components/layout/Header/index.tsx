@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import NavBar from "./components/NavBar";
-import SearchComponent from "../../../features/Search/SearchComponent";
+import SearchComponent from "../../../features/Search/components/SearchComponent";
 import NavProfileActions from "./components/ActionsNav";
 import { useUserContext } from "@/contexts/UserContext";
 import { useEffect, useState } from "react";

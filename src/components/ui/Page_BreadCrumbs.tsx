@@ -39,7 +39,7 @@ const PageBreadCrumbs = ({
               {label}
             </Link>
           ) : (
-            <span className="capitalize sm-text text-black whitespace-nowrap ellipsis block w-100">
+            <span className="capitalize sm-text text-black whitespace-nowrap ellipsis block max-w-100">
               {label}
             </span>
           )

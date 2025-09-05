@@ -4,6 +4,9 @@
 add those to product
 
 // TODO: add "aboutItem":["",""] to every one , and add weight and demintions to "productDetails":{"dimentions":"any"}
+// TODO: add brand name
+// TODO:add actual auther
+ // TODO: add best rating
 Yes — your structure is already solid, but if you want it to feel *production-grade* and cover more real-world e-commerce needs, you could enhance it with:
 
 ---

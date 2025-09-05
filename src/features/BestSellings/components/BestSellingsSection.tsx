@@ -1,7 +1,7 @@
 "use client";
 import SectionProducts from "@/components/ui/SectionProducts/SectionProducts";
 import { useLocale, useTranslations } from "next-intl";
-import { useFetchBestSellings } from "./hooks/useFetchBestSellings";
+import { useFetchBestSellings } from "../hooks/useFetchBestSellings";
 import { productType } from "@/entities/Product/types/productType";
 import { Skeleton } from "@mui/material";
 import { UseQueryResult } from "@tanstack/react-query";
@@ -14,7 +14,7 @@ type bestSellingsDataType = {
   };
 };
 
-const BestSellings = () => {
+const BestSellingsSection = () => {
   // translations
   const t = useTranslations("homePage.bestSellings");
   const locale = useLocale();
@@ -44,4 +44,4 @@ const BestSellings = () => {
   );
 };
 
-export default BestSellings;
+export default BestSellingsSection;

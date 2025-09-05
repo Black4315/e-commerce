@@ -4,12 +4,12 @@ import {
   ImageSliderWrapper,
 } from "@/components/ui/ImageSlider";
 import React from "react";
-import { useFetchSlider } from "./hooks/useFetchSlider";
+import { useFetchSlider } from "../hooks/useFetchSlider";
 import { useLocale, useTranslations } from "next-intl";
-import SliderItem from "./components/SliderItem";
-import { SliderItemtype } from "./types/sliderItem";
-import LoadingOffers from "./components/LoadingOffers";
-import ErrorOffers from "./components/ui/ErrorOffers";
+import SliderItem from "./SliderItem";
+import { SliderItemtype } from "../types/sliderItem";
+import LoadingOffers from "./LoadingOffers";
+import ErrorOffers from "./ui/ErrorOffers";
 
 const OffersSlider = () => {
   const locale = useLocale();

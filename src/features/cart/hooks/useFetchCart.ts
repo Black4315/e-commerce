@@ -5,7 +5,7 @@ import z from "zod";
 export default function useFetchCart(locale: string) {
   return fetchApi<CartItem[]>(
     ["cart", locale],
-    `/api/cart?lang=${locale}`,
+    `/api/cart`,
     locale,
     z.array(cartItemSchema),
     {

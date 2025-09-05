@@ -5,6 +5,7 @@ import { ChangeCartQuantity } from "../../../../../features/cart/components/AddT
 import CustomImage from "@/components/ui/CustomImag";
 import { useTranslations } from "next-intl";
 import { CartItemPresentationalProps } from "../../../../../features/cart/types/CartPage";
+import { CartItem } from "@/features/cart/types/cartType";
 
 /* ---------------- Product Image ---------------- */
 const ProductImage = ({
@@ -16,7 +17,7 @@ const ProductImage = ({
   url: string;
   alt: string;
 }) => (
-  <Link href={`/products/${handle}`} className="flex-center shrink-0">
+  <Link href={`/products/${handle}`} className="mt-1 shrink-0">
     <div className="w-18 h-18">
       <CustomImage
         className="object-contain w-full h-full"
@@ -31,27 +32,19 @@ const ProductImage = ({
 
 /* ---------------- Product Info ---------------- */
 const ProductInfo = ({
-  handle,
-  title,
   thds,
   color,
   colorName,
   size,
+  price,
 }: {
-  handle: string;
-  title: string;
   thds: string[];
   color?: string;
   colorName?: string;
   size?: string;
+  price?: number;
 }) => (
   <div className="flex flex-col max-xs:self-start">
-    <Link
-      href={`/products/${handle}`}
-      className="semi-text line-clamp-2 active:text-secondary-3"
-    >
-      {title}
-    </Link>
     <span className="med-text" style={{ color: color ?? "" }}>
       <span className="text-black">{thds[1]}: </span>
       <span className="text-shadow-black/20 text-shadow-xs">{colorName}</span>
@@ -60,6 +53,30 @@ const ProductInfo = ({
       <span>{thds[2]}: </span>
       {size ?? ""}
     </span>
+    <span className="med-text">
+      <span>{thds[3]}: </span>
+      {price ?? ""}
+    </span>
+  </div>
+);
+
+const ProductTitle = ({
+  item,
+  handle,
+  title,
+}: {
+  item: CartItem;
+  handle: string;
+  title: string;
+}) => (
+  <div className="w-full flex justify-between ">
+    <Link
+      href={`/products/${handle}`}
+      className="semi-text line-clamp-2 active:text-secondary-3"
+    >
+      {title}
+    </Link>
+    <TdAction.WishlistButton item={item} className="rounded-full w-7 h-7" />
   </div>
 );
 
@@ -83,27 +100,25 @@ const CartTdItemMobile = ({
 
       <div className="flex flex-col gap-2 w-full overflow-hidden">
         {/* Product Info + Wishlist */}
-        <div className="flex justify-between items-start">
-          <ProductInfo
-            handle={item.handle}
-            title={item.title}
-            thds={thds}
-            color={item.selectedVariant.color}
-            colorName={item.selectedVariant.colorName}
-            size={item.selectedSize?.size}
-          />
-          <TdAction.WishlistButton item={item} className="rounded-full" />
-        </div>
-
-        {/* Quantity */}
-        <div className="flex justify-between items-end max-xs:flex-col gap-2">
-          <ChangeCartQuantity
-            quantity={quantity}
-            updateQty={handleUpdateQty}
-            maxQyt={maxQyt}
-            isDark={false}
-            className="w-[120px] ms-auto h-9 me-0"
-          />
+        <div className="flex flex-col justify-between items-start">
+          {/* Quantity */}
+          <ProductTitle handle={item.handle} title={item.title} item={item} />
+          <div className="flex justify-between items-end max-xs:flex-col gap-2 w-full">
+            <ProductInfo
+              thds={thds}
+              color={item.selectedVariant.color}
+              colorName={item.selectedVariant.colorName}
+              size={item.selectedSize?.size}
+              price={item.selectedVariant.price}
+            />
+            <ChangeCartQuantity
+              quantity={quantity}
+              updateQty={handleUpdateQty}
+              maxQyt={maxQyt}
+              isDark={false}
+              className="w-[120px] ms-auto h-9 me-0"
+            />
+          </div>
         </div>
       </div>
     </div>

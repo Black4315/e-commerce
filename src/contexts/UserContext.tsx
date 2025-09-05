@@ -72,38 +72,44 @@ interface UserContextType {
 
 const UserContext = createContext<UserContextType | undefined>(undefined);
 
-export const UserProvider = ({ children }: { children: React.ReactNode }) => {
-    const [user, setUser] = useState<User | null>(null);
+export const UserProvider = ({
+  children,
+  initialUser,
+}: {
+  children: React.ReactNode;
+  initialUser: User | null;
+}) => {
+  const [user, setUser] = useState<User | null>(initialUser);
 
-    const isLoggedIn = !!user;
+  const isLoggedIn = !!user;
 
-    const login = async () => {
-        try {
-            const userData = await fetchUser(); // reuse your shared function
-            setUser(userData);
-            sessionStorage.setItem('user', JSON.stringify(userData));
-        } catch (error) {
-            console.error('Failed to fetch user:', error);
-        }
-    };
+  const login = async () => {
+    try {
+      const userData = await fetchUser(); // reuse your shared function
+      setUser(userData);
+      sessionStorage.setItem("user", JSON.stringify(userData));
+    } catch (error) {
+      console.error("Failed to fetch user:", error);
+    }
+  };
 
-    const logout = () => {
-        setUser(null);
-        sessionStorage.removeItem('user');
-    };
+  const logout = () => {
+    setUser(null);
+    sessionStorage.removeItem("user");
+  };
 
-    useEffect(() => {
-        const stored = sessionStorage.getItem('user');
-        if (stored) {
-            setUser(JSON.parse(stored));
-        }
-    }, []);
+  useEffect(() => {
+    const stored = sessionStorage.getItem("user");
+    if (stored) {
+      setUser(JSON.parse(stored));
+    }
+  }, []);
 
-    return (
-        <UserContext.Provider value={{ user, isLoggedIn, login, logout }}>
-            {children}
-        </UserContext.Provider>
-    );
+  return (
+    <UserContext.Provider value={{ user, isLoggedIn, login, logout }}>
+      {children}
+    </UserContext.Provider>
+  );
 };
 
 export const useUserContext = () => {

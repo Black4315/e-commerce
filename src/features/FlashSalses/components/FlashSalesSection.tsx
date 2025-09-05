@@ -1,14 +1,14 @@
 "use client";
 import SectionProducts from "@/components/ui/SectionProducts/SectionProducts";
-import { useFetchFlashsales } from "./hooks/useFetchFlashSales";
+import { useFetchFlashsales } from "../hooks/useFetchFlashSales";
 import { useLocale, useTranslations } from "next-intl";
-import CountdownTimer from "./components/CountdownTimer";
-import ErrorTimer from "./components/ErrorTimer";
+import CountdownTimer from "./CountdownTimer";
+import ErrorTimer from "./ErrorTimer";
 import {
   FlashSalesProvider,
   useFlashSalesContext,
-} from "./context/FlashSalesContext";
-import LoadingTimer from "./components/LoadingTimer";
+} from "../context/FlashSalesContext";
+import LoadingTimer from "./LoadingTimer";
 
 export default function FlashSales() {
   return (

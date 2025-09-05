@@ -12,7 +12,9 @@ import { Toaster } from "react-hot-toast";
 import { MobileCheckProvider } from "@/contexts/MobileCheckContext";
 import { headers } from "next/headers";
 import { isMobileUserAgent } from "@/utils/mobileCheck";
+import { mainPageMetaData } from "@/lib/seo/mainPageMetaData";
 
+export const generateMetadata = mainPageMetaData
 export default async function LocaleLayout({
   children,
   params,
