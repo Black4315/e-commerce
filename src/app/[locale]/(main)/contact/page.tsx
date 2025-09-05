@@ -26,7 +26,7 @@ const ContactPageContent = ({ isMobile }: { isMobile: boolean }) => {
       ]}
       isMobile={isMobile}
     >
-      <div className="flex md:max-h-120 gap-8 max-md:flex-col ">
+      <div className="flex md:max-h-120 gap-8 max-md:flex-col !mt-10">
         <ContactInfo />
         <ContactForm />
       </div>

@@ -86,7 +86,7 @@ const ContactInfo = () => {
 
   return (
     <address
-      className="p-6 md:p-10 flex flex-col rounded-xl gap-8 w-full md:max-w-85 shadow-[0px_1px_13px_rgba(0,0,0,0.05)] not-italic"
+      className="p-6 md:p-10 flex flex-col rounded-xl gap-8 w-full md:max-w-85 shadow-[0px_1px_13px_rgba(0,0,0,0.09)] not-italic"
       aria-label="Contact Information"
     >
       {infos.map((info, index) => (

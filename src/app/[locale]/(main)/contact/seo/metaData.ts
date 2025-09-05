@@ -22,7 +22,7 @@ export async function generateMetadataContact({
       siteName: SITE_NAME,
       images: [
         {
-          url: `${baseUrl}/assets/images/assets/images/ogimage.jpg`,
+          url: `${baseUrl}/assets/images/ogimage.jpg`,
           width: 1200,
           height: 630,
           alt: t("ogAlt", { site: SITE_NAME }),
@@ -35,7 +35,7 @@ export async function generateMetadataContact({
       card: "summary_large_image",
       title: t("title", { site: SITE_NAME }),
       description: t("twitterDescription", { site: SITE_NAME }),
-      images: [`${baseUrl}/assets/images/assets/images/ogimage.jpg`],
+      images: [`${baseUrl}/assets/images/ogimage.jpg`],
     },
     alternates: {
       canonical: `${baseUrl}/${locale}/contact`,

@@ -26,9 +26,9 @@ const AboutPage = ({ isMobile }: { isMobile?: boolean }) => {
       isMobile={isMobile}
     >
       {/* Main Content */}
-      <main className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 items-center">
+      <main className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 items-center !mt-10">
         <div className="flex flex-col gap-6">
-          <h1 className="semi-heading text-5xl text-gray-900">
+          <h1 className="semi-heading text-2xl md:text-5xl text-gray-900">
             {t("about.ourStory")}
           </h1>
           <p className="reg-text leading-relaxed text-gray-600">

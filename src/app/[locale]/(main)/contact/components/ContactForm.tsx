@@ -9,7 +9,7 @@ const ContactForm = () => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="w-full max-w-2xldd bg-white p-6 sm:p-10 rounded-xl shadow-[0_1px_13px_rgba(0,0,0,0.05)] border border-gray-100"
+      className="w-full bg-white p-6 sm:p-10 rounded-xl shadow-[0_1px_13px_rgba(0,0,0,0.0.09)] border border-gray-100"
     >
       <h2 className="sr-only">Contact Us</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
