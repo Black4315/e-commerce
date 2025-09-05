@@ -99,6 +99,8 @@ export const ModalPopup = ({
     isOpen && (
       <Portal container={modalContainerRef.current || portalcontainer}>
         <div
+          role="dialog"
+          aria-modal="true"
           className={cn(
             `modal-container p-0 flex justify-center fixed inset-0`,
             isClosing ? hideAnimClasses?.container : showAnimClasses?.container,

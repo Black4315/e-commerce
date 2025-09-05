@@ -27,9 +27,9 @@ const Download = () => {
       </div>
 
       <ul className="flex gap-6 justify-center">
-        {socialMedia.map(({ Icon, link }, i) => (
+        {socialMedia.map(({ Icon, link, name }, i) => (
           <li key={i} className="hover:text-hover-button-1">
-            <Link href={link}>
+            <Link href={link} aria-label={`Follow us on ${name}`}>
               <Icon className="w-5 h-5 sm:w-6 sm:h-6" />
             </Link>
           </li>

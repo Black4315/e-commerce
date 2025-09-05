@@ -45,6 +45,7 @@ const WishListBtn = ({
   return (
     <Button
       onClick={handleClick}
+      aria-label="wishlist toggling button"
       className={`${
         !isWishlistPage && isExisting ? "action-btn-select" : "bg-white"
       } rounded-full w-8.5 h-8.5 ${className}`}

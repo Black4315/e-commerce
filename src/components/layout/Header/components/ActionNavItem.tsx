@@ -35,7 +35,7 @@ const ActionNavItem = ({
       <ActionsIconButton
         {...props}
         className={cn(
-          "max-sm:w-9 max-sm:mx-0.5 max-sm:h-9 rounded-full duration-200 ",
+          "max-sm:mx-0.5 w-9 h-9 rounded-full duration-200 ",
           btnClassName,
           selected || inItsPage ? "bg-secondary-3 text-text-1" : ""
         )}

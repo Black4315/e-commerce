@@ -14,6 +14,7 @@ export interface ActionsIconButtonProps
   iconClassName?: string;
   children?: React.ReactNode;
   tooltipPlacement?: React.ComponentProps<typeof Tooltip>["placement"];
+  linkProps?:React.ComponentProps<"a">
 }
 
 export default function ActionsIconButton({
@@ -26,6 +27,7 @@ export default function ActionsIconButton({
   iconClassName,
   children,
   tooltipPlacement = "bottom",
+  linkProps,
   ...props
 }: ActionsIconButtonProps) {
   const iconEl = Icon ? (
@@ -39,7 +41,13 @@ export default function ActionsIconButton({
     />
   ) : null;
 
-  const content = href ? <Link href={href}>{iconEl}</Link> : iconEl;
+  const content = href ? (
+    <Link {...linkProps} href={href}>
+      {iconEl}
+    </Link>
+  ) : (
+    iconEl
+  );
 
   return (
     <CustomTooltip title={title} placement={tooltipPlacement}>

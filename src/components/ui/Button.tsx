@@ -11,7 +11,6 @@ const Button = ({ className, children, ...props }: ButtonProps) => {
   const isMobile = useMobileCheck();
   return (
     <button
-      role="button"
       className={cn(
         `w-10 h-10 ${
           isMobile

@@ -3,13 +3,14 @@ import { ComponentProps } from "react";
 
 const ProductTitle = ({
   title,
+  htmlTitle,
   className,
   ...props
-}: { title: string } & ComponentProps<"h3">) => {
+}: { title: string; htmlTitle?: string } & ComponentProps<"h3">) => {
   return (
     <h3
       {...props}
-      title={title}
+      title={htmlTitle}
       className={cn(
         "semi-heading capitalize leading-6 md:leading-8 md:mb-3 font-poppins ",
         className

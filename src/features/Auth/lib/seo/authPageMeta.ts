@@ -28,7 +28,7 @@ export async function authPageMetaData({
       description: auth.ogDescription.replace("{{siteName}}", SITE_NAME),
       images: [
         {
-          url: `${baseUrl}/assets/images/og-${type}.jpg`,
+          url: `${baseUrl}/assets/images/ogimage.jpg`,
           width: 1200,
           height: 630,
           alt: auth.ogAlt.replace("{{siteName}}", SITE_NAME),
@@ -39,7 +39,7 @@ export async function authPageMetaData({
       card: "summary_large_image",
       title: `${auth.title} | ${SITE_NAME}`,
       description: auth.twitterDescription.replace("{{siteName}}", SITE_NAME),
-      images: [`${baseUrl}/assets/images/og-${type}.jpg`],
+      images: [`${baseUrl}/assets/images/ogimage.jpg`],
     },
     alternates: {
       canonical: `${baseUrl}/${locale}/auth/${type}`,

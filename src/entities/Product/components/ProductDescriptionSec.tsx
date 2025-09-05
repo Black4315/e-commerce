@@ -11,9 +11,9 @@ const ProductDescriptionSec = (props: ComponentProps<"div">) => {
   const isMobile = useMobileCheck()
   return (
     <div aria-label="Product details section" {...props}>
-      <h4 className="semi-text text-lg md:text-xl mb-1">
+      <h1 className="semi-text text-lg md:text-xl mb-1">
         {t("productDescription")}
-      </h4>
+      </h1>
       <ExpandableText
         text={description}
         isLong={isMobile? description.length > 300 : undefined}

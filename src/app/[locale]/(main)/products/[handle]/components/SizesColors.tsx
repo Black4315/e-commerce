@@ -20,7 +20,7 @@ const SizesColors = () => {
   return (
     <div className="my-6 space-y-6">
       <div className="flex gap-6">
-        <h3 className="reg-text md:text-xl text-lg">{t("colors")}:</h3>
+        <h1 className="reg-text md:text-xl text-lg">{t("colors")}:</h1>
 
         {colors.length ? (
           <ColorsSelection
@@ -35,7 +35,7 @@ const SizesColors = () => {
       </div>
 
       <div className="flex gap-6">
-        <h3 className="reg-text md:text-xl text-lg">{t("sizes")}:</h3>
+        <h1 className="reg-text md:text-xl text-lg">{t("sizes")}:</h1>
 
         {sizes.length ? (
           <SizesSelection

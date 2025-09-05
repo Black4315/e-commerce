@@ -19,16 +19,18 @@ const CreatorCard = ({
   social,
   img,
   upsideDown,
-}: { upsideDown?:boolean } & CreatorDataType) => {
+}: { upsideDown?: boolean } & CreatorDataType) => {
   return (
     <div className="flex flex-col items-start space-y-4">
       <div
-        className={`w-full aspect-[2/3] bg-secondary-1 rounded-lg overflow-hidden ${upsideDown && "order-4 mt-4 mb-0"}`}
+        className={`w-full aspect-[2/3] bg-secondary-1 rounded-lg overflow-hidden ${
+          upsideDown && "order-4 mt-4 mb-0"
+        }`}
       >
         <img src={img} alt={name} className="w-full h-full object-cover" />
       </div>
       <div className="flex flex-col items-start space-y-1">
-        <h3 className="text-xl font-semibold tracking-tight">{name}</h3>
+        <h1 className="text-xl font-semibold tracking-tight">{name}</h1>
         <p className="text-gray-500">{desc}</p>
       </div>
       <div className="flex items-center space-x-4 text-gray-400">

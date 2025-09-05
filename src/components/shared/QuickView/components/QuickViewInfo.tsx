@@ -19,7 +19,7 @@ const QuickViewInfo = () => {
 
   return (
     <div className="*:mb-2 sm:*:mb-4 border-b border-border max-md:mb-4 mb-6">
-      <ProductTitle title={title} className="ellipsis" />
+      <ProductTitle htmlTitle={title} title={title} className="ellipsis" />
       <ProductDescription description={description} />
 
       <div className="flex gap-2">

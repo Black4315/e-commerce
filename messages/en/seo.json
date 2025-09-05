@@ -1,12 +1,19 @@
 {
 "seo": {
   "main": {
-    "defaultTitle": "Premium E-Commerce Platform",
-    "description": "Shop with Exclusive – South Asia's leading e-commerce platform.",
-    "keywords": ["Exclusive", "E-Commerce", "Online Shopping", "Electronics"],
-    "ogDescription": "Discover premium products with Exclusive.",
-    "ogAlt": "Premium Shopping Experience",
-    "twitterDescription": "Shop premium products online with Exclusive."
+    "defaultTitle": "Exclusive | Premium E-Commerce",
+    "description": "Shop with Exclusive – Exclusive is a next-generation e-commerce platform built for performance, scalability, and premium shopping experiences. Empowering sellers and delighting customers across South Asia.",
+    "keywords": [
+      "Exclusive",
+      "Premium E-Commerce",
+      "Scalable Online Shopping",
+      "Modern Marketplace",
+      "High-Performance Commerce",
+      "Next-Gen E-Commerce Platform"
+    ],
+    "ogDescription": "Experience a premium, high-performance e-commerce platform designed for modern brands and millions of customers worldwide.",
+    "ogAlt": "Exclusive – Premium E-Commerce Platform",
+    "twitterDescription": "Discover Exclusive: a modern, premium e-commerce platform built for performance, scalability, and a seamless shopping experience."
   },
   "contact": {
     "title": "Contact Us",

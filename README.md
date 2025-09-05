@@ -1,7 +1,7 @@
 <div align="center">
   <br />
-    <a href="https://exclusive-shop.vercel.app" target="_blank" style="height:100px;">
-      <img src="./public/assets/images/readme_preview.png" alt="Project Banner" >
+    <a href="https://e-commerce-jade-five-58.vercel.app/" target="_blank" style="height:100px;">
+      <img src="./public/assets/images/ogimage_github.png" alt="Project Banner" >
     </a>
   <br />
 

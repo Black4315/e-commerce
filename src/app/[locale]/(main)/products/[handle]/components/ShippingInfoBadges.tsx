@@ -17,7 +17,7 @@ const ShippingInfoBadges = () => {
         />
 
         <div className=" flex flex-col gap-4 justify-between">
-          <h3 className="med-text">{t("freeDeliv")}</h3>
+          <h1 className="med-text">{t("freeDeliv")}</h1>
           <p className="sm-text font-medium underline cursor-pointer leading-normal">
             {t("checkDelivAvalable")}
           </p>
@@ -29,7 +29,7 @@ const ShippingInfoBadges = () => {
         <Image src={IconReturn} width={40} height={40} alt="show image" />
 
         <div className=" flex flex-col gap-4 justify-between">
-          <h3 className="med-text">{t("returnDelivery")}</h3>
+          <h1 className="med-text">{t("returnDelivery")}</h1>
           <p className="sm-text font-medium leading-normal">
             {t("returnDeliveryDesc")}
             <Tooltip

@@ -30,7 +30,7 @@ export async function mainPageMetaData({
       description: t("main.ogDescription"),
       images: [
         {
-          url: `${baseUrl}/assets/images/og-image-${locale}.jpg`,
+          url: `${baseUrl}/assets/images/ogimage.jpg`,
           width: 1200,
           height: 630,
           alt: `${siteName} - ${t("main.ogAlt")}`,
@@ -41,7 +41,7 @@ export async function mainPageMetaData({
       card: "summary_large_image",
       title: `${siteName} | ${t("main.defaultTitle")}`,
       description: t("main.twitterDescription"),
-      images: [`${baseUrl}/assets/images/og-image-${locale}.jpg`],
+      images: [`${baseUrl}/assets/images/ogimage.jpg`],
     },
     robots: {
       index: true,

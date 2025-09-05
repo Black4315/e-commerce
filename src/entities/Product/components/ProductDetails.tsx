@@ -3,20 +3,16 @@ import { useTranslations } from "next-intl";
 import { useProductContext } from "../contexts/ProductContext";
 import { ComponentProps } from "react";
 
-const ProductDetails = (props:ComponentProps<'div'>) => {
+const ProductDetails = (props: ComponentProps<"div">) => {
   const { productDetails } = useProductContext();
   const t = useTranslations("homePage.product");
   return (
     productDetails?.length && (
       <div aria-label="Product details section" {...props}>
-        <h4 className="semi-text text-lg md:text-xl mb-1">
+        <h1 className="semi-text text-lg md:text-xl mb-1">
           {t("productDetails")}
-        </h4>
-        <ul
-          className="mt-4"
-          role="navigation"
-          aria-label="Product details Item Nav"
-        >
+        </h1>
+        <ul className="mt-4">
           {productDetails.map((item, i) => (
             <li
               key={i}

@@ -12,7 +12,11 @@ const QuickViewBtn = () => {
 
   return (
     //  Button to trigger the modal
-    <Button onClick={openModal} className="rounded-full w-8.5 h-8.5 bg-white">
+    <Button
+      onClick={openModal}
+      aria-label="Open quick view modal"
+      className="rounded-full w-8.5 h-8.5 bg-white"
+    >
       <QuickViewIcon className="w-6 h-6" />
 
       <ModalPopup

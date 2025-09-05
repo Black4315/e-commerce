@@ -26,19 +26,23 @@ export const profileMenuIcons = [
 export const socialMedia = [
     {
         Icon: IconFacebookIcon,
-        link: '#'
+        link: '#',
+        name:"Facebook"
     },
     {
         Icon: IconTwitter1Icon,
-        link: '#'
+        link: '#',
+        name:"Twitter"
     },
     {
         Icon: IconinstagramIcon,
-        link: '#'
+        link: '#',
+        name:"Instagram"
     },
     {
         Icon: IconLinkedin1Icon,
-        link: '#'
+        link: '#',
+        name:"Linkedin"
     }
 ]
 

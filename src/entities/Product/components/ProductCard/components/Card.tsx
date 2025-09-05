@@ -48,7 +48,7 @@ const Card = ({ className }: { className?: string }) => {
         className="flex flex-col h-full group-[.sale-ended]:blur-[1.2px]"
       >
         <div className={`flex flex-col p-2 gap-0.5`}>
-          <h3 className="med-text max-xsm:text-sm capitalize ellipsis" title={title}>{title}</h3>
+          <h1 className="med-text max-xsm:text-sm capitalize ellipsis" title={title}>{title}</h1>
  
           <div
             className={`flex ${
