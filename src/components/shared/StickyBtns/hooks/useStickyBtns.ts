@@ -15,7 +15,7 @@ export function useStickyBtns() {
   const locale = useLocale();
 
   useEffect(() => {
-    if (!(pathname == `/${locale}`)) return;
+    if (!(pathname == `/${locale}`)) return setshowBtns(false);
 
     const sroll = () => {
       if (window.scrollY > 200) {

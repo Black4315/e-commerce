@@ -11,8 +11,8 @@ export default {
   theme: {
     extend: {
       screens: {
-        "xs": "21rem", // Custom extra-small breakpoint
-        "xsm": "25rem", // Custom extra-small breakpoint
+        xs: "21rem", // Custom extra-small breakpoint
+        xsm: "25rem", // Custom extra-small breakpoint
       },
       fontFamily: {
         inter: ["var(--font-inter)", "sans-serif"],
@@ -132,6 +132,8 @@ export default {
         "yellow-700": "#B45309",
         "yellow-800": "#92400E",
         "yellow-900": "#78350F",
+
+        'limitedColor': "#CC0C39",
       },
     },
   },

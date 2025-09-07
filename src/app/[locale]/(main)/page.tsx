@@ -1,11 +1,11 @@
-import Hero from '@/components/layout/Hero';
-import BestSellings from '@/features/BestSellings';
-import BrowseByCategory from '@/features/BrowseByCategory';
-import CampaignOffer from '@/features/CampaignOffer';
-import FlashSales from '@/features/FlashSalses';
-import NewArrival from '@/features/NewArrival';
-import OurProducts from '@/features/OurProducts';
-import TrustBadges from '@/components/shared/TrustBadges';
+import Hero from "@/components/layout/Hero";
+import BestSellingsSection from "@/features/BestSellings/components/BestSellingsSection";
+import BrowseByCategory from "@/features/BrowseByCategory";
+import CampaignOffer from "@/features/CampaignOffer/components/CampaignOffer";
+import FlashSales from "@/features/FlashSalses/components/FlashSalesSection";
+import NewArrival from "@/features/NewArrival/components/NewArrival";
+import OurProductsSection from "@/features/OurProducts/components/OurProductsSection";
+import TrustBadges from "@/components/shared/TrustBadges";
 
 export default function HomePage() {
   return (
@@ -13,11 +13,11 @@ export default function HomePage() {
       <Hero />
       <FlashSales />
       <BrowseByCategory />
-      <BestSellings />
+      <BestSellingsSection />
       <CampaignOffer />
-      <OurProducts />
+      <OurProductsSection />
       <NewArrival />
       <TrustBadges />
     </div>
-  )
+  );
 }

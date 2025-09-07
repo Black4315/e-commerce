@@ -30,7 +30,7 @@ const ProfileMenu = () => {
     return (
 
         <ActionNavItem
-            href="#"
+            href=""
             title={ t('tooltip.profile') }
             Icon={UserIcon}
             alt="profile"

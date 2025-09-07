@@ -6,7 +6,7 @@ const LoadingCampaign = () => {
         <div className='overflow-hidden h-[400px] md:h-[500px]'>
 
             <Skeleton
-                className='bg-black w-full Relative my-10 md:my-18 py-17 px-14'
+                className='bg-black w-full Relative my-10 md:my-18 py-17 px-14 rounded-xl'
                 variant='rectangular'
                 height={500}
             />

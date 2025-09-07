@@ -1,0 +1,88 @@
+{
+    "id": "1",
+    "firstName": "Yahia",
+    "lastName": "Badr",
+    "fullName": "Yahia Badr",
+    "email": "yahia@example.com",
+    "role": "customer",
+    "phone": "+201234567890",
+    "avatar": "/assets/users/yahia.png",
+    "createdAt": "2025-07-10T15:30:00.000Z",
+    "address": {
+        "street": "123 Nile Street",
+        "city": "Cairo",
+        "postalCode": "11311",
+        "country": "EG"
+    },
+    "billingDetails": {
+        "fullName": "Yahia Badr",
+        "company": "Yahia Co.",
+        "vatNumber": "EG123456789",
+        "address": {
+            "street": "123 Nile Street",
+            "city": "Cairo",
+            "postalCode": "11311",
+            "country": "EG",
+            "apartment": "",
+            "floor": "",
+            "landmark": ""
+        }
+    },
+    "payment": {
+        "methods": [
+            {
+                "type": "credit_card",
+                "details": {
+                    "cardNumber": "**** **** **** 1234",
+                    "expiry": "12/27",
+                    "cardHolder": "Yahia Badr",
+                    "billingAddress": {
+                        "street": "123 Nile Street",
+                        "city": "Cairo",
+                        "postalCode": "11311",
+                        "country": "EG"
+                    }
+                },
+                "isDefault": true
+            },
+            {
+                "type": "paypal",
+                "details": {
+                    "email": "yahia.paypal@example.com"
+                },
+                "isDefault": false
+            }
+        ],
+        "lastUsed": "credit_card"
+    },
+    "cart": [
+        {
+            "id": 101,
+            "name": "iPhone 15",
+            "price": 999,
+            "quantity": 1,
+            "image": "/assets/products/iphone.jpg"
+        },
+        {
+            "id": 102,
+            "name": "AirPods Pro",
+            "price": 199,
+            "quantity": 2,
+            "image": "/assets/products/airpods.jpg"
+        }
+    ],
+    "wishlist": [
+        {
+            "id": 201,
+            "name": "MacBook Air M3",
+            "price": 1299,
+            "image": "/assets/products/macbook.jpg"
+        },
+        {
+            "id": 202,
+            "name": "Apple Watch Ultra",
+            "price": 799,
+            "image": "/assets/products/watch.jpg"
+        }
+    ]
+}

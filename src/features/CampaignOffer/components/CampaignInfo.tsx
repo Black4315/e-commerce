@@ -3,8 +3,9 @@ import { useState } from "react";
 import CampaignBtns from "./CampaignBtns";
 import CountDownTimer from "./CountDownTimer";
 import { FlashSaleCampaignTypeType } from "../types";
+import { useCampaignOfferContxt } from "../contexts";
 
-const CampaignInfo = ({ data }: { data: FlashSaleCampaignTypeType }) => {
+const CampaignInfo = () => {
   const [timerEnded, setTimerEnded] = useState(false);
 
   // on timer end call this func
@@ -12,6 +13,7 @@ const CampaignInfo = ({ data }: { data: FlashSaleCampaignTypeType }) => {
     setTimerEnded(true);
   }
 
+  const { data } = useCampaignOfferContxt();
   const { campaign } = data;
   return (
     <div className="flex flex-col gap-5 md:gap-8 justify-center md:justify-between h-full z-2 max-md:order-1">

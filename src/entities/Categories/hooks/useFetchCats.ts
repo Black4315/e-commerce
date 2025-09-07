@@ -1,5 +1,5 @@
-import useFetch from "@/lib/fectchApi";
+import fetchApi from "@/lib/fetchApi";
 
 export function useFetchCats(locale: string) {
-    return useFetch(['category'], '/api/categories', locale)
+  return fetchApi(["category"], "/api/categories", locale);
 }

@@ -12,6 +12,7 @@ import { useMobileCheck } from "@/contexts/MobileCheckContext";
 import { useTranslations } from "next-intl";
 import { useProductContext } from "@/entities/Product/contexts/ProductContext";
 import { useProductSelection } from "@/entities/Product/contexts/ProductSelectionContext";
+import { TransitionLink } from "@/utils/TransitionLink";
 
 const Card = ({ className }: { className?: string }) => {
   const isMobile = useMobileCheck();
@@ -43,13 +44,13 @@ const Card = ({ className }: { className?: string }) => {
       </div>
 
       {/* Name, Price & Rating */}
-      <Link
+      <TransitionLink
         href={`/products/${handle}`}
         className="flex flex-col h-full group-[.sale-ended]:blur-[1.2px]"
       >
         <div className={`flex flex-col p-2 gap-0.5`}>
-          <h3 className="med-text max-xsm:text-sm capitalize">{title}</h3>
-
+          <h1 className="med-text max-xsm:text-sm capitalize ellipsis" title={title}>{title}</h1>
+ 
           <div
             className={`flex ${
               !colors?.length ? "flex-col gap-0.5" : "items-center gap-3"
@@ -64,7 +65,7 @@ const Card = ({ className }: { className?: string }) => {
           {/* colors */}
           <ProductColors {...{ colors, selectedColor }} />
         </div>
-      </Link>
+      </TransitionLink>
     </div>
   );
 };

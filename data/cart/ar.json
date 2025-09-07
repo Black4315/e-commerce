@@ -1,6 +1,6 @@
 [
   {
-    "userId": 1,
+    "userId": "1",
     "canSaveForLater": true,
     "sync": true,
     "persistent": true,
@@ -25,7 +25,10 @@
       "quantityAvailable": 12,
       "inStock": true
     },
-    "selectedSize": { "size": "", "quantity": 12 },
+    "selectedSize": {
+      "size": "",
+      "quantity": 12
+    },
     "quantity": 12,
     "id": 13,
     "title": "مبرد سائل للمعالج بإضاءة RGB",
@@ -33,7 +36,12 @@
     "description": "مبرد سائل عالي الأداء مع إضاءة RGB.",
     "vendor": "RGB Tech",
     "category": "إلكترونيات",
-    "tags": ["cooler", "liquid", "rgb", "cpu"],
+    "tags": [
+      "cooler",
+      "liquid",
+      "rgb",
+      "cpu"
+    ],
     "hasVariations": false,
     "defaultVariantIndex": 0,
     "variants": [
@@ -72,7 +80,7 @@
     "dimensions": "30×12×5 سم"
   },
   {
-    "userId": 1,
+    "userId": "1",
     "canSaveForLater": true,
     "sync": true,
     "persistent": true,
@@ -81,11 +89,26 @@
       "colorName": "أحمر",
       "color": "#FF4F5A",
       "sizes": [
-        { "size": "S", "quantity": 4 },
-        { "size": "M", "quantity": 1 },
-        { "size": "L", "quantity": 1 },
-        { "size": "XL", "quantity": 1 },
-        { "size": "XXL", "quantity": 0 }
+        {
+          "size": "S",
+          "quantity": 4
+        },
+        {
+          "size": "M",
+          "quantity": 1
+        },
+        {
+          "size": "L",
+          "quantity": 1
+        },
+        {
+          "size": "XL",
+          "quantity": 1
+        },
+        {
+          "size": "XXL",
+          "quantity": 0
+        }
       ],
       "price": 260,
       "originalPrice": 360,
@@ -103,7 +126,10 @@
       "quantityAvailable": 7,
       "inStock": true
     },
-    "selectedSize": { "size": "L", "quantity": 1 },
+    "selectedSize": {
+      "size": "L",
+      "quantity": 1
+    },
     "quantity": 1,
     "id": 11,
     "title": "معطف نورث 2",
@@ -111,7 +137,12 @@
     "description": "معطف شتوي أنيق ودافئ للارتداء اليومي.",
     "vendor": "The North Face x Gucci",
     "category": "أزياء رجالية",
-    "tags": ["winter", "coat", "luxury", "gucci"],
+    "tags": [
+      "winter",
+      "coat",
+      "luxury",
+      "gucci"
+    ],
     "hasVariations": true,
     "defaultVariantIndex": 0,
     "variants": [
@@ -120,11 +151,26 @@
         "colorName": "أحمر",
         "color": "#FF4F5A",
         "sizes": [
-          { "size": "S", "quantity": 4 },
-          { "size": "M", "quantity": 1 },
-          { "size": "L", "quantity": 1 },
-          { "size": "XL", "quantity": 1 },
-          { "size": "XXL", "quantity": 0 }
+          {
+            "size": "S",
+            "quantity": 4
+          },
+          {
+            "size": "M",
+            "quantity": 1
+          },
+          {
+            "size": "L",
+            "quantity": 1
+          },
+          {
+            "size": "XL",
+            "quantity": 1
+          },
+          {
+            "size": "XXL",
+            "quantity": 0
+          }
         ],
         "price": 260,
         "originalPrice": 360,
@@ -147,19 +193,25 @@
         "colorName": "أبيض",
         "color": "#F5F5F5",
         "sizes": [
-          { "size": "L", "quantity": 2 },
-          { "size": "XL", "quantity": 3 }
+          {
+            "size": "L",
+            "quantity": 2
+          },
+          {
+            "size": "XL",
+            "quantity": 3
+          }
         ],
         "price": 260,
         "originalPrice": 360,
         "currency": "USD",
         "images": [
           {
-            "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+            "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat_white.png",
             "alt": "عرض أمامي"
           },
           {
-            "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+            "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat_white.png",
             "alt": "عرض خلفي"
           }
         ],
@@ -180,7 +232,7 @@
     "dimensions": "60x40x10 سم"
   },
   {
-    "userId": 1,
+    "userId": "1",
     "canSaveForLater": true,
     "sync": true,
     "persistent": true,
@@ -205,7 +257,10 @@
       "quantityAvailable": 20,
       "inStock": true
     },
-    "selectedSize": { "size": "", "quantity": 20 },
+    "selectedSize": {
+      "size": "",
+      "quantity": 20
+    },
     "quantity": 20,
     "id": 14,
     "title": "رف كتب صغير",
@@ -213,7 +268,12 @@
     "description": "رف كتب خشبي مدمج للمساحات الصغيرة.",
     "vendor": "OakCraft",
     "category": "Furniture",
-    "tags": ["bookshelf", "wood", "compact", "furniture"],
+    "tags": [
+      "bookshelf",
+      "wood",
+      "compact",
+      "furniture"
+    ],
     "hasVariations": false,
     "defaultVariantIndex": 0,
     "variants": [
@@ -252,7 +312,7 @@
     "dimensions": "80×30×100 سم"
   },
   {
-    "userId": 1,
+    "userId": "1",
     "canSaveForLater": true,
     "sync": true,
     "persistent": true,
@@ -266,18 +326,33 @@
       "currency": "USD",
       "images": [
         {
-          "url": "/assets/products/images/image 63.svg",
-          "alt": "وحدة تحكم HAVIT HV-G92 - العرض الأمامي"
+          "url": "/assets/products/images/image 63.png",
+          "alt": "HAVIT HV-G92 Gamepad Front View"
         },
         {
           "url": "/assets/products/images/image 57.svg",
-          "alt": "عرض جانبي"
+          "alt": "Side View"
+        },
+        {
+          "url": "/assets/products/images/image 58.svg",
+          "alt": "Side View"
+        },
+        {
+          "url": "/assets/products/images/image 59.svg",
+          "alt": "Side View"
+        },
+        {
+          "url": "/assets/products/images/image 61.svg",
+          "alt": "Side View"
         }
       ],
       "quantityAvailable": 12,
       "inStock": true
     },
-    "selectedSize": { "size": "", "quantity": 12 },
+    "selectedSize": {
+      "size": "",
+      "quantity": 12
+    },
     "quantity": 12,
     "flash": true,
     "start": "2025-07-17T00:00:00Z",
@@ -288,7 +363,12 @@
     "description": "وحدة تحكم عالية الجودة مناسبة للألعاب على الكمبيوتر الشخصي واللابتوب.",
     "vendor": "HAVIT",
     "category": "إلكترونيات",
-    "tags": ["gamepad", "controller", "gaming", "pc"],
+    "tags": [
+      "gamepad",
+      "controller",
+      "gaming",
+      "pc"
+    ],
     "hasVariations": false,
     "defaultVariantIndex": 0,
     "variants": [
@@ -302,12 +382,24 @@
         "currency": "USD",
         "images": [
           {
-            "url": "/assets/products/images/image 63.svg",
-            "alt": "وحدة تحكم HAVIT HV-G92 - العرض الأمامي"
+            "url": "/assets/products/images/image 63.png",
+            "alt": "HAVIT HV-G92 Gamepad Front View"
           },
           {
             "url": "/assets/products/images/image 57.svg",
-            "alt": "عرض جانبي"
+            "alt": "Side View"
+          },
+          {
+            "url": "/assets/products/images/image 58.svg",
+            "alt": "Side View"
+          },
+          {
+            "url": "/assets/products/images/image 59.svg",
+            "alt": "Side View"
+          },
+          {
+            "url": "/assets/products/images/image 61.svg",
+            "alt": "Side View"
           }
         ],
         "quantityAvailable": 12,
@@ -327,7 +419,7 @@
     "dimensions": "15x10x5 سم"
   },
   {
-    "userId": 1,
+    "userId": "1",
     "canSaveForLater": true,
     "sync": true,
     "persistent": true,
@@ -368,7 +460,10 @@
       "quantityAvailable": 24,
       "inStock": true
     },
-    "selectedSize": { "size": "", "quantity": 24 },
+    "selectedSize": {
+      "size": "",
+      "quantity": 24
+    },
     "quantity": 24,
     "flash": true,
     "start": "2025-07-17T00:00:00Z",
@@ -379,7 +474,12 @@
     "description": "رفعوا أسلوبكم مع هذه الحقيبة الفاخرة من العلامة التجارية غوتشي والتي تتميز بنمط المونوغرام الشهير—رمز خالد للفخامة والأناقة. مصممة بدقة واهتمام بالتفاصيل، تجمع هذه الحقيبة بين الحرفية الإيطالية الرفيعة والأناقة الكلاسيكية.",
     "vendor": "غوتشي",
     "category": "woأزياء رجالية",
-    "tags": ["bag", "duffle", "luxury", "designer"],
+    "tags": [
+      "bag",
+      "duffle",
+      "luxury",
+      "designer"
+    ],
     "hasVariations": false,
     "defaultVariantIndex": 0,
     "variants": [
@@ -434,7 +534,7 @@
     "dimensions": "45x25x20 سم"
   },
   {
-    "userId": 1,
+    "userId": "1",
     "canSaveForLater": true,
     "sync": true,
     "persistent": true,
@@ -459,7 +559,10 @@
       "quantityAvailable": 12,
       "inStock": true
     },
-    "selectedSize": { "size": "", "quantity": 12 },
+    "selectedSize": {
+      "size": "",
+      "quantity": 12
+    },
     "quantity": 12,
     "flash": true,
     "start": "2025-07-17T00:00:00Z",
@@ -470,7 +573,12 @@
     "description": "شاشة عرض عالية الدقة مناسبة للألعاب الاحترافية.",
     "vendor": "IPS إلكترونيات",
     "category": "إلكترونيات",
-    "tags": ["monitor", "gaming", "display", "lcd"],
+    "tags": [
+      "monitor",
+      "gaming",
+      "display",
+      "lcd"
+    ],
     "hasVariations": false,
     "defaultVariantIndex": 0,
     "variants": [
@@ -509,7 +617,7 @@
     "dimensions": "٦٠×٤٠×٢٠ سم"
   },
   {
-    "userId": 1,
+    "userId": "1",
     "canSaveForLater": true,
     "sync": true,
     "persistent": true,
@@ -518,11 +626,26 @@
       "colorName": "أحمر",
       "color": "#FF4F5A",
       "sizes": [
-        { "size": "S", "quantity": 4 },
-        { "size": "M", "quantity": 1 },
-        { "size": "L", "quantity": 1 },
-        { "size": "XL", "quantity": 1 },
-        { "size": "XXL", "quantity": 0 }
+        {
+          "size": "S",
+          "quantity": 4
+        },
+        {
+          "size": "M",
+          "quantity": 1
+        },
+        {
+          "size": "L",
+          "quantity": 1
+        },
+        {
+          "size": "XL",
+          "quantity": 1
+        },
+        {
+          "size": "XXL",
+          "quantity": 0
+        }
       ],
       "price": 260,
       "originalPrice": 360,
@@ -540,7 +663,10 @@
       "quantityAvailable": 7,
       "inStock": true
     },
-    "selectedSize": { "size": "M", "quantity": 1 },
+    "selectedSize": {
+      "size": "M",
+      "quantity": 1
+    },
     "quantity": 1,
     "id": 15,
     "title": "معطف نورث 3",
@@ -548,7 +674,12 @@
     "description": "معطف شتوي أنيق ودافئ للارتداء اليومي.",
     "vendor": "The North Face x Gucci",
     "category": "أزياء رجالية",
-    "tags": ["winter", "coat", "luxury", "gucci"],
+    "tags": [
+      "winter",
+      "coat",
+      "luxury",
+      "gucci"
+    ],
     "hasVariations": true,
     "defaultVariantIndex": 0,
     "variants": [
@@ -557,11 +688,26 @@
         "colorName": "أحمر",
         "color": "#FF4F5A",
         "sizes": [
-          { "size": "S", "quantity": 4 },
-          { "size": "M", "quantity": 1 },
-          { "size": "L", "quantity": 1 },
-          { "size": "XL", "quantity": 1 },
-          { "size": "XXL", "quantity": 0 }
+          {
+            "size": "S",
+            "quantity": 4
+          },
+          {
+            "size": "M",
+            "quantity": 1
+          },
+          {
+            "size": "L",
+            "quantity": 1
+          },
+          {
+            "size": "XL",
+            "quantity": 1
+          },
+          {
+            "size": "XXL",
+            "quantity": 0
+          }
         ],
         "price": 260,
         "originalPrice": 360,
@@ -584,19 +730,25 @@
         "colorName": "أبيض",
         "color": "#F5F5F5",
         "sizes": [
-          { "size": "L", "quantity": 2 },
-          { "size": "XL", "quantity": 3 }
+          {
+            "size": "L",
+            "quantity": 2
+          },
+          {
+            "size": "XL",
+            "quantity": 3
+          }
         ],
         "price": 260,
         "originalPrice": 360,
         "currency": "USD",
         "images": [
           {
-            "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+            "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat_white.png",
             "alt": "عرض أمامي"
           },
           {
-            "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+            "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat_white.png",
             "alt": "عرض خلفي"
           }
         ],

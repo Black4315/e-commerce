@@ -1,63 +1,39 @@
-"use client"
-import ImageViewSlider from "@/components/shared/QuickView/components/imageViewSlider";
-import PageBreadCrumbs from "@/components/ui/Page_BreadCrumbs";
-import ProductProvider from "@/entities/Product/contexts/ProductContext";
-import { ProductSelectionProvider } from "@/entities/Product/contexts/ProductSelectionContext";
-import { productTypeSchema } from "@/entities/Product/types/productType";
-import useFetchApi from "@/lib/fectchApi";
-import React from "react";
-import ImageView from "./components/ImageView";
+// page.tsx (ProductPage - App Router)
 
-const Product = ({
+import { getProduct } from "./services/getProduct";
+import Product from "./components/Product";
+import { headers } from "next/headers";
+import { isMobileUserAgent } from "@/utils/mobileCheck";
+import { generateProductMetadata } from "./seo/generateProductMetadata";
+import { generateProductSchema } from "./seo/generateProductSchema";
+
+export const generateMetadata = generateProductMetadata;
+
+export default async function ProductPage({
   params,
 }: {
-  params: Promise<{ locale: string; handle: string }>;
-}) => {
-  const { locale, handle } = React.use(params);
+  params: Promise<{
+    locale: string;
+    handle: string;
+  }>;
+}) {
+  const { locale, handle } = await params;
 
-  // fetch product
-  const {
-    data: product,
-    isLoading,
-    isError,
-  } = useFetchApi(
-    [handle],
-    `/api/products/${handle}`,
-    locale,
-    productTypeSchema
-  );
+  const userAgent = (await headers()).get("user-agent") || "";
+  const isMobile = isMobileUserAgent(userAgent);
 
-  if ( isLoading ){
-    return <div>Loading...</div>
-  }
-  
-  if (isError || !product) {
-    return <div>Error loading product</div>;
-  }
+  const product = await getProduct(locale, handle);
+  const structuredData = generateProductSchema(product, locale);
 
   return (
-    <ProductProvider product={product}>
-      <ProductSelectionProvider
-        variants={product.variants}
-        defaultVariantIndex={product.defaultVariantIndex}
-      >
-        <PageBreadCrumbs
-          breadcrumbsData={[
-            { label: "Home", link: "/" },
-            {
-              label: product.category,
-              link: "/category/" + product?.category.toLocaleLowerCase(),
-            },
-            { label: product.title },
-          ]}
-        >
-          <div className="flex max-lg:flex-col items-center justify-between"> 
-            <ImageView />
-          </div>
-        </PageBreadCrumbs>
-      </ProductSelectionProvider>
-    </ProductProvider>
-  );
-};
+    <>
+      <Product product={product} isMobile={isMobile} />
 
-export default Product;
+      {/* JSON-LD structured data for SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+    </>
+  );
+}

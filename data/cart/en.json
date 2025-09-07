@@ -1,6 +1,6 @@
 [
   {
-    "userId": 1,
+    "userId": "1",
     "canSaveForLater": true,
     "sync": true,
     "persistent": true,
@@ -50,7 +50,7 @@
       "size": "S",
       "quantity": 4
     },
-    "quantity": 1,
+    "quantity": 4,
 
     "flash": true,
     "start": "2025-07-17T00:00:00Z",
@@ -127,11 +127,11 @@
         ],
         "images": [
           {
-            "url": "/assets/products/images/ 672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+            "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat_white.png",
             "alt": "Front View"
           },
           {
-            "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+            "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat_white.png",
             "alt": "Back View"
           }
         ],

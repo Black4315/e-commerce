@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useProductContext } from "../../../contexts/ProductContext";
 import CustomImage from "@/components/ui/CustomImag";
 import { useProductSelection } from "@/entities/Product/contexts/ProductSelectionContext";
+import { TransitionLink } from "@/utils/TransitionLink";
 
 const ProductCardImage = () => {
   const isMobile = useMobileCheck();
@@ -11,7 +12,7 @@ const ProductCardImage = () => {
 
   const thumbnail = selectedVariant?.images[0];
   return (
-    <Link
+    <TransitionLink
       href={`/products/${handle}`}
       className={`absolute top-0 left-0 bottom-0 w-full flex flex-col h-full transition-apple duration-200 ${
         !isMobile ? "group-hover:brightness-90" : "brightness-[0.97]"
@@ -26,7 +27,7 @@ const ProductCardImage = () => {
           className="object-contain max-h-9/12 w-8/12 md:w-9/12"
         />
       </div>
-    </Link>
+    </TransitionLink>
   );
 };
 

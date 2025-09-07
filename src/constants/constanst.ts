@@ -26,19 +26,23 @@ export const profileMenuIcons = [
 export const socialMedia = [
     {
         Icon: IconFacebookIcon,
-        link: '#'
+        link: '#',
+        name:"Facebook"
     },
     {
         Icon: IconTwitter1Icon,
-        link: '#'
+        link: '#',
+        name:"Twitter"
     },
     {
         Icon: IconinstagramIcon,
-        link: '#'
+        link: '#',
+        name:"Instagram"
     },
     {
         Icon: IconLinkedin1Icon,
-        link: '#'
+        link: '#',
+        name:"Linkedin"
     }
 ]
 
@@ -95,4 +99,38 @@ export const browse_categories = [
         icon: CategoryGamepadIcon,
 
     },
+];
+
+
+export const creatorData = [
+  {
+    name: "Tom Cruise",
+    desc: "Founder & Chairman",
+    social: [
+      "https://twitter.com/",
+      "https://instagram.com/",
+      "https://linkedin.com/",
+    ],
+    img: "https://placehold.co/500x750/EAEAEA/333333?text=Tom+Cruise",
+  },
+  {
+    name: "Emma Watson",
+    desc: "Managing Director",
+    social: [
+      "https://twitter.com/",
+      "https://instagram.com/",
+      "https://linkedin.com/",
+    ],
+    img: "https://placehold.co/500x750/EAEAEA/333333?text=Emma+Watson",
+  },
+  {
+    name: "Will Smith",
+    desc: "Product Designer",
+    social: [
+      "https://twitter.com/",
+      "https://instagram.com/",
+      "https://linkedin.com/",
+    ],
+    img: "https://placehold.co/500x750/EAEAEA/333333?text=Will+Smith",
+  },
 ];

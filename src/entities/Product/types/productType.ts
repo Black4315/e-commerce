@@ -23,17 +23,19 @@ import { z } from "zod";
 
 
 export interface ProductSelectionContextType {
-    variants: Variant[];
-    colors: string[];
-    sizes: Size[];
-    selectedColor: string;
-    setSelectedColor: (color: string) => void;
-    selectedSize: Size ;
-    setSelectedSize: (size: Size) => void;
-    selectedVariant: Variant;
-    selectedSizeQuantity: number | undefined;
-    resetSelection: () => void;
-    hasVariationsSizes: boolean;
+  variants: Variant[];
+  colors: string[];
+  skusWithColors: {sku:string, color:string}[];
+  sizes: Size[];
+  selectedColor: string;
+  selectedSize: Size;
+  setSelectedSize: (size: Size) => void;
+  selectedVariant: Variant;
+  selectedSizeQuantity: number | undefined;
+  resetSelection: () => void;
+  selectedSku: string;
+  setSelectedSku: (color: string) => void;
+  hasVariationsSizes: boolean;
 }
 
 export const productImageSchema = z.object({
@@ -61,12 +63,13 @@ export const variantSchema = z.object({
 
 export const productTypeSchema = z.object({
     flash: z.boolean().optional(),
-    start: z.union([z.string(), z.date()]).optional(),
+    start: z.union([z.string(), z.date()]).optional(), // FIXME: make this as date only !!!!!!!
     end: z.union([z.string(), z.date()]).optional(),
     id: z.number(),
     title: z.string(),
     handle: z.string(),
     description: z.string(),
+    aboutItem: z.array(z.string()).optional(),
     vendor: z.string(),
     category: z.string(),
     tags: z.array(z.string()),
@@ -82,6 +85,7 @@ export const productTypeSchema = z.object({
     reviewsCount: z.number(),
     soldNumber: z.number(),
     taxes: z.number(),
+    productDetails: z.array(z.array(z.string())).optional(),
     weight: z.string(),
     material: z.string(),
     dimensions: z.string()

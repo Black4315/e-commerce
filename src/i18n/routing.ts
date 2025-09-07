@@ -13,5 +13,9 @@ export const routing = defineRouting({
         
     // },
     // Used when no locale matches
-    defaultLocale: 'en'
+    defaultLocale: 'en',
+
+    // FIXME: set to true if you want automatic locale detection based on the user's preferences
+    // and the Accept-Language header
+    // localeDetection:false
 });

@@ -1,5 +1,5 @@
-'use client'
-import { createContext, useContext, useState, ReactNode } from "react";
+"use client";
+import { createContext, useContext, useState, useMemo, ReactNode, useEffect } from "react";
 import {
   noSize,
   ProductSelectionContextType,
@@ -7,6 +7,7 @@ import {
   Variant,
 } from "@/entities/Product/types/productType";
 
+// Create context with optional type (will throw if accessed without provider)
 const ProductSelectionContext = createContext<
   ProductSelectionContextType | undefined
 >(undefined);
@@ -20,51 +21,71 @@ export const ProductSelectionProvider = ({
   variants: Variant[];
   children: ReactNode;
 }) => {
-  /// some times the product has no varients like coffe machine
-  // doesnt have sizes or colors so we need to ensure that
+  // --- Default setup (first load) ---
   const defaultVariant = variants?.[defaultVariantIndex];
-  const defaultSizes = defaultVariant.sizes;
 
-  const halfIndex = defaultSizes ? Math.floor(defaultSizes.length / 2) : 0;
-  const defaultColor = defaultVariant?.color ?? "";
+  // --- States for selections ---
+  const [selectedSku, setSelectedSku] = useState(defaultVariant?.sku ?? "");
+
+  // --- Derived values (auto-update when dependencies change) ---
+  const selectedVariant = useMemo(
+    () => variants.find((v) => v.sku === selectedSku) ?? defaultVariant,
+    [variants, selectedSku, defaultVariant]
+  );
+  const defaultSizes = selectedVariant?.sizes ?? [];
+
+  // Choose middle size if available, otherwise return a "noSize" placeholder
   const defaultSize =
     defaultSizes.length > 0
-      ? defaultVariant.sizes[halfIndex]
-      : noSize(defaultVariant);
+      ? defaultSizes[Math.floor(defaultSizes.length / 2)]
+      : noSize(selectedVariant);
 
-  const [selectedColor, setSelectedColor] = useState<string>(defaultColor);
   const [selectedSize, setSelectedSize] = useState<Size>(defaultSize);
+  const selectedColor = selectedVariant?.color ?? "";
+  const selectedSizeQuantity =
+    selectedVariant?.sizes.find((s) => s.size === selectedSize?.size)
+      ?.quantity ?? 0;
 
-  const selectedVariant =
-    variants.find((v) => v.color === selectedColor) || defaultVariant;
-  const selectedSizeQuantity = selectedVariant?.sizes.find(
-    (s) => s.size === selectedSize?.size
-  )?.quantity;
+  // --- Lists for UI rendering ---
+  const colors = useMemo(
+    // Only keep truthy colors
+    () => variants.map((v) => v.color).filter(Boolean),
+    [variants]
+  );
 
+  const skusWithColors = useMemo(
+    // Useful for mapping buttons by SKU+color
+    () => variants.map((v) => ({ sku: v.sku, color: v.color ?? "" })),
+    [variants]
+  );
+
+  const sizes = selectedVariant?.sizes ?? [];
+  const hasVariationsSizes = defaultSizes.length > 1;
+
+  // --- Reset helper ---
   const resetSelection = () => {
-    setSelectedColor(defaultColor);
+    setSelectedSku(selectedVariant?.sku ?? "");
     setSelectedSize(defaultSize);
   };
 
-  const colors: string[] = variants
-    .filter((v) => v.color !== "")
-    .map((v) => (v.color !== "" ? v.color : ""));
-  const sizes: Size[] = variants.flatMap((v) => v.sizes);
+  useEffect(()=> resetSelection(), [selectedVariant]);
 
-  const hasVariationsSizes = !!(defaultSizes.length > 1);
+  // --- Provide everything to children ---
   return (
     <ProductSelectionContext.Provider
       value={{
         variants,
+        selectedSku,
+        setSelectedSku,
+        selectedVariant,
         selectedColor,
-        setSelectedColor,
         selectedSize,
         setSelectedSize,
-        selectedVariant,
         selectedSizeQuantity,
         resetSelection,
         colors,
         sizes,
+        skusWithColors,
         hasVariationsSizes,
       }}
     >
@@ -73,11 +94,13 @@ export const ProductSelectionProvider = ({
   );
 };
 
+// Hook to safely consume context
 export const useProductSelection = () => {
   const ctx = useContext(ProductSelectionContext);
-  if (!ctx)
+  if (!ctx) {
     throw new Error(
       "useProductSelection must be used within a ProductSelectionProvider"
     );
+  }
   return ctx;
 };

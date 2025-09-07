@@ -9,8 +9,7 @@ import { Logo } from '@/assets';
 type CustomImageProps = ImageProps;
 
 export default function CustomImage({ src, alt, ...props }: CustomImageProps) {
-    const [isLoading, setIsLoading] = useState(true);
-
+    const [isLoading, setIsLoading] = useState((!!src));
     return (
       <>
         {isLoading && (
@@ -23,6 +22,7 @@ export default function CustomImage({ src, alt, ...props }: CustomImageProps) {
           src={src || Logo}
           alt={alt || "Fallback image"}
           {...props}
+          onLoadStart={() => setIsLoading(true)}
           onLoad={() => setIsLoading(false)}
           className={clsx(
             props.className,

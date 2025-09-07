@@ -16,7 +16,7 @@ import { buildCartItem } from "../../lib/buildCartItem";
 
 type Props = {
   className?: string;
-  qtyClassName?: string;
+  qtyProps?: { className?: string; isDark?: boolean };
   show?: boolean;
   insideModal?: boolean;
 };
@@ -24,7 +24,7 @@ type Props = {
 export default function AddToCart({
   show,
   className,
-  qtyClassName,
+  qtyProps,
   insideModal = false,
 }: Props) {
   const t = useTranslations("homePage.product");
@@ -56,7 +56,8 @@ export default function AddToCart({
         updateQty={updateQty}
         maxQyt={item?.itemsLeft}
         quantity={quantity}
-        className={qtyClassName}
+        isDark={qtyProps?.isDark}
+        className={qtyProps?.className}
       />
     ) : (
       <AddButton

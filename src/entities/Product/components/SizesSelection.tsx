@@ -3,7 +3,8 @@
 import { Size } from "@/entities/Product/types/productType";
 import { useTranslations } from "next-intl";
 import { SelectItem } from "@/components/ui/select";
-import SwitcherSelect from "../../../components/ui/SwitcherSelect";
+import SwitcherSelect from "@/components/ui/SwitcherSelect";
+import Button2 from "@/components/ui/Button2";
 
 const SizesSelection = ({
   sizes,
@@ -16,14 +17,16 @@ const SizesSelection = ({
   setSize: (size: Size | any) => void;
   dropDown?: boolean;
 }) => {
-  const t = useTranslations("homePage.product");
-
-  return dropDown ? <SizesSwitcher {...{ sizes, size, setSize }} /> : "";
+  return dropDown ? (
+    <SizesSwitcherDropDown {...{ sizes, size, setSize }} />
+  ) : (
+    <SizesSwitcher {...{ sizes, size, setSize }} />
+  );
 };
 
 export default SizesSelection;
 
-export const SizesSwitcher = ({
+export const SizesSwitcherDropDown = ({
   sizes,
   size,
   setSize,
@@ -42,8 +45,7 @@ export const SizesSwitcher = ({
 
   const qty = size.quantity;
   return (
-    <div className="flex items-center gap-2 mb-4">
-      <span className="text-neutral-500 capitalize">{t("sizes")}:</span>
+    <div className="flex items-center gap-2">
       <SwitcherSelect
         defaultValue={size.size}
         label={"Select a Size"}
@@ -65,8 +67,53 @@ export const SizesSwitcher = ({
           qty < 5 ? "text-danger-600" : qty < 10 && "text-warning-600"
         }`}
       >
-        {qty} unit{qty > 1 ? "s" : ""} remains
+        {qty > 50 ? "few" : qty} unit{qty > 1 ? "s" : ""} remains
       </span>
     </div>
   );
 };
+
+export const SizesSwitcher = ({
+  sizes,
+  size:selctedSize,
+  setSize,
+}: {
+  sizes: Size[];
+  size: Size;
+  setSize: (size: Size | any) => void;
+}) => {
+  const t = useTranslations("homePage.product");
+  const qty = selctedSize.quantity
+
+  return (
+    <div className="flex gap-4">
+      <ul className="flex gap-4 md:gap-6 items-center flex-wrap w-fit">
+        {sizes.map((size, i) => (
+          <li key={i}>
+            <Button2
+              onClick={() => setSize(size)}
+              disabled={size.quantity <= 0}
+              title={size.quantity <= 0 ? t("outStock") : ""}
+              className={`${
+                size.size == selctedSize.size ? "action-btn-select" : ""
+              } w-8 h-8 !p-0`}
+            >
+              {size.size}
+            </Button2>
+          </li>
+        ))}
+      </ul>
+      <span
+        className={`sm-text text-[10px] md:text-xs whitespace-nowrap mt-2 ${
+          qty < 5
+            ? "text-danger-600"
+            : qty <= 10
+            ? "text-warning-600"
+            : qty > 10 && "text-success-500"
+        }`}
+      >
+        {qty > 50 ? "few" : qty} unit{qty > 1 ? "s" : ""} remains
+      </span>
+    </div>
+  );
+}

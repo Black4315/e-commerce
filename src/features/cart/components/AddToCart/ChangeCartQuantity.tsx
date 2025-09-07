@@ -6,19 +6,21 @@ import IconplusIcon from "@/assets/icons/iconplus";
 import { cn } from "@/lib/utils";
 import { useEffect, useRef, useState } from "react";
 
+type ChangeCartQtyProps = {
+  updateQty: (quantity: number) => string | void | Promise<void>;
+  className?: string;
+  quantity: number;
+  maxQyt?: number;
+  isDark?: boolean;
+};
+
 export const ChangeCartQuantity = ({
   updateQty,
   className,
   quantity: qyt,
   maxQyt,
   isDark = true,
-}: {
-  updateQty: (quantity: number) => string | void | Promise<void>;
-  className?: string;
-  quantity: number;
-  maxQyt?: number;
-  isDark?: boolean;
-}) => {
+}: ChangeCartQtyProps) => {
   const [loadingQyt, setloadingQyt] = useState(false);
 
   const updateQ = async (val: any) => {

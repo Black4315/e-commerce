@@ -12,7 +12,10 @@ import { Toaster } from "react-hot-toast";
 import { MobileCheckProvider } from "@/contexts/MobileCheckContext";
 import { headers } from "next/headers";
 import { isMobileUserAgent } from "@/utils/mobileCheck";
+import { mainPageMetaData } from "@/lib/seo/mainPageMetaData";
+import LoadingSpinner from "@/components/ui/LoadingSpinner";
 
+export const generateMetadata = mainPageMetaData
 export default async function LocaleLayout({
   children,
   params,
@@ -34,8 +37,8 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} dir={isRTL ? "rtl" : "ltr"}>
       <body style={{ ["--origin-dir" as any]: isRTL ? "left" : "right" }}>
+        <LoadingSpinner wrapperclassName="main-loader" className="w-10 h-10"/>
         <Toaster />
-
         <AppContextProvider>
           <MobileCheckProvider initialValue={isMobile}>
             <div className="page-container">

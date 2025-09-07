@@ -37,6 +37,7 @@ export const IconCopyright = "/assets/icons/icon-copyright.svg";
 export const IconCustomerService = "/assets/icons/Icon-Customer service.svg";
 export const IconDelete = "/assets/icons/icon-delete.svg";
 export const IconDelivery = "/assets/icons/icon-delivery.svg";
+export const IconDeliveryBlack = "/assets/icons/icon-delivery-black.svg";
 export const IconFacebook = "/assets/icons/Icon-Facebook.svg";
 export const IconGoogle = "/assets/icons/Icon-Google.svg";
 export const IconHeadphone = "/assets/icons/icon-headphone.svg";

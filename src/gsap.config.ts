@@ -7,7 +7,7 @@ import { CustomEase } from 'gsap/all';
 gsap.registerPlugin(CustomEase);
 
 // Create your custom ease. Your format is correct.
-CustomEase.create('easeS', '0.4, 0, 0.6, 1');
+CustomEase.create('easeS', '0.4,0,0.6,1');
 
 // Now you can use the ease anywhere in your application
 // The `easeS` ease is now globally available.

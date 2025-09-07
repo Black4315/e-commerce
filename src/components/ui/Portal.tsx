@@ -1,3 +1,6 @@
+"use client";
+
+import { useHydrated } from '@/hooks/useHydrated';
 import { ReactNode } from 'react';
 import { createPortal } from 'react-dom';
 
@@ -7,9 +10,9 @@ type PortalProps = {
 };
 
 export function Portal({ children, container }: PortalProps) {
-    if (typeof window === 'undefined') {
-        return null;
-    }
+    const { hydrated } = useHydrated()
+    if (typeof window === "undefined" || !hydrated)  return null;
+
     const containerNode = container || document.body;
     return createPortal(children, containerNode);
 }

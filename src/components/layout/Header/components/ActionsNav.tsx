@@ -18,7 +18,7 @@ export default function ActionsNav({
   children?: React.ReactNode;
 }) {
   return (
-    <ul className="flex max-xs:gap-[0px] gap-1 items-center">
+    <ul className="flex max-xs:gap-[0px] gap-2 items-center">
       <ActionsNav.wishList />
       {children}
     </ul>
@@ -45,7 +45,8 @@ ActionsNav.wishList = ({
       alt="wishlist"
       width={28}
       height={28}
-      className=""
+      aria-label="wishlist redirect"
+      linkProps={{"aria-label":"Visit Wishlist page"}}
       onClick={() => {
         if (!isLoggedIn) {
           router.push(pages.signup);
@@ -82,6 +83,8 @@ ActionsNav.cart = ({
       href={pages.cart}
       title={tooltip ? t("cart") : ""}
       Icon={Cart1Icon}
+      linkProps={{ "aria-label": "Visit cart page" }}
+      aria-label="cart redirect"
       alt="cart"
       width={24}
       height={24}

@@ -1,0 +1,7 @@
+# Allow all search engines full access
+User-agent: *
+Disallow:
+
+# Point to your multilingual sitemaps
+Sitemap: https://e-commerce-jade-five-58.vercel.app/sitemap-en.xml
+Sitemap: https://e-commerce-jade-five-58.vercel.app/sitemap-ar.xml

@@ -16,7 +16,7 @@ export const TdAction = ({
   item: CartItem;
   link?: string;
 }) => (
-  <div className="absolute top-0 -start-9 h-full rounded-s overflow-hidden opacity-0 group-hover:start-0 transition-apple duration-200 group-hover:opacity-100 flex flex-col justify-between">
+  <div className="absolute top-0 -start-9 h-full rounded-s overflow-hidden opacity-0 group-hover:start-0 transition-apple duration-200 group-hover:opacity-100 flex flex-col">
     <TdAction.DeleteButton onClick={deletClick} />
     <TdAction.WishlistButton item={item} />
     {/* <TdAction.ShareButton /> */}

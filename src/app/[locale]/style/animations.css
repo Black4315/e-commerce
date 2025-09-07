@@ -42,12 +42,10 @@
 @keyframes fade-in {
     0% {
         opacity: 0;
-        transform: translateY(10px);
     }
 
     100% {
         opacity: 1;
-        transform: translateY(0);
     }
 }
 
@@ -88,7 +86,6 @@
 
 @keyframes quickSlider {
     to {
-        /* border: 1px solid; */
         background: #c7c7c7;
         filter: blur(0px) grayscale(0);
     }
@@ -131,6 +128,28 @@
     .animate__animated.animate__faster {
         animation-duration: 0.4s !important;
     }
+
+    .page-container {
+        transition-property: opacity, transform, filter, background;
+        transition-timing-function: var(--apple-transition);
+        transition-duration: 500ms;
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    body.page-transition .page-container {
+        opacity: 0;
+        transform: translateY(40px);
+        filter: blur(12px);
+        pointer-events: none;
+    }
+
+
+    body.page-transition .main-loader {
+        display: block;
+        animation: fade-in 0.3s var(--apple-transition) forwards 500ms;
+    }
+
 
     /* .animate__slideInUp {
         animation-duration: 0.5s !important;

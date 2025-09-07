@@ -5,7 +5,12 @@ import { useProductSelection } from "@/entities/Product/contexts/ProductSelectio
 
 const ImageView = () => {
   const { selectedVariant } = useProductSelection();
-  return <ImageViewSlider images={selectedVariant.images} maxImageNumber={Infinity}/>;
+  return (
+      <ImageViewSlider
+        images={selectedVariant.images}
+        maxImageNumber={Infinity}
+      />
+  );
 };
 
 export default ImageView;

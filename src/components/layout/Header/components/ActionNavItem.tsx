@@ -9,7 +9,7 @@ interface ActionNavItem extends ActionsIconButtonProps {
   className?: string;
   children?: React.ReactNode;
   btnClassName?: string;
-  selected?:boolean;
+  selected?: boolean;
 }
 
 const ActionNavItem = ({
@@ -21,8 +21,9 @@ const ActionNavItem = ({
 }: ActionNavItem) => {
   const pathName = usePathname();
   const [inItsPage, setinItsPage] = useState(false);
+
   useEffect(
-    () => setinItsPage(pathName.includes(props.href ?? "")),
+    () => setinItsPage(pathName.includes(props.href || "_NO_PATH_")),
     [pathName]
   );
 
@@ -34,7 +35,7 @@ const ActionNavItem = ({
       <ActionsIconButton
         {...props}
         className={cn(
-          "max-sm:w-9 max-sm:mx-0.5 max-sm:h-9 rounded-full duration-200 ",
+          "max-sm:mx-0.5 w-9 h-9 rounded-full duration-200 ",
           btnClassName,
           selected || inItsPage ? "bg-secondary-3 text-text-1" : ""
         )}

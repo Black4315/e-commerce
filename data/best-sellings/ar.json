@@ -1,8 +1,109 @@
 {
   "bestSellings": {
     "bestSellingsIn": "هذا الشهر",
-    "viewAll": "/our-products/",
+    "viewAll": "/shop/",
     "products": [
+      {
+        "flash": true,
+        "start": "2025-07-17T00:00:00Z",
+        "end": "2025-08-07T23:59:59Z",
+        "id": 1,
+        "title": "وحدة تحكم HAVIT HV-G92",
+        "handle": "havit-hv-g92-gamepad",
+        "description": "تتميز وحدات التحكم DOUBLE SHOCK 5 بتصميم كلاسيكي متوافق مع جهاز PlayStation 5، مع دعم كامل لخاصية الاهتزاز والعصي التناظرية، مما يعزز تجربة اللعب. وتُعتبر بديلاً اقتصاديًا لأجهزة التحكم الرسمية، حيث تدعم معظم الألعاب على أجهزة PlayStation لكل إصدار، مع توافق محدود مع الكمبيوتر الشخصي وبعض أجهزة الأندرويد. كما يمكن توصيلها بسهولة عبر البلوتوث أو الكابل، مما يجعلها مثالية لجلسات اللعب الجماعي أو كذراع تحكم احتياطي.",
+        "aboutItem": [
+          "تتضمن الأزرار التقليدية (الدائرة، المثلث، المربع، و X)، بالإضافة إلى أزرار الكتف (L1، L2، R1، و R2)، والعصي التناظرية، مما يجعلها متوافقة مع ألعاب الـ PlayStation.",
+          "تدعم خاصية الاهتزاز التي تعزز تجربة اللعب من خلال توفير ردود فعل واقعية أثناء اللعب، حيث تضيف هذه الميزة إحساسًا مؤثرًا أثناء الانفجارات أو الاصطدامات في الألعاب.",
+          "جميع وحدات التحكم مزودة بعصي تناظرية للتحكم الدقيق، وهو أمر أساسي للألعاب التي تتطلب حركة دقيقة مثل ألعاب التصويب أو القيادة، بالإضافة إلى لوحة الاتجاه (D-pad) للألعاب التي تعتمد على التحكم الرقمي.",
+          "تُعد هذه الوحدات خيارًا مناسبًا لجلسات اللعب الجماعي أو كذراع تحكم احتياطية دون الحاجة إلى ميزانية كبيرة. وعلى الرغم من اختلاف طرق الاتصال بين الإصدارات (سلكية أو لاسلكية)، فإن جميع الوحدات تدعم الاتصال السريع والسهل."
+        ],
+        "vendor": "HAVIT",
+        "category": "electronics",
+        "tags": [
+          "gamepad",
+          "controller",
+          "gaming",
+          "pc"
+        ],
+        "defaultVariantIndex": 0,
+        "hasVariations": false,
+        "variants": [
+          {
+            "sku": "HAVIT-G92",
+            "colorName": "",
+            "color": "",
+            "sizes": [],
+            "price": 120,
+            "originalPrice": 160,
+            "currency": "USD",
+            "quantityAvailable": 12,
+            "inStock": true,
+            "images": [
+              {
+                "url": "/assets/products/images/image 63.png",
+                "alt": "HAVIT HV-G92 Gamepad Front View"
+              },
+              {
+                "url": "/assets/products/images/image 57.svg",
+                "alt": "Side View"
+              },
+              {
+                "url": "/assets/products/images/image 58.svg",
+                "alt": "Side View"
+              },
+              {
+                "url": "/assets/products/images/image 59.svg",
+                "alt": "Side View"
+              },
+              {
+                "url": "/assets/products/images/image 61.svg",
+                "alt": "Side View"
+              }
+            ]
+          }
+        ],
+        "itemsLeft": 12,
+        "initialItems": 100,
+        "isNew": false,
+        "discountPercent": 40,
+        "rating": 4.5,
+        "reviewsCount": 88,
+        "soldNumber": 1300,
+        "taxes": 0.15,
+        "productDetails": [
+          [
+            "البطاريات",
+            "بطارية واحدة من نوع ليثيوم بوليمر مطلوبة (مرفقة)"
+          ],
+          [
+            "أبعاد العبوة",
+            "19.4 × 19.3 × 6.9 سم؛ 10 جم"
+          ],
+          [
+            "مادة العبوة",
+            "بلاستيك ABS"
+          ],
+          [
+            "وزن العبوة",
+            "0.45 كجم"
+          ],
+          [
+            "تاريخ الإصدار",
+            "10 نوفمبر 2024"
+          ],
+          [
+            "ASIN",
+            "B0DY5JXHGP"
+          ],
+          [
+            "بلد المنشأ",
+            "الصين"
+          ]
+        ],
+        "weight": "0.45kg",
+        "material": "بلاستيك ABS",
+        "dimensions": "15x10x5 سم"
+      },
       {
         "id": 11,
         "title": "معطف نورث 2",
@@ -10,7 +111,12 @@
         "description": "معطف شتوي أنيق ودافئ للارتداء اليومي.",
         "vendor": "The North Face x Gucci",
         "category": "أزياء رجالية",
-        "tags": ["winter", "coat", "luxury", "gucci"],
+        "tags": [
+          "winter",
+          "coat",
+          "luxury",
+          "gucci"
+        ],
         "hasVariations": true,
         "defaultVariantIndex": 0,
         "variants": [
@@ -72,11 +178,11 @@
             ],
             "images": [
               {
-                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat_white.png",
                 "alt": "عرض أمامي"
               },
               {
-                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat_white.png",
                 "alt": "عرض خلفي"
               }
             ],
@@ -106,7 +212,12 @@
         "description": "مبرد سائل عالي الأداء مع إضاءة RGB.",
         "vendor": "RGB Tech",
         "category": "إلكترونيات",
-        "tags": ["cooler", "liquid", "rgb", "cpu"],
+        "tags": [
+          "cooler",
+          "liquid",
+          "rgb",
+          "cpu"
+        ],
         "hasVariations": false,
         "defaultVariantIndex": 0,
         "variants": [
@@ -151,7 +262,12 @@
         "description": "رف كتب خشبي مدمج للمساحات الصغيرة.",
         "vendor": "OakCraft",
         "category": "Furniture",
-        "tags": ["bookshelf", "wood", "compact", "furniture"],
+        "tags": [
+          "bookshelf",
+          "wood",
+          "compact",
+          "furniture"
+        ],
         "hasVariations": false,
         "defaultVariantIndex": 0,
         "variants": [
@@ -188,102 +304,6 @@
         "weight": "7.5كجم",
         "material": "خشب صلب",
         "dimensions": "80×30×100 سم"
-      },
-      {
-        "id": 15,
-        "title": "معطف نورث 3",
-        "handle": "the-north-coat",
-        "description": "معطف شتوي أنيق ودافئ للارتداء اليومي.",
-        "vendor": "The North Face x Gucci",
-        "category": "أزياء رجالية",
-        "tags": ["winter", "coat", "luxury", "gucci"],
-        "hasVariations": true,
-        "defaultVariantIndex": 0,
-        "variants": [
-          {
-            "sku": "NORTHCOAT-RED",
-            "color": "#FF4F5A",
-            "colorName": "أحمر",
-            "sizes": [
-              {
-                "size": "S",
-                "quantity": 4
-              },
-              {
-                "size": "M",
-                "quantity": 1
-              },
-              {
-                "size": "L",
-                "quantity": 1
-              },
-              {
-                "size": "XL",
-                "quantity": 1
-              },
-              {
-                "size": "XXL",
-                "quantity": 0
-              }
-            ],
-            "images": [
-              {
-                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-                "alt": "عرض أمامي"
-              },
-              {
-                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-                "alt": "عرض خلفي"
-              }
-            ],
-            "price": 260,
-            "originalPrice": 360,
-            "currency": "USD",
-            "quantityAvailable": 7,
-            "inStock": true
-          },
-          {
-            "sku": "NORTHCOAT-WHITE",
-            "colorName": "أبيض",
-            "color": "#F5F5F5",
-            "sizes": [
-              {
-                "size": "L",
-                "quantity": 2
-              },
-              {
-                "size": "XL",
-                "quantity": 3
-              }
-            ],
-            "images": [
-              {
-                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-                "alt": "عرض أمامي"
-              },
-              {
-                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-                "alt": "عرض خلفي"
-              }
-            ],
-            "price": 260,
-            "originalPrice": 360,
-            "currency": "USD",
-            "quantityAvailable": 5,
-            "inStock": true
-          }
-        ],
-        "isNew": true,
-        "itemsLeft": 12,
-        "initialItems": 100,
-        "discountPercent": 0,
-        "rating": 4,
-        "reviewsCount": 2,
-        "soldNumber": 5000,
-        "taxes": 0.3,
-        "weight": "1.2kg",
-        "material": "خليط من البوليستر",
-        "dimensions": "60x40x10 سم"
       }
     ]
   }

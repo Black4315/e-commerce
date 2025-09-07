@@ -1,10 +1,12 @@
 "use client";
 import ProductRating from "@/entities/Product/components/ProductRating";
-import SoldNumbers from "./SoldNumbers";
+import SoldNumbers from "../../../../entities/Product/components/SoldNumbers";
 import QuickInStock from "./QuickInStock";
 import { useProductSelection } from "@/entities/Product/contexts/ProductSelectionContext";
 import { useProductContext } from "@/entities/Product/contexts/ProductContext";
 import MoreDetails from "@/entities/Product/components/MoreDetails";
+import ProductTitle from "@/entities/Product/components/ProductTitle";
+import ProductDescription from "@/entities/Product/components/ProductDescription";
 
 const QuickViewInfo = () => {
   //contexts
@@ -17,10 +19,8 @@ const QuickViewInfo = () => {
 
   return (
     <div className="*:mb-2 sm:*:mb-4 border-b border-border max-md:mb-4 mb-6">
-      <h3 className="semi-heading capitalize leading-6 md:leading-8 md:mb-3 font-poppins ellipsis">
-        {title}
-      </h3>
-      <p className="reg-text overflow-hidden line-clamp-4 ">{description}</p>
+      <ProductTitle htmlTitle={title} title={title} className="ellipsis" />
+      <ProductDescription description={description} />
 
       <div className="flex gap-2">
         <ProductRating />

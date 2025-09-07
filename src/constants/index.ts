@@ -4,3 +4,4 @@ export const LOCALE_LABELS: Record<string, string> = {
 };
 
 export const LOGO_NAME = 'Exclusive'
+export const SITE_NAME = "Exclusive";

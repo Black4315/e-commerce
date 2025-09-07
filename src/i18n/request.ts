@@ -14,9 +14,10 @@ export default getRequestConfig(async ({requestLocale}) => {
     messages: {
       ...(await import(`../../messages/${locale}/header.json`)).default,
       ...(await import(`../../messages/${locale}/footer.json`)).default,
-      ...(await import(`../../messages/${locale}/homePage.json`)).default,
+      ...(await import(`../../messages/${locale}/main.json`)).default,
       ...(await import(`../../messages/${locale}/Auth.json`)).default,
-      ...(await import(`../../messages/${locale}/contact.json`)).default,
-    }
+      ...(await import(`../../messages/${locale}/About&contact.json`)).default,
+      ...(await import(`../../messages/${locale}/seo.json`)).default,
+    },
   };
 });

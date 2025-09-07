@@ -1,318 +1,314 @@
 {
-    "bestSellings": {
-        "bestSellingsIn": "This Month",
-        "viewAll": "/best-sellings/",
-        "products": [
-            {
-                "id": 11,
-                "title": "The North Coat 2",
-                "handle": "the-north-coat",
-                "description": "Stylish and warm winter coat for everyday wear.",
-                "vendor": "The North Face x Gucci",
-                "category": "mens-fashion",
-                "tags": [
-                    "winter",
-                    "coat",
-                    "luxury",
-                    "gucci"
-                ],
-                "hasVariations": true,
-                "defaultVariantIndex": 0,
-                "variants": [
-                    {
-                        "sku": "NORTHCOAT-RED",
-                        "colorName": "red",
-                        "color": "#FF4F5A",
-                        "sizes": [
-                            {
-                                "size": "S",
-                                "quantity": 4
-                            },
-                            {
-                                "size": "M",
-                                "quantity": 1
-                            },
-                            {
-                                "size": "L",
-                                "quantity": 1
-                            },
-                            {
-                                "size": "XL",
-                                "quantity": 1
-                            },
-                            {
-                                "size": "XXL",
-                                "quantity": 0
-                            }
-                        ],
-                        "images": [
-                            {
-                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-                                "alt": "Front View"
-                            },
-                            {
-                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-                                "alt": "Back View"
-                            }
-                        ],
-                        "price": 260,
-                        "originalPrice": 360,
-                        "currency": "USD",
-                        "quantityAvailable": 7,
-                        "inStock": true
-                    },
-                    {
-                        "sku": "NORTHCOAT-WHITE",
-                        "color": "#F5F5F5",
-                        "colorName": "white",
-                        "sizes": [
-                            {
-                                "size": "M",
-                                "quantity": 0
-                            },
-                            {
-                                "size": "L",
-                                "quantity": 2
-                            },
-                            {
-                                "size": "XL",
-                                "quantity": 3
-                            }
-                        ],
-                        "images": [
-                            {
-                                "url": "/assets/products/images/ 672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-                                "alt": "Front View"
-                            },
-                            {
-                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-                                "alt": "Back View"
-                            }
-                        ],
-                        "price": 260,
-                        "originalPrice": 360,
-                        "currency": "USD",
-                        "quantityAvailable": 5,
-                        "inStock": true
-                    }
-                ],
-                "isNew": true,
-                "itemsLeft": 12,
-                "initialItems": 100,
-                "discountPercent": 0,
-                "rating": 4,
-                "reviewsCount": 2,
-                "soldNumber": 5000,
-                "taxes": 0.3,
-                "weight": "1.2kg",
-                "material": "Polyester Blend",
-                "dimensions": "60x40x10 cm"
-            },
-            {
-                "id": 13,
-                "title": "RGB Liquid CPU Cooler",
-                "handle": "rgb-liquid-cpu-cooler",
-                "description": "High performance liquid cooler with RGB lighting.",
-                "vendor": "RGB Tech",
-                "category": "Electronics",
-                "tags": [
-                    "cooler",
-                    "liquid",
-                    "rgb",
-                    "cpu"
-                ],
-                "hasVariations": false,
-                "defaultVariantIndex": 0,
-                "variants": [
-                    {
-                        "sku": "RGB-CPUCOOLER-01",
-                        "color": "#000000",
-                        "colorName": "black",
-                        "sizes": [],
-                        "images": [
-                            {
-                                "url": "/assets/products/images/gammaxx-l240-argb-1-500x500 1.png",
-                                "alt": "Front View"
-                            },
-                            {
-                                "url": "/assets/products/images/gammaxx-l240-argb-1-500x500 1.png",
-                                "alt": "Side View"
-                            }
-                        ],
-                        "price": 160,
-                        "originalPrice": 170,
-                        "currency": "USD",
-                        "quantityAvailable": 12,
-                        "inStock": true
-                    }
-                ],
-                "isNew": false,
-                "itemsLeft": 12,
-                "initialItems": 100,
-                "discountPercent": 6,
-                "rating": 4.7,
-                "reviewsCount": 65,
-                "soldNumber": 3500,
-                "taxes": 0.2,
-                "weight": "1.4kg",
-                "material": "Aluminum + Plastic",
-                "dimensions": "30x12x5 cm"
-            },
-            {
-                "id": 14,
-                "title": "Small BookShelf",
-                "handle": "small-bookshelf",
-                "description": "Compact wooden bookshelf for small spaces.",
-                "vendor": "OakCraft",
-                "category": "Furniture",
-                "tags": [
-                    "bookshelf",
-                    "wood",
-                    "compact",
-                    "furniture"
-                ],
-                "hasVariations": false,
-                "defaultVariantIndex": 0,
-                "variants": [
-                    {
-                        "sku": "SHELF-SMALL-01",
-                        "color": "#A9745D",
-                        "colorName": "brown",
-                        "sizes": [],
-                        "images": [
-                            {
-                                "url": "/assets/products/images/sam-moghadam-khamseh-L_7MQsHl_aU-unsplash 1.png",
-                                "alt": "Front View"
-                            },
-                            {
-                                "url": "/assets/products/images/sam-moghadam-khamseh-L_7MQsHl_aU-unsplash 1.png",
-                                "alt": "Side View"
-                            }
-                        ],
-                        "price": 360,
-                        "originalPrice": 460,
-                        "currency": "USD",
-                        "quantityAvailable": 20,
-                        "inStock": true
-                    }
-                ],
-                "isNew": false,
-                "itemsLeft": 20,
-                "initialItems": 100,
-                "discountPercent": 22,
-                "rating": 5,
-                "reviewsCount": 65,
-                "soldNumber": 1200,
-                "taxes": 0.15,
-                "weight": "7.5kg",
-                "material": "Solid Wood",
-                "dimensions": "80x30x100 cm"
-            },
-            {
-                "id": 15,
-                "title": "The North Coat 3",
-                "handle": "the-north-coat",
-                "description": "Stylish and warm winter coat for everyday wear.",
-                "vendor": "The North Face x Gucci",
-                "category": "mens-fashion",
-                "tags": [
-                    "winter",
-                    "coat",
-                    "luxury",
-                    "gucci"
-                ],
-                "hasVariations": true,
-                "defaultVariantIndex": 0,
-                "variants": [
-                    {
-                        "sku": "NORTHCOAT-RED",
-                        "colorName": "red",
-                        "color": "#FF4F5A",
-                        "sizes": [
-                            {
-                                "size": "S",
-                                "quantity": 4
-                            },
-                            {
-                                "size": "M",
-                                "quantity": 1
-                            },
-                            {
-                                "size": "L",
-                                "quantity": 1
-                            },
-                            {
-                                "size": "XL",
-                                "quantity": 1
-                            },
-                            {
-                                "size": "XXL",
-                                "quantity": 0
-                            }
-                        ],
-                        "images": [
-                            {
-                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-                                "alt": "Front View"
-                            },
-                            {
-                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-                                "alt": "Back View"
-                            }
-                        ],
-                        "price": 260,
-                        "originalPrice": 360,
-                        "currency": "USD",
-                        "quantityAvailable": 7,
-                        "inStock": true
-                    },
-                    {
-                        "sku": "NORTHCOAT-WHITE",
-                        "color": "#F5F5F5",
-                        "colorName": "white",
-                        "sizes": [
-                            {
-                                "size": "M",
-                                "quantity": 0
-                            },
-                            {
-                                "size": "L",
-                                "quantity": 2
-                            },
-                            {
-                                "size": "XL",
-                                "quantity": 3
-                            }
-                        ],
-                        "images": [
-                            {
-                                "url": "/assets/products/images/ 672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-                                "alt": "Front View"
-                            },
-                            {
-                                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
-                                "alt": "Back View"
-                            }
-                        ],
-                        "price": 260,
-                        "originalPrice": 360,
-                        "currency": "USD",
-                        "quantityAvailable": 5,
-                        "inStock": true
-                    }
-                ],
-                "isNew": true,
-                "itemsLeft": 12,
-                "initialItems": 100,
-                "discountPercent": 0,
-                "rating": 4,
-                "reviewsCount": 2,
-                "soldNumber": 5000,
-                "taxes": 0.3,
-                "weight": "1.2kg",
-                "material": "Polyester Blend",
-                "dimensions": "60x40x10 cm"
-            }
-        ]
-    }
+  "bestSellings": {
+    "bestSellingsIn": "This Month",
+    "viewAll": "/best-sellings/",
+    "products": [
+      {
+        "flash": true,
+        "start": "2025-07-17T00:00:00Z",
+        "end": "2025-09-15T23:59:59Z",
+        "id": 1,
+        "title": "Completely refurbished Wireless Controller for PS5/ PC Alternatives with DUAL Vibration Shock, Classic Design Cross-Platform Compatible with DualSense & PS5",
+        "handle": "havit-hv-g92-gamepad",
+        "description": "DOUBLE SHOCK 5 controllers feature a classic design Combatible with PlayStation 5, with full vibration support and analog sticks, enhancing the gaming experience. They are an affordable alternative to official controllers, supporting most games on the respective PlayStation devices for each version, with limited compatibility for PC and Android in some cases. They connect easily via Bluetooth or cable, making them ideal for multiplayer sessions or as a backup controller.",
+        "aboutItem": [
+          "They include the traditional buttons (circle, triangle, square, and X), shoulder buttons (L1, L2, R1, and R2), and analog sticks, making them Compatible with PlayStation games.",
+          "support the vibration function, enhancing the gaming experience by providing realistic feedback during gameplay, The vibration feature enhances the feeling of effects in games, such as impacts and explosions",
+          "All controllers include analog sticks for precise control, which is essential for games that require accurate movement, such as shooting or driving games, Additionally, each version has a D-pad for games that require digital control",
+          "These controllers are suitable for multiplayer sessions or as a backup controller without the need for a high budget, Although connection methods vary between versions (wired or wireless), all controllers support quick and easy connection:"
+        ],
+        "vendor": "HAVIT",
+        "category": "electronics",
+        "tags": [
+          "gamepad",
+          "controller",
+          "gaming",
+          "pc"
+        ],
+        "defaultVariantIndex": 0,
+        "hasVariations": false,
+        "variants": [
+          {
+            "sku": "HAVIT-G92",
+            "colorName": "",
+            "color": "",
+            "sizes": [],
+            "price": 120,
+            "originalPrice": 160,
+            "currency": "USD",
+            "quantityAvailable": 12,
+            "inStock": true,
+            "images": [
+              {
+                "url": "/assets/products/images/image 63.png",
+                "alt": "HAVIT HV-G92 Gamepad Front View"
+              },
+              {
+                "url": "/assets/products/images/image 57.svg",
+                "alt": "Side View"
+              },
+              {
+                "url": "/assets/products/images/image 58.svg",
+                "alt": "Side View"
+              },
+              {
+                "url": "/assets/products/images/image 59.svg",
+                "alt": "Side View"
+              },
+              {
+                "url": "/assets/products/images/image 61.svg",
+                "alt": "Side View"
+              }
+            ]
+          }
+        ],
+        "itemsLeft": 12,
+        "initialItems": 100,
+        "isNew": false,
+        "discountPercent": 40,
+        "rating": 4.5,
+        "reviewsCount": 88,
+        "soldNumber": 1300,
+        "taxes": 0.15,
+        "productDetails": [
+          [
+            "Batteries",
+            "1 Lithium Polymer batteries required. (included)"
+          ],
+          [
+            "Package Dimensions",
+            "19.4 x 19.3 x 6.9 cm; 10 g"
+          ],
+          [
+            "Package material",
+            "ABS Plastic"
+          ],
+          [
+            "Package weight",
+            "0.45kg"
+          ],
+          [
+            "Release date",
+            "10 November 2024"
+          ],
+          [
+            "ASIN",
+            "B0DY5JXHGP"
+          ],
+          [
+            "Country of origin",
+            "China"
+          ]
+        ],
+        "weight": "0.45kg",
+        "material": "ABS Plastic",
+        "dimensions": "15x10x5 cm"
+      },
+      {
+        "id": 11,
+        "title": "The North Coat 2",
+        "handle": "the-north-coat",
+        "description": "Stylish and warm winter coat for everyday wear.",
+        "vendor": "The North Face x Gucci",
+        "category": "mens-fashion",
+        "tags": [
+          "winter",
+          "coat",
+          "luxury",
+          "gucci"
+        ],
+        "hasVariations": true,
+        "defaultVariantIndex": 0,
+        "variants": [
+          {
+            "sku": "NORTHCOAT-RED",
+            "colorName": "red",
+            "color": "#FF4F5A",
+            "sizes": [
+              {
+                "size": "S",
+                "quantity": 4
+              },
+              {
+                "size": "M",
+                "quantity": 1
+              },
+              {
+                "size": "L",
+                "quantity": 1
+              },
+              {
+                "size": "XL",
+                "quantity": 1
+              },
+              {
+                "size": "XXL",
+                "quantity": 0
+              }
+            ],
+            "images": [
+              {
+                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                "alt": "Front View"
+              },
+              {
+                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat 1.png",
+                "alt": "Back View"
+              }
+            ],
+            "price": 260,
+            "originalPrice": 360,
+            "currency": "USD",
+            "quantityAvailable": 7,
+            "inStock": true
+          },
+          {
+            "sku": "NORTHCOAT-WHITE",
+            "color": "#F5F5F5",
+            "colorName": "white",
+            "sizes": [
+              {
+                "size": "M",
+                "quantity": 0
+              },
+              {
+                "size": "L",
+                "quantity": 2
+              },
+              {
+                "size": "XL",
+                "quantity": 3
+              }
+            ],
+            "images": [
+              {
+                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat_white.png",
+                "alt": "Front View"
+              },
+              {
+                "url": "/assets/products/images/672462_ZAH9D_5626_002_100_0000_Light-The-North-Face-x-Gucci-coat_white.png",
+                "alt": "Back View"
+              }
+            ],
+            "price": 260,
+            "originalPrice": 360,
+            "currency": "USD",
+            "quantityAvailable": 5,
+            "inStock": true
+          }
+        ],
+        "isNew": true,
+        "itemsLeft": 12,
+        "initialItems": 100,
+        "discountPercent": 0,
+        "rating": 4,
+        "reviewsCount": 2,
+        "soldNumber": 5000,
+        "taxes": 0.3,
+        "weight": "1.2kg",
+        "material": "Polyester Blend",
+        "dimensions": "60x40x10 cm"
+      },
+      {
+        "id": 13,
+        "title": "RGB Liquid CPU Cooler",
+        "handle": "rgb-liquid-cpu-cooler",
+        "description": "High performance liquid cooler with RGB lighting.",
+        "vendor": "RGB Tech",
+        "category": "Electronics",
+        "tags": [
+          "cooler",
+          "liquid",
+          "rgb",
+          "cpu"
+        ],
+        "hasVariations": false,
+        "defaultVariantIndex": 0,
+        "variants": [
+          {
+            "sku": "RGB-CPUCOOLER-01",
+            "color": "#000000",
+            "colorName": "black",
+            "sizes": [],
+            "images": [
+              {
+                "url": "/assets/products/images/gammaxx-l240-argb-1-500x500 1.png",
+                "alt": "Front View"
+              },
+              {
+                "url": "/assets/products/images/gammaxx-l240-argb-1-500x500 1.png",
+                "alt": "Side View"
+              }
+            ],
+            "price": 160,
+            "originalPrice": 170,
+            "currency": "USD",
+            "quantityAvailable": 12,
+            "inStock": true
+          }
+        ],
+        "isNew": false,
+        "itemsLeft": 12,
+        "initialItems": 100,
+        "discountPercent": 6,
+        "rating": 4.7,
+        "reviewsCount": 65,
+        "soldNumber": 3500,
+        "taxes": 0.2,
+        "weight": "1.4kg",
+        "material": "Aluminum + Plastic",
+        "dimensions": "30x12x5 cm"
+      },
+      {
+        "id": 14,
+        "title": "Small BookShelf",
+        "handle": "small-bookshelf",
+        "description": "Compact wooden bookshelf for small spaces.",
+        "vendor": "OakCraft",
+        "category": "Furniture",
+        "tags": [
+          "bookshelf",
+          "wood",
+          "compact",
+          "furniture"
+        ],
+        "hasVariations": false,
+        "defaultVariantIndex": 0,
+        "variants": [
+          {
+            "sku": "SHELF-SMALL-01",
+            "color": "#A9745D",
+            "colorName": "brown",
+            "sizes": [],
+            "images": [
+              {
+                "url": "/assets/products/images/sam-moghadam-khamseh-L_7MQsHl_aU-unsplash 1.png",
+                "alt": "Front View"
+              },
+              {
+                "url": "/assets/products/images/sam-moghadam-khamseh-L_7MQsHl_aU-unsplash 1.png",
+                "alt": "Side View"
+              }
+            ],
+            "price": 360,
+            "originalPrice": 460,
+            "currency": "USD",
+            "quantityAvailable": 20,
+            "inStock": true
+          }
+        ],
+        "isNew": false,
+        "itemsLeft": 20,
+        "initialItems": 100,
+        "discountPercent": 22,
+        "rating": 5,
+        "reviewsCount": 65,
+        "soldNumber": 1200,
+        "taxes": 0.15,
+        "weight": "7.5kg",
+        "material": "Solid Wood",
+        "dimensions": "80x30x100 cm"
+      }
+    ]
+  }
 }

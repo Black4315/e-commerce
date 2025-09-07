@@ -1,0 +1,54 @@
+import ColorsSelection from "@/entities/Product/components/ColorsSelection";
+import SizesSelection from "@/entities/Product/components/SizesSelection";
+import { useProductContext } from "@/entities/Product/contexts/ProductContext";
+import { useProductSelection } from "@/entities/Product/contexts/ProductSelectionContext";
+import { useTranslations } from "next-intl";
+
+const SizesColors = () => {
+  const {
+    setSelectedSize,
+    sizes,
+    selectedSize,
+    selectedVariant:{quantityAvailable},
+    skusWithColors,
+    colors,
+    setSelectedSku,
+    selectedSku,
+  } = useProductSelection();
+  const t = useTranslations("homePage.product");
+
+  return (
+    <div className="my-6 space-y-6">
+      <div className="flex gap-6">
+        <h1 className="reg-text md:text-xl text-lg">{t("colors")}:</h1>
+
+        {colors.length ? (
+          <ColorsSelection
+            skusWithColors={skusWithColors}
+            sku={selectedSku}
+            quanity={quantityAvailable}
+            setSku={setSelectedSku}
+          />
+        ) : (
+          <i className="med-text italic text-inactive">{t("nocolors")}</i>
+        )}
+      </div>
+
+      <div className="flex gap-6">
+        <h1 className="reg-text md:text-xl text-lg">{t("sizes")}:</h1>
+
+        {sizes.length ? (
+          <SizesSelection
+            sizes={sizes}
+            size={selectedSize}
+            setSize={setSelectedSize}
+          />
+        ) : (
+          <i className="med-text italic text-inactive">{t("nosizes")}</i>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default SizesColors;
