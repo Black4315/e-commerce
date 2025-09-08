@@ -16,6 +16,7 @@ const NavBar = () => {
     <nav className="flex lg:items-center nav gap-6 lg:gap-12 max-lg:flex-col">
       {nav.map((item, idx) => (
         <ProgLink
+         viewTransition
           key={idx}
           href={item.link}
           className={`text-black w-fit max-lg:!text-lg font-semibold lg:font-medium nav-el nav-link nav-item motion-border-b ${item.link === normPath ? "after:w-[105%]" : ""

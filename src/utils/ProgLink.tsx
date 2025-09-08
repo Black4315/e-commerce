@@ -1,14 +1,14 @@
 "use client"
-import Link, { LinkProps } from "next/link";
 import nProgress from "nprogress";
 import "nprogress/nprogress.css";
 import normalizePath from "./normalizePath";
-import { usePathname, useRouter } from "next/navigation";
 import { useLocale } from "next-intl";
 import { sleep } from "@/lib/sleep";
 import { useEffect } from "react";
+import { Link, usePathname, useRouter } from "@/i18n/navigation";
 
 nProgress.configure({ showSpinner: false })
+type LinkProps = React.ComponentProps<typeof Link>;
 export interface ProgLinkProps extends LinkProps {
     children: React.ReactNode;
     className?: string;
@@ -29,17 +29,17 @@ const ProgLink: React.FC<ProgLinkProps> = ({ children,
     const locale = useLocale()
 
     const handleTransition = async (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-        e.preventDefault();
+        // e.preventDefault();
         onClick && onClick(e)
 
         // If already on the same page → do nothing
-        if (normalizePath(pathname, locale) === normalizePath(href, locale)) return;
+        if (pathname === normalizePath(href, locale)) return;
 
         nProgress.start()
         // apply class on body only if viewTransition is true
         viewTransition && document.body.classList.add("page-transition");
-        await sleep(transitionDuration);
-        router.push(href);
+        // await sleep(transitionDuration);
+        // router.push(href);
     }
 
     useEffect(() => {
@@ -54,7 +54,7 @@ const ProgLink: React.FC<ProgLinkProps> = ({ children,
     }, [pathname, transitionDuration]);
 
     return (
-        <Link {...props} href={href} onClick={handleTransition} className={className}>
+        <Link locale={locale} {...props} href={href} onClick={handleTransition} className={className}>
             {children}
         </Link>
     )
