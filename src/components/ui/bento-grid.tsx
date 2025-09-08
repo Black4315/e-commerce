@@ -1,8 +1,9 @@
 import { cn } from "@/lib/utils";
+import ProgLink from "@/utils/ProgLink";
 import { Skeleton } from "@mui/material";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import Link from "next/link";
+
 
 export const BentoGrid = ({
     className,
@@ -53,7 +54,7 @@ export const BentoGridItem = ({
             {header}
 
             {/* image */}
-            <div className={`absolute mb-0 flex-center ${[1, 2].includes(id) ? 'bottom-0 translate-y-0 w-10/12 max-md:w-[300px] max-md:h-[16rem]' : 'w-8/12 top-1/2 -translate-y-1/2 self-center max-md:h-[11rem] ' } ${id == 2 && '!w-8/12 !self-end'} `} >
+            <div className={`absolute mb-0 flex-center ${[1, 2].includes(id) ? 'bottom-0 translate-y-0 w-10/12 max-md:w-[300px] max-md:h-[16rem]' : 'w-8/12 top-1/2 -translate-y-1/2 self-center max-md:h-[11rem] '} ${id == 2 && '!w-8/12 !self-end'} `} >
                 <Image src={img} width={500} height={100} alt={'Bento Image'} className="object-contain h-full w-full z-10 " />
 
                 {!([1, 2].includes(id)) && <div className="bg-[#d9d9d9e6] blur-[100px] w-40 md:w-10/12 aspect-square opacity- absolute self-center top-1/2 -translate-y-1/2" />}
@@ -66,9 +67,9 @@ export const BentoGridItem = ({
                 <p className="reg-text text-text-1 text-xs md:text-sm">
                     {description}
                 </p>
-                <Link href={href} className="med-text capitalize border-b border-text-1 text-text-1 w-fit transition-all hover:text-hover-button-1 hover:border-hover-button-1">
+                <ProgLink href={href} className="med-text capitalize border-b border-text-1 text-text-1 w-fit transition-all hover:text-hover-button-1 hover:border-hover-button-1">
                     {t('shopNowBtn')}
-                </Link>
+                </ProgLink>
             </div>
         </div>
     );
@@ -85,7 +86,7 @@ export const BentoLoadingSkeleton = () => (
                 }`
             }
         >
-            <Skeleton variant="rectangular" sx={{height:"100%"}}/>
+            <Skeleton variant="rectangular" sx={{ height: "100%" }} />
         </div>
     ))
 

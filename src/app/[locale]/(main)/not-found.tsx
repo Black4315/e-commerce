@@ -1,6 +1,7 @@
 'use client';
 
 import Button from '@/components/ui/Button';
+import ProgLink from '@/utils/ProgLink';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import { useEffect } from 'react';
@@ -23,11 +24,11 @@ export default function NotFound() {
                 {t('404Description')}
             </p>
 
-            <Link href="/" className="mt-10 md:mt-20">
+            <ProgLink href="/" className="mt-10 md:mt-20">
                 <Button className="bg-secondary-3 w-fit text-text-1 py-3 px-6 md:py-6 md:px-12 med-text">
                     {t('goHome')}
                 </Button>
-            </Link>
+            </ProgLink>
         </div>
 
         // </div>

@@ -3,6 +3,7 @@ import Button from "@/components/ui/Button"
 import { useTranslations } from "next-intl"
 import { useCampaignOfferContxt } from "../contexts"
 import Link from "next/link"
+import ProgLink from "@/utils/ProgLink"
 
 
 const CampaignBtns = ({ timerEnded }: { timerEnded: boolean }) => {
@@ -19,9 +20,9 @@ const CampaignBtns = ({ timerEnded }: { timerEnded: boolean }) => {
             {timerEnded &&
                 <Button
                     className={`bg-button-1 hover:bg-button-1/80 semi-text text-text-1 px-2 md:px-12 py-2 md:py-4 w-auto h-auto order-1 capitalize`}>
-                    <Link href={data.campaign.fallback_after_expiry.redirect_url}>
+                    <ProgLink href={data.campaign.fallback_after_expiry.redirect_url}>
                         {data.campaign.fallback_after_expiry.button}
-                    </Link>
+                    </ProgLink>
                 </Button>
             }
         </div>

@@ -1,11 +1,12 @@
 "use client";
-import Link from "next/link";
+
 import { TdAction } from "./TdAction";
 import { ChangeCartQuantity } from "../../../../../features/cart/components/AddToCart/ChangeCartQuantity";
 import CustomImage from "@/components/ui/CustomImag";
 import { useTranslations } from "next-intl";
 import { CartItemPresentationalProps } from "../../../../../features/cart/types/CartPage";
 import { CartItem } from "@/features/cart/types/cartType";
+import ProgLink from "@/utils/ProgLink";
 
 /* ---------------- Product Image ---------------- */
 const ProductImage = ({
@@ -17,7 +18,7 @@ const ProductImage = ({
   url: string;
   alt: string;
 }) => (
-  <Link href={`/products/${handle}`} className="mt-1 shrink-0">
+  <ProgLink href={`/products/${handle}`} className="mt-1 shrink-0">
     <div className="w-18 h-18">
       <CustomImage
         className="object-contain w-full h-full"
@@ -27,7 +28,7 @@ const ProductImage = ({
         height={54}
       />
     </div>
-  </Link>
+  </ProgLink>
 );
 
 /* ---------------- Product Info ---------------- */
@@ -70,12 +71,12 @@ const ProductTitle = ({
   title: string;
 }) => (
   <div className="w-full flex justify-between ">
-    <Link
+    <ProgLink
       href={`/products/${handle}`}
       className="semi-text line-clamp-2 active:text-secondary-3"
     >
       {title}
-    </Link>
+    </ProgLink>
     <TdAction.WishlistButton item={item} className="rounded-full w-7 h-7" />
   </div>
 );

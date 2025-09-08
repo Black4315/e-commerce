@@ -9,36 +9,45 @@ import { sleep } from "@/lib/sleep";
 import { useEffect } from "react";
 
 nProgress.configure({ showSpinner: false })
-interface ProgLinkProps extends LinkProps {
+export interface ProgLinkProps extends LinkProps {
     children: React.ReactNode;
     className?: string;
     href: string;
     transitionDuration?: number;
+    viewTransition?: boolean;
 }
 const ProgLink: React.FC<ProgLinkProps> = ({ children,
     className,
     href,
-    transitionDuration = 500, ...props }) => {
+    viewTransition,
+    onClick,
+    transitionDuration = 350, 
+    ...props 
+}) => {
     const router = useRouter();
     const pathname = usePathname();
     const locale = useLocale()
 
     const handleTransition = async (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
         e.preventDefault();
+        onClick && onClick(e)
 
         // If already on the same page → do nothing
         if (normalizePath(pathname, locale) === normalizePath(href, locale)) return;
 
         nProgress.start()
+        // apply class on body only if viewTransition is true
+        viewTransition && document.body.classList.add("page-transition");
         await sleep(transitionDuration);
         router.push(href);
     }
-    
+
     useEffect(() => {
         if (!pathname) return;
 
         const timeout = setTimeout(() => {
             nProgress.done()
+            viewTransition && document.body.classList.remove("page-transition");
         }, transitionDuration);
 
         return () => clearTimeout(timeout);

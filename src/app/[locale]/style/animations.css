@@ -132,22 +132,20 @@
     .page-container {
         transition-property: opacity, transform, filter, background;
         transition-timing-function: var(--apple-transition);
-        transition-duration: 500ms;
-        opacity: 1;
-        transform: translateY(0px);
+        transition-duration: 350ms;
     }
 
     body.page-transition .page-container {
-        opacity: 0;
         transform: translateY(40px);
         filter: blur(12px);
+        opacity: 0;
         pointer-events: none;
     }
 
 
     body.page-transition .main-loader {
         display: block;
-        animation: fade-in 0.3s var(--apple-transition) forwards 500ms;
+        animation: fade-in 0.3s var(--apple-transition) forwards 350ms;
     }
 
 

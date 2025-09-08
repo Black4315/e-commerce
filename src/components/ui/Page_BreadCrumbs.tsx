@@ -1,3 +1,4 @@
+import ProgLink from '@/utils/ProgLink';
 import { Breadcrumbs, Typography } from '@mui/material';
 import Link from 'next/link';
 import React, { ComponentProps } from 'react'
@@ -30,14 +31,13 @@ const PageBreadCrumbs = ({
       >
         {breadcrumbsData.map(({ label, link }, i) =>
           i != breadcrumbsData.length - 1 ? (
-            <Link
-              color="inherit"
+            <ProgLink
               href={link ?? ""}
-              className="sm-text capitalize hover:underline"
+              className="sm-text capitalize hover:underline text-inherit"
               key={i}
             >
               {label}
-            </Link>
+            </ProgLink>
           ) : (
             <span className="capitalize sm-text text-black whitespace-nowrap ellipsis block max-w-100">
               {label}

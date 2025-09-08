@@ -37,7 +37,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} dir={isRTL ? "rtl" : "ltr"}>
       <body style={{ ["--origin-dir" as any]: isRTL ? "left" : "right" }}>
-        <LoadingSpinner wrapperclassName="main-loader" className="w-10 h-10"/>
+        <LoadingSpinner wrapperclassName="main-loader" />
         <Toaster />
         <AppContextProvider>
           <MobileCheckProvider initialValue={isMobile}>

@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import AddToCart from "../../../../../features/cart/components/AddToCart";
 import ProductCardActions from "./ProductCardActions";
 import ProductCardImage from "./ProductCardImage";
@@ -12,7 +11,7 @@ import { useMobileCheck } from "@/contexts/MobileCheckContext";
 import { useTranslations } from "next-intl";
 import { useProductContext } from "@/entities/Product/contexts/ProductContext";
 import { useProductSelection } from "@/entities/Product/contexts/ProductSelectionContext";
-import { TransitionLink } from "@/utils/TransitionLink";
+import ProgLink from "@/utils/ProgLink";
 
 const Card = ({ className }: { className?: string }) => {
   const isMobile = useMobileCheck();
@@ -44,17 +43,16 @@ const Card = ({ className }: { className?: string }) => {
       </div>
 
       {/* Name, Price & Rating */}
-      <TransitionLink
+      <ProgLink
         href={`/products/${handle}`}
         className="flex flex-col h-full group-[.sale-ended]:blur-[1.2px]"
       >
         <div className={`flex flex-col p-2 gap-0.5`}>
           <h1 className="med-text max-xsm:text-sm capitalize ellipsis" title={title}>{title}</h1>
- 
+
           <div
-            className={`flex ${
-              !colors?.length ? "flex-col gap-0.5" : "items-center gap-3"
-            }`}
+            className={`flex ${!colors?.length ? "flex-col gap-0.5" : "items-center gap-3"
+              }`}
           >
             {/* remove discount if there is no discountPercent */}
             <ProductCardPrice />
@@ -65,7 +63,7 @@ const Card = ({ className }: { className?: string }) => {
           {/* colors */}
           <ProductColors {...{ colors, selectedColor }} />
         </div>
-      </TransitionLink>
+      </ProgLink>
     </div>
   );
 };

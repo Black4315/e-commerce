@@ -9,7 +9,7 @@ import { Logo } from '@/assets';
 type CustomImageProps = ImageProps;
 
 export default function CustomImage({ src, alt, ...props }: CustomImageProps) {
-    const [isLoading, setIsLoading] = useState((!!src));
+    const [isLoading, setIsLoading] = useState(true);
     return (
       <>
         {isLoading && (

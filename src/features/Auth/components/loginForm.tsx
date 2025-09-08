@@ -72,7 +72,7 @@ const LoginForm = () => {
           <button className='auth-btn' type='submit' disabled={isSubmitting}>
             {isSubmitting ? <LoadingSpinner className='w-4 -my-4' /> : t('login')}
           </button>
-          <Link href={pages.forgetPass} className='reg-text font-poppins text-secondary-3 text-end'>{t('forgetPass')}</Link>
+          <ProgLink href={pages.forgetPass} className='reg-text font-poppins text-secondary-3 text-end'>{t('forgetPass')}</ProgLink>
         </div>
 
         {/* login with goole */}

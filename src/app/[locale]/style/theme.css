@@ -28,6 +28,7 @@
 #nprogress .bar {
   background: var(--color-secondary-3) !important;
   height: 3px !important;
+  border-radius: 10px;
 }
 #nprogress .peg{
   box-shadow: none !important;

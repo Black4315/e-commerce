@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import NavBar from "./components/NavBar";
 import SearchComponent from "../../../features/Search/components/SearchComponent";
 import NavProfileActions from "./components/ActionsNav";
@@ -12,7 +11,6 @@ import { cn } from "@/lib/utils";
 import { useTranslations } from "next-intl";
 import { LOGO_NAME } from "@/constants";
 import { useHeader } from "./hooks/useHeader";
-import { TransitionLink } from "@/utils/TransitionLink";
 import ProgLink from "@/utils/ProgLink";
 
 const Header = () => {
@@ -57,7 +55,7 @@ const Header = () => {
               {isLoggedIn ? (
                 <NavProfileActions.user />
               ) : (
-                <TransitionLink
+                <ProgLink
                   href={"/auth/login"}
                   className="login-btn max-xs:w-13 max-xs:ms-1"
                   children={t("logInBtn")}

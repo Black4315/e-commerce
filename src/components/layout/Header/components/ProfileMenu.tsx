@@ -7,8 +7,8 @@ import ActionNavItem from "./ActionNavItem"
 import { useGSAP } from "@gsap/react"
 import { useTranslations } from "next-intl"
 import { profileMenuIcons } from "@/constants/constanst"
-import Link from "next/link"
 import { anim } from "../utils/profileLiAnim"
+import ProgLink from "@/utils/ProgLink"
 
 const ProfileMenu = () => {
     const [open, setopen] = useState(false)
@@ -45,10 +45,10 @@ const ProfileMenu = () => {
                     <ul className="flex items-start flex-col gap-3">
                         {profileNav.map(({label,link},idx)=>(
                             <li key={idx} className="profile-menu-li leading-5 tracking-wide text-text-1 font-poppins text-sm hover:text-hover-button-1 transition-colors cursor-pointer">
-                                <Link href={link} onClick={() => setopen(!open)} className="flex items-center gap-2">
+                                <ProgLink href={link} onClick={() => setopen(!open)} className="flex items-center gap-2">
                                     {React.createElement(profileMenuIcons[idx], { className: 'w-8' })}
                                     {label}
-                                </Link>
+                                </ProgLink>
                             </li>
                         ))}
                     </ul>

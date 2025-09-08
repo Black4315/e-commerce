@@ -58,7 +58,7 @@ const EmblaCarousel = forwardRef<EmblaCarouselHandle, PropType>(
       ...options,
     });
     const [scrollProgress, setScrollProgress] = useState(0);
-    const [scrollSnaps, setscrollSnaps] = useState<any[]>([]);
+    const [scrollSnaps, setscrollSnaps] = useState(emblaApi?.scrollSnapList() ?? Array(5));
     const selectedIndex = emblaApi?.selectedScrollSnap() ?? 0;
 
     const {
@@ -145,7 +145,7 @@ export const DotsProgress = ({
   max = 7,
 }: {
   scrollProgress: number;
-  scrollSnaps: any[];
+  scrollSnaps: number[];
   max?: number;
 }) => {
   const total = scrollSnaps.length;

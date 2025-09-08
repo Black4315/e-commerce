@@ -1,7 +1,6 @@
 "use client"
-import { TransitionLink } from "@/utils/TransitionLink"
+import ProgLink from "@/utils/ProgLink"
 import { useTranslations } from "next-intl"
-import Link from "next/link"
 import { usePathname } from "next/navigation"
 
 
@@ -16,14 +15,14 @@ const NavBar = () => {
   return (
     <nav className="flex lg:items-center nav gap-6 lg:gap-12 max-lg:flex-col">
       {nav.map((item, idx) => (
-        <TransitionLink
+        <ProgLink
           key={idx}
           href={item.link}
           className={`text-black w-fit max-lg:!text-lg font-semibold lg:font-medium nav-el nav-link nav-item motion-border-b ${item.link === normPath ? "after:w-[105%]" : ""
             }`}
         >
           {item.label}
-        </TransitionLink>
+        </ProgLink>
       ))}
     </nav>
   );
