@@ -113,7 +113,7 @@ I’m open to collaborations, freelance projects, or full-time opportunities.
 ---
 
 ## License
-MIT License © 2025 Yahia Badr  
+Custom Non-Commercial License © 2025 Yahia Badr  
 
 [TailwindCSS]:https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white
 [tailwind-url]:https://tailwindcss.com/

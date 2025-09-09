@@ -1,6 +1,6 @@
 import { RefObject, useEffect, useState } from "react";
 
-export function useIntersectingObs(observRef: RefObject<HTMLElement | null>) {
+export function useIntersectingObs(observEle: HTMLElement | null) {
   const [hide, setHide] = useState(false);
 
   useEffect(() => {
@@ -11,15 +11,15 @@ export function useIntersectingObs(observRef: RefObject<HTMLElement | null>) {
       { threshold: 0 }
     );
   
-    if (observRef.current) observer.observe(observRef.current);
+    if (observEle) observer.observe(observEle);
 
     return () => {
-      if (observRef.current) observer.unobserve(observRef.current);
+      if (observEle) observer.unobserve(observEle);
     };
-  }, [observRef.current]);
+  }, [observEle]);
 
   return {
     hide,
-    observRef,
+    observEle,
   };
 }
