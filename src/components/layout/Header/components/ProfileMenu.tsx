@@ -36,6 +36,7 @@ const ProfileMenu = () => {
             alt="profile"
             width={28}
             height={28}
+            aria-label="profile menu dropdown"
             iconClassName='max-sm:!w-6'
             btnClassName={`${open ? 'action-btn-select':''}`}
             onClick={(e) => setopen(!open)}

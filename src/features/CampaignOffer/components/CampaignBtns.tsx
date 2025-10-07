@@ -10,7 +10,7 @@ const CampaignBtns = ({ timerEnded }: { timerEnded: boolean }) => {
     const { data } = useCampaignOfferContxt()
 
     return (
-        <div className="flex gap-3 items-center">
+        <div className="flex gap-4 items-center">
             <Button
                 className={`bg-button-1 hover:bg-button-1/80 semi-text text-text-1 px-6 md:px-12 py-2 md:py-4 w-auto h-auto ${timerEnded ? "brightness-[0.6] grayscale-[0.6] pointer-events-none" : ""}`}>{
                     t('buyNowBtn')}!

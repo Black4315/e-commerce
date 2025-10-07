@@ -18,7 +18,7 @@ export default function ActionsNav({
   children?: React.ReactNode;
 }) {
   return (
-    <ul className="flex max-xs:gap-[0px] gap-2 items-center">
+    <ul className="flex max-xs:gap-[6px] gap-3 items-center">
       <ActionsNav.wishList />
       {children}
     </ul>

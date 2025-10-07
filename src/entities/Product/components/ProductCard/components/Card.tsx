@@ -6,7 +6,7 @@ import ProductCardActions from "./ProductCardActions";
 import ProductCardImage from "./ProductCardImage";
 import ProductCardPrice from "./ProductCardPrice";
 import ProductRating from "../../ProductRating";
-import ProductColors from "../../ProductColors";
+import ProductColors from "./ProductColors";
 import { cn } from "@/lib/utils";
 import { useMobileCheck } from "@/contexts/MobileCheckContext";
 import { useTranslations } from "next-intl";
@@ -34,7 +34,7 @@ const Card = ({ className }: { className?: string }) => {
         className
       )}
     >
-      <div className="relative bg-secondary-1 w-full group overflow-hidden flex-shrink-0 h-[262px]">
+      <div className="relative bg-secondary-1 w-full group/img overflow-hidden flex-shrink-0 h-[262px]">
         <ProductCardImage />
         <AddToCart />
 

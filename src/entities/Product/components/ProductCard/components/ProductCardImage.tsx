@@ -14,7 +14,7 @@ const ProductCardImage = () => {
     <Link
       href={`/products/${handle}`}
       className={`absolute top-0 left-0 bottom-0 w-full flex flex-col h-full transition-apple duration-200 ${
-        !isMobile ? "group-hover:brightness-90" : "brightness-[0.97]"
+        !isMobile ? "group-hover/img:brightness-90" : "brightness-[0.97]"
       }`}
     >
       <div className="bg-secondary-1 flex-center h-full w-full">

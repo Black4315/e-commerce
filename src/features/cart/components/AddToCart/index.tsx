@@ -50,7 +50,7 @@ export default function AddToCart({
   const hidden = !isMobile && !exists && !show && variant?.inStock;
 
   // conditions
-  const renderQuantity = () =>
+  const renderButtons = () =>
     exists && variant?.inStock ? (
       <ChangeCartQuantity
         updateQty={updateQty}
@@ -71,12 +71,12 @@ export default function AddToCart({
   return (
     <div
       className={cn(
-        "absolute bottom-0 w-full transition-apple duration-150 group-hover:opacity-100 group-hover:translate-y-0 group-hover:delay-500 group-hover:pointer-events-auto",
+        "absolute bottom-0 w-full transition-apple duration-200 group-hover/img:opacity-100 group-hover/img:translate-y-0 group-hover/img:delay-400 group-hover/img:pointer-events-auto",
         hidden && "translate-y-2.5 opacity-0 pointer-events-none",
         className
       )}
     >
-      {renderQuantity()}
+      {renderButtons()}
       <ModalPopup
         isOpen={modalOpen}
         onClose={closeModal}
