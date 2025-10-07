@@ -19,7 +19,7 @@ const Download = () => {
         />
         <div className="flex flex-col gap-1">
           {downloads.map(({ img, alt, link }, i) => (
-            <Link href={link} key={i}>
+            <Link target="_blank" href={link} key={i} aria-label={`Reach us from ${alt}`}>
               <Image src={img} width={110} height={40} alt={alt} />
             </Link>
           ))}
@@ -29,7 +29,7 @@ const Download = () => {
       <ul className="flex gap-6 justify-center">
         {socialMedia.map(({ Icon, link, name }, i) => (
           <li key={i} className="hover:text-hover-button-1">
-            <Link href={link} aria-label={`Follow us on ${name}`}>
+            <Link target="_blank" href={link} aria-label={`Follow us on ${name}`}>
               <Icon className="w-5 h-5 sm:w-6 sm:h-6" />
             </Link>
           </li>

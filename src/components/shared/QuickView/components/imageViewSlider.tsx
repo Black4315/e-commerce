@@ -36,6 +36,7 @@ const MobileImageSlider = ({ images }: { images: ProductImage[] }) => (
             height={150}
             src={url}
             alt={alt}
+            unoptimized
             className="object-contain w-9/12 h-full"
           />
         </div>
@@ -78,6 +79,7 @@ const DeskTopImageSlider = ({
                 height={50}
                 src={url}
                 alt={alt}
+                unoptimized
                 className="object-contain w-9/12"
               />
             )}
@@ -91,6 +93,8 @@ const DeskTopImageSlider = ({
           height={200}
           src={images[current].url}
           alt={images[current].alt}
+          unoptimized
+          quality={100}
           className="object-contain w-9/12"
         />
       </div>

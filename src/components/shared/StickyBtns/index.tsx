@@ -34,7 +34,7 @@ const StickyBtns = ({ hide }: { hide: boolean }) => {
         <div
           onClick={() => window.scroll({ top: 0, behavior: "smooth" })}
           className={`fixed bottom-8 end-3 lg:bottom-8 lg:end-8 z-60 w-11 h-11 flex-center bg-secondary-3 text-text-1 hover:bg-hover-button-2 transition-all rounded-full cursor-pointer transition-apple duration-200 ${
-            hide || !showBtns ? "scale-0 opacity-0 pointer-events-none" : ""
+            hide || !showBtns ? "scale-0 pointer-events-none" : ""
           }`}
         >
           <Icons_arrowupIcon />

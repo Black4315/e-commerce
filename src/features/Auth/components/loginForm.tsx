@@ -12,6 +12,7 @@ import Link from 'next/link'
 import { pages } from '@/constants/pages'
 import z from 'zod'
 import IconGoogleIcon from '@/assets/icons/IconGoogle'
+import ProgLink from '@/utils/ProgLink'
 
 export type LoginFormValues = z.infer<ReturnType<typeof getLoginFormSchema>>;
 
@@ -43,13 +44,13 @@ const LoginForm = () => {
 
   return (
     <AuthForm
-    ref={formRef}
-    heading={t('loginFormHead')}
-    subheading={t('createAccFormSubHead')}
-    onSubmit={handleSubmit(onSubmit)}
+      ref={formRef}
+      heading={t('loginFormHead')}
+      subheading={t('createAccFormSubHead')}
+      onSubmit={handleSubmit(onSubmit)}
       control={control}
-      >
-        {/* TODO: adjust the services and use axois and send to server */}
+    >
+      {/* TODO: adjust the services and use axois and send to server */}
       <TextInput
         control={control}
         name='emailOrPhone'
@@ -71,7 +72,7 @@ const LoginForm = () => {
           <button className='auth-btn' type='submit' disabled={isSubmitting}>
             {isSubmitting ? <LoadingSpinner className='w-4 -my-4' /> : t('login')}
           </button>
-          <Link href={pages.forgetPass} className='reg-text font-poppins text-secondary-3 text-end'>{t('forgetPass')}</Link>
+          <ProgLink href={pages.forgetPass} className='reg-text font-poppins text-secondary-3 text-end'>{t('forgetPass')}</ProgLink>
         </div>
 
         {/* login with goole */}
@@ -83,10 +84,10 @@ const LoginForm = () => {
         {/* create acc */}
         <div className='text-text-2 flex-center gap-2 !mt-8 flex-wrap'>
           <span className='reg-text font-poppins'>{t('newTo')}</span>
-          <Link href={pages.signup} className='med-text border-b hover:border-black transition-all hover:text-black'>
+          <ProgLink href={pages.signup} className='med-text border-b hover:border-black transition-all hover:text-black'>
 
             {t('createAccFormHead')}
-          </Link>
+          </ProgLink>
         </div>
 
       </div>

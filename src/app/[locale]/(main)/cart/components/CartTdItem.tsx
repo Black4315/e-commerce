@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+
 import Price from "@/entities/Product/components/Price";
 import CustomImage from "@/components/ui/CustomImag";
 import { ChangeCartQuantity } from "@/features/cart/components/AddToCart/ChangeCartQuantity";
@@ -9,6 +9,7 @@ import { useCartItemLogic } from "@/features/cart/hooks/useCartItemHook";
 import { TdAction } from "./TdAction";
 import CartTdItemMobile from "./CartTdItemMobile";
 import { CartItemPresentationalProps } from "@/features/cart/types/CartPage";
+import ProgLink from "@/utils/ProgLink";
 
 /* ---------------- Image + Title ---------------- */
 const CartItemImageTitle = ({
@@ -20,7 +21,7 @@ const CartItemImageTitle = ({
 }) => (
   <td className="relative overflow-hidden">
     <TdAction deletClick={onDelete} item={item} />
-    <Link
+    <ProgLink
       aria-label="redirect to productPage"
       href={`/products/${item.handle}`}
       className="active:text-secondary-3 transition-all"
@@ -37,7 +38,7 @@ const CartItemImageTitle = ({
         </div>
         <span className="line-clamp-2">{item.title}</span>
       </div>
-    </Link>
+    </ProgLink>
   </td>
 );
 

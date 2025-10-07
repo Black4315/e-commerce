@@ -1,7 +1,8 @@
 import Button from "@/components/ui/Button";
 import { CustomTooltip } from "@/components/ui/CustomTooltip";
-import Link from "next/link";
+
 import Tooltip from "@mui/material/Tooltip";
+import ProgLink from "@/utils/ProgLink";
 
 export interface ActionsIconButtonProps
   extends React.HTMLAttributes<HTMLButtonElement> {
@@ -14,7 +15,7 @@ export interface ActionsIconButtonProps
   iconClassName?: string;
   children?: React.ReactNode;
   tooltipPlacement?: React.ComponentProps<typeof Tooltip>["placement"];
-  linkProps?:React.ComponentProps<"a">
+  linkProps?: React.ComponentProps<"a">
 }
 
 export default function ActionsIconButton({
@@ -42,9 +43,9 @@ export default function ActionsIconButton({
   ) : null;
 
   const content = href ? (
-    <Link {...linkProps} href={href}>
+    <ProgLink {...linkProps} href={href}>
       {iconEl}
-    </Link>
+    </ProgLink>
   ) : (
     iconEl
   );

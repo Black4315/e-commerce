@@ -42,12 +42,10 @@
 @keyframes fade-in {
     0% {
         opacity: 0;
-        transform: translateY(10px);
     }
 
     100% {
         opacity: 1;
-        transform: translateY(0);
     }
 }
 
@@ -130,6 +128,26 @@
     .animate__animated.animate__faster {
         animation-duration: 0.4s !important;
     }
+
+    .page-container {
+        transition-property: opacity, transform, filter, background;
+        transition-timing-function: var(--apple-transition);
+        transition-duration: 350ms;
+    }
+
+    body.page-transition .page-container {
+        transform: translateY(40px);
+        filter: blur(12px);
+        opacity: 0;
+        pointer-events: none;
+    }
+
+
+    body.page-transition .main-loader {
+        display: block;
+        animation: fade-in 0.3s var(--apple-transition) forwards 350ms;
+    }
+
 
     /* .animate__slideInUp {
         animation-duration: 0.5s !important;

@@ -20,7 +20,12 @@
         ],
         "vendor": "HAVIT",
         "category": "electronics",
-        "tags": ["gamepad", "controller", "gaming", "pc"],
+        "tags": [
+          "gamepad",
+          "controller",
+          "gaming",
+          "pc"
+        ],
         "defaultVariantIndex": 0,
         "hasVariations": false,
         "variants": [
@@ -36,7 +41,7 @@
             "inStock": true,
             "images": [
               {
-                "url": "/assets/products/images/image 63.svg",
+                "url": "/assets/products/images/image 63.png",
                 "alt": "HAVIT HV-G92 Gamepad Front View"
               },
               {
@@ -67,13 +72,34 @@
         "soldNumber": 1300,
         "taxes": 0.15,
         "productDetails": [
-          ["البطاريات", "بطارية واحدة من نوع ليثيوم بوليمر مطلوبة (مرفقة)"],
-          ["أبعاد العبوة", "19.4 × 19.3 × 6.9 سم؛ 10 جم"],
-          ["مادة العبوة", "بلاستيك ABS"],
-          ["وزن العبوة", "0.45 كجم"],
-          ["تاريخ الإصدار", "10 نوفمبر 2024"],
-          ["ASIN", "B0DY5JXHGP"],
-          ["بلد المنشأ", "الصين"]
+          [
+            "البطاريات",
+            "بطارية واحدة من نوع ليثيوم بوليمر مطلوبة (مرفقة)"
+          ],
+          [
+            "أبعاد العبوة",
+            "19.4 × 19.3 × 6.9 سم؛ 10 جم"
+          ],
+          [
+            "مادة العبوة",
+            "بلاستيك ABS"
+          ],
+          [
+            "وزن العبوة",
+            "0.45 كجم"
+          ],
+          [
+            "تاريخ الإصدار",
+            "10 نوفمبر 2024"
+          ],
+          [
+            "ASIN",
+            "B0DY5JXHGP"
+          ],
+          [
+            "بلد المنشأ",
+            "الصين"
+          ]
         ],
         "weight": "0.45kg",
         "material": "بلاستيك ABS",
@@ -89,7 +115,12 @@
         "description": "معطف شتوي أنيق ودافئ للارتداء اليومي.",
         "vendor": "The North Face x Gucci",
         "category": "أزياء رجالية",
-        "tags": ["winter", "coat", "luxury", "gucci"],
+        "tags": [
+          "winter",
+          "coat",
+          "luxury",
+          "gucci"
+        ],
         "hasVariations": true,
         "defaultVariantIndex": 0,
         "variants": [
@@ -188,7 +219,12 @@
         "description": "رفعوا أسلوبكم مع هذه الحقيبة الفاخرة من العلامة التجارية غوتشي والتي تتميز بنمط المونوغرام الشهير—رمز خالد للفخامة والأناقة. مصممة بدقة واهتمام بالتفاصيل، تجمع هذه الحقيبة بين الحرفية الإيطالية الرفيعة والأناقة الكلاسيكية.",
         "vendor": "غوتشي",
         "category": "woأزياء رجالية",
-        "tags": ["bag", "duffle", "luxury", "designer"],
+        "tags": [
+          "bag",
+          "duffle",
+          "luxury",
+          "designer"
+        ],
         "defaultVariantIndex": 0,
         "hasVariations": false,
         "variants": [
@@ -252,7 +288,12 @@
         "description": "شاشة عرض عالية الدقة مناسبة للألعاب الاحترافية.",
         "vendor": "IPS إلكترونيات",
         "category": "إلكترونيات",
-        "tags": ["monitor", "gaming", "display", "lcd"],
+        "tags": [
+          "monitor",
+          "gaming",
+          "display",
+          "lcd"
+        ],
         "hasVariations": false,
         "defaultVariantIndex": 0,
         "variants": [
@@ -300,7 +341,12 @@
         "description": "شاشة عرض عالية الدقة مناسبة للألعاب الاحترافية.",
         "vendor": "IPS إلكترونيات",
         "category": "إلكترونيات",
-        "tags": ["monitor", "gaming", "display", "lcd"],
+        "tags": [
+          "monitor",
+          "gaming",
+          "display",
+          "lcd"
+        ],
         "hasVariations": false,
         "defaultVariantIndex": 0,
         "variants": [
@@ -348,7 +394,12 @@
         "description": "شاشة عرض عالية الدقة مناسبة للألعاب الاحترافية.",
         "vendor": "IPS إلكترونيات",
         "category": "إلكترونيات",
-        "tags": ["monitor", "gaming", "display", "lcd"],
+        "tags": [
+          "monitor",
+          "gaming",
+          "display",
+          "lcd"
+        ],
         "hasVariations": false,
         "defaultVariantIndex": 0,
         "variants": [
@@ -396,7 +447,12 @@
         "description": "شاشة عرض عالية الدقة مناسبة للألعاب الاحترافية.",
         "vendor": "IPS إلكترونيات",
         "category": "إلكترونيات",
-        "tags": ["monitor", "gaming", "display", "lcd"],
+        "tags": [
+          "monitor",
+          "gaming",
+          "display",
+          "lcd"
+        ],
         "hasVariations": false,
         "defaultVariantIndex": 0,
         "variants": [

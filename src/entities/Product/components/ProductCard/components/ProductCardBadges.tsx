@@ -3,9 +3,10 @@
 import { cn } from "@/lib/utils";
 import { useTranslations } from "next-intl";
 import Badge from "./ui/Badge";
-import Link from "next/link";
+
 import { useProductContext } from "@/entities/Product/contexts/ProductContext";
 import { pages } from "@/constants/pages";
+import ProgLink from "@/utils/ProgLink";
 
 export const ProductCardBadges = ({ className }: { className?: string }) => {
   const t = useTranslations("homePage.product");
@@ -36,7 +37,7 @@ ProductCardBadges.limited = ({ className }: { className?: string }) => {
   const t = useTranslations("homePage.product");
 
   return (
-    <Link href={pages.flashSales}>
+    <ProgLink href={pages.flashSales}>
       <Badge
         className={cn(
           "bg-limited-color hover:bg-[#a80c30] transition rounded-full px-2 h-fit py-1 max-md:text-text-[10px]",
@@ -45,6 +46,6 @@ ProductCardBadges.limited = ({ className }: { className?: string }) => {
       >
         {t("limitedTime")}
       </Badge>
-    </Link>
+    </ProgLink>
   );
 };

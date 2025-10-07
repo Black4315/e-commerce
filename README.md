@@ -11,6 +11,7 @@
     <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="typescript" />
     <img src="https://img.shields.io/badge/-GSAP-black?style=for-the-badge&logoColor=white&logo=greensock&color=88CE02" alt="greensock" />
     <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
+    <img src="https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white" />
   </div>
 
   <h3 align="center">Premium E-Commerce Platform</h3>
@@ -80,6 +81,7 @@ Whether it’s product browsing, advanced filters, smooth checkout, or interacti
 * [![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 * [![GSAP](https://img.shields.io/badge/-GSAP-black?style=for-the-badge&logoColor=white&logo=greensock&color=88CE02)](https://gsap.com/)
 * [![tailwindcss][TailwindCSS]][tailwind-url]
+* [![Framermotion][framer]][framer-url]
 - React Query  
 - React Context & React Hook Form  
 - Web APIs integration  
@@ -111,7 +113,7 @@ I’m open to collaborations, freelance projects, or full-time opportunities.
 ---
 
 ## License
-MIT License © 2025 Yahia Badr  
+Custom Non-Commercial License © 2025 Yahia Badr  
 
 [TailwindCSS]:https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white
 [tailwind-url]:https://tailwindcss.com/
@@ -119,3 +121,5 @@ MIT License © 2025 Yahia Badr
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
+[framer]:https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white
+[framer-url]:https://motion.dev

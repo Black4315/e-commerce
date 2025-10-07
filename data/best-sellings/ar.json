@@ -19,7 +19,12 @@
         ],
         "vendor": "HAVIT",
         "category": "electronics",
-        "tags": ["gamepad", "controller", "gaming", "pc"],
+        "tags": [
+          "gamepad",
+          "controller",
+          "gaming",
+          "pc"
+        ],
         "defaultVariantIndex": 0,
         "hasVariations": false,
         "variants": [
@@ -35,7 +40,7 @@
             "inStock": true,
             "images": [
               {
-                "url": "/assets/products/images/image 63.svg",
+                "url": "/assets/products/images/image 63.png",
                 "alt": "HAVIT HV-G92 Gamepad Front View"
               },
               {
@@ -66,13 +71,34 @@
         "soldNumber": 1300,
         "taxes": 0.15,
         "productDetails": [
-          ["البطاريات", "بطارية واحدة من نوع ليثيوم بوليمر مطلوبة (مرفقة)"],
-          ["أبعاد العبوة", "19.4 × 19.3 × 6.9 سم؛ 10 جم"],
-          ["مادة العبوة", "بلاستيك ABS"],
-          ["وزن العبوة", "0.45 كجم"],
-          ["تاريخ الإصدار", "10 نوفمبر 2024"],
-          ["ASIN", "B0DY5JXHGP"],
-          ["بلد المنشأ", "الصين"]
+          [
+            "البطاريات",
+            "بطارية واحدة من نوع ليثيوم بوليمر مطلوبة (مرفقة)"
+          ],
+          [
+            "أبعاد العبوة",
+            "19.4 × 19.3 × 6.9 سم؛ 10 جم"
+          ],
+          [
+            "مادة العبوة",
+            "بلاستيك ABS"
+          ],
+          [
+            "وزن العبوة",
+            "0.45 كجم"
+          ],
+          [
+            "تاريخ الإصدار",
+            "10 نوفمبر 2024"
+          ],
+          [
+            "ASIN",
+            "B0DY5JXHGP"
+          ],
+          [
+            "بلد المنشأ",
+            "الصين"
+          ]
         ],
         "weight": "0.45kg",
         "material": "بلاستيك ABS",
@@ -85,7 +111,12 @@
         "description": "معطف شتوي أنيق ودافئ للارتداء اليومي.",
         "vendor": "The North Face x Gucci",
         "category": "أزياء رجالية",
-        "tags": ["winter", "coat", "luxury", "gucci"],
+        "tags": [
+          "winter",
+          "coat",
+          "luxury",
+          "gucci"
+        ],
         "hasVariations": true,
         "defaultVariantIndex": 0,
         "variants": [
@@ -181,7 +212,12 @@
         "description": "مبرد سائل عالي الأداء مع إضاءة RGB.",
         "vendor": "RGB Tech",
         "category": "إلكترونيات",
-        "tags": ["cooler", "liquid", "rgb", "cpu"],
+        "tags": [
+          "cooler",
+          "liquid",
+          "rgb",
+          "cpu"
+        ],
         "hasVariations": false,
         "defaultVariantIndex": 0,
         "variants": [
@@ -226,7 +262,12 @@
         "description": "رف كتب خشبي مدمج للمساحات الصغيرة.",
         "vendor": "OakCraft",
         "category": "Furniture",
-        "tags": ["bookshelf", "wood", "compact", "furniture"],
+        "tags": [
+          "bookshelf",
+          "wood",
+          "compact",
+          "furniture"
+        ],
         "hasVariations": false,
         "defaultVariantIndex": 0,
         "variants": [

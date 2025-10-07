@@ -1,7 +1,8 @@
-import Link from "next/link";
+
 import { CategoryType } from "../types/CategoryType";
 import DropDownIcon from "@/assets/icons/DropDown";
 import { cn } from "@/lib/utils";
+import ProgLink from "@/utils/ProgLink";
 
 type CategoryProps = {
   category: CategoryType;
@@ -16,7 +17,7 @@ const Category = ({ category, onHover }: CategoryProps) => {
     >
       <div className="flex justify-between cursor-pointer">
         <h3 className="normal-text">
-          <Link href={category.link}>{category.name}</Link>
+          <ProgLink href={category.link}>{category.name}</ProgLink>
         </h3>
 
         {category.children.length ? (

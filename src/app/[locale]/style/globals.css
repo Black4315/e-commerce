@@ -55,6 +55,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: white;
   }
 
   .flex-center {
@@ -289,6 +290,9 @@ body {
     width: 8px;
     height: 8px;
   }
+  .main-loader{
+    @apply fixed top-10 start-1/2 -translate-x-1/2 z-1 hidden opacity-0
+  }
 }
 
 input:-webkit-autofill,
@@ -299,3 +303,4 @@ input:-webkit-autofill:active {
   -webkit-text-fill-color: black !important;
   caret-color: black;
 }
+

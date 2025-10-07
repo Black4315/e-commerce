@@ -5,7 +5,7 @@ import { useContext, useEffect, useState } from "react";
 import { createContext } from "react";
 import { IoMdClose } from "react-icons/io";
 import { AnimatePresence, motion } from "motion/react";
-import Link from "next/link";
+
 import LocaleSwitcherSelect from "../layout/topHeader/components/LocaleSwitcherSelect";
 import { useLocale } from "next-intl";
 import { Portal } from "./Portal";

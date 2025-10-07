@@ -1,8 +1,9 @@
 import { CategoryChild } from "@/entities/Categories/types/CategoryType";
 import "./style/dropdown.css";
 import { AnimatePresence, motion, Variants } from "motion/react";
-import Link from "next/link";
+
 import { useEffect, useRef, useState } from "react";
+import ProgLink from "@/utils/ProgLink";
 
 type Props = {
   items: CategoryChild[];
@@ -53,7 +54,7 @@ export default function DropdownPanel({ items, isActive }: Props) {
                         {name}
                       </span>
                     ) : (
-                      link && <Link href={link}>{name}</Link>
+                      link && <ProgLink href={link}>{name}</ProgLink>
                     )}
                   </motion.li>
                 ))}

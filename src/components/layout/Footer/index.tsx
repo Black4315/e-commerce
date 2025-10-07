@@ -1,16 +1,17 @@
 "use client";
 
 import CopyRight from "./components/CopyRight";
-import Link from "next/link";
+
 import GetOffer from "./components/GetOffer";
 import FooterElementList from "./components/FooterElementList";
-import {  useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { useMobileCheck } from "@/contexts/MobileCheckContext";
 import { cn } from "@/lib/utils";
 import StickyBtns from "@/components/shared/StickyBtns";
 import { LOGO_NAME } from "@/constants";
 import { useStickyBtns } from "./hooks/useStickyBtns";
 import Download from "./components/Download";
+import ProgLink from "@/utils/ProgLink";
 
 const Footer = () => {
   const t = useTranslations("footer");
@@ -33,15 +34,15 @@ const Footer = () => {
         >
           <div className="flex flex-col gap-5 sm:gap-6 ">
             <h1>
-              <Link href={"/"} className="logo text-text-1 ">
+              <ProgLink href={"/"} className="logo text-text-1 ">
                 {LOGO_NAME}
-              </Link>
+              </ProgLink>
             </h1>
 
             <h2>
-              <Link href={"/subscribe"} className="footer-subtitle">
+              <ProgLink href={"/subscribe"} className="footer-subtitle">
                 {t("sub")}
-              </Link>
+              </ProgLink>
             </h2>
             <GetOffer />
           </div>

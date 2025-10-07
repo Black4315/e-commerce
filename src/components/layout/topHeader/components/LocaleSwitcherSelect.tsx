@@ -7,6 +7,7 @@ import SwitcherSelect from "@/components/ui/SwitcherSelect";
 import { LOCALE_LABELS } from "@/constants";
 import { Locale, routing, usePathname, useRouter } from "@/i18n/navigation";
 import { useParams } from "next/navigation";
+import nProgress from "nprogress";
 
 type Props = {
   defaultValue: string;
@@ -22,6 +23,7 @@ export default function LocaleSwitcherSelect({ defaultValue, label, className }:
 
   // Handle locale change
   function onSelectChange(nextLocale: string) {
+    nProgress.start()
     router.replace(
       // @ts-expect-error -- TypeScript will validate that only known `params`
       // are used in combination with a given `pathname`. Since the two will

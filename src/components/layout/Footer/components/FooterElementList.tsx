@@ -1,8 +1,8 @@
 
-import Link from 'next/link';
 import { cn } from '@/lib/utils'; // assuming className merge utility
 import { useMobileCheck } from '@/contexts/MobileCheckContext';
 import CustomAccordion from '@/components/ui/CustomAccordion';
+import ProgLink from '@/utils/ProgLink';
 
 type FooterElementListProps = {
     header: string;
@@ -18,9 +18,9 @@ const FooterElementList = ({ header, body, className }: FooterElementListProps) 
             {body.map(({ label, link }, i) => (
                 <li className="footer-text text-text-3" key={i}>
                     {link ? (
-                        <Link href={link} className="hover:text-hover-button-1">
+                        <ProgLink href={link} className="hover:text-hover-button-1">
                             {label}
-                        </Link>
+                        </ProgLink>
                     ) : (
                         label
                     )}

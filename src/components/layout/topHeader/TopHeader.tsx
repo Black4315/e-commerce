@@ -4,6 +4,7 @@ import useFetchTopOffer from './hooks/useFetchTopOffer';
 import Link from 'next/link';
 import LocaleSwitcherSelect from './components/LocaleSwitcherSelect';
 import FetchErr from './components/FetchErr';
+import ProgLink from '@/utils/ProgLink';
 
 export default function TopHeader({ locale }: { locale: string }) {
   const { data, isLoading, error } = useFetchTopOffer(locale)
@@ -17,9 +18,9 @@ export default function TopHeader({ locale }: { locale: string }) {
 
         <p className="flex-1 text-xs sm:text-sm leading-5 tracking-wide md:text-center lg:-mr-20 md:static md:translate-x-0">
           {data.title}
-          <Link href={data.link} className="underline font-semibold mx-2">
+          <ProgLink href={data.link} className="underline font-semibold mx-2">
             ShopNow
-          </Link>
+          </ProgLink>
         </p>
 
         <div className="hidden md:block z-10">

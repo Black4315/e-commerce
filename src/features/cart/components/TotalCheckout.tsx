@@ -5,8 +5,9 @@ import Button2 from "@/components/ui/Button2";
 import { pages } from "@/constants/pages";
 import { currencyOfPrice } from "@/utils";
 import { useTranslations } from "next-intl";
-import Link from "next/link";
+
 import React from "react";
+import ProgLink from "@/utils/ProgLink";
 
 const TotalCheckout = ({
   subTotal,
@@ -49,14 +50,14 @@ const TotalCheckout = ({
         ))}
       </ul>
 
-      <Link href={pages.checkout} className="mt-2 md:mt-4">
+      <ProgLink href={pages.checkout} className="mt-2 md:mt-4">
         <Button2
           type="submit"
           className="text-text-1 bg-secondary-3 border-none hover:bg-hover-button-2 mx-auto"
         >
           {t("proceedCheck")}
         </Button2>
-      </Link>
+      </ProgLink>
     </div>
   );
 };

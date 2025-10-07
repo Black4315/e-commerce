@@ -15,7 +15,12 @@
     ],
     "vendor": "HAVIT",
     "category": "electronics",
-    "tags": ["gamepad", "controller", "gaming", "pc"],
+    "tags": [
+      "gamepad",
+      "controller",
+      "gaming",
+      "pc"
+    ],
     "defaultVariantIndex": 0,
     "hasVariations": false,
     "variants": [
@@ -31,7 +36,7 @@
         "inStock": true,
         "images": [
           {
-            "url": "/assets/products/images/image 63.svg",
+            "url": "/assets/products/images/image 63.png",
             "alt": "HAVIT HV-G92 Gamepad Front View"
           },
           {
@@ -62,13 +67,34 @@
     "soldNumber": 1300,
     "taxes": 0.15,
     "productDetails": [
-      ["Batteries", "1 Lithium Polymer batteries required. (included)"],
-      ["Package Dimensions", "19.4 x 19.3 x 6.9 cm; 10 g"],
-      ["Package material", "ABS Plastic"],
-      ["Package weight", "0.45kg"],
-      ["Release date", "10 November 2024"],
-      ["ASIN", "B0DY5JXHGP"],
-      ["Country of origin", "China"]
+      [
+        "Batteries",
+        "1 Lithium Polymer batteries required. (included)"
+      ],
+      [
+        "Package Dimensions",
+        "19.4 x 19.3 x 6.9 cm; 10 g"
+      ],
+      [
+        "Package material",
+        "ABS Plastic"
+      ],
+      [
+        "Package weight",
+        "0.45kg"
+      ],
+      [
+        "Release date",
+        "10 November 2024"
+      ],
+      [
+        "ASIN",
+        "B0DY5JXHGP"
+      ],
+      [
+        "Country of origin",
+        "China"
+      ]
     ],
     "weight": "0.45kg",
     "material": "ABS Plastic",
@@ -84,7 +110,12 @@
     "description": "Stylish and warm winter coat for everyday wear.",
     "vendor": "The North Face x Gucci",
     "category": "mens-fashion",
-    "tags": ["winter", "coat", "luxury", "gucci"],
+    "tags": [
+      "winter",
+      "coat",
+      "luxury",
+      "gucci"
+    ],
     "hasVariations": true,
     "defaultVariantIndex": 0,
     "variants": [
@@ -187,7 +218,12 @@
     "description": "Elevate your style with this premium designer handbag featuring the iconic Gucci monogram pattern—a timeless symbol of luxury and sophistication. Crafted with meticulous attention to detail, this bag combines high-end Italian craftsmanship with classic elegance.",
     "vendor": "Gucci",
     "category": "womens-fashion",
-    "tags": ["bag", "duffle", "luxury", "designer"],
+    "tags": [
+      "bag",
+      "duffle",
+      "luxury",
+      "designer"
+    ],
     "defaultVariantIndex": 0,
     "hasVariations": false,
     "variants": [
@@ -251,7 +287,12 @@
     "description": "High resolution display monitor suitable for pro gaming.",
     "vendor": "IPS Electronics",
     "category": "electronics",
-    "tags": ["monitor", "gaming", "display", "lcd"],
+    "tags": [
+      "monitor",
+      "gaming",
+      "display",
+      "lcd"
+    ],
     "hasVariations": false,
     "defaultVariantIndex": 0,
     "variants": [
@@ -296,7 +337,12 @@
     "description": "Stylish and warm winter coat for everyday wear.",
     "vendor": "The North Face x Gucci",
     "category": "mens-fashion",
-    "tags": ["winter", "coat", "luxury", "gucci"],
+    "tags": [
+      "winter",
+      "coat",
+      "luxury",
+      "gucci"
+    ],
     "hasVariations": true,
     "defaultVariantIndex": 0,
     "variants": [
@@ -396,7 +442,12 @@
     "description": "High performance liquid cooler with RGB lighting.",
     "vendor": "RGB Tech",
     "category": "Electronics",
-    "tags": ["cooler", "liquid", "rgb", "cpu"],
+    "tags": [
+      "cooler",
+      "liquid",
+      "rgb",
+      "cpu"
+    ],
     "hasVariations": false,
     "defaultVariantIndex": 0,
     "variants": [
@@ -441,7 +492,12 @@
     "description": "Compact wooden bookshelf for small spaces.",
     "vendor": "OakCraft",
     "category": "Furniture",
-    "tags": ["bookshelf", "wood", "compact", "furniture"],
+    "tags": [
+      "bookshelf",
+      "wood",
+      "compact",
+      "furniture"
+    ],
     "hasVariations": false,
     "defaultVariantIndex": 0,
     "variants": [
@@ -489,7 +545,12 @@
     "description": "High resolution display monitor suitable for pro gaming.",
     "vendor": "IPS Electronics",
     "category": "electronics",
-    "tags": ["monitor", "gaming", "display", "lcd"],
+    "tags": [
+      "monitor",
+      "gaming",
+      "display",
+      "lcd"
+    ],
     "hasVariations": false,
     "defaultVariantIndex": 0,
     "variants": [

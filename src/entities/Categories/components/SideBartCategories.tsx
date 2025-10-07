@@ -4,7 +4,8 @@ import { CategoryMobile } from "./Category";
 import { CategoryChild, CategoryType } from "../types/CategoryType";
 import useDropDown from "../hooks/useDropDown";
 import { Dispatch, useEffect } from "react";
-import Link from "next/link";
+
+import ProgLink from "@/utils/ProgLink";
 
 const SideBartCategories = ({
   onClick,
@@ -57,7 +58,7 @@ export const SideBartCategoryItems = ({
   items,
 }: {
   items: CategoryChild[] | null;
-}) =>{
+}) => {
   return items ? (
     <ul className="space-y-4 dropdown-panel w-55 text-black ">
       {items?.map(({ link, label, name }, i) => (
@@ -70,7 +71,7 @@ export const SideBartCategoryItems = ({
               {name}
             </span>
           ) : (
-            link && <Link href={link} className="active:text-secondary-3 transition-all nav-link">{name}</Link>
+            link && <ProgLink href={link} className="active:text-secondary-3 transition-all nav-link">{name}</ProgLink>
           )}
         </li>
       ))}

@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import NavBar from "./components/NavBar";
 import SearchComponent from "../../../features/Search/components/SearchComponent";
 import NavProfileActions from "./components/ActionsNav";
@@ -12,6 +11,7 @@ import { cn } from "@/lib/utils";
 import { useTranslations } from "next-intl";
 import { LOGO_NAME } from "@/constants";
 import { useHeader } from "./hooks/useHeader";
+import ProgLink from "@/utils/ProgLink";
 
 const Header = () => {
   const isMobile = useMobileCheck(); // Assuming useMobileCheck is a custom hook to check if the device is mobile
@@ -39,9 +39,9 @@ const Header = () => {
             <SideBarMenu
               className={`lg:hidden ${isMobile && "!block"}`}
             />
-            <Link href={"/"} className="logo max-lg:mx-2">
+            <ProgLink href={"/"} className="logo max-lg:mx-2">
               {LOGO_NAME}
-            </Link>
+            </ProgLink>
           </div>
 
           <div className={`hidden lg:block ${isMobile && "!hidden"}`}>
@@ -55,7 +55,7 @@ const Header = () => {
               {isLoggedIn ? (
                 <NavProfileActions.user />
               ) : (
-                <Link
+                <ProgLink
                   href={"/auth/login"}
                   className="login-btn max-xs:w-13 max-xs:ms-1"
                   children={t("logInBtn")}

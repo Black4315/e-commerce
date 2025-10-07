@@ -3,9 +3,10 @@ import ProductCards from "./components/ProductCards";
 import { productType } from "@/entities/Product/types/productType";
 import SkeltonProductCard from "./components/SkeltonProductCards";
 import ErrorProducts from "./components/ErrorProducts";
-import Link from "next/link";
+
 import Section from "../Section";
 import { useTranslations } from "next-intl";
+import ProgLink from "@/utils/ProgLink";
 
 type SectionProductsProps = {
   children?: React.ReactNode;
@@ -56,12 +57,12 @@ const SectionProducts: React.FC<SectionProductsProps> = ({
           <ProductCards data={products} rows={rows} />
           {viewAllLink && products.length ? (
             <div className="flex-center">
-              <Link
+              <ProgLink
                 href={viewAllLink}
                 className="w-48 md:w-56 aspect-[4.6] med-text flex-center hover:bg-hover-button-2 transition-all bg-secondary-3 text-text-1 rounded"
               >
                 {t("viewAll")}
-              </Link>
+              </ProgLink>
             </div>
           ) : (
             ""

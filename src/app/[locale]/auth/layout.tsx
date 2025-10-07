@@ -1,7 +1,7 @@
 import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
-import '../style/globals.css';
+import '../style/globals.css'
 
 export default async function AuthLayout({
   children,
